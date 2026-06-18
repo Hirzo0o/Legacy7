@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Legacy 7 | The Icon Series — Adelly33</title>
+<style>
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:'Helvetica Neue',Arial,sans-serif;background:#0a0a0a;color:#f0f0f0}
+  a{color:inherit;text-decoration:none}
+
+  /* TOP BAR */
+  .topbar{background:#111;display:flex;justify-content:center;gap:40px;padding:8px 20px;font-size:12px;color:#bbb;border-bottom:1px solid #222}
+  .topbar a:hover{color:#fff}
+
+  /* NAV */
+  nav{background:#0a0a0a;display:flex;align-items:center;justify-content:space-between;padding:14px 30px;border-bottom:1px solid #1c1c1c;position:sticky;top:0;z-index:100}
+  .nav-logo img{height:36px}
+  .nav-icons{display:flex;gap:18px;font-size:13px;color:#ccc}
+  .nav-icons a{display:flex;align-items:center;gap:5px}
+
+  /* COUNTDOWN BANNER */
+  .countdown-banner{background:#c8000a;text-align:center;padding:10px 20px;font-size:13px;font-weight:600;letter-spacing:1px;color:#fff}
+  .countdown-timer{display:inline-flex;gap:6px;margin-left:14px;align-items:center}
+  .timer-block{background:rgba(0,0,0,.3);border-radius:4px;padding:2px 8px;font-size:15px;font-weight:700;min-width:36px;text-align:center}
+  .timer-sep{font-weight:700}
+
+  /* HERO */
+  .hero{text-align:center;padding:40px 20px 20px;background:linear-gradient(180deg,#0a0a0a 0%,#111 100%)}
+  .hero-logo{max-width:360px;width:90%;margin-bottom:18px}
+  .hero-sub{font-size:13px;letter-spacing:2px;color:#c8a84b;text-transform:uppercase;margin-bottom:22px}
+  .hero-video-wrap{position:relative;max-width:700px;margin:0 auto 22px;border-radius:10px;overflow:hidden;background:#000}
+  .hero-video-wrap video{width:100%;display:block}
+  .hero-cta-btn{display:inline-block;background:#c8000a;color:#fff;padding:14px 36px;border-radius:6px;font-size:15px;font-weight:700;letter-spacing:1px;margin-bottom:28px;transition:background .2s}
+  .hero-cta-btn:hover{background:#a50009}
+  .hero-headline{font-size:clamp(22px,4vw,34px);font-weight:800;line-height:1.25;max-width:700px;margin:0 auto 16px;color:#fff}
+  .hero-desc{font-size:15px;color:#bbb;max-width:620px;margin:0 auto 24px;line-height:1.65}
+  .trust-badges{display:flex;flex-wrap:wrap;justify-content:center;gap:14px;margin-bottom:30px}
+  .badge{background:#1a1a1a;border:1px solid #2e2e2e;border-radius:20px;padding:6px 16px;font-size:12px;color:#c8a84b;font-weight:600}
+
+  /* PRODUCT GALLERY */
+  .gallery-section{max-width:1000px;margin:0 auto;padding:10px 20px 30px}
+  .gallery-main img{width:100%;border-radius:10px;display:block}
+  .gallery-thumbs{display:flex;gap:10px;margin-top:10px;justify-content:center}
+  .gallery-thumbs img{width:90px;height:90px;object-fit:cover;border-radius:6px;cursor:pointer;border:2px solid transparent;transition:border .2s}
+  .gallery-thumbs img.active{border-color:#c8a84b}
+  .gallery-thumbs img:hover{border-color:#c8a84b}
+
+  /* RATING BAR */
+  .rating-bar{text-align:center;padding:10px 20px;font-size:14px;color:#c8a84b;font-weight:600}
+
+  /* BUY BOX */
+  #ex-buy-section{background:#111;border:1px solid #2a2a2a;border-radius:12px;max-width:600px;margin:20px auto 30px;padding:28px 24px}
+  .product-title{font-size:22px;font-weight:800;color:#fff;margin-bottom:4px}
+  .product-tags{font-size:12px;color:#888;margin-bottom:14px}
+  .price-row{display:flex;align-items:center;gap:14px;margin-bottom:18px}
+  .price-old{font-size:18px;color:#555;text-decoration:line-through}
+  .price-new{font-size:30px;font-weight:800;color:#fff}
+  .price-badge{background:#c8000a;color:#fff;font-size:12px;font-weight:700;padding:3px 10px;border-radius:4px}
+  .qty-label{font-size:13px;color:#aaa;margin-bottom:8px}
+  .qty-controls{display:flex;align-items:center;gap:0;margin-bottom:18px;border:1px solid #2e2e2e;border-radius:6px;width:fit-content}
+  .qty-btn{background:#1a1a1a;border:none;color:#fff;width:38px;height:38px;font-size:20px;cursor:pointer;transition:background .2s}
+  .qty-btn:hover{background:#2a2a2a}
+  .qty-val{background:#111;color:#fff;width:48px;height:38px;text-align:center;font-size:15px;border:none;border-left:1px solid #2e2e2e;border-right:1px solid #2e2e2e}
+  .order-btn{display:block;width:100%;background:#c8000a;color:#fff;border:none;padding:16px;border-radius:8px;font-size:16px;font-weight:700;letter-spacing:1px;cursor:pointer;transition:background .2s;margin-bottom:16px}
+  .order-btn:hover{background:#a50009}
+  .perks{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:18px}
+  .perk{display:flex;align-items:flex-start;gap:8px;font-size:13px;color:#bbb}
+  .perk-icon{font-size:18px;flex-shrink:0}
+  .secure-checkout{text-align:center;margin-bottom:14px;font-size:12px;color:#888;font-weight:600;letter-spacing:1px}
+  .payment-icons{display:flex;flex-wrap:wrap;justify-content:center;gap:8px}
+  .pay-icon{background:#1a1a1a;border:1px solid #2e2e2e;border-radius:4px;padding:4px 10px;font-size:11px;color:#aaa;font-weight:600}
+
+  /* FEATURES GRID */
+  .features-section{max-width:900px;margin:0 auto;padding:40px 20px}
+  .section-eyebrow{font-size:11px;letter-spacing:3px;color:#c8a84b;text-transform:uppercase;text-align:center;margin-bottom:10px}
+  .section-title{font-size:clamp(22px,3.5vw,32px);font-weight:800;text-align:center;color:#fff;margin-bottom:14px;line-height:1.25}
+  .section-sub{font-size:15px;color:#999;text-align:center;max-width:580px;margin:0 auto 36px;line-height:1.6}
+  .features-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:24px}
+  .feat-card{background:#111;border:1px solid #222;border-radius:10px;padding:24px 20px;text-align:center}
+  .feat-icon{font-size:28px;margin-bottom:10px}
+  .feat-title{font-size:15px;font-weight:700;color:#fff;margin-bottom:6px}
+  .feat-desc{font-size:13px;color:#888;line-height:1.55}
+
+  /* CONTENT SECTIONS */
+  .content-block{max-width:900px;margin:0 auto;padding:40px 20px}
+  .content-row{display:flex;gap:36px;align-items:center;margin-bottom:48px;flex-wrap:wrap}
+  .content-row.reverse{flex-direction:row-reverse}
+  .content-img{flex:1;min-width:260px}
+  .content-img img{width:100%;border-radius:10px;display:block}
+  .content-text{flex:1;min-width:260px}
+  .content-text h3{font-size:20px;font-weight:800;color:#fff;margin-bottom:12px;line-height:1.3}
+  .content-text p{font-size:14px;color:#999;line-height:1.7}
+
+  /* STEPS */
+  .steps-section{max-width:900px;margin:0 auto;padding:40px 20px}
+  .steps-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:28px;margin-top:36px}
+  .step-card{background:#111;border:1px solid #222;border-radius:10px;padding:28px 22px}
+  .step-num{font-size:36px;font-weight:900;color:#c8a84b;margin-bottom:10px;line-height:1}
+  .step-title{font-size:16px;font-weight:700;color:#fff;margin-bottom:8px}
+  .step-desc{font-size:13px;color:#888;line-height:1.6}
+
+  /* STATS */
+  .stats-section{max-width:900px;margin:0 auto;padding:40px 20px;text-align:center}
+  .stats-grid{display:flex;flex-wrap:wrap;justify-content:center;gap:36px;margin-top:32px}
+  .stat-item{}
+  .stat-num{font-size:42px;font-weight:900;color:#c8a84b;line-height:1}
+  .stat-bar-wrap{width:120px;height:6px;background:#222;border-radius:3px;margin:8px auto 6px}
+  .stat-bar{height:6px;background:#c8a84b;border-radius:3px}
+  .stat-label{font-size:13px;color:#888}
+
+  /* BEFORE/AFTER */
+  .ba-section{max-width:900px;margin:0 auto;padding:40px 20px}
+  .ba-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:32px}
+  .ba-img{position:relative;border-radius:10px;overflow:hidden}
+  .ba-img img{width:100%;display:block}
+  .ba-label{position:absolute;bottom:12px;left:12px;background:rgba(0,0,0,.75);color:#fff;font-size:12px;font-weight:700;padding:4px 10px;border-radius:4px}
+
+  /* PACKAGE */
+  .package-section{max-width:900px;margin:0 auto;padding:40px 20px}
+  .package-img{width:100%;border-radius:10px;margin:30px 0}
+  .package-items{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:20px;margin-bottom:30px}
+  .pkg-item{background:#111;border:1px solid #222;border-radius:10px;padding:20px}
+  .pkg-item-icon{font-size:28px;margin-bottom:8px}
+  .pkg-item-title{font-size:14px;font-weight:700;color:#fff;margin-bottom:5px}
+  .pkg-item-desc{font-size:13px;color:#888;line-height:1.55}
+
+  /* COMMITMENT */
+  .commitment-section{max-width:900px;margin:0 auto;padding:40px 20px}
+  .commit-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px;margin-top:32px}
+  .commit-card{background:#111;border:1px solid #222;border-radius:10px;padding:22px}
+  .commit-icon{font-size:22px;margin-bottom:8px}
+  .commit-title{font-size:14px;font-weight:700;color:#fff;margin-bottom:5px}
+  .commit-desc{font-size:13px;color:#888;line-height:1.55}
+
+  /* FAQ */
+  .faq-section{max-width:750px;margin:0 auto;padding:40px 20px}
+  .faq-item{border-bottom:1px solid #222;padding:20px 0;cursor:pointer}
+  .faq-q{font-size:15px;font-weight:700;color:#fff;display:flex;justify-content:space-between;align-items:center}
+  .faq-q span{color:#c8a84b;font-size:20px;transition:transform .2s}
+  .faq-a{font-size:14px;color:#999;line-height:1.65;margin-top:12px;display:none}
+  .faq-item.open .faq-a{display:block}
+  .faq-item.open .faq-q span{transform:rotate(45deg)}
+
+  /* FINAL CTA */
+  .final-cta{background:linear-gradient(135deg,#111 0%,#1a1200 100%);text-align:center;padding:60px 20px;border-top:1px solid #222}
+  .final-cta h2{font-size:clamp(24px,4vw,36px);font-weight:900;color:#fff;margin-bottom:12px;max-width:640px;margin-left:auto;margin-right:auto}
+  .final-cta p{font-size:14px;color:#999;margin-bottom:28px;max-width:500px;margin-left:auto;margin-right:auto}
+  .final-cta a{display:inline-block;background:#c8000a;color:#fff;padding:16px 40px;border-radius:8px;font-size:15px;font-weight:700;letter-spacing:1px;transition:background .2s}
+  .final-cta a:hover{background:#a50009}
+  .cta-note{font-size:12px;color:#666;margin-top:12px}
+
+  /* REVIEWS */
+  .reviews-section{max-width:900px;margin:0 auto;padding:40px 20px}
+  .rating-summary{display:flex;align-items:center;gap:28px;margin-bottom:30px;flex-wrap:wrap}
+  .rating-big{font-size:56px;font-weight:900;color:#fff;line-height:1}
+  .rating-bars{flex:1;min-width:180px}
+  .rbar-row{display:flex;align-items:center;gap:8px;margin-bottom:6px;font-size:13px}
+  .rbar-label{color:#888;min-width:8px}
+  .rbar-track{flex:1;height:6px;background:#222;border-radius:3px}
+  .rbar-fill{height:6px;background:#c8a84b;border-radius:3px}
+  .rbar-count{color:#888;min-width:40px;text-align:right}
+  .stars-text{color:#c8a84b;font-size:18px;display:block;margin-bottom:4px}
+  .total-reviews{font-size:13px;color:#888}
+  .reviews-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:18px}
+  .review-card{background:#111;border:1px solid #222;border-radius:10px;padding:18px}
+  .review-stars{color:#c8a84b;font-size:14px;margin-bottom:8px}
+  .review-text{font-size:13px;color:#bbb;line-height:1.6;margin-bottom:10px;font-style:italic}
+  .review-author{font-size:12px;color:#888;font-weight:600}
+  .review-verified{font-size:11px;color:#4caf50}
+  .load-more-btn{display:block;margin:28px auto 0;background:transparent;border:1px solid #333;color:#bbb;padding:12px 36px;border-radius:6px;font-size:14px;cursor:pointer;transition:all .2s}
+  .load-more-btn:hover{border-color:#c8a84b;color:#c8a84b}
+
+  /* FOOTER */
+  footer{background:#0a0a0a;border-top:1px solid #1c1c1c;padding:48px 30px 28px}
+  .footer-inner{max-width:1000px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:32px}
+  .footer-brand img{height:32px;margin-bottom:14px}
+  .footer-brand p{font-size:13px;color:#666;line-height:1.65}
+  .footer-col h4{font-size:13px;font-weight:700;color:#fff;margin-bottom:14px;letter-spacing:1px;text-transform:uppercase}
+  .footer-col ul{list-style:none}
+  .footer-col ul li{margin-bottom:8px}
+  .footer-col ul li a{font-size:13px;color:#666;transition:color .2s}
+  .footer-col ul li a:hover{color:#fff}
+  .footer-contact{font-size:13px;color:#666;margin-bottom:6px}
+  .footer-bottom{max-width:1000px;margin:32px auto 0;border-top:1px solid #1c1c1c;padding-top:18px;text-align:center;font-size:12px;color:#444}
+
+  @media(max-width:600px){
+    .ba-grid{grid-template-columns:1fr}
+    .content-row,.content-row.reverse{flex-direction:column}
+  }
+</style>
+</head>
+<body>
+
+<!-- TOP BAR -->
+<div class="topbar">
+  <a href="#">Track your order</a>
+  <a href="#">Contact us</a>
+</div>
+
+<!-- NAV -->
+<nav>
+  <a href="#" class="nav-logo">
+    <img src="https://adelly33.com/cdn/shop/files/LOGO1_adelly_SVG_-_800_X_200.svg?v=1776891692&width=200" alt="Adelly33"/>
+  </a>
+  <div class="nav-icons">
+    <a href="#">My account</a>
+    <a href="#">🛒 0</a>
+  </div>
+</nav>
+
+<!-- COUNTDOWN -->
+<div class="countdown-banner">
+  LAST UNITS: Secure Your Legacy
+  <span class="countdown-timer">
+    <span class="timer-block" id="cd-days">00</span><span class="timer-sep">:</span>
+    <span class="timer-block" id="cd-hours">00</span><span class="timer-sep">:</span>
+    <span class="timer-block" id="cd-min">00</span><span class="timer-sep">:</span>
+    <span class="timer-block" id="cd-sec">00</span>
+  </span>
+</div>
+
+<!-- HERO -->
+<div class="hero">
+  <img class="hero-logo" src="https://adelly33.com/cdn/shop/files/LOGO_800_X_200PXLEGACY.png?v=1781546637&width=1780" alt="Legacy 7 Logo"/>
+  <p class="hero-sub">CR7 Excellence in a Collector's Piece</p>
+  <div class="hero-video-wrap">
+    <video autoplay muted loop playsinline poster="https://adelly33.com/cdn/shop/files/preview_images/f53417867bee44698130b3cb59dd769d.thumbnail.0000000000_small.jpg?v=1781235118">
+      <source src="https://adelly33.com/cdn/shop/videos/c/vp/f53417867bee44698130b3cb59dd769d/f53417867bee44698130b3cb59dd769d.SD-480p-0.9Mbps-86342736.mp4?v=0" type="video/mp4"/>
+    </video>
+  </div>
+  <a href="#ex-buy-section" class="hero-cta-btn">Order Now — Limited Stock Available</a>
+  <p style="font-size:11px;letter-spacing:2px;color:#c8a84b;text-transform:uppercase;margin-bottom:18px">FOR THE TRUE FANS</p>
+  <h1 class="hero-headline">The Entire World Cup Legacy of CR7, Immortalized in Gold Foil for Your Wall</h1>
+  <p class="hero-desc">Not just another cheap poster. This is a chronological museum-grade piece featuring six collectible illustrations—arriving with all mounting hardware so you can hang history the same day.</p>
+  <p style="font-size:13px;color:#c8a84b;margin-bottom:18px">⭐ +2,000 fans already own it · Arrives ready to gift</p>
+  <div class="trust-badges">
+    <span class="badge">★ Premium Collector's Item</span>
+    <span class="badge">★ Encrypted Secure Checkout</span>
+    <span class="badge">★ Arrives Ready to Display</span>
+  </div>
+</div>
+
+<!-- GALLERY -->
+<div class="gallery-section">
+  <div class="gallery-main">
+    <img id="main-img" src="https://adelly33.com/cdn/shop/files/ly3.png?v=1781213927&width=1200" alt="Legacy 7"/>
+  </div>
+  <div class="gallery-thumbs">
+    <img class="active" src="https://adelly33.com/cdn/shop/files/ly3.png?v=1781213927&width=200" onclick="switchImg(this,'https://adelly33.com/cdn/shop/files/ly3.png?v=1781213927&width=1200')" alt="thumb1"/>
+    <img src="https://adelly33.com/cdn/shop/files/ly2.png?v=1781213927&width=200" onclick="switchImg(this,'https://adelly33.com/cdn/shop/files/ly2.png?v=1781213927&width=1200')" alt="thumb2"/>
+    <img src="https://adelly33.com/cdn/shop/files/ly4.png?v=1781213927&width=200" onclick="switchImg(this,'https://adelly33.com/cdn/shop/files/ly4.png?v=1781213927&width=1200')" alt="thumb3"/>
+  </div>
+</div>
+
+<div class="rating-bar">⭐⭐⭐⭐⭐ 4.8/5 | Loved by 500+ football fans.</div>
+
+<!-- BUY BOX -->
+<div id="ex-buy-section">
+  <div class="product-title">Legacy 7 | The Icon Series</div>
+  <div class="product-tags">Museum-Grade Frame &nbsp;·&nbsp; Hardware Included &nbsp;·&nbsp; Premium Packaging</div>
+  <div class="price-row">
+    <span class="price-old">$69.99</span>
+    <span class="price-new">$37.99</span>
+    <span class="price-badge">-46%</span>
+  </div>
+  <div class="qty-label">Quantity</div>
+  <div class="qty-controls">
+    <button class="qty-btn" onclick="changeQty(-1)">−</button>
+    <input class="qty-val" id="qty" type="text" value="1" readonly/>
+    <button class="qty-btn" onclick="changeQty(1)">+</button>
+  </div>
+  <button class="order-btn">Order Now</button>
+  <div class="perks">
+    <div class="perk"><span class="perk-icon">💪</span><span>Solid Build, Not Flimsy Plastic</span></div>
+    <div class="perk"><span class="perk-icon">📦</span><span>Packaged in Reinforced Box</span></div>
+    <div class="perk"><span class="perk-icon">🔒</span><span>End-to-End Encrypted Checkout</span></div>
+    <div class="perk"><span class="perk-icon">⏳</span><span>Built to Last for Decades</span></div>
+  </div>
+  <div class="secure-checkout">100% Secure Encrypted Checkout</div>
+  <div class="payment-icons">
+    <span class="pay-icon">AMEX</span>
+    <span class="pay-icon">Apple Pay</span>
+    <span class="pay-icon">Diners</span>
+    <span class="pay-icon">Discover</span>
+    <span class="pay-icon">Google Pay</span>
+    <span class="pay-icon">JCB</span>
+    <span class="pay-icon">Maestro</span>
+    <span class="pay-icon">Mastercard</span>
+    <span class="pay-icon">PayPal</span>
+    <span class="pay-icon">UnionPay</span>
+    <span class="pay-icon">Venmo</span>
+    <span class="pay-icon">Visa</span>
+  </div>
+</div>
+
+<!-- FEATURES -->
+<div class="features-section">
+  <div class="section-eyebrow">What Sets It Apart</div>
+  <h2 class="section-title">Experience the complete journey,<br>not just a static image.</h2>
+  <div class="features-grid">
+    <div class="feat-card">
+      <div class="feat-icon">📅</div>
+      <div class="feat-title">2006–2026 Chronology</div>
+      <div class="feat-desc">Genuine brilliant applications that command attention in any room.</div>
+    </div>
+    <div class="feat-card">
+      <div class="feat-icon">✨</div>
+      <div class="feat-title">Gold Foil Accents</div>
+      <div class="feat-desc">Imported museum-grade materials. Forget flimsy, lightweight plastic borders.</div>
+    </div>
+    <div class="feat-card">
+      <div class="feat-icon">🖼</div>
+      <div class="feat-title">Solid Gallery Frame</div>
+      <div class="feat-desc">Imported museum-grade materials that feel like a premium collector's piece.</div>
+    </div>
+    <div class="feat-card">
+      <div class="feat-icon">🔨</div>
+      <div class="feat-title">Ready to Display</div>
+      <div class="feat-desc">Includes heavy-duty mounting hardware and a desk stand right out of the box.</div>
+    </div>
+  </div>
+</div>
+
+<!-- CONTENT ROWS -->
+<div class="content-block">
+  <div class="section-eyebrow">THE TRIBUTE HE DESERVES</div>
+  <h2 class="section-title" style="margin-bottom:36px">A finish that commands attention from across the room</h2>
+
+  <div class="content-row">
+    <div class="content-img"><img src="https://cdn.shopify.com/s/files/1/0679/2278/8635/files/ex-ex-fumfx-legacy7-img-1-v0.jpg?v=1781546398" alt="Quality"/></div>
+    <div class="content-text">
+      <h3>The first impact happens when you hold it</h3>
+      <p>A solid, imported shadow box with real weight, crystal-clear protection, and gold foil details that scream quality before you even read the timeline.</p>
+      <br/>
+      <p>🛡 Sturdy frame that does not feel hollow</p>
+      <p>✨ Brilliant gold foil applications</p>
+      <p>👓 Crystal-clear cover with zero cheap glare</p>
+      <br/>
+      <a href="#ex-buy-section" style="display:inline-block;background:#c8000a;color:#fff;padding:12px 26px;border-radius:6px;font-size:14px;font-weight:700;margin-top:10px">See the Details — Feel the quality in every angle</a>
+    </div>
+  </div>
+
+  <div class="section-eyebrow" style="margin-top:20px">WHY THIS PIECE MATTERS</div>
+  <h2 class="section-title" style="margin-bottom:36px">That scattered collection of memories, finally unified</h2>
+
+  <div class="content-row reverse">
+    <div class="content-img"><img src="https://cdn.shopify.com/s/files/1/0679/2278/8635/files/ex-ex-fumfx-legacy7-img-2-v0.jpg?v=1781546398" alt="Story"/></div>
+    <div class="content-text">
+      <h3>A chronological story, not just a picture</h3>
+      <p>You do not want another generic poster fading on the wall. Legacy7 gathers every milestone from 2006 to 2026 into a single cohesive timeline, letting you relive the entire legend at a glance.</p>
+    </div>
+  </div>
+
+  <div class="content-row">
+    <div class="content-img"><img src="https://cdn.shopify.com/s/files/1/0679/2278/8635/files/ex-ex-fumfx-legacy7-img-3-v0.jpg?v=1781546398" alt="Artwork"/></div>
+    <div class="content-text">
+      <h3>Premium artwork, clearly defined</h3>
+      <p>No guessing games about what you are getting. It features six high-quality, custom-illustrated collectible plates—crafted to capture the classic style while being exclusive, original pieces.</p>
+    </div>
+  </div>
+
+  <div class="content-row reverse">
+    <div class="content-img"><img src="https://cdn.shopify.com/s/files/1/0679/2278/8635/files/ex-ex-fumfx-legacy7-img-4-v0.jpg?v=1781546398" alt="Hardware"/></div>
+    <div class="content-text">
+      <h3>Ready to hang, zero frustration</h3>
+      <p>We include all the mounting hardware and a sturdy stand. You will not have to run to the hardware store—just open the premium box and instantly elevate your office or sports room.</p>
+    </div>
+  </div>
+</div>
+
+<!-- STEPS -->
+<div class="steps-section">
+  <div class="section-eyebrow">HOW TO HONOR THE LEGEND</div>
+  <h2 class="section-title">Three steps to upgrade your sports room forever</h2>
+  <div class="steps-grid">
+    <div class="step-card">
+      <div class="step-num">01</div>
+      <div class="step-title">You Receive It</div>
+      <div class="step-desc">It arrives in a reinforced, premium gift box. No flimsy packaging, no cracked glass. Just an immaculate piece ready for its unboxing moment.</div>
+    </div>
+    <div class="step-card">
+      <div class="step-num">02</div>
+      <div class="step-title">You Hang It</div>
+      <div class="step-desc">Use the included premium mounting hardware or the custom desk stand. No guessing, no extra trips to the store—it is built to be displayed in seconds.</div>
+    </div>
+    <div class="step-card">
+      <div class="step-num">03</div>
+      <div class="step-title">You Feel the Pride</div>
+      <div class="step-desc">Watch it become the ultimate conversation starter. The gold foil catches the light, and the chronological journey reminds you why you are a true fan.</div>
+    </div>
+  </div>
+  <div style="text-align:center;margin-top:32px">
+    <img src="https://cdn.shopify.com/s/files/1/0679/2278/8635/files/ex-ex-fumfx-legacy7-img-5-v0.jpg?v=1781546398" alt="Display" style="width:100%;max-width:700px;border-radius:10px"/>
+  </div>
+</div>
+
+<!-- STATS -->
+<div class="stats-section">
+  <div class="section-eyebrow">BUILT FOR TRUE COLLECTORS</div>
+  <h2 class="section-title">The specs that separate it from cheap imitations</h2>
+  <p class="section-sub">We did not cut corners. While others ship flimsy frames with vague descriptions, we built a 12×16 inch centerpiece designed to outlast your walls and preserve history perfectly.</p>
+  <div class="stats-grid">
+    <div class="stat-item">
+      <div class="stat-num">98%</div>
+      <div class="stat-bar-wrap"><div class="stat-bar" style="width:98%"></div></div>
+      <div class="stat-label">Solid Museum-Grade Build</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-num">95%</div>
+      <div class="stat-bar-wrap"><div class="stat-bar" style="width:95%"></div></div>
+      <div class="stat-label">Custom Illustrated Art</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-num">92%</div>
+      <div class="stat-bar-wrap"><div class="stat-bar" style="width:92%"></div></div>
+      <div class="stat-label">All Hardware Included</div>
+    </div>
+  </div>
+</div>
+
+<!-- BEFORE / AFTER -->
+<div class="ba-section">
+  <div class="section-eyebrow">THE BEFORE AND AFTER</div>
+  <h2 class="section-title">From a messy drawer to a gallery wall</h2>
+  <p class="section-sub">On the left, folded jerseys and bent stickers fading away in a drawer. On the right, the entire 2006–2026 trajectory displayed in a premium shadow box with gold accents. Stop hiding your passion—hang it with absolute pride.</p>
+  <div class="ba-grid">
+    <div class="ba-img">
+      <img src="https://cdn.shopify.com/s/files/1/0679/2278/8635/files/ex-ex-fumfx-legacy7-img-6-v0.jpg?v=1781546398" alt="Before"/>
+      <div class="ba-label">Before — Scattered fading memories</div>
+    </div>
+    <div class="ba-img">
+      <img src="https://cdn.shopify.com/s/files/1/0679/2278/8635/files/ex-ex-fumfx-legacy7-img-7-v0.jpg?v=1781546398" alt="After"/>
+      <div class="ba-label">After — The ultimate wall tribute</div>
+    </div>
+  </div>
+  <div style="text-align:center;margin-top:24px">
+    <a href="#ex-buy-section" style="display:inline-block;background:#c8000a;color:#fff;padding:14px 32px;border-radius:6px;font-size:15px;font-weight:700">Upgrade My Space — Elevate your room instantly</a>
+  </div>
+</div>
+
+<!-- ROOM VISION -->
+<div style="text-align:center;padding:40px 20px">
+  <img src="https://cdn.shopify.com/s/files/1/0679/2278/8635/files/ex-ex-fumfx-legacy7-img-8-v0.jpg?v=1781546398" alt="In your space" style="width:100%;max-width:800px;border-radius:10px;margin-bottom:24px"/>
+  <div class="section-eyebrow">WHEN IT IS PART OF YOUR SPACE</div>
+  <h2 class="section-title" style="max-width:600px;margin:0 auto 14px">The first time you walk into your office, you will know</h2>
+  <p class="section-sub">Imagine sitting at your desk. You look up, and instead of a blank wall or a wrinkled poster, you see the complete journey of football's greatest. The gold details shine, the timeline tells a story, and every guest stops to ask about it.</p>
+  <div style="display:flex;flex-wrap:wrap;justify-content:center;gap:20px;margin:20px 0 28px">
+    <span style="font-size:14px;color:#bbb">🏢 Perfect for any office</span>
+    <span style="font-size:14px;color:#bbb">🗣 A conversation starter with every single guest</span>
+    <span style="font-size:14px;color:#bbb">❤ The emotional gift they will love</span>
+  </div>
+  <a href="#ex-buy-section" style="display:inline-block;background:#c8000a;color:#fff;padding:14px 32px;border-radius:6px;font-size:15px;font-weight:700">Claim My Piece — Imagine it in your room</a>
+</div>
+
+<!-- PACKAGE -->
+<div class="package-section">
+  <div class="section-eyebrow">THE COLLECTOR'S PACKAGE</div>
+  <h2 class="section-title">Everything you need to display history today</h2>
+  <p class="section-sub">We do not just sell you a frame and wish you luck. Legacy7 arrives as a complete experience, ready to become the focal point of your room—or the perfect gift for someone who deserves it.</p>
+  <img class="package-img" src="https://cdn.shopify.com/s/files/1/0679/2278/8635/files/ex-ex-fumfx-legacy7-img-9-v0.jpg?v=1781546398" alt="Package"/>
+  <div class="package-items">
+    <div class="pkg-item">
+      <div class="pkg-item-icon">🖼</div>
+      <div class="pkg-item-title">Legacy7 Shadow Box</div>
+      <div class="pkg-item-desc">The chronological 2006–2026 tribute with gold foil accents and six exclusive high-quality illustrations.</div>
+    </div>
+    <div class="pkg-item">
+      <div class="pkg-item-icon">🔨</div>
+      <div class="pkg-item-title">Mounting Hardware</div>
+      <div class="pkg-item-desc">No more trips to the hardware store. Everything you need to hang it or stand it on a desk is included.</div>
+    </div>
+    <div class="pkg-item">
+      <div class="pkg-item-icon">🎁</div>
+      <div class="pkg-item-title">Reinforced Gift Box</div>
+      <div class="pkg-item-desc">Designed to survive transit and look incredible the second it is unwrapped as an emotional gift.</div>
+    </div>
+    <div class="pkg-item">
+      <div class="pkg-item-icon">🎨</div>
+      <div class="pkg-item-title">Authentic Original Artwork</div>
+      <div class="pkg-item-desc">Clear specifications on our custom-illustrated artwork. No blurry AI artifacts—just pure quality.</div>
+    </div>
+  </div>
+  <div style="text-align:center">
+    <a href="#ex-buy-section" style="display:inline-block;background:#c8000a;color:#fff;padding:14px 32px;border-radius:6px;font-size:15px;font-weight:700">Secure My Package — Limited run, secure yours today</a>
+  </div>
+</div>
+
+<!-- COMMITMENT -->
+<div class="commitment-section">
+  <img src="https://cdn.shopify.com/s/files/1/0679/2278/8635/files/ex-ex-fumfx-legacy7-img-10-v0.jpg?v=1781546400" alt="Commitment" style="width:100%;border-radius:10px;margin-bottom:32px"/>
+  <div class="section-eyebrow">OUR COMMITMENT TO QUALITY</div>
+  <h2 class="section-title">Zero flimsy materials, zero unboxing anxiety</h2>
+  <p class="section-sub">You might have been burned by cheap, lightweight frames that arrive broken. We engineered the Legacy7 to survive the journey and blow you away in person. You get exactly what is pictured, down to the last brilliant gold detail.</p>
+  <div class="commit-grid">
+    <div class="commit-card">
+      <div class="commit-icon">🧱</div>
+      <div class="commit-title">Real Materials, No Junk</div>
+      <div class="commit-desc">We use solid imported shadow boxes, not hollow plastic that bends in your hands.</div>
+    </div>
+    <div class="commit-card">
+      <div class="commit-icon">🚚</div>
+      <div class="commit-title">Built for Safe Transit</div>
+      <div class="commit-desc">Our reinforced packaging is designed for the toughest journeys so it arrives completely flawless.</div>
+    </div>
+    <div class="commit-card">
+      <div class="commit-icon">🤝</div>
+      <div class="commit-title">No Hidden Surprises</div>
+      <div class="commit-desc">What you see is what you get. The illustrations are crisp, the gold is bright, and the hardware is right in the box.</div>
+    </div>
+  </div>
+</div>
+
+<!-- FAQ -->
+<div class="faq-section">
+  <h2 class="section-title">Questions you might have before ordering today</h2>
+  <div style="margin-top:28px">
+    <div class="faq-item open">
+      <div class="faq-q" onclick="toggleFaq(this)">Are the plates official stickers or illustrations?<span>+</span></div>
+      <div class="faq-a">They are premium, custom-illustrated collectible plates designed exclusively for Legacy7. We don't use misleading claims—you get stunning, high-resolution original artwork without blurry artifacts.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q" onclick="toggleFaq(this)">What material is the frame? Is it flimsy?<span>+</span></div>
+      <div class="faq-a">Not at all. Unlike competitors who use hollow plastic, Legacy7 uses a solid, imported museum-grade shadow box. It has real weight to it and feels like a premium piece of decor, not a cheap toy.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q" onclick="toggleFaq(this)">Is hardware included?<span>+</span></div>
+      <div class="faq-a">Yes! We know how frustrating it is to get a frame and not be able to hang it. Your package includes heavy-duty wall mounting hardware and a sturdy desk stand so you can display it immediately.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q" onclick="toggleFaq(this)">Is it worth the investment?<span>+</span></div>
+      <div class="faq-a">A standard poster tears, fades, and looks cheap. Legacy7 is a robust shadow box with gold foil accents and a chronological timeline that serves as a premium centerpiece. It is built to last for decades.</div>
+    </div>
+  </div>
+</div>
+
+<!-- FINAL CTA -->
+<div class="final-cta">
+  <div class="section-eyebrow" style="margin-bottom:16px">SECURE YOUR PIECE OF HISTORY</div>
+  <h2>Hang the entire legacy before it is gone</h2>
+  <p>The ultimate tribute to CR7 is waiting for your wall. Complete with solid framing and all mounting hardware—something you won't find anywhere else. Don't let your passion sit in a drawer.</p>
+  <a href="#ex-buy-section">Order Legacy7 — Premium Packaging · Secure Checkout</a>
+</div>
+
+<!-- REVIEWS -->
+<div class="reviews-section">
+  <h2 class="section-title">Customer Reviews</h2>
+  <div class="rating-summary">
+    <div>
+      <div class="rating-big">4.8</div>
+      <span class="stars-text">⭐⭐⭐⭐⭐</span>
+      <span class="total-reviews">1,640 reviews</span>
+    </div>
+    <div class="rating-bars">
+      <div class="rbar-row"><span class="rbar-label">5</span><div class="rbar-track"><div class="rbar-fill" style="width:84%"></div></div><span class="rbar-count">1,373</span></div>
+      <div class="rbar-row"><span class="rbar-label">4</span><div class="rbar-track"><div class="rbar-fill" style="width:11%"></div></div><span class="rbar-count">174</span></div>
+      <div class="rbar-row"><span class="rbar-label">3</span><div class="rbar-track"><div class="rbar-fill" style="width:6%"></div></div><span class="rbar-count">93</span></div>
+      <div class="rbar-row"><span class="rbar-label">2</span><div class="rbar-track"><div class="rbar-fill" style="width:0%"></div></div><span class="rbar-count">0</span></div>
+      <div class="rbar-row"><span class="rbar-label">1</span><div class="rbar-track"><div class="rbar-fill" style="width:0%"></div></div><span class="rbar-count">0</span></div>
+    </div>
+  </div>
+  <div class="reviews-grid" id="reviews-grid">
+    <!-- Populated by JS -->
+  </div>
+  <button class="load-more-btn" onclick="loadMoreReviews()">Load more</button>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <img src="https://adelly33.com/cdn/shop/files/LOGO1_adelly_SVG_-_800_X_200.svg?v=1776891692&width=200" alt="Adelly33"/>
+      <p>Dedicated to delivering innovative, high-quality products that enhance your daily life. We pride ourselves on exceptional service and reliable quality, ensuring a seamless shopping experience you can trust every time.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Terms and Policies</h4>
+      <ul>
+        <li><a href="#">Privacy policy</a></li>
+        <li><a href="#">Shipping policy</a></li>
+        <li><a href="#">Return and refund policy</a></li>
+        <li><a href="#">Terms of service</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Customer Support</h4>
+      <ul>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Frequently asked questions</a></li>
+        <li><a href="#">Track your order</a></li>
+        <li><a href="#">Contact us</a></li>
+      </ul>
+      <p class="footer-contact" style="margin-top:12px">+962 79 115 3023</p>
+      <p class="footer-contact">Amman, Jordan</p>
+    </div>
+  </div>
+  <div class="footer-bottom">© 2026 Adelly33. All rights reserved.</div>
+</footer>
+
+<script>
+// Countdown timer — 24h rolling
+function updateCountdown(){
+  const now=new Date();
+  const end=new Date(now);
+  end.setHours(23,59,59,999);
+  const diff=end-now;
+  const h=Math.floor(diff/3600000);
+  const m=Math.floor((diff%3600000)/60000);
+  const s=Math.floor((diff%60000)/1000);
+  document.getElementById('cd-days').textContent='00';
+  document.getElementById('cd-hours').textContent=String(h).padStart(2,'0');
+  document.getElementById('cd-min').textContent=String(m).padStart(2,'0');
+  document.getElementById('cd-sec').textContent=String(s).padStart(2,'0');
+}
+updateCountdown();
+setInterval(updateCountdown,1000);
+
+// Gallery
+function switchImg(el,src){
+  document.getElementById('main-img').src=src;
+  document.querySelectorAll('.gallery-thumbs img').forEach(i=>i.classList.remove('active'));
+  el.classList.add('active');
+}
+
+// Qty
+function changeQty(d){
+  const el=document.getElementById('qty');
+  const v=Math.max(1,parseInt(el.value)+d);
+  el.value=v;
+}
+
+// FAQ
+function toggleFaq(el){
+  const item=el.closest('.faq-item');
+  item.classList.toggle('open');
+}
+
+// Reviews data
+const reviews=[
+  {stars:'⭐⭐⭐⭐⭐',text:'This CR7 shadow box is a must-have for any fan! The timeline of his World Cup journey from 2006 to 2026 is beautifully laid out. The golden accents make it feel super premium, and it looks stunning on my wall. Shipping was quick, and it arrived in perfect condition.',author:'James H.'},
+  {stars:'⭐⭐⭐⭐⭐',text:'As a huge Ronaldo fan, I was blown away by the quality of this piece! The collectible illustrated items are gorgeous, and the framed design truly feels like a museum piece. This is proudly displayed in my living room now!',author:'Sophia K.'},
+  {stars:'⭐⭐⭐⭐',text:'I really like the design and the concept behind this shadow box. The only reason I\'m giving it 4 stars instead of 5 is that I was hoping for more information on how to hang it. Overall, a beautiful tribute to CR7!',author:'Victor L.'},
+  {stars:'⭐⭐⭐⭐⭐',text:'I bought this as a birthday gift for my brother, and he absolutely loved it! The retro Panini vibe of the illustrations brings back great memories. It\'s a perfect addition to his sports collection!',author:'Jessica T.'},
+  {stars:'⭐⭐⭐⭐⭐',text:'My husband is a die-hard Ronaldo fan, and when I found this piece, I knew I had to get it for him! It turned out even better than expected—it\'s like a piece of art. He was thrilled to receive it!',author:'Linda R.'},
+  {stars:'⭐⭐⭐⭐⭐',text:'This piece is an absolute gem! The detail in the illustrations is stunning, and I love that it tells the story of CR7\'s international journey. It\'s a perfect addition to my sports collection!',author:'Jessica L.'},
+  {stars:'⭐⭐⭐⭐⭐',text:'This item exceeded my expectations! I was initially skeptical about whether it would look cheap, but it truly feels like an upscale decor piece. The frame is solid and heavy, which gives it a high-quality feel. A perfect conversation starter!',author:'Martin J.'},
+  {stars:'⭐⭐⭐⭐⭐',text:'Absolutely love this shadow box! As a collector, it\'s hard to find unique pieces, but this one fits the bill. The gold highlights and timeline make it really special.',author:'Ella S.'},
+  {stars:'⭐⭐⭐⭐⭐',text:'I purchased the Eternal Legacy CR7 framed piece as a birthday gift for my husband, who has been a die-hard Ronaldo fan for years. The quality is truly impressive! The gold accents really pop.',author:'Emily T.'},
+  {stars:'⭐⭐⭐⭐⭐',text:'Absolutely love this piece! The chronological layout is fantastic, illustrating CR7\'s journey in the World Cups. I was worried it might look cheap, but it feels premium and looks stunning on my wall.',author:'Liam D.'},
+  {stars:'⭐⭐⭐⭐⭐',text:'As a lifelong Ronaldo supporter, I can say this is the perfect tribute! The illustrations are stunning, and the quality of the frame is top-notch. It definitely stands out on my wall!',author:'Kevin L.'},
+  {stars:'⭐⭐⭐⭐⭐',text:'The artwork is nice, and I appreciate the story it tells about Ronaldo. A great addition to any Ronaldo fan\'s collection!',author:'Sophia R.'},
+];
+
+let shown=6;
+function renderReviews(){
+  const grid=document.getElementById('reviews-grid');
+  grid.innerHTML='';
+  reviews.slice(0,shown).forEach(r=>{
+    grid.innerHTML+=`<div class="review-card">
+      <div class="review-stars">${r.stars}</div>
+      <div class="review-text">"${r.text}"</div>
+      <div class="review-author">— ${r.author}</div>
+      <div class="review-verified">✔ Verified Purchase</div>
+    </div>`;
+  });
+}
+function loadMoreReviews(){
+  shown=Math.min(shown+6,reviews.length);
+  renderReviews();
+  if(shown>=reviews.length) document.querySelector('.load-more-btn').style.display='none';
+}
+renderReviews();
+</script>
+</body>
+</html>
