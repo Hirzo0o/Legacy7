@@ -117,8 +117,22 @@
     }
 
     .view-angled .frame-3d-wrapper {
-      transform: rotateY(-16deg) rotateX(6deg) scale(0.97);
+      transform: rotateY(var(--ry, -24deg)) rotateX(var(--rx, 8deg)) scale(0.88);
     }
+    .view-angled.tilting .frame-3d-wrapper { transition: transform 0.12s linear; }
+    .hero-logo { box-shadow: 0 0 0 1px rgba(212,175,55,.35), 0 18px 60px -10px rgba(212,175,55,.45); }
+    /* 3D frame box: depth faces behind the front of the frame */
+    .frame-box { position: relative; transform-style: preserve-3d; --d: 26px; }
+    .frame-face { position: absolute; pointer-events: none; background: var(--edge, linear-gradient(90deg,#050505,#1c1c1f 55%,#0a0a0a)); }
+    .frame-face.r { top: 0; right: 0; width: var(--d); height: 100%; transform-origin: right center; transform: rotateY(-90deg); }
+    .frame-face.l { top: 0; left: 0; width: var(--d); height: 100%; transform-origin: left center; transform: rotateY(90deg); }
+    .frame-face.b { left: 0; bottom: 0; height: var(--d); width: 100%; transform-origin: center bottom; transform: rotateX(90deg); }
+    .frame-face.t { left: 0; top: 0; height: var(--d); width: 100%; transform-origin: center top; transform: rotateX(-90deg); }
+    .frame-cast { position: absolute; inset: 4% 2% -2% 6%; background: rgba(0,0,0,.75); filter: blur(26px); transform: translateZ(calc(var(--d) * -1 - 2px)); opacity: 0; transition: opacity .6s; pointer-events: none; }
+    .view-angled .frame-cast, .view-room .frame-cast { opacity: 1; }
+    .frame-sheen { position: absolute; inset: 0; pointer-events: none; opacity: 0; transition: opacity .6s;
+      background: linear-gradient(calc(110deg + var(--ry, -24deg) * 2), rgba(255,255,255,0) 35%, rgba(255,245,215,.16) 50%, rgba(255,255,255,0) 65%); }
+    .view-angled .frame-sheen { opacity: 1; }
 
     .view-closeup .frame-3d-wrapper {
       transform: scale(1.14) translateY(-18px);
@@ -173,7 +187,7 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex items-center justify-between h-16 sm:h-20 gap-3">
         <a href="#top" class="flex items-center gap-3 group shrink-0" aria-label="The Last Dance Collectibles home">
-          <img src="logo-mark.png" alt="" width="48" height="48" class="w-11 h-11 sm:w-12 sm:h-12 rounded-full shadow-gold-glow group-hover:scale-105 transition-transform"/>
+          <img src="logo-mark.png" alt="" width="64" height="64" class="w-12 h-12 sm:w-16 sm:h-16 rounded-full shadow-gold-glow group-hover:scale-105 transition-transform"/>
           <div class="leading-tight">
             <span class="font-serif text-sm sm:text-base font-bold tracking-[0.18em] text-[#F5F5F5] block brand-1">THE LAST DANCE</span>
             <span class="text-[9px] tracking-[0.28em] uppercase text-[#D4AF37] block brand-2">Collectibles</span>
@@ -203,6 +217,8 @@
       <div id="hero-spotlight" class="pointer-events-none absolute top-10 left-1/2 -translate-x-1/2 w-[90vw] max-w-4xl h-[480px] rounded-full blur-[130px] opacity-25 transition-colors duration-700" style="background: radial-gradient(circle, #D4AF37 0%, transparent 70%);"></div>
 
       <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 flex flex-col items-center text-center">
+        <img src="Logo.png" alt="The Last Dance Collectibles, framing football history" width="512" height="512" fetchpriority="high"
+             class="hero-logo w-40 h-40 sm:w-56 sm:h-56 lg:w-64 lg:h-64 rounded-full mb-6"/>
         <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#121212] border border-[#D4AF37]/40 mb-5 shadow-gold-glow">
           <span class="w-1.5 h-1.5 rounded-full bg-[#D4AF37]"></span>
           <span id="hero-edition-badge" class="text-[11px] font-bold tracking-[0.22em] uppercase text-[#F3E5AB]">CR7 Edition · Portugal</span>
@@ -622,16 +638,21 @@
           class="absolute rounded-sm transition-shadow hover:shadow-[0_0_0_2px_#F3E5AB,0_0_24px_rgba(212,175,55,.55)] focus-visible:shadow-[0_0_0_2px_#F3E5AB]"
           style="left:${a[0]}%;top:${a[1]}%;width:${a[2]}%;height:${a[3]}%"></button>`;
       }).join('');
-      let outer = 'bg-[#0b0b0c] border-[#1f1f22]';
-      if (selectedFinish === 'Brushed Gold Trim') outer = 'bg-[#171308] border-[#D4AF37]/80';
-      else if (selectedFinish === 'Walnut Heritage') outer = 'bg-[#26170e] border-[#5c3a24]';
+      let outer = 'bg-[#0b0b0c] border-[#1f1f22]', edge = 'linear-gradient(90deg,#050505,#1c1c1f 55%,#0a0a0a)';
+      if (selectedFinish === 'Brushed Gold Trim') { outer = 'bg-[#171308] border-[#D4AF37]/80'; edge = 'linear-gradient(90deg,#6b5418,#d4af37 50%,#7a5f1c)'; }
+      else if (selectedFinish === 'Walnut Heritage') { outer = 'bg-[#26170e] border-[#5c3a24]'; edge = 'linear-gradient(90deg,#2a180c,#5c3a24 55%,#2a180c)'; }
       return `
-        <div class="relative mx-auto w-full rounded-xl p-2 sm:p-3 ${outer} border-[6px] sm:border-[10px] shadow-museum-frame">
+        <div class="frame-box mx-auto w-full" style="--edge:${edge}">
+        <div class="frame-cast"></div>
+        <span class="frame-face r"></span><span class="frame-face l"></span><span class="frame-face t"></span><span class="frame-face b"></span>
+        <div class="relative w-full rounded-xl p-2 sm:p-3 ${outer} border-[6px] sm:border-[10px] shadow-museum-frame">
           <div class="relative overflow-hidden rounded ${foilGlareEnabled ? 'foil-active' : ''}">
             <img src="${esc(asset(p.artwork))}" alt="The ${esc(p.shortTitle)} design" class="block w-full h-auto"/>
             <div class="foil-shimmer-layer" style="opacity:${foilGlareEnabled ? '1' : '0'}"></div>
             ${spots}
           </div>
+          <div class="frame-sheen"></div>
+        </div>
         </div>`;
     }
 
@@ -909,6 +930,7 @@
       const stage = document.getElementById('gallery-stage');
       stage.classList.remove('view-front', 'view-angled', 'view-closeup', 'view-room');
       stage.classList.add(`view-${viewName}`);
+      stage.classList.remove('tilting'); stage.style.removeProperty('--ry'); stage.style.removeProperty('--rx');
       document.getElementById('room-wall-backdrop').classList.toggle('hidden', viewName !== 'room');
       ['front', 'angled', 'closeup', 'room'].forEach(v => {
         const btn = document.getElementById(`view-btn-${v}`);
@@ -920,6 +942,23 @@
         label.classList.toggle('text-[#A3A3A3]', !on);
       });
     }
+
+    // Angled view: the frame turns with the pointer (mouse or finger)
+    (function setupTilt() {
+      const stage = document.getElementById('gallery-stage');
+      if (!stage || matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+      const reset = () => { stage.classList.remove('tilting'); stage.style.removeProperty('--ry'); stage.style.removeProperty('--rx'); };
+      stage.addEventListener('pointermove', e => {
+        if (currentGalleryView !== 'angled') return;
+        const r = stage.getBoundingClientRect();
+        const x = (e.clientX - r.left) / r.width - 0.5, y = (e.clientY - r.top) / r.height - 0.5;
+        stage.classList.add('tilting');
+        stage.style.setProperty('--ry', `${(-24 + x * 40).toFixed(1)}deg`);
+        stage.style.setProperty('--rx', `${(8 - y * 20).toFixed(1)}deg`);
+      });
+      stage.addEventListener('pointerleave', reset);
+      stage.addEventListener('pointercancel', reset);
+    })();
 
     function toggleFoilGlare() {
       foilGlareEnabled = !foilGlareEnabled;
