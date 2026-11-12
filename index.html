@@ -634,8 +634,30 @@
     PLAYERS_DATA.cr7.video = CR7_VIDEO.src;
     PLAYERS_DATA.cr7.poster = CR7_VIDEO.poster;
 
+    function artworkFrameHTML(p) {
+      const spots = p.cards.map((card, i) => {
+        const a = String(card.area || '').split(',').map(Number);
+        if (a.length !== 4 || a.some(isNaN)) return '';
+        return `<button type="button" onclick="openCardModal(${i})" aria-label="View the ${card.tournament} card"
+          class="absolute rounded-sm transition-shadow hover:shadow-[0_0_0_2px_#F3E5AB,0_0_24px_rgba(212,175,55,.55)] focus-visible:shadow-[0_0_0_2px_#F3E5AB]"
+          style="left:${a[0]}%;top:${a[1]}%;width:${a[2]}%;height:${a[3]}%"></button>`;
+      }).join('');
+      let outer = 'bg-[#0b0b0c] border-[#1f1f22]';
+      if (selectedFinish === 'Brushed Gold Trim') outer = 'bg-[#171308] border-[#D4AF37]/80';
+      else if (selectedFinish === 'Walnut Heritage') outer = 'bg-[#26170e] border-[#5c3a24]';
+      return `
+        <div class="relative mx-auto w-full rounded-xl p-2 sm:p-3 ${outer} border-[6px] sm:border-[10px] shadow-museum-frame">
+          <div class="relative overflow-hidden rounded ${foilGlareEnabled ? 'foil-active' : ''}">
+            <img src="${esc(asset(p.artwork))}" alt="The ${esc(p.shortTitle)} design" class="block w-full h-auto"/>
+            <div class="foil-shimmer-layer" style="opacity:${foilGlareEnabled ? '1' : '0'}"></div>
+            ${spots}
+          </div>
+        </div>`;
+    }
+
     function buildShadowboxHTML(player, isHero = false) {
       const p = player;
+      if (p.artwork) return artworkFrameHTML(p);
       const cardsHTML = p.cards.map((card, idx) => `
         <button 
           type="button"
@@ -795,7 +817,7 @@
 
     function renderFrames() {
       const player = PLAYERS_DATA[currentPlayerKey];
-      document.getElementById('hero-shadowbox-mount').innerHTML = player.video ? videoHTML(player) : hasPhotos(player) ? photoHTML(player) : buildShadowboxHTML(player, true);
+      document.getElementById('hero-shadowbox-mount').innerHTML = player.video ? videoHTML(player) : buildShadowboxHTML(player, true);
       document.getElementById('gallery-frame-mount').innerHTML = hasPhotos(player) ? photoHTML(player) : buildShadowboxHTML(player, false);
     }
 
@@ -825,13 +847,13 @@
       document.getElementById('hero-headline').innerHTML = p.heroHeadline;
       document.getElementById('hero-subheadline').textContent = p.heroSubheadline;
       document.getElementById('hero-spotlight').style.background = `radial-gradient(circle, ${p.accentGlow} 0%, transparent 70%)`;
-      document.getElementById('hero-frame-label').textContent = p.video ? `The ${p.shortTitle}, filmed in a real room` : real ? `The ${p.shortTitle}` : `Illustrated preview of the ${p.shortTitle}. Tap a card to see its moment.`;
-      document.getElementById('hero-glare-btn').classList.toggle('hidden', !!p.video || real);
+      document.getElementById('hero-frame-label').textContent = p.video ? `The ${p.shortTitle}, filmed in a real room` : p.artwork ? `The ${p.shortTitle} design. Tap a card to see its moment.` : `Illustrated preview of the ${p.shortTitle}. Tap a card to see its moment.`;
+      document.getElementById('hero-glare-btn').classList.toggle('hidden', !!p.video);
 
       document.getElementById('photo-thumbs').classList.toggle('hidden', !real || p.photos.length < 2);
       document.getElementById('angle-buttons').classList.toggle('hidden', real);
       if (real) { renderPhotoThumbs(); setGalleryView('front'); }
-      document.getElementById('gallery-tip').textContent = real ? `Photos of the ${p.shortTitle}.` : 'Illustrated preview. Tap any card inside the frame to see the moment it celebrates.';
+      document.getElementById('gallery-tip').textContent = real ? `Photos of the ${p.shortTitle}.` : p.artwork ? 'The full design. Tap any card to see the moment it celebrates.' : 'Illustrated preview. Tap any card inside the frame to see the moment it celebrates.';
       renderFrames();
 
       document.getElementById('buybox-series').textContent = `${p.shortTitle} · ${p.nation}`;
@@ -1062,6 +1084,7 @@
         p.compare = Number(e.compare_price) || 0;
         p.video = e.video || ''; p.poster = e.video_poster || '';
         p.portrait = e.portrait || '';
+        p.artwork = e.artwork || '';
         p.crest = e.crest || '';
         p.signatureImage = e.signature_image || '';
         p.photos = Array.isArray(e.photos) ? e.photos.filter(Boolean) : [];
@@ -1070,7 +1093,8 @@
             year: esc(c.year), tournament: esc(c.tournament), jerseyNo: esc(c.shirt), badge: esc(c.label),
             stage: esc(c.reached), desc: c.description || '', kitPrimary: /^#[0-9a-f]{3,8}$/i.test(c.colour) ? c.colour : '#7F1D1D',
             kitAccent: /^#[0-9a-f]{3,8}$/i.test(c.accent) ? c.accent : '#D4AF37',
-            image: c.image || ''
+            image: c.image || '',
+            area: c.area || ''
           }));
         }
       });

@@ -21,7 +21,8 @@
       "photos": [
         "https://adelly33.com/cdn/shop/files/ly3.png?v=1781213927&width=1200",
         "https://adelly33.com/cdn/shop/files/ly2.png?v=1781213927&width=1200",
-        "https://adelly33.com/cdn/shop/files/ly4.png?v=1781213927&width=1200"
+        "https://adelly33.com/cdn/shop/files/ly4.png?v=1781213927&width=1200",
+        "/uploads/editions/cr7/artwork.jpg"
       ],
       "cards": [
         {
@@ -33,7 +34,8 @@
           "description": "His first World Cup. He scored against Iran in Frankfurt as Portugal reached their first semi-final in 40 years.",
           "colour": "#9B1C1C",
           "accent": "#047857",
-          "image": ""
+          "image": "/uploads/editions/cr7/card-2006.png",
+          "area": "7.15,53.25,13.88,27.93"
         },
         {
           "year": "2010",
@@ -44,7 +46,8 @@
           "description": "His first World Cup as Portugal captain.",
           "colour": "#B91C1C",
           "accent": "#F5F5F5",
-          "image": ""
+          "image": "/uploads/editions/cr7/card-2010.png",
+          "area": "22.10,53.25,13.88,27.93"
         },
         {
           "year": "2014",
@@ -55,7 +58,8 @@
           "description": "Arrived as the reigning Ballon d’Or winner, set up a late equaliser against the USA in Manaus and scored the winner against Ghana in Brasília.",
           "colour": "#7F1D1D",
           "accent": "#D4AF37",
-          "image": ""
+          "image": "/uploads/editions/cr7/card-2014.png",
+          "area": "37.00,53.25,13.88,27.93"
         },
         {
           "year": "2018",
@@ -66,7 +70,8 @@
           "description": "Scored a hat-trick against Spain in Sochi, finishing with a late free kick to make it 3–3.",
           "colour": "#991B1B",
           "accent": "#065F46",
-          "image": ""
+          "image": "/uploads/editions/cr7/card-2018.png",
+          "area": "51.90,53.25,13.88,27.93"
         },
         {
           "year": "2022",
@@ -77,7 +82,8 @@
           "description": "Scored against Ghana to become the first man to score at five World Cups.",
           "colour": "#991B1B",
           "accent": "#14532D",
-          "image": ""
+          "image": "/uploads/editions/cr7/card-2022.png",
+          "area": "66.80,53.25,13.88,27.93"
         },
         {
           "year": "2026",
@@ -88,12 +94,14 @@
           "description": "The 2026 World Cup, hosted across the USA, Canada and Mexico.",
           "colour": "#881337",
           "accent": "#D4AF37",
-          "image": ""
+          "image": "/uploads/editions/cr7/card-2026.png",
+          "area": "81.70,53.25,13.88,27.93"
         }
       ],
-      "portrait": "",
-      "crest": "",
-      "signature_image": ""
+      "portrait": "/uploads/editions/cr7/portrait.jpg",
+      "crest": "/uploads/editions/cr7/crest.png",
+      "signature_image": "/uploads/editions/cr7/signature.png",
+      "artwork": "/uploads/editions/cr7/artwork.jpg"
     },
     {
       "key": "lm10",
@@ -124,7 +132,8 @@
           "description": "His first World Cup. At 18 he scored against Serbia and Montenegro, becoming Argentina’s youngest World Cup scorer.",
           "colour": "#38BDF8",
           "accent": "#F8FAFC",
-          "image": "/uploads/editions/messi/card-2006.png"
+          "image": "/uploads/editions/messi/card-2006.png",
+          "area": "12.05,50.92,12.50,25.18"
         },
         {
           "year": "2010",
@@ -135,7 +144,8 @@
           "description": "His first World Cup in Argentina’s No. 10 shirt.",
           "colour": "#0284C7",
           "accent": "#F8FAFC",
-          "image": "/uploads/editions/messi/card-2010.png"
+          "image": "/uploads/editions/messi/card-2010.png",
+          "area": "25.50,50.92,12.50,25.18"
         },
         {
           "year": "2014",
@@ -146,7 +156,8 @@
           "description": "Led Argentina to the final at the Maracanã and won the tournament’s Golden Ball.",
           "colour": "#38BDF8",
           "accent": "#0F172A",
-          "image": "/uploads/editions/messi/card-2014.png"
+          "image": "/uploads/editions/messi/card-2014.png",
+          "area": "38.90,50.92,12.50,25.18"
         },
         {
           "year": "2018",
@@ -157,7 +168,8 @@
           "description": "Scored against Nigeria in St Petersburg to help send Argentina through to the knockout stage.",
           "colour": "#0EA5E9",
           "accent": "#F8FAFC",
-          "image": "/uploads/editions/messi/card-2018.png"
+          "image": "/uploads/editions/messi/card-2018.png",
+          "area": "52.35,50.92,12.50,25.18"
         },
         {
           "year": "2022",
@@ -168,7 +180,8 @@
           "description": "Scored twice in the final, won the World Cup with Argentina and collected a second Golden Ball.",
           "colour": "#38BDF8",
           "accent": "#D4AF37",
-          "image": "/uploads/editions/messi/card-2022.png"
+          "image": "/uploads/editions/messi/card-2022.png",
+          "area": "65.80,50.92,12.50,25.18"
         },
         {
           "year": "2026",
@@ -179,12 +192,14 @@
           "description": "The 2026 World Cup, hosted across the USA, Canada and Mexico.",
           "colour": "#0284C7",
           "accent": "#D4AF37",
-          "image": "/uploads/editions/messi/card-2026.png"
+          "image": "/uploads/editions/messi/card-2026.png",
+          "area": "79.20,50.92,12.50,25.18"
         }
       ],
-      "portrait": "",
-      "crest": "",
-      "signature_image": ""
+      "portrait": "/uploads/editions/messi/portrait.jpg",
+      "crest": "/uploads/editions/messi/crest.png",
+      "signature_image": "/uploads/editions/messi/signature.png",
+      "artwork": "/uploads/editions/messi/artwork.jpg"
     },
     {
       "key": "njr10",
@@ -215,7 +230,8 @@
           "description": "His first World Cup, at home. He scored twice in the opening match against Croatia in São Paulo and twice more against Cameroon in Brasília.",
           "colour": "#EAB308",
           "accent": "#15803D",
-          "image": "/uploads/editions/neymar/card-2014.png"
+          "image": "/uploads/editions/neymar/card-2014.png",
+          "area": "23.40,47.10,13.45,27.09"
         },
         {
           "year": "2018",
@@ -226,7 +242,8 @@
           "description": "Scored and set up a goal against Mexico in Samara to take Brazil into the quarter-finals.",
           "colour": "#FACC15",
           "accent": "#15803D",
-          "image": "/uploads/editions/neymar/card-2018.png"
+          "image": "/uploads/editions/neymar/card-2018.png",
+          "area": "37.75,47.10,13.45,27.09"
         },
         {
           "year": "2022",
@@ -237,7 +254,8 @@
           "description": "Scored in extra time against Croatia to equal Pelé’s record of 77 goals for Brazil.",
           "colour": "#EAB308",
           "accent": "#1D4ED8",
-          "image": "/uploads/editions/neymar/card-2022.png"
+          "image": "/uploads/editions/neymar/card-2022.png",
+          "area": "52.30,47.10,13.45,27.09"
         },
         {
           "year": "2026",
@@ -248,12 +266,14 @@
           "description": "The 2026 World Cup, hosted across the USA, Canada and Mexico.",
           "colour": "#FACC15",
           "accent": "#15803D",
-          "image": "/uploads/editions/neymar/card-2026.png"
+          "image": "/uploads/editions/neymar/card-2026.png",
+          "area": "66.70,47.10,13.45,27.09"
         }
       ],
-      "portrait": "",
+      "portrait": "/uploads/editions/neymar/portrait.jpg",
       "crest": "/uploads/editions/neymar/crest.png",
-      "signature_image": "/uploads/editions/neymar/signature.png"
+      "signature_image": "/uploads/editions/neymar/signature.png",
+      "artwork": "/uploads/editions/neymar/artwork.jpg"
     }
   ]
 }
