@@ -53,6 +53,8 @@ collections:
               - { name: quote, label: Quote in the gold foil panel, widget: string }
               - { name: signature, label: Signature text inside the illustrated frame, widget: string }
               - { name: portrait, label: "Player portrait inside the illustrated frame (optional)", widget: image, required: false }
+              - { name: crest, label: "Team crest in the frame (optional)", widget: image, required: false }
+              - { name: signature_image, label: "Signature image in the frame (optional, replaces the signature text)", widget: image, required: false }
               - name: photos
                 label: "Photos of the real frame (if empty, an illustrated frame is shown)"
                 label_singular: Photo

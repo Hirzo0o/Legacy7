@@ -758,10 +758,12 @@
 
             <!-- BOTTOM GOLD FOIL SIGNATURE & NUMBERED PLAQUE -->
             <div class="relative z-10 pt-2 border-t border-[#D4AF37]/25 flex items-center justify-between text-[8px] sm:text-[10px]">
-              <span class="tracking-[0.2em] uppercase text-[#A3A3A3]">${p.nation}</span>
-              <span class="font-serif italic text-sm sm:text-base text-gold-gradient font-semibold tracking-wide">
-                ${p.signatureText}
+              <span class="flex items-center gap-2 tracking-[0.2em] uppercase text-[#A3A3A3]">
+                ${p.crest ? `<img src="${esc(asset(p.crest))}" alt="" class="h-8 sm:h-12 w-auto" style="mix-blend-mode:lighten"/>` : ''}${p.nation}
               </span>
+              ${p.signatureImage
+                ? `<img src="${esc(asset(p.signatureImage))}" alt="${esc(p.fullName)} signature" class="h-8 sm:h-12 w-auto" style="mix-blend-mode:lighten"/>`
+                : `<span class="font-serif italic text-sm sm:text-base text-gold-gradient font-semibold tracking-wide">${p.signatureText}</span>`}
               <span class="tracking-[0.16em] uppercase text-[#D4AF37] font-semibold">${p.eraSpan}</span>
             </div>
 
@@ -1060,6 +1062,8 @@
         p.compare = Number(e.compare_price) || 0;
         p.video = e.video || ''; p.poster = e.video_poster || '';
         p.portrait = e.portrait || '';
+        p.crest = e.crest || '';
+        p.signatureImage = e.signature_image || '';
         p.photos = Array.isArray(e.photos) ? e.photos.filter(Boolean) : [];
         if (Array.isArray(e.cards) && e.cards.length) {
           p.cards = e.cards.map(c => ({

@@ -91,7 +91,9 @@
           "image": ""
         }
       ],
-      "portrait": ""
+      "portrait": "",
+      "crest": "",
+      "signature_image": ""
     },
     {
       "key": "lm10",
@@ -180,7 +182,9 @@
           "image": ""
         }
       ],
-      "portrait": ""
+      "portrait": "",
+      "crest": "",
+      "signature_image": ""
     },
     {
       "key": "njr10",
@@ -211,7 +215,7 @@
           "description": "His first World Cup, at home. He scored twice in the opening match against Croatia in São Paulo and twice more against Cameroon in Brasília.",
           "colour": "#EAB308",
           "accent": "#15803D",
-          "image": ""
+          "image": "/uploads/editions/neymar/card-2014.png"
         },
         {
           "year": "2018",
@@ -222,7 +226,7 @@
           "description": "Scored and set up a goal against Mexico in Samara to take Brazil into the quarter-finals.",
           "colour": "#FACC15",
           "accent": "#15803D",
-          "image": ""
+          "image": "/uploads/editions/neymar/card-2018.png"
         },
         {
           "year": "2022",
@@ -233,7 +237,7 @@
           "description": "Scored in extra time against Croatia to equal Pelé’s record of 77 goals for Brazil.",
           "colour": "#EAB308",
           "accent": "#1D4ED8",
-          "image": ""
+          "image": "/uploads/editions/neymar/card-2022.png"
         },
         {
           "year": "2026",
@@ -244,10 +248,12 @@
           "description": "The 2026 World Cup, hosted across the USA, Canada and Mexico.",
           "colour": "#FACC15",
           "accent": "#15803D",
-          "image": ""
+          "image": "/uploads/editions/neymar/card-2026.png"
         }
       ],
-      "portrait": ""
+      "portrait": "",
+      "crest": "/uploads/editions/neymar/crest.png",
+      "signature_image": "/uploads/editions/neymar/signature.png"
     }
   ]
 }
