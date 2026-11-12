@@ -1,6 +1,8 @@
 {
-  "site_name": "EZlancing",
-  "site_logo": "/Logo.png",
+  "site_name": "Legacy 7",
+  "header_logo": "",
+  "footer_logo": "/Logo.png",
+  "favicon": "/Logo.png",
   "hero_logo": "https://adelly33.com/cdn/shop/files/LOGO_800_X_200PXLEGACY.png?v=1781546637&width=1780",
   "whatsapp_number": "962791153023",
   "phone_display": "+962 79 115 3023"

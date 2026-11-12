@@ -47,7 +47,9 @@ collections:
         file: content/settings.json
         fields:
           - { name: site_name, label: Site name, widget: string }
-          - { name: site_logo, label: "Site logo (header, footer and browser tab)", widget: image }
+          - { name: header_logo, label: "Header logo (leave empty to show the LEGACY 7 text wordmark)", widget: image, required: false }
+          - { name: footer_logo, label: "Footer logo (company logo)", widget: image, required: false }
+          - { name: favicon, label: "Browser tab icon", widget: image, required: false }
           - { name: hero_logo, label: "Product logo (large logo at the top of the page)", widget: image, required: false }
           - { name: whatsapp_number, label: "WhatsApp number (digits only, with country code)", widget: string, pattern: ["^[0-9]{8,15}$", "Digits only, including country code"] }
           - { name: phone_display, label: Phone number as shown in the footer, widget: string }
