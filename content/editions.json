@@ -124,7 +124,7 @@
           "description": "His first World Cup. At 18 he scored against Serbia and Montenegro, becoming Argentina’s youngest World Cup scorer.",
           "colour": "#38BDF8",
           "accent": "#F8FAFC",
-          "image": ""
+          "image": "/uploads/editions/messi/card-2006.png"
         },
         {
           "year": "2010",
@@ -135,7 +135,7 @@
           "description": "His first World Cup in Argentina’s No. 10 shirt.",
           "colour": "#0284C7",
           "accent": "#F8FAFC",
-          "image": ""
+          "image": "/uploads/editions/messi/card-2010.png"
         },
         {
           "year": "2014",
@@ -146,7 +146,7 @@
           "description": "Led Argentina to the final at the Maracanã and won the tournament’s Golden Ball.",
           "colour": "#38BDF8",
           "accent": "#0F172A",
-          "image": ""
+          "image": "/uploads/editions/messi/card-2014.png"
         },
         {
           "year": "2018",
@@ -157,7 +157,7 @@
           "description": "Scored against Nigeria in St Petersburg to help send Argentina through to the knockout stage.",
           "colour": "#0EA5E9",
           "accent": "#F8FAFC",
-          "image": ""
+          "image": "/uploads/editions/messi/card-2018.png"
         },
         {
           "year": "2022",
@@ -168,7 +168,7 @@
           "description": "Scored twice in the final, won the World Cup with Argentina and collected a second Golden Ball.",
           "colour": "#38BDF8",
           "accent": "#D4AF37",
-          "image": ""
+          "image": "/uploads/editions/messi/card-2022.png"
         },
         {
           "year": "2026",
@@ -179,7 +179,7 @@
           "description": "The 2026 World Cup, hosted across the USA, Canada and Mexico.",
           "colour": "#0284C7",
           "accent": "#D4AF37",
-          "image": ""
+          "image": "/uploads/editions/messi/card-2026.png"
         }
       ],
       "portrait": "",
