@@ -8,7 +8,8 @@
 <link rel="canonical" href="https://legacy7.onrender.com/"/>
 <link rel="icon" type="image/png" href="Logo.png" id="favicon"/>
 <link rel="apple-touch-icon" href="Logo.png"/>
-<meta name="theme-color" content="#0a0a0a"/>
+<meta name="theme-color" content="#0b0a08"/>
+<link rel="preload" href="fonts/bodoni-moda-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin/>
 <meta property="og:type" content="product"/>
 <meta property="og:site_name" content="EZlancing"/>
 <meta property="og:title" content="Legacy 7 | The Icon Series"/>
@@ -23,14 +24,20 @@
 </script>
 <style>
   /* PALETTE: change a colour here and it updates everywhere */
+  @font-face{font-family:'Bodoni Moda';src:url('fonts/bodoni-moda-latin-wght-normal.woff2') format('woff2');font-weight:400 900;font-style:normal;font-display:swap}
+  @font-face{font-family:'Bodoni Moda';src:url('fonts/bodoni-moda-latin-wght-italic.woff2') format('woff2');font-weight:400 900;font-style:italic;font-display:swap}
+  @font-face{font-family:'Hanken Grotesk';src:url('fonts/hanken-grotesk-latin-wght-normal.woff2') format('woff2');font-weight:100 900;font-style:normal;font-display:swap}
   :root{
-    --bg:#0a0a0a;--surface:#111;--surface-2:#1a1a1a;
-    --border:#222;--border-strong:#2e2e2e;
-    --heading:#fff;--text:#f0f0f0;--muted:#bbb;--subtle:#8c8c8c;--faint:#6b6b6b;
-    --gold:#c8a84b;--red:#c8000a;--red-dark:#a50009;
+    --bg:#0b0a08;--surface:#14120e;--surface-2:#1c1914;
+    --border:#2a261d;--border-strong:#3a3426;
+    --heading:#f5efe0;--text:#ebe5d6;--muted:#bdb6a4;--subtle:#8f8878;--faint:#6f695c;
+    --gold:#c9a54a;--gold-light:#e3c877;--on-gold:#17130a;
+    --crimson:#9e1b22;
+    --display:'Bodoni Moda','Didot','Bodoni MT',Georgia,serif;
+    --body:'Hanken Grotesk','Helvetica Neue',Arial,sans-serif;
   }
   *{box-sizing:border-box;margin:0;padding:0}
-  body{font-family:'Helvetica Neue',Arial,sans-serif;background:var(--bg);color:var(--text)}
+  body{font-family:var(--body);background:var(--bg);color:var(--text)}
   a{color:inherit;text-decoration:none}
 
   /* TOP BAR */
@@ -44,7 +51,7 @@
   .nav-icons a{display:flex;align-items:center;gap:5px}
 
   /* COUNTDOWN BANNER */
-  .countdown-banner{background:var(--red);text-align:center;padding:10px 20px;font-size:13px;font-weight:600;letter-spacing:1px;color:var(--heading)}
+  .countdown-banner{background:var(--gold);text-align:center;padding:10px 20px;font-size:13px;font-weight:600;letter-spacing:1px;color:var(--heading)}
   .countdown-timer{display:inline-flex;gap:6px;margin-left:14px;align-items:center}
   .timer-block{background:rgba(0,0,0,.3);border-radius:4px;padding:2px 8px;font-size:15px;font-weight:700;min-width:36px;text-align:center}
   .timer-sep{font-weight:700}
@@ -55,8 +62,8 @@
   .hero-sub{font-size:13px;letter-spacing:2px;color:var(--gold);text-transform:uppercase;margin-bottom:22px}
   .hero-video-wrap{position:relative;max-width:700px;margin:0 auto 22px;border-radius:10px;overflow:hidden;background:#000}
   .hero-video-wrap video{width:100%;display:block}
-  .hero-cta-btn{display:inline-block;background:var(--red);color:var(--heading);padding:14px 36px;border-radius:6px;font-size:15px;font-weight:700;letter-spacing:1px;margin-bottom:28px;transition:background .2s}
-  .hero-cta-btn:hover{background:var(--red-dark)}
+  .hero-cta-btn{display:inline-block;background:var(--gold);color:var(--on-gold);padding:14px 36px;border-radius:2px;font-size:15px;font-weight:700;letter-spacing:1px;margin-bottom:28px;transition:background .2s}
+  .hero-cta-btn:hover{background:var(--gold-light)}
   .hero-headline{font-size:clamp(22px,4vw,34px);font-weight:800;line-height:1.25;max-width:700px;margin:0 auto 16px;color:var(--heading)}
   .hero-desc{font-size:15px;color:var(--muted);max-width:620px;margin:0 auto 24px;line-height:1.65}
   .trust-badges{display:flex;flex-wrap:wrap;justify-content:center;gap:14px;margin-bottom:30px}
@@ -80,14 +87,14 @@
   .price-row{display:flex;align-items:center;gap:14px;margin-bottom:18px}
   .price-old{font-size:18px;color:var(--faint);text-decoration:line-through}
   .price-new{font-size:30px;font-weight:800;color:var(--heading)}
-  .price-badge{background:var(--red);color:var(--heading);font-size:12px;font-weight:700;padding:3px 10px;border-radius:4px}
+  .price-badge{background:var(--gold);color:var(--heading);font-size:12px;font-weight:700;padding:3px 10px;border-radius:4px}
   .qty-label{font-size:13px;color:var(--muted);margin-bottom:8px}
   .qty-controls{display:flex;align-items:center;gap:0;margin-bottom:18px;border:1px solid var(--border-strong);border-radius:6px;width:fit-content}
   .qty-btn{background:var(--surface-2);border:none;color:var(--heading);width:38px;height:38px;font-size:20px;cursor:pointer;transition:background .2s}
   .qty-btn:hover{background:var(--border-strong)}
   .qty-val{background:var(--surface);color:var(--heading);width:48px;height:38px;text-align:center;font-size:15px;border:none;border-left:1px solid var(--border-strong);border-right:1px solid var(--border-strong)}
-  .order-btn{display:block;width:100%;background:var(--red);color:var(--heading);border:none;padding:16px;border-radius:8px;font-size:16px;font-weight:700;letter-spacing:1px;cursor:pointer;transition:background .2s;margin-bottom:16px}
-  .order-btn:hover{background:var(--red-dark)}
+  .order-btn{display:block;width:100%;background:var(--gold);color:var(--heading);border:none;padding:16px;border-radius:8px;font-size:16px;font-weight:700;letter-spacing:1px;cursor:pointer;transition:background .2s;margin-bottom:16px}
+  .order-btn:hover{background:var(--gold-light)}
   .perks{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:18px}
   .perk{display:flex;align-items:flex-start;gap:8px;font-size:13px;color:var(--muted)}
   .perk-icon{font-size:18px;flex-shrink:0}
@@ -104,8 +111,8 @@
   .more-card-title{font-size:15px;font-weight:700;color:var(--heading)}
   .more-card-price{font-size:16px;font-weight:800;color:var(--heading)}
   .more-card-price s{font-size:13px;color:var(--faint);font-weight:400;margin-right:8px}
-  .more-card button{margin-top:auto;background:var(--red);color:var(--heading);border:none;padding:11px;border-radius:6px;font-size:14px;font-weight:700;cursor:pointer}
-  .more-card button:hover{background:var(--red-dark)}
+  .more-card button{margin-top:auto;background:var(--gold);color:var(--heading);border:none;padding:11px;border-radius:6px;font-size:14px;font-weight:700;cursor:pointer}
+  .more-card button:hover{background:var(--gold-light)}
   .more-card button:disabled,.order-btn:disabled{background:#333;color:var(--subtle);cursor:not-allowed}
   .wordmark{font-size:20px;font-weight:800;letter-spacing:4px;color:var(--heading)}
   .wordmark b{color:var(--gold)}
@@ -187,8 +194,8 @@
   .final-cta{background:linear-gradient(135deg,var(--surface) 0%,#1a1200 100%);text-align:center;padding:60px 20px;border-top:1px solid var(--border)}
   .final-cta h2{font-size:clamp(24px,4vw,36px);font-weight:900;color:var(--heading);margin-bottom:12px;max-width:640px;margin-left:auto;margin-right:auto}
   .final-cta p{font-size:14px;color:var(--subtle);margin-bottom:28px;max-width:500px;margin-left:auto;margin-right:auto}
-  .final-cta a{display:inline-block;background:var(--red);color:var(--heading);padding:16px 40px;border-radius:8px;font-size:15px;font-weight:700;letter-spacing:1px;transition:background .2s}
-  .final-cta a:hover{background:var(--red-dark)}
+  .final-cta a{display:inline-block;background:var(--gold);color:var(--heading);padding:16px 40px;border-radius:8px;font-size:15px;font-weight:700;letter-spacing:1px;transition:background .2s}
+  .final-cta a:hover{background:var(--gold-light)}
   .cta-note{font-size:12px;color:var(--faint);margin-top:12px}
 
   /* REVIEWS */
@@ -229,6 +236,44 @@
     .ba-grid{grid-template-columns:1fr}
     .content-row,.content-row.reverse{flex-direction:column}
   }
+
+  /* ---- FRESH LOOK: gold foil on frame black ---------------------------- */
+  body{line-height:1.6;-webkit-font-smoothing:antialiased}
+  h1,h2,h3,.hero-headline,.section-title,.product-title,.content-text h3,.step-title,.wordmark,.price-new,.stat-num,.step-num,.more-card-title{font-family:var(--display);font-weight:600;letter-spacing:-.01em}
+  .hero-headline{font-size:clamp(28px,5vw,46px);line-height:1.12;font-weight:600}
+  .section-title{font-size:clamp(26px,4vw,40px);line-height:1.15}
+  .product-title{font-size:26px}
+  .content-text h3{font-size:24px}
+  .price-new{font-size:36px;font-weight:700}
+  .stat-num,.step-num{font-weight:500;font-style:italic}
+  .wordmark{font-size:22px;letter-spacing:.14em;font-weight:700}
+
+  /* small labels: italic serif in sentence case instead of tracked capitals */
+  .section-eyebrow,.hero-sub{font-family:var(--display);font-style:italic;font-size:16px;letter-spacing:0;text-transform:lowercase;color:var(--gold)}
+  .section-eyebrow::first-letter,.hero-sub::first-letter{text-transform:uppercase}
+
+  /* actions are gold; crimson is kept for the discount badge only */
+  .hero-cta-btn,.order-btn,.final-cta a,.more-card button{background:var(--gold);color:var(--on-gold);border-radius:2px;font-family:var(--body);font-weight:700;letter-spacing:.04em}
+  .hero-cta-btn:hover,.order-btn:hover,.final-cta a:hover,.more-card button:hover,a[href="#ex-buy-section"][style]:hover{background:var(--gold-light)}
+  .more-card button:disabled,.order-btn:disabled{background:var(--border-strong);color:var(--subtle)}
+  .price-badge{background:var(--crimson);color:#fff;border-radius:2px}
+  a:focus-visible,button:focus-visible{outline:2px solid var(--gold-light);outline-offset:3px}
+
+  /* top strip: quiet charcoal with a gold hairline */
+  .countdown-banner{background:var(--surface);color:var(--gold);border-bottom:1px solid var(--gold);font-weight:600;letter-spacing:.06em}
+  .timer-block{background:transparent;border:1px solid var(--border-strong);border-radius:2px;color:var(--heading);font-variant-numeric:tabular-nums}
+
+  /* the buy box is matted like the frame it sells: gold rule inside a dark mount */
+  #ex-buy-section{border:1px solid var(--gold);border-radius:2px;outline:1px solid var(--border-strong);outline-offset:8px;margin:36px auto 44px;padding:32px 28px;background:var(--surface)}
+
+  /* quieter, squarer surfaces */
+  .feat-card,.review-card,.more-card,.commit-item,.pkg-item{border-radius:3px}
+  .badge{border-radius:2px;background:transparent;border-color:var(--border-strong)}
+  .gallery-main img,.hero-video-wrap,.gallery-thumbs img{border-radius:3px}
+  .load-more-btn{border-color:var(--border-strong);border-radius:2px}
+  .load-more-btn:hover{border-color:var(--gold);color:var(--gold)}
+  .review-verified{color:var(--gold)}
+  .qty-controls{border-radius:2px}
 </style>
 </head>
 <body>
@@ -384,7 +429,7 @@
       <p>✨ Brilliant gold foil applications</p>
       <p>👓 Crystal-clear cover with zero cheap glare</p>
       <br/>
-      <a href="#ex-buy-section" style="display:inline-block;background:var(--red);color:var(--heading);padding:12px 26px;border-radius:6px;font-size:14px;font-weight:700;margin-top:10px">See the Details — Feel the quality in every angle</a>
+      <a href="#ex-buy-section" style="display:inline-block;background:var(--gold);color:var(--on-gold);padding:12px 26px;border-radius:2px;font-size:14px;font-weight:700;margin-top:10px">See the Details — Feel the quality in every angle</a>
     </div>
   </div>
 
@@ -482,7 +527,7 @@
     </div>
   </div>
   <div style="text-align:center;margin-top:24px">
-    <a href="#ex-buy-section" style="display:inline-block;background:var(--red);color:var(--heading);padding:14px 32px;border-radius:6px;font-size:15px;font-weight:700">Upgrade My Space — Elevate your room instantly</a>
+    <a href="#ex-buy-section" style="display:inline-block;background:var(--gold);color:var(--on-gold);padding:14px 32px;border-radius:2px;font-size:15px;font-weight:700">Upgrade My Space — Elevate your room instantly</a>
   </div>
 </div>
 
@@ -497,7 +542,7 @@
     <span style="font-size:14px;color:var(--muted)">🗣 A conversation starter with every single guest</span>
     <span style="font-size:14px;color:var(--muted)">❤ The emotional gift they will love</span>
   </div>
-  <a href="#ex-buy-section" style="display:inline-block;background:var(--red);color:var(--heading);padding:14px 32px;border-radius:6px;font-size:15px;font-weight:700">Claim My Piece — Imagine it in your room</a>
+  <a href="#ex-buy-section" style="display:inline-block;background:var(--gold);color:var(--on-gold);padding:14px 32px;border-radius:2px;font-size:15px;font-weight:700">Claim My Piece — Imagine it in your room</a>
 </div>
 
 <!-- PACKAGE -->
@@ -529,7 +574,7 @@
     </div>
   </div>
   <div style="text-align:center">
-    <a href="#ex-buy-section" style="display:inline-block;background:var(--red);color:var(--heading);padding:14px 32px;border-radius:6px;font-size:15px;font-weight:700">Secure My Package — Limited run, secure yours today</a>
+    <a href="#ex-buy-section" style="display:inline-block;background:var(--gold);color:var(--on-gold);padding:14px 32px;border-radius:2px;font-size:15px;font-weight:700">Secure My Package — Limited run, secure yours today</a>
   </div>
 </div>
 
