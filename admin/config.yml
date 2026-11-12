@@ -52,6 +52,7 @@ collections:
               - { name: story, label: Story paragraph, widget: text }
               - { name: quote, label: Quote in the gold foil panel, widget: string }
               - { name: signature, label: Signature text inside the illustrated frame, widget: string }
+              - { name: portrait, label: "Player portrait inside the illustrated frame (optional)", widget: image, required: false }
               - name: photos
                 label: "Photos of the real frame (if empty, an illustrated frame is shown)"
                 label_singular: Photo

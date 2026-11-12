@@ -649,18 +649,16 @@
             <span class="text-[#D4AF37]">${card.jerseyNo}</span>
           </div>
 
-          <!-- Collectible Jersey / Player Silhouette Artwork -->
-          <div class="relative aspect-[3/4] w-full rounded overflow-hidden flex flex-col items-center justify-center mb-1.5 border border-white/10"
-               style="background: linear-gradient(145deg, ${card.kitPrimary} 0%, #09090b 95%);">
-            <!-- Subtle Jersey Stripe -->
+          <!-- Card artwork: the real sticker when set in the admin, otherwise an illustrated placeholder -->
+          <div class="relative aspect-[3/4] w-full rounded overflow-hidden flex flex-col items-center justify-center mb-1.5 border border-white/10 bg-[#0b0b0c]"
+               style="${card.image ? '' : `background: linear-gradient(145deg, ${card.kitPrimary} 0%, #09090b 95%);`}">
+            ${card.image ? `<img src="${esc(asset(card.image))}" alt="${card.tournament} card" loading="lazy" class="absolute inset-0 w-full h-full object-cover"/>` : `
             <div class="absolute inset-y-0 left-1/2 -translate-x-1/2 w-2 opacity-25" style="background:${card.kitAccent};"></div>
-            
-            <!-- Stylized Player Bust SVG -->
-            <svg class="w-8 h-8 sm:w-10 sm:h-10 relative z-10 drop-shadow" viewBox="0 0 64 64" fill="none">
+            <svg class="w-8 h-8 sm:w-10 sm:h-10 relative z-10 drop-shadow" viewBox="0 0 64 64" fill="none" aria-hidden="true">
               <circle cx="32" cy="20" r="10" fill="#F5F5F5" fill-opacity="0.9"/>
               <path d="M14 56C14 43 22 36 32 36C42 36 50 43 50 56" fill="${card.kitPrimary}" stroke="${card.kitAccent}" stroke-width="2.5"/>
               <text x="32" y="50" text-anchor="middle" fill="#F3E5AB" font-size="9" font-weight="bold" font-family="sans-serif">${card.jerseyNo}</text>
-            </svg>
+            </svg>`}
 
             <!-- Hover Inspect Badge -->
             <span class="opacity-0 group-hover/card:opacity-100 transition-opacity absolute inset-x-0 bottom-0 bg-black/85 text-[7px] text-center py-0.5 text-[#F3E5AB] font-semibold uppercase tracking-wider">
@@ -669,7 +667,7 @@
           </div>
 
           <!-- Card Footer -->
-          <div class="truncate text-[7px] sm:text-[8px] font-bold text-[#F5F5F5] tracking-tight">${card.tournament.split(' ')[0]}</div>
+          <div class="truncate text-[7px] sm:text-[8px] font-bold text-[#F5F5F5] tracking-tight">${card.tournament.replace(/\s*\d{4}\s*$/, '') || card.tournament}</div>
           <div class="truncate text-[6px] sm:text-[7px] text-[#D4AF37] font-medium">${card.badge}</div>
         </button>
       `).join('');
@@ -699,6 +697,7 @@
               <!-- Left: Monochrome / Gold Highlight Portrait Emblem -->
               <div class="col-span-4 flex justify-center">
                 <div class="relative w-20 h-24 sm:w-28 sm:h-32 rounded-lg overflow-hidden bg-gradient-to-b from-[#1e1e22] to-[#080808] border border-[#D4AF37]/30 flex items-end justify-center shadow-inner">
+                  ${p.portrait ? `<img src="${esc(asset(p.portrait))}" alt="${esc(p.fullName)}" class="absolute inset-0 w-full h-full object-cover grayscale"/>` : `
                   <svg class="w-full h-full" viewBox="0 0 120 140" fill="none">
                     <defs>
                       <linearGradient id="goldPortrait-${p.id}-${isHero ? 'h' : 'g'}" x1="0" y1="0" x2="120" y2="140" gradientUnits="userSpaceOnUse">
@@ -710,7 +709,7 @@
                     <circle cx="60" cy="48" r="22" fill="url(#goldPortrait-${p.id}-${isHero ? 'h' : 'g'})" fill-opacity="0.88"/>
                     <path d="M20 136C20 102 36 84 60 84C84 84 100 102 100 136" fill="#18181b" stroke="url(#goldPortrait-${p.id}-${isHero ? 'h' : 'g'})" stroke-width="2"/>
                     <text x="60" y="120" text-anchor="middle" fill="#F3E5AB" font-family="Cinzel, serif" font-size="13" font-weight="700" letter-spacing="2">${p.monogram}</text>
-                  </svg>
+                  </svg>`}
                 </div>
               </div>
 
@@ -753,7 +752,7 @@
             </div>
 
             <!-- MIDDLE 6-CARD MUSEUM GRID -->
-            <div class="relative z-10 grid gap-1.5 sm:gap-2.5 mb-5 sm:mb-6" style="grid-template-columns:repeat(${p.cards.length},minmax(0,1fr))">
+            <div class="relative z-10 grid gap-1.5 sm:gap-2.5 mb-5 sm:mb-6 justify-center" style="grid-template-columns:repeat(${p.cards.length},minmax(0,${p.cards.length > 5 ? '1fr' : '120px'}))">
               ${cardsHTML}
             </div>
 
@@ -1060,6 +1059,7 @@
         if (Number(e.price) > 0) p.price = Number(e.price);
         p.compare = Number(e.compare_price) || 0;
         p.video = e.video || ''; p.poster = e.video_poster || '';
+        p.portrait = e.portrait || '';
         p.photos = Array.isArray(e.photos) ? e.photos.filter(Boolean) : [];
         if (Array.isArray(e.cards) && e.cards.length) {
           p.cards = e.cards.map(c => ({
