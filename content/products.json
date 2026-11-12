@@ -1,0 +1,18 @@
+{
+  "products": [
+    {
+      "title": "Legacy 7 | The Icon Series",
+      "subtitle": "Museum-Grade Frame · Hardware Included · Premium Packaging",
+      "price": 37.99,
+      "compare_price": 69.99,
+      "status": "active",
+      "featured": true,
+      "checkout_url": "",
+      "images": [
+        "https://adelly33.com/cdn/shop/files/ly3.png?v=1781213927&width=1200",
+        "https://adelly33.com/cdn/shop/files/ly2.png?v=1781213927&width=1200",
+        "https://adelly33.com/cdn/shop/files/ly4.png?v=1781213927&width=1200"
+      ]
+    }
+  ]
+}

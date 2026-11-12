@@ -2,12 +2,16 @@
 
 Single-page product site for Legacy 7 | The Icon Series. Plain HTML, CSS and JavaScript with no build step.
 
-## Checkout
+## Managing listings and the logo
 
-`index.html` has a config block at the top of its script:
+Open `/admin/` on the live site and choose **Sign in with Token** (a GitHub token with Contents read and write access to this repo).
 
-- `CHECKOUT_URL`: paste a Shopify or Stripe payment link to send "Order Now" to card checkout.
-- While `CHECKOUT_URL` is empty, "Order Now" opens a pre-filled WhatsApp order to `WHATSAPP_NUMBER`.
+- **Product listings** edits `content/products.json`: title, prices, status, images and an optional card checkout link per product.
+- **Site settings and logo** edits `content/settings.json`: site logo, product logo, WhatsApp number and phone.
+
+The product marked Featured fills the main buy box; other visible products appear under "More from Legacy 7".
+A product with no checkout link takes orders through a pre-filled WhatsApp message.
+Saving in the admin commits to the `production-ready` branch, and Render redeploys automatically.
 
 ## Deploy
 

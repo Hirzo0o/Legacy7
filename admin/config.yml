@@ -1,0 +1,53 @@
+# Legacy 7 admin (Sveltia CMS). Open /admin/ and choose "Sign in with Token".
+backend:
+  name: github
+  repo: Hirzo0o/Legacy7
+  # Must match the branch Render deploys from.
+  branch: production-ready
+
+site_url: https://legacy7.onrender.com
+media_folder: uploads
+public_folder: /uploads
+
+collections:
+  - name: store
+    label: Store
+    files:
+      - name: products
+        label: Product listings
+        file: content/products.json
+        fields:
+          - name: products
+            label: Products
+            label_singular: Product
+            widget: list
+            summary: "{{title}} ({{status}})"
+            fields:
+              - { name: title, label: Title, widget: string }
+              - { name: subtitle, label: Subtitle, widget: string, required: false }
+              - { name: price, label: "Price (USD)", widget: number, value_type: float, min: 0 }
+              - { name: compare_price, label: "Original price (USD, shown struck through)", widget: number, value_type: float, min: 0, required: false }
+              - name: status
+                label: Status
+                widget: select
+                default: active
+                options:
+                  - { label: "Active (on sale)", value: active }
+                  - { label: "Sold out (shown, cannot be ordered)", value: sold_out }
+                  - { label: "Hidden", value: hidden }
+              - { name: featured, label: "Featured (main product at the top of the page)", widget: boolean, default: false }
+              - { name: checkout_url, label: "Card checkout link (Shopify or Stripe). Leave empty for WhatsApp orders.", widget: string, required: false }
+              - name: images
+                label: Images (first one is the main image)
+                label_singular: Image
+                widget: list
+                field: { name: image, label: Image, widget: image }
+      - name: settings
+        label: Site settings and logo
+        file: content/settings.json
+        fields:
+          - { name: site_name, label: Site name, widget: string }
+          - { name: site_logo, label: "Site logo (header, footer and browser tab)", widget: image }
+          - { name: hero_logo, label: "Product logo (large logo at the top of the page)", widget: image, required: false }
+          - { name: whatsapp_number, label: "WhatsApp number (digits only, with country code)", widget: string, pattern: ["^[0-9]{8,15}$", "Digits only, including country code"] }
+          - { name: phone_display, label: Phone number as shown in the footer, widget: string }
