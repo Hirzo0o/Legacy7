@@ -1,886 +1,1063 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="dark scroll-smooth">
 <head>
-<meta charset="UTF-8"/>
-<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>The Last Dance Collectibles | The Icon Series — EZlancing</title>
-<meta name="description" content="The Last Dance Collectibles | The Icon Series: a 12×16 inch framed shadow box tracing CR7's World Cup journey from 2006 to 2026, with gold foil accents and mounting hardware included."/>
-<link rel="canonical" href="https://legacy7.onrender.com/"/>
-<link rel="icon" type="image/png" href="Logo.png" id="favicon"/>
-<link rel="apple-touch-icon" href="Logo.png"/>
-<meta name="theme-color" content="#080808"/>
-<link rel="preload" href="fonts/plus-jakarta-sans-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin/>
-<meta property="og:type" content="product"/>
-<meta property="og:site_name" content="EZlancing"/>
-<meta property="og:title" content="The Last Dance Collectibles | The Icon Series"/>
-<meta property="og:description" content="The Last Dance Collectibles | The Icon Series: a 12×16 inch framed shadow box tracing CR7's World Cup journey from 2006 to 2026, with gold foil accents and mounting hardware included."/>
-<meta property="og:url" content="https://legacy7.onrender.com/"/>
-<meta property="og:image" content="https://adelly33.com/cdn/shop/files/ly3.png?v=1781213927&amp;width=1200"/>
-<meta name="twitter:card" content="summary_large_image"/>
-<link rel="preconnect" href="https://adelly33.com" crossorigin/>
-<link rel="preconnect" href="https://cdn.shopify.com" crossorigin/>
-<script type="application/ld+json">
-{"@context":"https://schema.org","@type":"Product","name":"The Last Dance Collectibles | The Icon Series","description":"The Last Dance Collectibles | The Icon Series: a 12×16 inch framed shadow box tracing CR7's World Cup journey from 2006 to 2026, with gold foil accents and mounting hardware included.","brand":{"@type":"Brand","name":"The Last Dance Collectibles"},"image":"https://adelly33.com/cdn/shop/files/ly3.png?v=1781213927&width=1200","offers":{"@type":"Offer","price":"37.99","priceCurrency":"USD","url":"https://legacy7.onrender.com/"}}
-</script>
-<style>
-  /* PALETTE: change a colour here and it updates everywhere */
-  :root{
-    --bg:#080808;--surface:#121212;--surface-2:#181818;
-    --border:#2a261d;--border-strong:#3a3426;
-    --heading:#f5efe0;--text:#ebe5d6;--muted:#bdb6a4;--subtle:#8f8878;--faint:#6f695c;
-    --gold:#c9a54a;--gold-light:#e3c877;--on-gold:#17130a;
-    --crimson:#9e1b22;
-    --display:'Cinzel','Didot','Bodoni MT',Georgia,serif;
-    --body:'Plus Jakarta Sans','Helvetica Neue',Arial,sans-serif;
-  }
-  *{box-sizing:border-box;margin:0;padding:0}
-  body{font-family:var(--body);background:var(--bg);color:var(--text)}
-  a{color:inherit;text-decoration:none}
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>The Last Dance Collectibles | World Cup Collector Frames</title>
+  <meta name="description" content="Framed World Cup collector pieces for CR7, Lionel Messi and Neymar Jr fans: a 12×16 inch shadow box with six collectible cards, gold foil accents and mounting hardware. Order on WhatsApp."/>
+  <link rel="canonical" href="https://legacy7.onrender.com/"/>
+  <link rel="icon" type="image/png" href="Logo.png" id="favicon"/>
+  <link rel="apple-touch-icon" href="Logo.png"/>
+  <meta name="theme-color" content="#080808"/>
+  <meta property="og:type" content="product"/>
+  <meta property="og:site_name" content="The Last Dance Collectibles"/>
+  <meta property="og:title" content="The Last Dance Collectibles | World Cup Collector Frames"/>
+  <meta property="og:description" content="Framed World Cup collector pieces for CR7, Lionel Messi and Neymar Jr fans: a 12×16 inch shadow box with six collectible cards, gold foil accents and mounting hardware. Order on WhatsApp."/>
+  <meta property="og:url" content="https://legacy7.onrender.com/"/>
+  <meta property="og:image" content="https://adelly33.com/cdn/shop/files/ly3.png?v=1781213927&amp;width=1200"/>
+  <meta name="twitter:card" content="summary_large_image"/>
+  <link rel="preload" href="fonts/cinzel-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin/>
+  <link rel="preload" href="fonts/plus-jakarta-sans-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin/>
+  <link rel="preconnect" href="https://adelly33.com" crossorigin/>
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Product", "name": "CR7 Edition — The Last Dance Collectibles", "description": "A 12×16 inch framed shadow box tracing CR7's World Cup journey from 2006 to 2026, with gold foil accents and mounting hardware included.", "image": "https://adelly33.com/cdn/shop/files/ly3.png?v=1781213927&width=1200", "brand": {"@type": "Brand", "name": "The Last Dance Collectibles"}, "offers": {"@type": "Offer", "price": "37.99", "priceCurrency": "USD", "availability": "https://schema.org/InStock", "url": "https://legacy7.onrender.com/"}}</script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            obsidian: '#080808',
+            charcoal: '#121212',
+            charcoalLight: '#181818',
+            goldBorder: '#262218',
+            goldPrimary: '#D4AF37',
+            goldChampagne: '#F3E5AB',
+            goldDeep: '#997A1E',
+          },
+          fontFamily: {
+            serif: ['Cinzel', 'Georgia', 'serif'],
+            sans: ['Plus Jakarta Sans', 'system-ui', 'sans-serif'],
+          },
+          boxShadow: {
+            'gold-glow': '0 0 60px -15px rgba(212, 175, 55, 0.25)',
+            'museum-frame': '0 30px 70px -10px rgba(0, 0, 0, 0.92), 0 0 1px 1px rgba(212, 175, 55, 0.18)',
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    @font-face{font-family:'Cinzel';src:url('fonts/cinzel-latin-600-normal.woff2') format('woff2');font-weight:500 600;font-display:swap}
+    @font-face{font-family:'Cinzel';src:url('fonts/cinzel-latin-700-normal.woff2') format('woff2');font-weight:700 900;font-display:swap}
+    @font-face{font-family:'Plus Jakarta Sans';src:url('fonts/plus-jakarta-sans-latin-wght-normal.woff2') format('woff2');font-weight:200 800;font-display:swap}
+    a:focus-visible,button:focus-visible{outline:2px solid #F3E5AB;outline-offset:3px}
+    @media (prefers-reduced-motion: reduce){.foil-active .foil-shimmer-layer{animation:none}.frame-3d-wrapper{transition:none}}
 
-  /* TOP BAR */
-  .topbar{background:var(--surface);display:flex;justify-content:center;gap:40px;padding:8px 20px;font-size:12px;color:var(--muted);border-bottom:1px solid var(--border)}
-  .topbar a:hover{color:var(--heading)}
+    body {
+      background-color: #080808;
+      color: #F5F5F5;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      overflow-x: hidden;
+    }
 
-  /* NAV */
-  nav{background:var(--bg);display:flex;align-items:center;justify-content:space-between;padding:14px 30px;border-bottom:1px solid var(--border);position:sticky;top:0;z-index:100}
-  .nav-logo img{height:36px}
-  .nav-icons{display:flex;gap:18px;font-size:13px;color:var(--muted)}
-  .nav-icons a{display:flex;align-items:center;gap:5px}
+    /* Metallic Gold Text & Gradients */
+    .text-gold-gradient {
+      background: linear-gradient(135deg, #F3E5AB 0%, #D4AF37 45%, #AA8220 75%, #F3E5AB 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-size: 200% auto;
+    }
 
-  /* COUNTDOWN BANNER */
-  .countdown-banner{background:var(--gold);text-align:center;padding:10px 20px;font-size:13px;font-weight:600;letter-spacing:1px;color:var(--heading)}
-  .countdown-timer{display:inline-flex;gap:6px;margin-left:14px;align-items:center}
-  .timer-block{background:rgba(0,0,0,.3);border-radius:4px;padding:2px 8px;font-size:15px;font-weight:700;min-width:36px;text-align:center}
-  .timer-sep{font-weight:700}
+    .bg-gold-metallic {
+      background: linear-gradient(135deg, #E5C76B 0%, #D4AF37 50%, #B58E22 100%);
+    }
 
-  /* HERO */
-  .hero{text-align:center;padding:40px 20px 20px;background:linear-gradient(180deg,var(--bg) 0%,var(--surface) 100%)}
-  .hero-logo{max-width:360px;width:90%;margin-bottom:18px}
-  .hero-sub{font-size:13px;letter-spacing:2px;color:var(--gold);text-transform:uppercase;margin-bottom:22px}
-  .hero-video-wrap{position:relative;max-width:700px;margin:0 auto 22px;border-radius:10px;overflow:hidden;background:#000}
-  .hero-video-wrap video{width:100%;display:block}
-  .hero-cta-btn{display:inline-block;background:var(--gold);color:var(--on-gold);padding:14px 36px;border-radius:2px;font-size:15px;font-weight:700;letter-spacing:1px;margin-bottom:28px;transition:background .2s}
-  .hero-cta-btn:hover{background:var(--gold-light)}
-  .hero-headline{font-size:clamp(22px,4vw,34px);font-weight:800;line-height:1.25;max-width:700px;margin:0 auto 16px;color:var(--heading)}
-  .hero-desc{font-size:15px;color:var(--muted);max-width:620px;margin:0 auto 24px;line-height:1.65}
-  .trust-badges{display:flex;flex-wrap:wrap;justify-content:center;gap:14px;margin-bottom:30px}
-  .badge{background:var(--surface-2);border:1px solid var(--border-strong);border-radius:20px;padding:6px 16px;font-size:12px;color:var(--gold);font-weight:600}
+    .bg-gold-metallic:hover {
+      background: linear-gradient(135deg, #F3E5AB 0%, #DFBD4B 50%, #C59B27 100%);
+    }
 
-  /* PRODUCT GALLERY */
-  .gallery-section{max-width:1000px;margin:0 auto;padding:10px 20px 30px}
-  .gallery-main img{width:100%;border-radius:10px;display:block}
-  .gallery-thumbs{display:flex;gap:10px;margin-top:10px;justify-content:center}
-  .gallery-thumbs img{width:90px;height:90px;object-fit:cover;border-radius:6px;cursor:pointer;border:2px solid transparent;transition:border .2s}
-  .gallery-thumbs img.active{border-color:var(--gold)}
-  .gallery-thumbs img:hover{border-color:var(--gold)}
+    /* Interactive Shimmer Sweep */
+    @keyframes foilSweep {
+      0% { transform: translateX(-140%) skewX(-22deg); }
+      100% { transform: translateX(240%) skewX(-22deg); }
+    }
 
-  /* RATING BAR */
-  .rating-bar{text-align:center;padding:10px 20px;font-size:14px;color:var(--gold);font-weight:600}
+    .foil-shimmer-layer {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(
+        105deg,
+        transparent 20%,
+        rgba(243, 229, 171, 0.08) 40%,
+        rgba(255, 255, 255, 0.32) 50%,
+        rgba(212, 175, 55, 0.14) 60%,
+        transparent 80%
+      );
+      pointer-events: none;
+      transition: opacity 0.4s ease;
+    }
 
-  /* BUY BOX */
-  #ex-buy-section{background:var(--surface);border:1px solid var(--border-strong);border-radius:12px;max-width:600px;margin:20px auto 30px;padding:28px 24px}
-  .product-title{font-size:22px;font-weight:800;color:var(--heading);margin-bottom:4px}
-  .product-tags{font-size:12px;color:var(--subtle);margin-bottom:14px}
-  .price-row{display:flex;align-items:center;gap:14px;margin-bottom:18px}
-  .price-old{font-size:18px;color:var(--faint);text-decoration:line-through}
-  .price-new{font-size:30px;font-weight:800;color:var(--heading)}
-  .price-badge{background:var(--gold);color:var(--heading);font-size:12px;font-weight:700;padding:3px 10px;border-radius:4px}
-  .qty-label{font-size:13px;color:var(--muted);margin-bottom:8px}
-  .qty-controls{display:flex;align-items:center;gap:0;margin-bottom:18px;border:1px solid var(--border-strong);border-radius:6px;width:fit-content}
-  .qty-btn{background:var(--surface-2);border:none;color:var(--heading);width:38px;height:38px;font-size:20px;cursor:pointer;transition:background .2s}
-  .qty-btn:hover{background:var(--border-strong)}
-  .qty-val{background:var(--surface);color:var(--heading);width:48px;height:38px;text-align:center;font-size:15px;border:none;border-left:1px solid var(--border-strong);border-right:1px solid var(--border-strong)}
-  .order-btn{display:block;width:100%;background:var(--gold);color:var(--heading);border:none;padding:16px;border-radius:8px;font-size:16px;font-weight:700;letter-spacing:1px;cursor:pointer;transition:background .2s;margin-bottom:16px}
-  .order-btn:hover{background:var(--gold-light)}
-  .perks{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:18px}
-  .perk{display:flex;align-items:flex-start;gap:8px;font-size:13px;color:var(--muted)}
-  .perk-icon{font-size:18px;flex-shrink:0}
-  .secure-checkout{text-align:center;margin-bottom:14px;font-size:12px;color:var(--subtle);font-weight:600;letter-spacing:1px}
-  .payment-icons{display:flex;flex-wrap:wrap;justify-content:center;gap:8px}
-  .pay-icon{background:var(--surface-2);border:1px solid var(--border-strong);border-radius:4px;padding:4px 10px;font-size:11px;color:var(--muted);font-weight:600}
+    .foil-active .foil-shimmer-layer {
+      animation: foilSweep 3.8s infinite ease-in-out;
+    }
 
-  /* MORE PRODUCTS (rendered from content/products.json) */
-  .more-products{max-width:1000px;margin:0 auto;padding:30px 20px 10px}
-  .more-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:20px;margin-top:20px}
-  .more-card{background:var(--surface);border:1px solid var(--border);border-radius:10px;overflow:hidden;display:flex;flex-direction:column}
-  .more-card img{width:100%;aspect-ratio:1/1;object-fit:cover;display:block;background:#000}
-  .more-card-body{padding:16px;display:flex;flex-direction:column;gap:8px;flex:1}
-  .more-card-title{font-size:15px;font-weight:700;color:var(--heading)}
-  .more-card-price{font-size:16px;font-weight:800;color:var(--heading)}
-  .more-card-price s{font-size:13px;color:var(--faint);font-weight:400;margin-right:8px}
-  .more-card button{margin-top:auto;background:var(--gold);color:var(--heading);border:none;padding:11px;border-radius:6px;font-size:14px;font-weight:700;cursor:pointer}
-  .more-card button:hover{background:var(--gold-light)}
-  .more-card button:disabled,.order-btn:disabled{background:#333;color:var(--subtle);cursor:not-allowed}
-  .wordmark{font-size:20px;font-weight:800;letter-spacing:4px;color:var(--heading)}
-  .wordmark b{color:var(--gold)}
-  .logo-chip{display:inline-block;background:#fff;border-radius:8px;padding:6px 10px;margin-bottom:14px}
-  .footer-brand .logo-chip img{height:44px;margin:0;display:block}
+    /* Frame View Transformations */
+    .frame-stage {
+      perspective: 1400px;
+    }
 
-  /* FEATURES GRID */
-  .features-section{max-width:900px;margin:0 auto;padding:40px 20px}
-  .section-eyebrow{font-size:11px;letter-spacing:3px;color:var(--gold);text-transform:uppercase;text-align:center;margin-bottom:10px}
-  .section-title{font-size:clamp(22px,3.5vw,32px);font-weight:800;text-align:center;color:var(--heading);margin-bottom:14px;line-height:1.25}
-  .section-sub{font-size:15px;color:var(--subtle);text-align:center;max-width:580px;margin:0 auto 36px;line-height:1.6}
-  .features-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:24px}
-  .feat-card{background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:24px 20px;text-align:center}
-  .feat-icon{font-size:28px;margin-bottom:10px}
-  .feat-title{font-size:15px;font-weight:700;color:var(--heading);margin-bottom:6px}
-  .feat-desc{font-size:13px;color:var(--subtle);line-height:1.55}
+    .frame-3d-wrapper {
+      transition: transform 0.65s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.65s ease;
+      transform-style: preserve-3d;
+    }
 
-  /* CONTENT SECTIONS */
-  .content-block{max-width:900px;margin:0 auto;padding:40px 20px}
-  .content-row{display:flex;gap:36px;align-items:center;margin-bottom:48px;flex-wrap:wrap}
-  .content-row.reverse{flex-direction:row-reverse}
-  .content-img{flex:1;min-width:260px}
-  .content-img img{width:100%;border-radius:10px;display:block}
-  .content-text{flex:1;min-width:260px}
-  .content-text h3{font-size:20px;font-weight:800;color:var(--heading);margin-bottom:12px;line-height:1.3}
-  .content-text p{font-size:14px;color:var(--subtle);line-height:1.7}
+    .view-front .frame-3d-wrapper {
+      transform: rotateY(0deg) rotateX(0deg) scale(1);
+    }
 
-  /* STEPS */
-  .steps-section{max-width:900px;margin:0 auto;padding:40px 20px}
-  .steps-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:28px;margin-top:36px}
-  .step-card{background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:28px 22px}
-  .step-num{font-size:36px;font-weight:900;color:var(--gold);margin-bottom:10px;line-height:1}
-  .step-title{font-size:16px;font-weight:700;color:var(--heading);margin-bottom:8px}
-  .step-desc{font-size:13px;color:var(--subtle);line-height:1.6}
+    .view-angled .frame-3d-wrapper {
+      transform: rotateY(-16deg) rotateX(6deg) scale(0.97);
+    }
 
-  /* STATS */
-  .stats-section{max-width:900px;margin:0 auto;padding:40px 20px;text-align:center}
-  .stats-grid{display:flex;flex-wrap:wrap;justify-content:center;gap:36px;margin-top:32px}
-  .stat-item{}
-  .stat-num{font-size:42px;font-weight:900;color:var(--gold);line-height:1}
-  .stat-bar-wrap{width:120px;height:6px;background:var(--border);border-radius:3px;margin:8px auto 6px}
-  .stat-bar{height:6px;background:var(--gold);border-radius:3px}
-  .stat-label{font-size:13px;color:var(--subtle)}
+    .view-closeup .frame-3d-wrapper {
+      transform: scale(1.14) translateY(-18px);
+    }
 
-  /* BEFORE/AFTER */
-  .ba-section{max-width:900px;margin:0 auto;padding:40px 20px}
-  .ba-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:32px}
-  .ba-img{position:relative;border-radius:10px;overflow:hidden}
-  .ba-img img{width:100%;display:block}
-  .ba-label{position:absolute;bottom:12px;left:12px;background:rgba(0,0,0,.75);color:var(--heading);font-size:12px;font-weight:700;padding:4px 10px;border-radius:4px}
+    .view-room .frame-3d-wrapper {
+      transform: scale(0.76) translateY(-12px);
+    }
 
-  /* PACKAGE */
-  .package-section{max-width:900px;margin:0 auto;padding:40px 20px}
-  .package-img{width:100%;border-radius:10px;margin:30px 0}
-  .package-items{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:20px;margin-bottom:30px}
-  .pkg-item{background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:20px}
-  .pkg-item-icon{font-size:28px;margin-bottom:8px}
-  .pkg-item-title{font-size:14px;font-weight:700;color:var(--heading);margin-bottom:5px}
-  .pkg-item-desc{font-size:13px;color:var(--subtle);line-height:1.55}
+    /* Custom Scrollbar */
+    ::-webkit-scrollbar {
+      width: 6px;
+      height: 6px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #080808;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #2b2619;
+      border-radius: 999px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #D4AF37;
+    }
 
-  /* COMMITMENT */
-  .commitment-section{max-width:900px;margin:0 auto;padding:40px 20px}
-  .commit-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px;margin-top:32px}
-  .commit-card{background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:22px}
-  .commit-icon{font-size:22px;margin-bottom:8px}
-  .commit-title{font-size:14px;font-weight:700;color:var(--heading);margin-bottom:5px}
-  .commit-desc{font-size:13px;color:var(--subtle);line-height:1.55}
+    /* Subtle Velvet Texture Pattern */
+    .velvet-mat {
+      background-color: #0b0b0c;
+      background-image: radial-gradient(rgba(212, 175, 55, 0.06) 1px, transparent 0);
+      background-size: 16px 16px;
+    }
 
-  /* FAQ */
-  .faq-section{max-width:750px;margin:0 auto;padding:40px 20px}
-  .faq-item{border-bottom:1px solid var(--border);padding:20px 0;cursor:pointer}
-  .faq-q{font-size:15px;font-weight:700;color:var(--heading);display:flex;justify-content:space-between;align-items:center}
-  .faq-q span{color:var(--gold);font-size:20px;transition:transform .2s}
-  .faq-a{font-size:14px;color:var(--subtle);line-height:1.65;margin-top:12px;display:none}
-  .faq-item.open .faq-a{display:block}
-  .faq-item.open .faq-q span{transform:rotate(45deg)}
-
-  /* FINAL CTA */
-  .final-cta{background:linear-gradient(135deg,var(--surface) 0%,#1a1200 100%);text-align:center;padding:60px 20px;border-top:1px solid var(--border)}
-  .final-cta h2{font-size:clamp(24px,4vw,36px);font-weight:900;color:var(--heading);margin-bottom:12px;max-width:640px;margin-left:auto;margin-right:auto}
-  .final-cta p{font-size:14px;color:var(--subtle);margin-bottom:28px;max-width:500px;margin-left:auto;margin-right:auto}
-  .final-cta a{display:inline-block;background:var(--gold);color:var(--heading);padding:16px 40px;border-radius:8px;font-size:15px;font-weight:700;letter-spacing:1px;transition:background .2s}
-  .final-cta a:hover{background:var(--gold-light)}
-  .cta-note{font-size:12px;color:var(--faint);margin-top:12px}
-
-  /* REVIEWS */
-  .reviews-section{max-width:900px;margin:0 auto;padding:40px 20px}
-  .rating-summary{display:flex;align-items:center;gap:28px;margin-bottom:30px;flex-wrap:wrap}
-  .rating-big{font-size:56px;font-weight:900;color:var(--heading);line-height:1}
-  .rating-bars{flex:1;min-width:180px}
-  .rbar-row{display:flex;align-items:center;gap:8px;margin-bottom:6px;font-size:13px}
-  .rbar-label{color:var(--subtle);min-width:8px}
-  .rbar-track{flex:1;height:6px;background:var(--border);border-radius:3px}
-  .rbar-fill{height:6px;background:var(--gold);border-radius:3px}
-  .rbar-count{color:var(--subtle);min-width:40px;text-align:right}
-  .stars-text{color:var(--gold);font-size:18px;display:block;margin-bottom:4px}
-  .total-reviews{font-size:13px;color:var(--subtle)}
-  .reviews-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:18px}
-  .review-card{background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:18px}
-  .review-stars{color:var(--gold);font-size:14px;margin-bottom:8px}
-  .review-text{font-size:13px;color:var(--muted);line-height:1.6;margin-bottom:10px;font-style:italic}
-  .review-author{font-size:12px;color:var(--subtle);font-weight:600}
-  .review-verified{font-size:11px;color:#4caf50}
-  .load-more-btn{display:block;margin:28px auto 0;background:transparent;border:1px solid #333;color:var(--muted);padding:12px 36px;border-radius:6px;font-size:14px;cursor:pointer;transition:all .2s}
-  .load-more-btn:hover{border-color:var(--gold);color:var(--gold)}
-
-  /* FOOTER */
-  footer{background:var(--bg);border-top:1px solid var(--border);padding:48px 30px 28px}
-  .footer-inner{max-width:1000px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:32px}
-  .footer-brand img{height:32px;margin-bottom:14px}
-  .footer-brand p{font-size:13px;color:var(--faint);line-height:1.65}
-  .footer-col h4{font-size:13px;font-weight:700;color:var(--heading);margin-bottom:14px;letter-spacing:1px;text-transform:uppercase}
-  .footer-col ul{list-style:none}
-  .footer-col ul li{margin-bottom:8px}
-  .footer-col ul li a{font-size:13px;color:var(--faint);transition:color .2s}
-  .footer-col ul li a:hover{color:var(--heading)}
-  .footer-contact{font-size:13px;color:var(--faint);margin-bottom:6px}
-  .footer-bottom{max-width:1000px;margin:32px auto 0;border-top:1px solid var(--border);padding-top:18px;text-align:center;font-size:12px;color:var(--faint)}
-
-  @media(max-width:600px){
-    .ba-grid{grid-template-columns:1fr}
-    .content-row,.content-row.reverse{flex-direction:column}
-  }
-
-  /* ---- FRESH LOOK: gold foil on frame black ---------------------------- */
-  body{line-height:1.6;-webkit-font-smoothing:antialiased}
-  h1,h2,h3,.hero-headline,.section-title,.product-title,.content-text h3,.step-title,.wordmark,.price-new,.stat-num,.step-num,.more-card-title{font-family:var(--display);font-weight:600;letter-spacing:-.01em}
-  .hero-headline{font-size:clamp(28px,5vw,46px);line-height:1.12;font-weight:600}
-  .section-title{font-size:clamp(26px,4vw,40px);line-height:1.15}
-  .product-title{font-size:26px}
-  .content-text h3{font-size:24px}
-  .price-new{font-size:36px;font-weight:700}
-  .stat-num,.step-num{font-weight:500;font-style:italic}
-  .wordmark{font-size:22px;letter-spacing:.14em;font-weight:700}
-
-  /* small labels: italic serif in sentence case instead of tracked capitals */
-  .section-eyebrow,.hero-sub{font-family:var(--display);font-style:italic;font-size:16px;letter-spacing:0;text-transform:none;color:var(--gold)}
-
-  /* actions are gold; crimson is kept for the discount badge only */
-  .hero-cta-btn,.order-btn,.final-cta a,.more-card button{background:var(--gold);color:var(--on-gold);border-radius:2px;font-family:var(--body);font-weight:700;letter-spacing:.04em}
-  .hero-cta-btn:hover,.order-btn:hover,.final-cta a:hover,.more-card button:hover,a[href="#ex-buy-section"][style]:hover{background:var(--gold-light)}
-  .more-card button:disabled,.order-btn:disabled{background:var(--border-strong);color:var(--subtle)}
-  .price-badge{background:var(--crimson);color:#fff;border-radius:2px}
-  a:focus-visible,button:focus-visible{outline:2px solid var(--gold-light);outline-offset:3px}
-
-  /* top strip: quiet charcoal with a gold hairline */
-  .countdown-banner{background:var(--surface);color:var(--gold);border-bottom:1px solid var(--gold);font-weight:600;letter-spacing:.06em}
-  .timer-block{background:transparent;border:1px solid var(--border-strong);border-radius:2px;color:var(--heading);font-variant-numeric:tabular-nums}
-
-  /* the buy box is matted like the frame it sells: gold rule inside a dark mount */
-  #ex-buy-section{border:1px solid var(--gold);border-radius:2px;outline:1px solid var(--border-strong);outline-offset:8px;margin:36px auto 44px;padding:32px 28px;background:var(--surface)}
-
-  /* quieter, squarer surfaces */
-  .feat-card,.review-card,.more-card,.commit-item,.pkg-item{border-radius:3px}
-  .badge{border-radius:2px;background:transparent;border-color:var(--border-strong)}
-  .gallery-main img,.hero-video-wrap,.gallery-thumbs img{border-radius:3px}
-  .load-more-btn{border-color:var(--border-strong);border-radius:2px}
-  .load-more-btn:hover{border-color:var(--gold);color:var(--gold)}
-  .review-verified{color:var(--gold)}
-  .qty-controls{border-radius:2px}
-</style>
-<link rel="stylesheet" href="theme.css"/>
-<link rel="stylesheet" href="edition.css"/>
+    /* Hide scrollbar for clean pill strip on mobile */
+    .no-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+    .no-scrollbar {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+    </style>
 </head>
-<body>
+<body class="antialiased selection:bg-[#D4AF37] selection:text-black">
 
-<!-- TOP BAR -->
-<div class="topbar">
-  <a href="https://wa.me/962791153023?text=Hi%2C%20I%27d%20like%20to%20track%20my%20The%20Last%20Dance%20Collectibles%20order." target="_blank" rel="noopener">Track your order</a>
-  <a href="https://wa.me/962791153023" target="_blank" rel="noopener">Contact us</a>
-</div>
-
-<!-- NAV -->
-<nav>
-  <a href="./" class="nav-logo" aria-label="The Last Dance Collectibles home">
-    <span class="wordmark" id="wordmark">THE LAST DANCE <b>COLLECTIBLES</b></span>
-    <img id="header-logo" alt="The Last Dance Collectibles" hidden/>
-  </a>
-  <div class="nav-icons">
-    <a href="messi.html">Messi</a>
-    <a href="neymar.html">Neymar Jr</a>
-    <a href="#ex-buy-section">Order now</a>
-  </div>
-</nav>
-
-<!-- COUNTDOWN -->
-<div class="countdown-banner">
-  LAST UNITS: Secure Your Legacy
-  <span class="countdown-timer">
-    <span class="timer-block" id="cd-days">00</span><span class="timer-sep">:</span>
-    <span class="timer-block" id="cd-hours">00</span><span class="timer-sep">:</span>
-    <span class="timer-block" id="cd-min">00</span><span class="timer-sep">:</span>
-    <span class="timer-block" id="cd-sec">00</span>
-  </span>
-</div>
-
-<!-- HERO -->
-<div class="hero">
-  <div class="hero-copy">
-  <img class="hero-logo" src="https://adelly33.com/cdn/shop/files/LOGO_800_X_200PXLEGACY.png?v=1781546637&width=1780" alt="The Last Dance Collectibles Logo"/>
-  <p class="hero-sub">CR7 excellence in a collector's piece</p>
-  <a href="#ex-buy-section" class="hero-cta-btn">Order Now — Limited Stock Available</a>
-  <p style="font-size:11px;letter-spacing:2px;color:var(--gold);text-transform:uppercase;margin-bottom:18px">FOR THE TRUE FANS</p>
-  <h1 class="hero-headline">The Entire World Cup Legacy of CR7, Immortalized in Gold Foil for Your Wall</h1>
-  <p class="hero-desc">Not just another cheap poster. This is a chronological museum-grade piece featuring six collectible illustrations—arriving with all mounting hardware so you can hang history the same day.</p>
-  <p style="font-size:13px;color:var(--gold);margin-bottom:18px">⭐ +2,000 fans already own it · Arrives ready to gift</p>
-  <div class="trust-badges">
-    <span class="badge">★ Premium Collector's Item</span>
-    <span class="badge">★ Encrypted Secure Checkout</span>
-    <span class="badge">★ Arrives Ready to Display</span>
-  </div>
-  </div>
-  <div class="hero-media">
-  <div class="hero-video-wrap">
-    <video autoplay muted loop playsinline preload="metadata" poster="https://adelly33.com/cdn/shop/files/preview_images/f53417867bee44698130b3cb59dd769d.thumbnail.0000000000_small.jpg?v=1781235118">
-      <source src="https://adelly33.com/cdn/shop/videos/c/vp/f53417867bee44698130b3cb59dd769d/f53417867bee44698130b3cb59dd769d.SD-480p-0.9Mbps-86342736.mp4?v=0" type="video/mp4"/>
-    </video>
-  </div>
-  </div>
-</div>
-
-<div class="buy-grid">
-<div class="buy-left">
-<!-- GALLERY -->
-<div class="gallery-section">
-  <div class="gallery-main">
-    <img id="main-img" src="https://adelly33.com/cdn/shop/files/ly3.png?v=1781213927&width=1200" alt="The Last Dance Collectibles"/>
-  </div>
-  <div class="gallery-thumbs" id="thumbs">
-    <img loading="lazy" decoding="async" class="active" src="https://adelly33.com/cdn/shop/files/ly3.png?v=1781213927&width=200" onclick="switchImg(this,'https://adelly33.com/cdn/shop/files/ly3.png?v=1781213927&width=1200')" alt="thumb1"/>
-    <img loading="lazy" decoding="async" src="https://adelly33.com/cdn/shop/files/ly2.png?v=1781213927&width=200" onclick="switchImg(this,'https://adelly33.com/cdn/shop/files/ly2.png?v=1781213927&width=1200')" alt="thumb2"/>
-    <img loading="lazy" decoding="async" src="https://adelly33.com/cdn/shop/files/ly4.png?v=1781213927&width=200" onclick="switchImg(this,'https://adelly33.com/cdn/shop/files/ly4.png?v=1781213927&width=1200')" alt="thumb3"/>
-  </div>
-</div>
-
-<div class="rating-bar">⭐⭐⭐⭐⭐ 4.8/5 | Loved by 500+ football fans.</div>
-</div>
-<div class="buy-right">
-<!-- BUY BOX -->
-<div id="ex-buy-section">
-  <div class="product-title" id="p-title">The Last Dance Collectibles | The Icon Series</div>
-  <div class="product-tags" id="p-sub">Museum-Grade Frame &nbsp;·&nbsp; Hardware Included &nbsp;·&nbsp; Premium Packaging</div>
-  <div class="price-row">
-    <span class="price-old" id="p-old">$69.99</span>
-    <span class="price-new" id="p-new">$37.99</span>
-    <span class="price-badge" id="p-badge">-46%</span>
-  </div>
-  <div class="qty-label">Quantity</div>
-  <div class="qty-controls">
-    <button class="qty-btn" onclick="changeQty(-1)">−</button>
-    <input class="qty-val" id="qty" type="text" value="1" readonly/>
-    <button class="qty-btn" onclick="changeQty(1)">+</button>
-  </div>
-  <button class="order-btn" id="order-btn" type="button" onclick="placeOrder()">Order Now</button>
-  <div class="perks">
-    <div class="perk"><span class="perk-icon">💪</span><span>Solid Build, Not Flimsy Plastic</span></div>
-    <div class="perk"><span class="perk-icon">📦</span><span>Packaged in Reinforced Box</span></div>
-    <div class="perk"><span class="perk-icon">🔒</span><span>End-to-End Encrypted Checkout</span></div>
-    <div class="perk"><span class="perk-icon">⏳</span><span>Built to Last for Decades</span></div>
-  </div>
-  <div class="secure-checkout">100% Secure Encrypted Checkout</div>
-  <div class="payment-icons">
-    <span class="pay-icon">AMEX</span>
-    <span class="pay-icon">Apple Pay</span>
-    <span class="pay-icon">Diners</span>
-    <span class="pay-icon">Discover</span>
-    <span class="pay-icon">Google Pay</span>
-    <span class="pay-icon">JCB</span>
-    <span class="pay-icon">Maestro</span>
-    <span class="pay-icon">Mastercard</span>
-    <span class="pay-icon">PayPal</span>
-    <span class="pay-icon">UnionPay</span>
-    <span class="pay-icon">Venmo</span>
-    <span class="pay-icon">Visa</span>
-  </div>
-</div>
-
-<!-- FEATURES -->
-</div>
-</div>
-
-<section id="more-products" class="more-products" hidden>
-  <p class="section-eyebrow">The collection</p>
-  <h2 class="section-title">More from The Last Dance Collectibles</h2>
-  <div class="more-grid" id="more-grid"></div>
-</section>
-
-<div class="features-section">
-  <div class="section-eyebrow">What sets it apart</div>
-  <h2 class="section-title">Experience the complete journey,<br>not just a static image.</h2>
-  <div class="features-grid">
-    <div class="feat-card">
-      <div class="feat-icon">📅</div>
-      <div class="feat-title">2006–2026 Chronology</div>
-      <div class="feat-desc">Genuine brilliant applications that command attention in any room.</div>
-    </div>
-    <div class="feat-card">
-      <div class="feat-icon">✨</div>
-      <div class="feat-title">Gold Foil Accents</div>
-      <div class="feat-desc">Imported museum-grade materials. Forget flimsy, lightweight plastic borders.</div>
-    </div>
-    <div class="feat-card">
-      <div class="feat-icon">🖼</div>
-      <div class="feat-title">Solid Gallery Frame</div>
-      <div class="feat-desc">Imported museum-grade materials that feel like a premium collector's piece.</div>
-    </div>
-    <div class="feat-card">
-      <div class="feat-icon">🔨</div>
-      <div class="feat-title">Ready to Display</div>
-      <div class="feat-desc">Includes heavy-duty mounting hardware and a desk stand right out of the box.</div>
-    </div>
-  </div>
-</div>
-
-<!-- CONTENT ROWS -->
-<div class="content-block">
-  <div class="section-eyebrow">The tribute he deserves</div>
-  <h2 class="section-title" style="margin-bottom:36px">A finish that commands attention from across the room</h2>
-
-  <div class="content-row">
-    <div class="content-img"><img loading="lazy" decoding="async" src="https://cdn.shopify.com/s/files/1/0679/2278/8635/files/ex-ex-fumfx-legacy7-img-1-v0.jpg?v=1781546398" alt="Quality"/></div>
-    <div class="content-text">
-      <h3>The first impact happens when you hold it</h3>
-      <p>A solid, imported shadow box with real weight, crystal-clear protection, and gold foil details that scream quality before you even read the timeline.</p>
-      <br/>
-      <p>🛡 Sturdy frame that does not feel hollow</p>
-      <p>✨ Brilliant gold foil applications</p>
-      <p>👓 Crystal-clear cover with zero cheap glare</p>
-      <br/>
-      <a href="#ex-buy-section" style="display:inline-block;background:var(--gold);color:var(--on-gold);padding:12px 26px;border-radius:2px;font-size:14px;font-weight:700;margin-top:10px">See the Details — Feel the quality in every angle</a>
-    </div>
+  <!-- TOP ANNOUNCEMENT BAR -->
+  <div class="bg-[#100E09] border-b border-[#262218] text-center py-2 px-4 text-[11px] sm:text-xs tracking-[0.2em] uppercase text-[#F3E5AB] font-medium">
+    Order on WhatsApp &bull; <a class="wa-link hover:text-white underline-offset-4 hover:underline" data-text="Hi, I would like to track my The Last Dance Collectibles order." href="https://wa.me/962791153023" target="_blank" rel="noopener">Track your order</a> &bull; <a class="wa-link hover:text-white underline-offset-4 hover:underline" href="https://wa.me/962791153023" target="_blank" rel="noopener">Contact us</a>
   </div>
 
-  <div class="section-eyebrow" style="margin-top:20px">Why this piece matters</div>
-  <h2 class="section-title" style="margin-bottom:36px">That scattered collection of memories, finally unified</h2>
+  <!-- STICKY GLASSMORPHISM HEADER -->
+  <header class="sticky top-0 z-40 bg-[#080808]/85 backdrop-blur-xl border-b border-[#262218]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16 sm:h-20 gap-3">
+        <a href="#top" class="flex items-center gap-3 group shrink-0" aria-label="The Last Dance Collectibles home">
+          <div class="w-9 h-9 sm:w-10 sm:h-10 rounded-xl bg-[#121212] border border-[#D4AF37]/40 flex items-center justify-center shadow-gold-glow group-hover:border-[#D4AF37] transition-colors">
+            <svg class="w-5 h-5 text-[#D4AF37]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
+              <path d="M12 2L15 8L21 9L16.5 14L17.8 20L12 17L6.2 20L7.5 14L3 9L9 8L12 2Z" stroke-linejoin="round"/>
+              <circle cx="12" cy="12" r="2.2" fill="#D4AF37"/>
+            </svg>
+          </div>
+          <div class="leading-tight">
+            <span class="font-serif text-sm sm:text-base font-bold tracking-[0.18em] text-[#F5F5F5] block">THE LAST DANCE</span>
+            <span class="text-[9px] tracking-[0.28em] uppercase text-[#D4AF37] block">Collectibles</span>
+          </div>
+        </a>
 
-  <div class="content-row reverse">
-    <div class="content-img"><img loading="lazy" decoding="async" src="https://cdn.shopify.com/s/files/1/0679/2278/8635/files/ex-ex-fumfx-legacy7-img-2-v0.jpg?v=1781546398" alt="Story"/></div>
-    <div class="content-text">
-      <h3>A chronological story, not just a picture</h3>
-      <p>You do not want another generic poster fading on the wall. The Last Dance Collectibles gathers every milestone from 2006 to 2026 into a single cohesive timeline, letting you relive the entire legend at a glance.</p>
+        <nav aria-label="Player editions" class="hidden md:flex items-center bg-[#121212] p-1.5 rounded-full border border-[#262218]">
+          <button onclick="switchPlayer('cr7')" id="nav-cr7" class="player-tab-btn px-4 py-1.5 rounded-full text-xs font-semibold tracking-wider uppercase transition-all duration-300">CR7 Edition</button>
+          <button onclick="switchPlayer('lm10')" id="nav-lm10" class="player-tab-btn px-4 py-1.5 rounded-full text-xs font-semibold tracking-wider uppercase transition-all duration-300">Lionel Messi Edition</button>
+          <button onclick="switchPlayer('njr10')" id="nav-njr10" class="player-tab-btn px-4 py-1.5 rounded-full text-xs font-semibold tracking-wider uppercase transition-all duration-300">Neymar Jr Edition</button>
+        </nav>
+
+        <div class="flex items-center gap-2 sm:gap-3">
+          <a href="#buy-section" class="hidden sm:inline-flex items-center px-3.5 py-2 rounded-xl border border-[#262218] bg-[#121212] hover:border-[#D4AF37]/60 text-xs font-medium text-[#F3E5AB] transition-colors">Order frame</a>
+          <button onclick="toggleCart(true)" aria-label="Open your bag" class="relative flex items-center gap-2 px-3.5 py-2 rounded-xl bg-[#121212] border border-[#262218] hover:border-[#D4AF37] text-[#F5F5F5] transition-all">
+            <svg class="w-4 h-4 text-[#D4AF37]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" /></svg>
+            <span class="text-xs font-semibold hidden sm:inline">Your bag</span>
+            <span id="cart-badge" class="inline-flex items-center justify-center min-w-[20px] h-5 px-1.5 rounded-full bg-gold-metallic text-black text-[11px] font-bold">0</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="flex md:hidden items-center justify-center gap-1.5 pb-3 overflow-x-auto no-scrollbar">
+        <button onclick="switchPlayer('cr7')" id="mob-nav-cr7" class="player-tab-btn shrink-0 px-3.5 py-1.5 rounded-full text-[11px] font-semibold tracking-wider uppercase transition-all">CR7 Edition</button>
+        <button onclick="switchPlayer('lm10')" id="mob-nav-lm10" class="player-tab-btn shrink-0 px-3.5 py-1.5 rounded-full text-[11px] font-semibold tracking-wider uppercase transition-all">Messi Edition</button>
+        <button onclick="switchPlayer('njr10')" id="mob-nav-njr10" class="player-tab-btn shrink-0 px-3.5 py-1.5 rounded-full text-[11px] font-semibold tracking-wider uppercase transition-all">Neymar Jr Edition</button>
+      </div>
+    </div>
+  </header>
+
+  <main id="top" class="transition-opacity duration-300">
+
+    <!-- 1. HERO -->
+    <section class="relative pt-8 pb-16 sm:pt-12 sm:pb-24 overflow-hidden border-b border-[#262218]">
+      <div id="hero-spotlight" class="pointer-events-none absolute top-10 left-1/2 -translate-x-1/2 w-[90vw] max-w-4xl h-[480px] rounded-full blur-[130px] opacity-25 transition-colors duration-700" style="background: radial-gradient(circle, #D4AF37 0%, transparent 70%);"></div>
+
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 flex flex-col items-center text-center">
+        <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#121212] border border-[#D4AF37]/40 mb-5 shadow-gold-glow">
+          <span class="w-1.5 h-1.5 rounded-full bg-[#D4AF37]"></span>
+          <span id="hero-edition-badge" class="text-[11px] font-bold tracking-[0.22em] uppercase text-[#F3E5AB]">CR7 Edition · Portugal</span>
+        </div>
+
+        <h1 id="hero-headline" class="font-serif text-3xl sm:text-5xl lg:text-[54px] font-bold tracking-tight leading-[1.14] max-w-4xl text-[#F5F5F5] mb-5">
+          The Entire World Cup Legacy of <span class="text-gold-gradient">CR7</span>, Immortalized in Gold Foil for Your Wall
+        </h1>
+
+        <p id="hero-subheadline" class="text-sm sm:text-base lg:text-lg text-[#A3A3A3] max-w-2xl leading-relaxed mb-7"></p>
+
+        <div class="flex flex-wrap items-center justify-center gap-3 text-xs sm:text-sm text-[#A3A3A3] mb-8">
+          <span class="text-[#F3E5AB] font-medium">12 × 16 inch shadow box</span>
+          <span class="text-[#3a3322]">•</span>
+          <span>Mounting hardware included</span>
+          <span class="text-[#3a3322]">•</span>
+          <span>Premium packaging</span>
+        </div>
+
+        <div class="flex flex-col sm:flex-row items-center gap-3.5 w-full sm:w-auto mb-12">
+          <a href="#buy-section" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-gold-metallic text-black font-bold text-xs sm:text-sm tracking-[0.16em] uppercase shadow-gold-glow transition-transform active:scale-[0.98]">Order your frame</a>
+          <button onclick="openCardModal(0)" class="w-full sm:w-auto px-6 py-4 rounded-xl bg-[#121212] border border-[#262218] hover:border-[#D4AF37]/60 text-[#F5F5F5] font-semibold text-xs sm:text-sm tracking-[0.12em] uppercase transition-colors">See the 6 cards</button>
+        </div>
+
+        <div class="w-full max-w-3xl mx-auto">
+          <div id="hero-frame-container" class="relative rounded-2xl p-4 sm:p-8 bg-gradient-to-b from-[#141310] to-[#0a0a0a] border border-[#262218] shadow-2xl">
+            <div class="flex flex-wrap items-center justify-between gap-2 pb-4 mb-5 border-b border-[#262218]/80 text-xs">
+              <div class="flex items-center gap-2 text-[#A3A3A3]">
+                <span class="inline-block w-2 h-2 rounded-full bg-[#D4AF37]"></span>
+                <span id="hero-frame-label">The CR7 edition, filmed in a real room</span>
+              </div>
+              <button id="hero-glare-btn" onclick="toggleFoilGlare()" class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg bg-[#181818] border border-[#262218] hover:border-[#D4AF37] text-[#F3E5AB] transition-colors">
+                <span id="glare-btn-label">Glass glare: on</span>
+              </button>
+            </div>
+            <div id="hero-shadowbox-mount"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. GALLERY & BUY BOX -->
+    <section id="buy-section" class="py-16 sm:py-24 border-b border-[#262218] bg-[#090909] scroll-mt-28">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-start">
+
+          <div class="lg:col-span-7 space-y-5">
+            <div id="gallery-stage" class="frame-stage view-front relative rounded-2xl bg-[#101010] border border-[#262218] p-5 sm:p-10 min-h-[420px] sm:min-h-[540px] flex flex-col items-center justify-center overflow-hidden">
+              <div id="room-wall-backdrop" class="hidden absolute inset-0 pointer-events-none transition-opacity duration-500">
+                <div class="absolute inset-0 bg-gradient-to-b from-[#1a1815] via-[#12100e] to-[#090807]"></div>
+                <div class="absolute top-0 left-1/2 -translate-x-1/2 w-96 h-64 bg-[#D4AF37]/10 blur-3xl"></div>
+                <div class="absolute bottom-0 inset-x-0 h-16 bg-gradient-to-r from-[#23170f] via-[#362316] to-[#23170f] border-t border-[#4d3321]"></div>
+              </div>
+              <div id="gallery-frame-mount" class="frame-3d-wrapper w-full max-w-xl relative z-10"></div>
+            </div>
+
+            <!-- CR7: real photo thumbnails -->
+            <div id="photo-thumbs" class="grid grid-cols-3 gap-3"></div>
+
+            <!-- Illustrated editions: view angles -->
+            <div id="angle-buttons" class="hidden grid grid-cols-2 sm:grid-cols-4 gap-3">
+              <button onclick="setGalleryView('front')" id="view-btn-front" class="gallery-view-btn p-3 rounded-xl bg-[#121212] border border-[#D4AF37] text-left transition-all"><span class="block text-[10px] uppercase tracking-wider text-[#D4AF37] font-bold mb-0.5">View 1</span><span class="block text-xs font-semibold text-[#F5F5F5]">Front</span></button>
+              <button onclick="setGalleryView('angled')" id="view-btn-angled" class="gallery-view-btn p-3 rounded-xl bg-[#121212] border border-[#262218] hover:border-[#D4AF37]/50 text-left transition-all"><span class="block text-[10px] uppercase tracking-wider text-[#A3A3A3] font-bold mb-0.5">View 2</span><span class="block text-xs font-semibold text-[#F5F5F5]">Angled</span></button>
+              <button onclick="setGalleryView('closeup')" id="view-btn-closeup" class="gallery-view-btn p-3 rounded-xl bg-[#121212] border border-[#262218] hover:border-[#D4AF37]/50 text-left transition-all"><span class="block text-[10px] uppercase tracking-wider text-[#A3A3A3] font-bold mb-0.5">View 3</span><span class="block text-xs font-semibold text-[#F5F5F5]">Close-up</span></button>
+              <button onclick="setGalleryView('room')" id="view-btn-room" class="gallery-view-btn p-3 rounded-xl bg-[#121212] border border-[#262218] hover:border-[#D4AF37]/50 text-left transition-all"><span class="block text-[10px] uppercase tracking-wider text-[#A3A3A3] font-bold mb-0.5">View 4</span><span class="block text-xs font-semibold text-[#F5F5F5]">On the wall</span></button>
+            </div>
+            <p id="gallery-tip" class="text-center text-xs text-[#A3A3A3]"></p>
+          </div>
+
+          <div class="lg:col-span-5 rounded-2xl bg-[#121212] border border-[#262218] p-6 sm:p-8 shadow-2xl lg:sticky lg:top-28">
+            <span id="buybox-series" class="block text-[11px] font-bold tracking-[0.2em] uppercase text-[#D4AF37] mb-3">CR7 Edition</span>
+            <h2 id="buybox-title" class="font-serif text-2xl sm:text-3xl font-bold text-[#F5F5F5] leading-snug mb-2"></h2>
+            <p id="buybox-subtitle" class="text-xs sm:text-sm text-[#A3A3A3] mb-5">A 12 × 16 inch shadow box with six collectible World Cup cards and gold foil accents. Mounting hardware and premium packaging included.</p>
+
+            <div class="flex items-baseline gap-3 pb-6 mb-6 border-b border-[#262218]">
+              <span id="price-now" class="text-3xl sm:text-4xl font-bold text-[#F5F5F5]">$37.99</span>
+              <span id="price-was" class="text-base text-[#A3A3A3] line-through">$69.99</span>
+              <span id="price-save" class="px-2.5 py-1 rounded-md bg-[#2a1a08] border border-[#D4AF37]/50 text-[#F3E5AB] text-xs font-bold tracking-wide">SAVE 46%</span>
+            </div>
+
+            <div class="flex flex-col sm:flex-row gap-3 mb-6">
+              <div class="flex items-center justify-between sm:w-32 px-3 py-3 rounded-xl bg-[#080808] border border-[#262218]">
+                <button onclick="updateBuyQty(-1)" aria-label="Decrease quantity" class="w-7 h-7 rounded-lg hover:bg-[#181818] text-[#A3A3A3] hover:text-white font-bold transition-colors">−</button>
+                <span id="buy-qty" class="text-sm font-bold text-[#F5F5F5]">1</span>
+                <button onclick="updateBuyQty(1)" aria-label="Increase quantity" class="w-7 h-7 rounded-lg hover:bg-[#181818] text-[#A3A3A3] hover:text-white font-bold transition-colors">+</button>
+              </div>
+              <button onclick="addCurrentPlayerToCart()" class="flex-1 py-4 px-6 rounded-xl bg-gold-metallic text-black font-bold text-xs sm:text-sm tracking-[0.16em] uppercase shadow-gold-glow flex items-center justify-center gap-2 transition-transform active:scale-[0.98]">
+                <span>Add to bag — $<span id="buy-btn-total">37.99</span></span>
+              </button>
+            </div>
+
+            <div class="grid grid-cols-2 gap-3 pt-5 border-t border-[#262218] text-xs text-[#A3A3A3] mb-6">
+              <div class="flex items-center gap-2.5"><span class="w-7 h-7 rounded-lg bg-[#181818] border border-[#262218] flex items-center justify-center text-[#D4AF37] shrink-0">✦</span><span>Solid shadow box frame</span></div>
+              <div class="flex items-center gap-2.5"><span class="w-7 h-7 rounded-lg bg-[#181818] border border-[#262218] flex items-center justify-center text-[#D4AF37] shrink-0">✦</span><span>Ready-to-hang hardware</span></div>
+              <div class="flex items-center gap-2.5"><span class="w-7 h-7 rounded-lg bg-[#181818] border border-[#262218] flex items-center justify-center text-[#D4AF37] shrink-0">✦</span><span>Gold foil accents</span></div>
+              <div class="flex items-center gap-2.5"><span class="w-7 h-7 rounded-lg bg-[#181818] border border-[#262218] flex items-center justify-center text-[#D4AF37] shrink-0">✦</span><span>Gift-ready packaging</span></div>
+            </div>
+
+            <p class="pt-4 border-t border-[#262218] text-[11px] text-[#A3A3A3] leading-relaxed">
+              We confirm your order, delivery address and payment with you on WhatsApp. See our <a href="shipping.html" class="text-[#F3E5AB] hover:underline">shipping</a> and <a href="returns.html" class="text-[#F3E5AB] hover:underline">returns</a> policies.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. FEATURE GRID -->
+    <section class="py-16 sm:py-24 border-b border-[#262218]">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-3xl mx-auto mb-14">
+          <span class="text-xs font-bold tracking-[0.24em] uppercase text-[#D4AF37] block mb-3">What sets it apart</span>
+          <h2 class="font-serif text-2xl sm:text-4xl font-bold text-[#F5F5F5] leading-tight">The whole journey in one frame, not just a single picture.</h2>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+          <div class="p-6 rounded-2xl bg-[#121212] border border-[#262218] hover:border-[#D4AF37]/50 transition-colors">
+            <div class="w-11 h-11 rounded-xl bg-[#181818] border border-[#D4AF37]/30 flex items-center justify-center text-[#D4AF37] mb-5"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M7 8h4v8H7zM13 8h4v8h-4z"/></svg></div>
+            <h3 class="font-serif text-lg font-bold text-[#F5F5F5] mb-2">Six World Cup cards</h3>
+            <p class="text-sm text-[#A3A3A3] leading-relaxed">Each tournament illustrated as a collectible card and set in order, so the frame reads as a timeline.</p>
+          </div>
+          <div class="p-6 rounded-2xl bg-[#121212] border border-[#262218] hover:border-[#D4AF37]/50 transition-colors">
+            <div class="w-11 h-11 rounded-xl bg-[#181818] border border-[#D4AF37]/30 flex items-center justify-center text-[#D4AF37] mb-5"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" /></svg></div>
+            <h3 class="font-serif text-lg font-bold text-[#F5F5F5] mb-2">Gold foil accents</h3>
+            <p class="text-sm text-[#A3A3A3] leading-relaxed">Gold details that catch the light against a dark background, day or night.</p>
+          </div>
+          <div class="p-6 rounded-2xl bg-[#121212] border border-[#262218] hover:border-[#D4AF37]/50 transition-colors">
+            <div class="w-11 h-11 rounded-xl bg-[#181818] border border-[#D4AF37]/30 flex items-center justify-center text-[#D4AF37] mb-5"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M12 3v12m0 0l-4-4m4 4l4-4M4 21h16" /></svg></div>
+            <h3 class="font-serif text-lg font-bold text-[#F5F5F5] mb-2">Ready to hang</h3>
+            <p class="text-sm text-[#A3A3A3] leading-relaxed">Arrives with mounting hardware, so it can go on the wall the day it arrives.</p>
+          </div>
+          <div class="p-6 rounded-2xl bg-[#121212] border border-[#262218] hover:border-[#D4AF37]/50 transition-colors">
+            <div class="w-11 h-11 rounded-xl bg-[#181818] border border-[#D4AF37]/30 flex items-center justify-center text-[#D4AF37] mb-5"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M20 12v9H4v-9M2 7h20v5H2zM12 21V7m0 0H7.5a2.5 2.5 0 110-5C11 2 12 7 12 7zm0 0h4.5a2.5 2.5 0 100-5C13 2 12 7 12 7z" /></svg></div>
+            <h3 class="font-serif text-lg font-bold text-[#F5F5F5] mb-2">Gift-ready packaging</h3>
+            <p class="text-sm text-[#A3A3A3] leading-relaxed">Packed in premium packaging, ready to give to the fan in your life.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. STORY ROWS -->
+    <section class="py-16 sm:py-24 border-b border-[#262218] bg-[#0A0A0A]">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-24">
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+          <div class="lg:col-span-6">
+            <div id="foil-demo-card" class="foil-active relative rounded-2xl bg-[#121212] border border-[#262218] p-8 sm:p-12 overflow-hidden shadow-2xl">
+              <div class="foil-shimmer-layer"></div>
+              <div class="relative z-10 text-center py-8">
+                <span class="text-xs tracking-[0.3em] uppercase text-[#A3A3A3] block mb-3">Gold foil detail</span>
+                <div id="story-monogram" class="font-serif text-6xl sm:text-8xl font-extrabold text-gold-gradient tracking-widest mb-4">CR7</div>
+                <p id="story-era-span" class="text-xs sm:text-sm tracking-[0.25em] uppercase text-[#F3E5AB] mb-6">World Cup journey • 2006 — 2026</p>
+                <div class="w-48 h-px mx-auto bg-gradient-to-r from-transparent via-[#D4AF37] to-transparent mb-6"></div>
+                <p id="story-signature-quote" class="font-serif italic text-base sm:text-lg text-[#F5F5F5]/90"></p>
+              </div>
+            </div>
+          </div>
+          <div class="lg:col-span-6 space-y-5">
+            <span class="text-xs font-bold tracking-[0.22em] uppercase text-[#D4AF37]">The tribute he deserves</span>
+            <h2 class="font-serif text-2xl sm:text-4xl font-bold text-[#F5F5F5] leading-tight">A piece that holds the room</h2>
+            <p id="story-1-copy" class="text-sm sm:text-base text-[#A3A3A3] leading-relaxed"></p>
+            <ul class="space-y-2.5 text-sm text-[#F5F5F5]">
+              <li class="flex items-center gap-2.5"><span class="text-[#D4AF37]">◆</span> Deep shadow box frame</li>
+              <li class="flex items-center gap-2.5"><span class="text-[#D4AF37]">◆</span> Six illustrated cards in chronological order</li>
+              <li class="flex items-center gap-2.5"><span class="text-[#D4AF37]">◆</span> Gold foil accents throughout</li>
+            </ul>
+            <div class="pt-2"><a href="#buy-section" class="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl bg-gold-metallic text-black font-bold text-xs tracking-[0.15em] uppercase">Order yours</a></div>
+          </div>
+        </div>
+
+        <div class="space-y-10">
+          <div class="text-center max-w-3xl mx-auto">
+            <span class="text-xs font-bold tracking-[0.22em] uppercase text-[#D4AF37] block mb-2">The six cards</span>
+            <h2 class="font-serif text-2xl sm:text-4xl font-bold text-[#F5F5F5] mb-3">Every World Cup, finally in one place</h2>
+            <p class="text-sm sm:text-base text-[#A3A3A3]">Tap a card to see the moment it celebrates.</p>
+          </div>
+          <div id="timeline-cards-grid" class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4"></div>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center pt-6">
+          <div class="lg:col-span-6 order-2 lg:order-1 space-y-5">
+            <span class="text-xs font-bold tracking-[0.22em] uppercase text-[#D4AF37]">Built for true collectors</span>
+            <h2 class="font-serif text-2xl sm:text-4xl font-bold text-[#F5F5F5] leading-tight">Solid, heavy and made to last</h2>
+            <p class="text-sm sm:text-base text-[#A3A3A3] leading-relaxed">This is not a hollow plastic frame. It is a solid shadow box with real weight, finished with gold foil accents, and it arrives with everything you need to hang it.</p>
+            <div class="grid grid-cols-2 gap-3 pt-2">
+              <div class="p-4 rounded-xl bg-[#121212] border border-[#262218]"><span class="block text-[11px] uppercase tracking-wider text-[#A3A3A3]">Size</span><span class="text-base font-bold text-[#F5F5F5]">12 × 16 inches</span></div>
+              <div class="p-4 rounded-xl bg-[#121212] border border-[#262218]"><span class="block text-[11px] uppercase tracking-wider text-[#A3A3A3]">Frame</span><span class="text-base font-bold text-[#F5F5F5]">Shadow box</span></div>
+              <div class="p-4 rounded-xl bg-[#121212] border border-[#262218]"><span class="block text-[11px] uppercase tracking-wider text-[#A3A3A3]">Cards</span><span class="text-base font-bold text-[#F5F5F5]">6 illustrated</span></div>
+              <div class="p-4 rounded-xl bg-[#121212] border border-[#262218]"><span class="block text-[11px] uppercase tracking-wider text-[#A3A3A3]">Finish</span><span class="text-base font-bold text-[#F5F5F5]">Gold foil accents</span></div>
+            </div>
+          </div>
+          <div class="lg:col-span-6 order-1 lg:order-2">
+            <div class="rounded-2xl bg-[#121212] border border-[#262218] p-6 sm:p-8 relative overflow-hidden">
+              <div class="flex items-center justify-between border-b border-[#262218] pb-4 mb-6">
+                <div>
+                  <span class="text-[10px] uppercase tracking-[0.22em] text-[#D4AF37] block">The collector's package</span>
+                  <span class="font-serif text-lg font-bold text-[#F5F5F5]">What's in the box</span>
+                </div>
+                <span class="px-3 py-1 rounded-full bg-[#181818] border border-[#262218] text-xs text-[#F3E5AB]">12" × 16"</span>
+              </div>
+              <div class="space-y-3 text-xs">
+                <div class="p-3.5 rounded-xl bg-[#181818] border border-[#262218] flex items-center justify-between"><span class="font-semibold text-[#F5F5F5]">01. Shadow box frame</span><span class="text-[#D4AF37]">Solid build</span></div>
+                <div class="p-3.5 rounded-xl bg-[#181818] border border-[#262218] flex items-center justify-between"><span class="font-semibold text-[#F5F5F5]">02. Six World Cup cards</span><span class="text-[#D4AF37]">In order</span></div>
+                <div class="p-3.5 rounded-xl bg-[#181818] border border-[#262218] flex items-center justify-between"><span class="font-semibold text-[#F5F5F5]">03. Gold foil details</span><span class="text-[#D4AF37]">Throughout</span></div>
+                <div class="p-3.5 rounded-xl bg-[#181818] border border-[#262218] flex items-center justify-between"><span class="font-semibold text-[#F5F5F5]">04. Mounting hardware</span><span class="text-[#D4AF37]">Included</span></div>
+                <div class="p-3.5 rounded-xl bg-[#181818] border border-[#262218] flex items-center justify-between"><span class="font-semibold text-[#F5F5F5]">05. Premium packaging</span><span class="text-[#D4AF37]">Gift-ready</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 5. REVIEWS & TRIO -->
+    <section class="py-16 sm:py-24">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-20">
+
+        <div id="reviews-block">
+          <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-10">
+            <div>
+              <span class="text-xs font-bold tracking-[0.22em] uppercase text-[#D4AF37] block mb-2">Customer reviews</span>
+              <h2 id="reviews-heading" class="font-serif text-2xl sm:text-4xl font-bold text-[#F5F5F5]">What CR7 collectors say</h2>
+            </div>
+          </div>
+          <div id="reviews-grid" class="grid grid-cols-1 md:grid-cols-3 gap-5"></div>
+          <div class="text-center mt-8"><button id="reviews-more" onclick="showMoreReviews()" class="px-5 py-2.5 rounded-xl bg-[#121212] border border-[#262218] hover:border-[#D4AF37] text-xs font-semibold text-[#F3E5AB]">Show more reviews</button></div>
+        </div>
+
+        <div class="rounded-3xl bg-gradient-to-br from-[#16140f] via-[#101010] to-[#0b0b0b] border border-[#D4AF37]/40 p-6 sm:p-10 lg:p-12 shadow-gold-glow">
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+            <div class="lg:col-span-5 space-y-4">
+              <span class="inline-block px-3 py-1 rounded-full bg-[#D4AF37]/15 border border-[#D4AF37]/40 text-[#F3E5AB] text-[11px] font-bold tracking-[0.2em] uppercase">The collection</span>
+              <h2 class="font-serif text-2xl sm:text-4xl font-bold text-[#F5F5F5] leading-tight">Complete the trio</h2>
+              <p class="text-sm text-[#A3A3A3] leading-relaxed">Hang <strong class="text-white">CR7</strong>, <strong class="text-white">Lionel Messi</strong> and <strong class="text-white">Neymar Jr</strong> side by side: three World Cup journeys on one wall.</p>
+              <div class="flex items-baseline gap-3 pt-1"><span id="trio-price" class="text-3xl font-bold text-[#F3E5AB]">$113.97</span><span class="text-sm text-[#A3A3A3]">for all three</span></div>
+              <div class="pt-2"><button onclick="addTrioToCart()" class="w-full sm:w-auto px-7 py-4 rounded-xl bg-gold-metallic text-black font-bold text-xs tracking-[0.16em] uppercase shadow-gold-glow transition-transform active:scale-[0.98]">Add all three to bag</button></div>
+            </div>
+            <div class="lg:col-span-7 grid grid-cols-1 sm:grid-cols-3 gap-4">
+              <button onclick="switchPlayerAndScroll('cr7')" class="text-left cursor-pointer group rounded-2xl bg-[#121212] border border-[#262218] hover:border-[#D4AF37] p-4 transition-all">
+                <div class="flex items-center justify-between mb-3"><span class="font-serif text-lg font-bold text-gold-gradient">CR7</span><span class="text-[10px] px-2 py-0.5 rounded bg-[#181818] text-[#A3A3A3]">2006–2026</span></div>
+                <p class="text-xs font-semibold text-[#F5F5F5] mb-1">Cristiano Ronaldo</p><p class="text-[11px] text-[#A3A3A3] mb-4">Portugal</p>
+                <span class="text-[11px] font-bold text-[#D4AF37] group-hover:underline">View edition</span>
+              </button>
+              <button onclick="switchPlayerAndScroll('lm10')" class="text-left cursor-pointer group rounded-2xl bg-[#121212] border border-[#262218] hover:border-[#D4AF37] p-4 transition-all">
+                <div class="flex items-center justify-between mb-3"><span class="font-serif text-lg font-bold text-gold-gradient">LM10</span><span class="text-[10px] px-2 py-0.5 rounded bg-[#181818] text-[#A3A3A3]">2006–2026</span></div>
+                <p class="text-xs font-semibold text-[#F5F5F5] mb-1">Lionel Messi</p><p class="text-[11px] text-[#A3A3A3] mb-4">Argentina</p>
+                <span class="text-[11px] font-bold text-[#D4AF37] group-hover:underline">View edition</span>
+              </button>
+              <button onclick="switchPlayerAndScroll('njr10')" class="text-left cursor-pointer group rounded-2xl bg-[#121212] border border-[#262218] hover:border-[#D4AF37] p-4 transition-all">
+                <div class="flex items-center justify-between mb-3"><span class="font-serif text-lg font-bold text-gold-gradient">NJR10</span><span class="text-[10px] px-2 py-0.5 rounded bg-[#181818] text-[#A3A3A3]">2014–2026</span></div>
+                <p class="text-xs font-semibold text-[#F5F5F5] mb-1">Neymar Jr</p><p class="text-[11px] text-[#A3A3A3] mb-4">Brazil</p>
+                <span class="text-[11px] font-bold text-[#D4AF37] group-hover:underline">View edition</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="border-t border-[#262218] bg-[#060606] py-12 text-xs text-[#A3A3A3]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 sm:grid-cols-3 gap-8">
+      <div class="space-y-3">
+        <span class="font-serif text-sm font-bold tracking-[0.2em] text-[#F5F5F5] block">THE LAST DANCE COLLECTIBLES</span>
+        <p class="leading-relaxed">Framed World Cup collector pieces for football fans. A product line by EZlancing, Amman, Jordan.</p>
+        <p><a id="phone-link" href="tel:+962791153023" class="hover:text-[#D4AF37]">+962 79 115 3023</a> · <a class="wa-link hover:text-[#D4AF37]" href="https://wa.me/962791153023" target="_blank" rel="noopener">WhatsApp</a></p>
+      </div>
+      <div>
+        <span class="block text-[#F5F5F5] font-semibold mb-3">Editions</span>
+        <ul class="space-y-2">
+          <li><button onclick="switchPlayerAndScroll('cr7')" class="hover:text-[#D4AF37]">CR7 Edition</button></li>
+          <li><button onclick="switchPlayerAndScroll('lm10')" class="hover:text-[#D4AF37]">Lionel Messi Edition</button></li>
+          <li><button onclick="switchPlayerAndScroll('njr10')" class="hover:text-[#D4AF37]">Neymar Jr Edition</button></li>
+          <li><a href="about.html" class="hover:text-[#D4AF37]">About us</a></li>
+        </ul>
+      </div>
+      <div>
+        <span class="block text-[#F5F5F5] font-semibold mb-3">Terms and policies</span>
+        <ul class="space-y-2">
+          <li><a href="privacy.html" class="hover:text-[#D4AF37]">Privacy policy</a></li>
+          <li><a href="shipping.html" class="hover:text-[#D4AF37]">Shipping policy</a></li>
+          <li><a href="returns.html" class="hover:text-[#D4AF37]">Return and refund policy</a></li>
+          <li><a href="terms.html" class="hover:text-[#D4AF37]">Terms of service</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-10 text-[11px] text-[#737373]">© 2026 The Last Dance Collectibles. Original fan collectibles, not official merchandise of any player, club or federation.</p>
+  </footer>
+
+  <!-- CARD MODAL -->
+  <div id="card-modal" role="dialog" aria-modal="true" aria-labelledby="modal-card-title" class="fixed inset-0 z-50 hidden items-center justify-center p-4 bg-black/85 backdrop-blur-md" onclick="if(event.target===this)closeCardModal()">
+    <div class="relative w-full max-w-md rounded-2xl bg-[#121212] border border-[#D4AF37]/50 p-6 sm:p-7 shadow-2xl">
+      <button onclick="closeCardModal()" aria-label="Close" class="absolute top-4 right-4 w-8 h-8 rounded-full bg-[#181818] border border-[#262218] text-[#A3A3A3] hover:text-white flex items-center justify-center">✕</button>
+      <div class="flex items-center gap-2 text-[11px] font-bold tracking-[0.2em] uppercase text-[#D4AF37] mb-2"><span>World Cup card</span><span>•</span><span id="modal-card-year">2006</span></div>
+      <h3 id="modal-card-title" class="font-serif text-2xl font-bold text-[#F5F5F5] mb-1"></h3>
+      <p id="modal-card-nation" class="text-xs text-[#A3A3A3] mb-5"></p>
+      <div id="modal-card-visual" class="mb-5 flex justify-center"></div>
+      <p id="modal-card-desc" class="text-sm text-[#A3A3A3] leading-relaxed mb-5"></p>
+      <div class="grid grid-cols-3 gap-2.5 p-3.5 rounded-xl bg-[#080808] border border-[#262218] text-center mb-5">
+        <div><span class="block text-[10px] uppercase text-[#A3A3A3]">Year</span><span id="modal-stat-year" class="text-base font-bold text-[#F5F5F5]"></span></div>
+        <div><span class="block text-[10px] uppercase text-[#A3A3A3]">Shirt</span><span id="modal-stat-shirt" class="text-base font-bold text-[#D4AF37]"></span></div>
+        <div><span class="block text-[10px] uppercase text-[#A3A3A3]">Reached</span><span id="modal-stat-stage" class="text-xs font-bold text-[#F3E5AB]"></span></div>
+      </div>
+      <div class="flex items-center justify-between gap-3">
+        <button onclick="stepCardModal(-1)" class="flex-1 py-2.5 rounded-xl bg-[#181818] border border-[#262218] hover:border-[#D4AF37] text-xs font-semibold text-[#F5F5F5]">Previous card</button>
+        <button onclick="stepCardModal(1)" class="flex-1 py-2.5 rounded-xl bg-[#181818] border border-[#262218] hover:border-[#D4AF37] text-xs font-semibold text-[#F5F5F5]">Next card</button>
+      </div>
     </div>
   </div>
 
-  <div class="content-row">
-    <div class="content-img"><img loading="lazy" decoding="async" src="https://cdn.shopify.com/s/files/1/0679/2278/8635/files/ex-ex-fumfx-legacy7-img-3-v0.jpg?v=1781546398" alt="Artwork"/></div>
-    <div class="content-text">
-      <h3>Premium artwork, clearly defined</h3>
-      <p>No guessing games about what you are getting. It features six high-quality, custom-illustrated collectible plates—crafted to capture the classic style while being exclusive, original pieces.</p>
+  <!-- BAG DRAWER -->
+  <div id="cart-drawer-overlay" onclick="toggleCart(false)" class="fixed inset-0 z-50 hidden bg-black/80 backdrop-blur-sm"></div>
+  <aside id="cart-drawer" aria-label="Your bag" class="fixed top-0 right-0 z-50 h-full w-full max-w-md bg-[#0D0D0D] border-l border-[#262218] transform translate-x-full transition-transform duration-300 flex flex-col">
+    <div class="p-6 border-b border-[#262218] flex items-center justify-between">
+      <div><span class="text-[10px] uppercase tracking-[0.22em] text-[#D4AF37] block">The Last Dance Collectibles</span><h3 class="font-serif text-xl font-bold text-[#F5F5F5]">Your bag</h3></div>
+      <button onclick="toggleCart(false)" aria-label="Close bag" class="w-9 h-9 rounded-xl bg-[#181818] border border-[#262218] text-[#A3A3A3] hover:text-white flex items-center justify-center">✕</button>
     </div>
-  </div>
+    <div class="px-6 py-3 bg-[#14120d] border-b border-[#262218] text-xs text-[#F3E5AB]">Delivery and payment are confirmed with you on WhatsApp.</div>
+    <div id="cart-items-container" class="flex-1 overflow-y-auto p-6 space-y-4"></div>
+    <div class="p-6 border-t border-[#262218] bg-[#101010] space-y-4">
+      <div class="flex justify-between text-base font-bold text-[#F5F5F5]"><span>Total (USD)</span><span id="cart-total" class="text-[#F3E5AB]">$0.00</span></div>
+      <button onclick="checkoutWhatsApp()" id="checkout-btn" class="w-full py-4 rounded-xl bg-gold-metallic text-black font-bold text-xs tracking-[0.18em] uppercase shadow-gold-glow disabled:opacity-40 disabled:cursor-not-allowed">Order on WhatsApp</button>
+    </div>
+  </aside>
 
-  <div class="content-row reverse">
-    <div class="content-img"><img loading="lazy" decoding="async" src="https://cdn.shopify.com/s/files/1/0679/2278/8635/files/ex-ex-fumfx-legacy7-img-4-v0.jpg?v=1781546398" alt="Hardware"/></div>
-    <div class="content-text">
-      <h3>Ready to hang, zero frustration</h3>
-      <p>We include all the mounting hardware and a sturdy stand. You will not have to run to the hardware store—just open the premium box and instantly elevate your office or sports room.</p>
-    </div>
-  </div>
-</div>
+  <script>
+    // Media for the CR7 edition (real product video and photos)
+    const CR7_VIDEO = {
+      poster: 'https://adelly33.com/cdn/shop/files/preview_images/f53417867bee44698130b3cb59dd769d.thumbnail.0000000000_small.jpg?v=1781235118',
+      src: 'https://adelly33.com/cdn/shop/videos/c/vp/f53417867bee44698130b3cb59dd769d/f53417867bee44698130b3cb59dd769d.SD-480p-0.9Mbps-86342736.mp4?v=0'
+    };
+    let CR7_PHOTOS = [
+      'https://adelly33.com/cdn/shop/files/ly3.png?v=1781213927&width=1200',
+      'https://adelly33.com/cdn/shop/files/ly2.png?v=1781213927&width=1200',
+      'https://adelly33.com/cdn/shop/files/ly4.png?v=1781213927&width=1200'
+    ];
 
-<!-- STEPS -->
-<div class="steps-section">
-  <div class="section-eyebrow">How to honor the legend</div>
-  <h2 class="section-title">Three steps to upgrade your sports room forever</h2>
-  <div class="steps-grid">
-    <div class="step-card">
-      <div class="step-num">01</div>
-      <div class="step-title">You Receive It</div>
-      <div class="step-desc">It arrives in a reinforced, premium gift box. No flimsy packaging, no cracked glass. Just an immaculate piece ready for its unboxing moment.</div>
-    </div>
-    <div class="step-card">
-      <div class="step-num">02</div>
-      <div class="step-title">You Hang It</div>
-      <div class="step-desc">Use the included premium mounting hardware or the custom desk stand. No guessing, no extra trips to the store—it is built to be displayed in seconds.</div>
-    </div>
-    <div class="step-card">
-      <div class="step-num">03</div>
-      <div class="step-title">You Feel the Pride</div>
-      <div class="step-desc">Watch it become the ultimate conversation starter. The gold foil catches the light, and the chronological journey reminds you why you are a true fan.</div>
-    </div>
-  </div>
-  <div style="text-align:center;margin-top:32px">
-    <img loading="lazy" decoding="async" src="https://cdn.shopify.com/s/files/1/0679/2278/8635/files/ex-ex-fumfx-legacy7-img-5-v0.jpg?v=1781546398" alt="Display" style="width:100%;max-width:700px;border-radius:10px"/>
-  </div>
-</div>
+    // Customer reviews for the CR7 edition
+    const CR7_REVIEWS = [ { "stars": 5, "text": "This CR7 shadow box is a must-have for any fan! The timeline of his World Cup journey from 2006 to 2026 is beautifully laid out. The golden accents make it feel super premium, and it looks stunning on my wall. Shipping was quick, and it arrived in perfect condition.", "author": "James H." }, { "stars": 5, "text": "As a huge Ronaldo fan, I was blown away by the quality of this piece! The collectible illustrated items are gorgeous, and the framed design truly feels like a museum piece. This is proudly displayed in my living room now!", "author": "Sophia K." }, { "stars": 4, "text": "I really like the design and the concept behind this shadow box. The only reason I'm giving it 4 stars instead of 5 is that I was hoping for more information on how to hang it. Overall, a beautiful tribute to CR7!", "author": "Victor L." }, { "stars": 5, "text": "I bought this as a birthday gift for my brother, and he absolutely loved it! The retro Panini vibe of the illustrations brings back great memories. It's a perfect addition to his sports collection!", "author": "Jessica T." }, { "stars": 5, "text": "My husband is a die-hard Ronaldo fan, and when I found this piece, I knew I had to get it for him! It turned out even better than expected—it's like a piece of art. He was thrilled to receive it!", "author": "Linda R." }, { "stars": 5, "text": "This piece is an absolute gem! The detail in the illustrations is stunning, and I love that it tells the story of CR7's international journey. It's a perfect addition to my sports collection!", "author": "Jessica L." }, { "stars": 5, "text": "This item exceeded my expectations! I was initially skeptical about whether it would look cheap, but it truly feels like an upscale decor piece. The frame is solid and heavy, which gives it a high-quality feel. A perfect conversation starter!", "author": "Martin J." }, { "stars": 5, "text": "Absolutely love this shadow box! As a collector, it's hard to find unique pieces, but this one fits the bill. The gold highlights and timeline make it really special.", "author": "Ella S." }, { "stars": 5, "text": "I purchased the Eternal Legacy CR7 framed piece as a birthday gift for my husband, who has been a die-hard Ronaldo fan for years. The quality is truly impressive! The gold accents really pop.", "author": "Emily T." }, { "stars": 5, "text": "Absolutely love this piece! The chronological layout is fantastic, illustrating CR7's journey in the World Cups. I was worried it might look cheap, but it feels premium and looks stunning on my wall.", "author": "Liam D." }, { "stars": 5, "text": "As a lifelong Ronaldo supporter, I can say this is the perfect tribute! The illustrations are stunning, and the quality of the frame is top-notch. It definitely stands out on my wall!", "author": "Kevin L." }, { "stars": 5, "text": "The artwork is nice, and I appreciate the story it tells about Ronaldo. A great addition to any Ronaldo fan's collection!", "author": "Sophia R." } ];
 
-<!-- STATS -->
-<div class="stats-section">
-  <div class="section-eyebrow">Built for true collectors</div>
-  <h2 class="section-title">The specs that separate it from cheap imitations</h2>
-  <p class="section-sub">We did not cut corners. While others ship flimsy frames with vague descriptions, we built a 12×16 inch centerpiece designed to outlast your walls and preserve history perfectly.</p>
-  <div class="stats-grid">
-    <div class="stat-item">
-      <div class="stat-num">98%</div>
-      <div class="stat-bar-wrap"><div class="stat-bar" style="width:98%"></div></div>
-      <div class="stat-label">Solid Museum-Grade Build</div>
-    </div>
-    <div class="stat-item">
-      <div class="stat-num">95%</div>
-      <div class="stat-bar-wrap"><div class="stat-bar" style="width:95%"></div></div>
-      <div class="stat-label">Custom Illustrated Art</div>
-    </div>
-    <div class="stat-item">
-      <div class="stat-num">92%</div>
-      <div class="stat-bar-wrap"><div class="stat-bar" style="width:92%"></div></div>
-      <div class="stat-label">All Hardware Included</div>
-    </div>
-  </div>
-</div>
+    const PLAYERS_DATA = {
+      cr7: {
+        id: 'cr7', slug: 'cr7', monogram: 'CR7', fullName: 'Cristiano Ronaldo', nation: 'Portugal',
+        shortTitle: 'CR7 Edition', eraSpan: '2006–2026', accentGlow: '#D4AF37',
+        editionName: 'CR7 — The World Cup Journey (2006–2026)',
+        heroHeadline: 'The Entire World Cup Legacy of <span class="text-gold-gradient">CR7</span>, Immortalized in Gold Foil for Your Wall',
+        heroSubheadline: 'Six World Cups, from Germany 2006 to North America 2026, in one framed shadow box with gold foil accents. Arrives ready to hang.',
+        quote: '"Six World Cups. One frame."',
+        story1Copy: 'From his first World Cup in Germany in 2006 to becoming the first man to score at five World Cups in Qatar 2022, every chapter of Cristiano Ronaldo’s international journey sits in order inside one frame.',
+        signatureText: 'Cristiano Ronaldo 7',
+        cards: [
+          { year: '2006', tournament: 'GERMANY 2006', jerseyNo: '#17', kitPrimary: '#9B1C1C', kitAccent: '#047857', badge: 'DEBUT', stage: '4th place', desc: 'His first World Cup. He scored against Iran in Frankfurt as Portugal reached their first semi-final in 40 years.' },
+          { year: '2010', tournament: 'SOUTH AFRICA 2010', jerseyNo: '#7', kitPrimary: '#B91C1C', kitAccent: '#F5F5F5', badge: 'CAPTAIN', stage: 'Round of 16', desc: 'His first World Cup as Portugal captain.' },
+          { year: '2014', tournament: 'BRAZIL 2014', jerseyNo: '#7', kitPrimary: '#7F1D1D', kitAccent: '#D4AF37', badge: 'BALLON D’OR', stage: 'Group stage', desc: 'Arrived as the reigning Ballon d’Or winner, set up a late equaliser against the USA in Manaus and scored the winner against Ghana in Brasília.' },
+          { year: '2018', tournament: 'RUSSIA 2018', jerseyNo: '#7', kitPrimary: '#991B1B', kitAccent: '#065F46', badge: 'SOCHI HAT-TRICK', stage: 'Round of 16', desc: 'Scored a hat-trick against Spain in Sochi, finishing with a late free kick to make it 3–3.' },
+          { year: '2022', tournament: 'QATAR 2022', jerseyNo: '#7', kitPrimary: '#991B1B', kitAccent: '#14532D', badge: 'FIVE WORLD CUPS', stage: 'Quarter-final', desc: 'Scored against Ghana to become the first man to score at five World Cups.' },
+          { year: '2026', tournament: 'NORTH AMERICA 2026', jerseyNo: '#7', kitPrimary: '#881337', kitAccent: '#D4AF37', badge: 'SIXTH WORLD CUP', stage: '2026', desc: 'The 2026 World Cup, hosted across the USA, Canada and Mexico.' }
+        ]
+      },
+      lm10: {
+        id: 'lm10', slug: 'messi', monogram: 'LM10', fullName: 'Lionel Messi', nation: 'Argentina',
+        shortTitle: 'Lionel Messi Edition', eraSpan: '2006–2026', accentGlow: '#38BDF8',
+        editionName: 'LM10 — The World Cup Journey (2006–2026)',
+        heroHeadline: 'Every Era of <span class="text-gold-gradient">Messi’s</span> World Cup Story, Framed in Gold Foil',
+        heroSubheadline: 'Six World Cups, from his debut in Germany 2006 to North America 2026, in one framed shadow box with gold foil accents.',
+        quote: '"From an 18-year-old debut to lifting the trophy in Lusail."',
+        story1Copy: 'From his first World Cup goal at 18 in Germany to two Golden Balls and Argentina’s third star in Qatar, every chapter of Lionel Messi’s World Cup journey sits in order inside one frame.',
+        signatureText: 'Leo Messi 10',
+        cards: [
+          { year: '2006', tournament: 'GERMANY 2006', jerseyNo: '#19', kitPrimary: '#38BDF8', kitAccent: '#F8FAFC', badge: 'DEBUT', stage: 'Quarter-final', desc: 'His first World Cup. At 18 he scored against Serbia and Montenegro, becoming Argentina’s youngest World Cup scorer.' },
+          { year: '2010', tournament: 'SOUTH AFRICA 2010', jerseyNo: '#10', kitPrimary: '#0284C7', kitAccent: '#F8FAFC', badge: 'NO. 10', stage: 'Quarter-final', desc: 'His first World Cup in Argentina’s No. 10 shirt.' },
+          { year: '2014', tournament: 'BRAZIL 2014', jerseyNo: '#10', kitPrimary: '#38BDF8', kitAccent: '#0F172A', badge: 'GOLDEN BALL', stage: 'Final', desc: 'Led Argentina to the final at the Maracanã and won the tournament’s Golden Ball.' },
+          { year: '2018', tournament: 'RUSSIA 2018', jerseyNo: '#10', kitPrimary: '#0EA5E9', kitAccent: '#F8FAFC', badge: 'ST PETERSBURG', stage: 'Round of 16', desc: 'Scored against Nigeria in St Petersburg to help send Argentina through to the knockout stage.' },
+          { year: '2022', tournament: 'QATAR 2022', jerseyNo: '#10', kitPrimary: '#38BDF8', kitAccent: '#D4AF37', badge: 'WORLD CHAMPION', stage: 'Winner', desc: 'Scored twice in the final, won the World Cup with Argentina and collected a second Golden Ball.' },
+          { year: '2026', tournament: 'NORTH AMERICA 2026', jerseyNo: '#10', kitPrimary: '#0284C7', kitAccent: '#D4AF37', badge: 'SIXTH WORLD CUP', stage: '2026', desc: 'The 2026 World Cup, hosted across the USA, Canada and Mexico.' }
+        ]
+      },
+      njr10: {
+        id: 'njr10', slug: 'neymar', monogram: 'NJR10', fullName: 'Neymar Jr', nation: 'Brazil',
+        shortTitle: 'Neymar Jr Edition', eraSpan: '2014–2026', accentGlow: '#FACC15',
+        editionName: 'NJR10 — The World Cup Journey (2014–2026)',
+        heroHeadline: 'The World Cup Artistry of <span class="text-gold-gradient">Neymar Jr</span>, Framed in Gold Foil',
+        heroSubheadline: 'From Brazil 2014 to North America 2026, five World Cup cards and a gold tribute card in one framed shadow box.',
+        quote: '"Joga bonito, framed in gold."',
+        story1Copy: 'From carrying a host nation’s hopes at Brazil 2014 to equalling Pelé’s Brazil scoring record in Qatar, every chapter of Neymar Jr’s World Cup journey sits in order inside one frame.',
+        signatureText: 'Neymar Jr 10',
+        cards: [
+          { year: '2014', tournament: 'BRAZIL 2014', jerseyNo: '#10', kitPrimary: '#EAB308', kitAccent: '#15803D', badge: 'OPENING MATCH', stage: 'Semi-final', desc: 'Scored twice against Croatia in São Paulo in the opening match of the home World Cup.' },
+          { year: '2014', tournament: 'BRAZIL 2014', jerseyNo: '#10', kitPrimary: '#CA8A04', kitAccent: '#166534', badge: 'BRASÍLIA', stage: 'Semi-final', desc: 'Scored twice against Cameroon in Brasília as Brazil won their group.' },
+          { year: '2018', tournament: 'RUSSIA 2018', jerseyNo: '#10', kitPrimary: '#FACC15', kitAccent: '#15803D', badge: 'SAMARA', stage: 'Quarter-final', desc: 'Scored and set up a goal against Mexico in Samara to take Brazil into the quarter-finals.' },
+          { year: '2022', tournament: 'QATAR 2022', jerseyNo: '#10', kitPrimary: '#EAB308', kitAccent: '#1D4ED8', badge: 'PELÉ’S RECORD', stage: 'Quarter-final', desc: 'Scored in extra time against Croatia to equal Pelé’s record of 77 goals for Brazil.' },
+          { year: '2026', tournament: 'NORTH AMERICA 2026', jerseyNo: '#10', kitPrimary: '#FACC15', kitAccent: '#15803D', badge: 'NORTH AMERICA', stage: '2026', desc: 'The 2026 World Cup, hosted across the USA, Canada and Mexico.' },
+          { year: 'GOLD', tournament: 'TRIBUTE CARD', jerseyNo: '#10', kitPrimary: '#14532D', kitAccent: '#D4AF37', badge: 'GOLD FOIL', stage: 'Tribute', desc: 'A gold foil tribute card that completes the set.' }
+        ]
+      }
+    };
 
-<!-- BEFORE / AFTER -->
-<div class="ba-section">
-  <div class="section-eyebrow">The before and after</div>
-  <h2 class="section-title">From a messy drawer to a gallery wall</h2>
-  <p class="section-sub">On the left, folded jerseys and bent stickers fading away in a drawer. On the right, the entire 2006–2026 trajectory displayed in a premium shadow box with gold accents. Stop hiding your passion—hang it with absolute pride.</p>
-  <div class="ba-grid">
-    <div class="ba-img">
-      <img loading="lazy" decoding="async" src="https://cdn.shopify.com/s/files/1/0679/2278/8635/files/ex-ex-fumfx-legacy7-img-6-v0.jpg?v=1781546398" alt="Before"/>
-      <div class="ba-label">Before — Scattered fading memories</div>
-    </div>
-    <div class="ba-img">
-      <img loading="lazy" decoding="async" src="https://cdn.shopify.com/s/files/1/0679/2278/8635/files/ex-ex-fumfx-legacy7-img-7-v0.jpg?v=1781546398" alt="After"/>
-      <div class="ba-label">After — The ultimate wall tribute</div>
-    </div>
-  </div>
-  <div style="text-align:center;margin-top:24px">
-    <a href="#ex-buy-section" style="display:inline-block;background:var(--gold);color:var(--on-gold);padding:14px 32px;border-radius:2px;font-size:15px;font-weight:700">Upgrade My Space — Elevate your room instantly</a>
-  </div>
-</div>
+    // State
+    let currentPlayerKey = 'cr7';
+    let currentGalleryView = 'front';
+    let foilGlareEnabled = true;
+    const selectedFinish = 'Matte Obsidian Black';
+    let buyQuantity = 1;
+    let activeModalCardIndex = 0;
+    let cart = [];
+    let reviewsShown = 6;
+    let activePhoto = 0;
+    let UNIT_PRICE = 37.99;
+    let COMPARE_PRICE = 69.99;
+    let WHATSAPP = '962791153023';
+    const money = n => '$' + n.toFixed(2);
 
-<!-- ROOM VISION -->
-<div style="text-align:center;padding:40px 20px">
-  <img loading="lazy" decoding="async" src="https://cdn.shopify.com/s/files/1/0679/2278/8635/files/ex-ex-fumfx-legacy7-img-8-v0.jpg?v=1781546398" alt="In your space" style="width:100%;max-width:800px;border-radius:10px;margin-bottom:24px"/>
-  <div class="section-eyebrow">When it is part of your space</div>
-  <h2 class="section-title" style="max-width:600px;margin:0 auto 14px">The first time you walk into your office, you will know</h2>
-  <p class="section-sub">Imagine sitting at your desk. You look up, and instead of a blank wall or a wrinkled poster, you see the complete journey of football's greatest. The gold details shine, the timeline tells a story, and every guest stops to ask about it.</p>
-  <div style="display:flex;flex-wrap:wrap;justify-content:center;gap:20px;margin:20px 0 28px">
-    <span style="font-size:14px;color:var(--muted)">🏢 Perfect for any office</span>
-    <span style="font-size:14px;color:var(--muted)">🗣 A conversation starter with every single guest</span>
-    <span style="font-size:14px;color:var(--muted)">❤ The emotional gift they will love</span>
-  </div>
-  <a href="#ex-buy-section" style="display:inline-block;background:var(--gold);color:var(--on-gold);padding:14px 32px;border-radius:2px;font-size:15px;font-weight:700">Claim My Piece — Imagine it in your room</a>
-</div>
+    function buildShadowboxHTML(player, isHero = false) {
+      const p = player;
+      const cardsHTML = p.cards.map((card, idx) => `
+        <button 
+          type="button"
+          onclick="openCardModal(${idx})"
+          title="Inspect ${card.tournament} Card"
+          class="group/card relative rounded-md p-1.5 sm:p-2 bg-[#141416] border border-[#D4AF37]/45 hover:border-[#F3E5AB] hover:-translate-y-1 transition-all duration-300 text-left shadow-lg focus:outline-none">
+          
+          <!-- Mini Card Top Header -->
+          <div class="flex items-center justify-between text-[7px] sm:text-[8px] font-bold tracking-wider uppercase text-[#F3E5AB] mb-1">
+            <span>${card.year}</span>
+            <span class="text-[#D4AF37]">${card.jerseyNo}</span>
+          </div>
 
-<!-- PACKAGE -->
-<div class="package-section">
-  <div class="section-eyebrow">The collector's package</div>
-  <h2 class="section-title">Everything you need to display history today</h2>
-  <p class="section-sub">We do not just sell you a frame and wish you luck. The Last Dance Collectibles arrives as a complete experience, ready to become the focal point of your room—or the perfect gift for someone who deserves it.</p>
-  <img loading="lazy" decoding="async" class="package-img" src="https://cdn.shopify.com/s/files/1/0679/2278/8635/files/ex-ex-fumfx-legacy7-img-9-v0.jpg?v=1781546398" alt="Package"/>
-  <div class="package-items">
-    <div class="pkg-item">
-      <div class="pkg-item-icon">🖼</div>
-      <div class="pkg-item-title">The Last Dance Collectibles Shadow Box</div>
-      <div class="pkg-item-desc">The chronological 2006–2026 tribute with gold foil accents and six exclusive high-quality illustrations.</div>
-    </div>
-    <div class="pkg-item">
-      <div class="pkg-item-icon">🔨</div>
-      <div class="pkg-item-title">Mounting Hardware</div>
-      <div class="pkg-item-desc">No more trips to the hardware store. Everything you need to hang it or stand it on a desk is included.</div>
-    </div>
-    <div class="pkg-item">
-      <div class="pkg-item-icon">🎁</div>
-      <div class="pkg-item-title">Reinforced Gift Box</div>
-      <div class="pkg-item-desc">Designed to survive transit and look incredible the second it is unwrapped as an emotional gift.</div>
-    </div>
-    <div class="pkg-item">
-      <div class="pkg-item-icon">🎨</div>
-      <div class="pkg-item-title">Authentic Original Artwork</div>
-      <div class="pkg-item-desc">Clear specifications on our custom-illustrated artwork. No blurry AI artifacts—just pure quality.</div>
-    </div>
-  </div>
-  <div style="text-align:center">
-    <a href="#ex-buy-section" style="display:inline-block;background:var(--gold);color:var(--on-gold);padding:14px 32px;border-radius:2px;font-size:15px;font-weight:700">Secure My Package — Limited run, secure yours today</a>
-  </div>
-</div>
+          <!-- Collectible Jersey / Player Silhouette Artwork -->
+          <div class="relative aspect-[3/4] w-full rounded overflow-hidden flex flex-col items-center justify-center mb-1.5 border border-white/10"
+               style="background: linear-gradient(145deg, ${card.kitPrimary} 0%, #09090b 95%);">
+            <!-- Subtle Jersey Stripe -->
+            <div class="absolute inset-y-0 left-1/2 -translate-x-1/2 w-2 opacity-25" style="background:${card.kitAccent};"></div>
+            
+            <!-- Stylized Player Bust SVG -->
+            <svg class="w-8 h-8 sm:w-10 sm:h-10 relative z-10 drop-shadow" viewBox="0 0 64 64" fill="none">
+              <circle cx="32" cy="20" r="10" fill="#F5F5F5" fill-opacity="0.9"/>
+              <path d="M14 56C14 43 22 36 32 36C42 36 50 43 50 56" fill="${card.kitPrimary}" stroke="${card.kitAccent}" stroke-width="2.5"/>
+              <text x="32" y="50" text-anchor="middle" fill="#F3E5AB" font-size="9" font-weight="bold" font-family="sans-serif">${card.jerseyNo}</text>
+            </svg>
 
-<!-- COMMITMENT -->
-<div class="commitment-section">
-  <img loading="lazy" decoding="async" src="https://cdn.shopify.com/s/files/1/0679/2278/8635/files/ex-ex-fumfx-legacy7-img-10-v0.jpg?v=1781546400" alt="Commitment" style="width:100%;border-radius:10px;margin-bottom:32px"/>
-  <div class="section-eyebrow">Our commitment to quality</div>
-  <h2 class="section-title">Zero flimsy materials, zero unboxing anxiety</h2>
-  <p class="section-sub">You might have been burned by cheap, lightweight frames that arrive broken. We engineered the The Last Dance Collectibles to survive the journey and blow you away in person. You get exactly what is pictured, down to the last brilliant gold detail.</p>
-  <div class="commit-grid">
-    <div class="commit-card">
-      <div class="commit-icon">🧱</div>
-      <div class="commit-title">Real Materials, No Junk</div>
-      <div class="commit-desc">We use solid imported shadow boxes, not hollow plastic that bends in your hands.</div>
-    </div>
-    <div class="commit-card">
-      <div class="commit-icon">🚚</div>
-      <div class="commit-title">Built for Safe Transit</div>
-      <div class="commit-desc">Our reinforced packaging is designed for the toughest journeys so it arrives completely flawless.</div>
-    </div>
-    <div class="commit-card">
-      <div class="commit-icon">🤝</div>
-      <div class="commit-title">No Hidden Surprises</div>
-      <div class="commit-desc">What you see is what you get. The illustrations are crisp, the gold is bright, and the hardware is right in the box.</div>
-    </div>
-  </div>
-</div>
+            <!-- Hover Inspect Badge -->
+            <span class="opacity-0 group-hover/card:opacity-100 transition-opacity absolute inset-x-0 bottom-0 bg-black/85 text-[7px] text-center py-0.5 text-[#F3E5AB] font-semibold uppercase tracking-wider">
+              Inspect
+            </span>
+          </div>
 
-<!-- FAQ -->
-<div id="faq" class="faq-section">
-  <h2 class="section-title">Questions you might have before ordering today</h2>
-  <div style="margin-top:28px">
-    <div class="faq-item open">
-      <div class="faq-q" onclick="toggleFaq(this)">Are the plates official stickers or illustrations?<span>+</span></div>
-      <div class="faq-a">They are premium, custom-illustrated collectible plates designed exclusively for The Last Dance Collectibles. We don't use misleading claims—you get stunning, high-resolution original artwork without blurry artifacts.</div>
-    </div>
-    <div class="faq-item">
-      <div class="faq-q" onclick="toggleFaq(this)">What material is the frame? Is it flimsy?<span>+</span></div>
-      <div class="faq-a">Not at all. Unlike competitors who use hollow plastic, The Last Dance Collectibles uses a solid, imported museum-grade shadow box. It has real weight to it and feels like a premium piece of decor, not a cheap toy.</div>
-    </div>
-    <div class="faq-item">
-      <div class="faq-q" onclick="toggleFaq(this)">Is hardware included?<span>+</span></div>
-      <div class="faq-a">Yes! We know how frustrating it is to get a frame and not be able to hang it. Your package includes heavy-duty wall mounting hardware and a sturdy desk stand so you can display it immediately.</div>
-    </div>
-    <div class="faq-item">
-      <div class="faq-q" onclick="toggleFaq(this)">Is it worth the investment?<span>+</span></div>
-      <div class="faq-a">A standard poster tears, fades, and looks cheap. The Last Dance Collectibles is a robust shadow box with gold foil accents and a chronological timeline that serves as a premium centerpiece. It is built to last for decades.</div>
-    </div>
-  </div>
-</div>
+          <!-- Card Footer -->
+          <div class="truncate text-[7px] sm:text-[8px] font-bold text-[#F5F5F5] tracking-tight">${card.tournament.split(' ')[0]}</div>
+          <div class="truncate text-[6px] sm:text-[7px] text-[#D4AF37] font-medium">${card.badge}</div>
+        </button>
+      `).join('');
 
-<!-- FINAL CTA -->
-<div class="final-cta">
-  <div class="section-eyebrow" style="margin-bottom:16px">Secure your piece of history</div>
-  <h2>Hang the entire legacy before it is gone</h2>
-  <p>The ultimate tribute to CR7 is waiting for your wall. Complete with solid framing and all mounting hardware—something you won't find anywhere else. Don't let your passion sit in a drawer.</p>
-  <a href="#ex-buy-section">Order The Last Dance Collectibles — Premium Packaging · Secure Checkout</a>
-</div>
+      // Frame Border Styling based on selected Finish
+      let outerFrameClass = 'bg-[#0b0b0c] border-[#1f1f22]';
+      if (selectedFinish === 'Brushed Gold Trim') {
+        outerFrameClass = 'bg-[#171308] border-[#D4AF37]/80';
+      } else if (selectedFinish === 'Walnut Heritage') {
+        outerFrameClass = 'bg-[#26170e] border-[#5c3a24]';
+      }
 
-<!-- REVIEWS -->
-<div class="reviews-section">
-  <h2 class="section-title">Customer Reviews</h2>
-  <div class="rating-summary">
-    <div>
-      <div class="rating-big">4.8</div>
-      <span class="stars-text">⭐⭐⭐⭐⭐</span>
-      <span class="total-reviews">1,640 reviews</span>
-    </div>
-    <div class="rating-bars">
-      <div class="rbar-row"><span class="rbar-label">5</span><div class="rbar-track"><div class="rbar-fill" style="width:84%"></div></div><span class="rbar-count">1,373</span></div>
-      <div class="rbar-row"><span class="rbar-label">4</span><div class="rbar-track"><div class="rbar-fill" style="width:11%"></div></div><span class="rbar-count">174</span></div>
-      <div class="rbar-row"><span class="rbar-label">3</span><div class="rbar-track"><div class="rbar-fill" style="width:6%"></div></div><span class="rbar-count">93</span></div>
-      <div class="rbar-row"><span class="rbar-label">2</span><div class="rbar-track"><div class="rbar-fill" style="width:0%"></div></div><span class="rbar-count">0</span></div>
-      <div class="rbar-row"><span class="rbar-label">1</span><div class="rbar-track"><div class="rbar-fill" style="width:0%"></div></div><span class="rbar-count">0</span></div>
-    </div>
-  </div>
-  <div class="reviews-grid" id="reviews-grid">
-    <!-- Populated by JS -->
-  </div>
-  <button class="load-more-btn" onclick="loadMoreReviews()">Load more</button>
-</div>
+      return `
+        <div class="relative mx-auto w-full rounded-xl p-3 sm:p-5 ${outerFrameClass} border-[6px] sm:border-[10px] shadow-museum-frame transition-colors duration-500">
+          <!-- Inner Gold Fillet Bevel -->
+          <div class="relative rounded-lg velvet-mat border border-[#D4AF37]/40 p-4 sm:p-7 overflow-hidden ${foilGlareEnabled ? 'foil-active' : ''}">
+            
+            <!-- Dynamic Glass Glare & Shimmer Overlay -->
+            <div class="foil-shimmer-layer" style="opacity: ${foilGlareEnabled ? '1' : '0'};"></div>
+            ${foilGlareEnabled ? `
+              <div class="pointer-events-none absolute -top-24 -left-24 w-2/3 h-[160%] rotate-12 bg-gradient-to-r from-transparent via-white/[0.06] to-transparent"></div>
+            ` : ''}
 
-<!-- FOOTER -->
-<footer>
-  <div class="footer-inner">
-    <div class="footer-brand">
-      <span class="logo-chip"><img id="footer-logo" src="Logo.png" alt="EZlancing" loading="lazy"/></span>
-      <p>Dedicated to delivering innovative, high-quality products that enhance your daily life. We pride ourselves on exceptional service and reliable quality, ensuring a seamless shopping experience you can trust every time.</p>
-    </div>
-    <div class="footer-col">
-      <h4>Terms and Policies</h4>
-      <ul>
-        <li><a href="privacy.html">Privacy policy</a></li>
-        <li><a href="shipping.html">Shipping policy</a></li>
-        <li><a href="returns.html">Return and refund policy</a></li>
-        <li><a href="terms.html">Terms of service</a></li>
-      </ul>
-    </div>
-    <div class="footer-col">
-      <h4>Customer Support</h4>
-      <ul>
-        <li><a href="about.html">About Us</a></li>
-        <li><a href="#faq">Frequently asked questions</a></li>
-        <li><a href="https://wa.me/962791153023?text=Hi%2C%20I%27d%20like%20to%20track%20my%20The%20Last%20Dance%20Collectibles%20order." target="_blank" rel="noopener">Track your order</a></li>
-        <li><a href="https://wa.me/962791153023" target="_blank" rel="noopener">Contact us</a></li>
-      </ul>
-      <p class="footer-contact" style="margin-top:12px"><a id="phone-link" href="tel:+962791153023">+962 79 115 3023</a></p>
-      <p class="footer-contact">Amman, Jordan</p>
-    </div>
-  </div>
-  <div class="footer-bottom">© 2026 EZlancing. All rights reserved.</div>
-</footer>
+            <!-- TOP HEADER ROW INSIDE FRAME: Portrait | Gold Foil Monogram | World Cup Trophy -->
+            <div class="relative z-10 grid grid-cols-12 items-center gap-2 sm:gap-4 mb-5 sm:mb-7">
+              
+              <!-- Left: Monochrome / Gold Highlight Portrait Emblem -->
+              <div class="col-span-4 flex justify-center">
+                <div class="relative w-20 h-24 sm:w-28 sm:h-32 rounded-lg overflow-hidden bg-gradient-to-b from-[#1e1e22] to-[#080808] border border-[#D4AF37]/30 flex items-end justify-center shadow-inner">
+                  <svg class="w-full h-full" viewBox="0 0 120 140" fill="none">
+                    <defs>
+                      <linearGradient id="goldPortrait-${p.id}-${isHero ? 'h' : 'g'}" x1="0" y1="0" x2="120" y2="140" gradientUnits="userSpaceOnUse">
+                        <stop offset="0%" stop-color="#F3E5AB"/>
+                        <stop offset="50%" stop-color="#D4AF37"/>
+                        <stop offset="100%" stop-color="#6B5314"/>
+                      </linearGradient>
+                    </defs>
+                    <circle cx="60" cy="48" r="22" fill="url(#goldPortrait-${p.id}-${isHero ? 'h' : 'g'})" fill-opacity="0.88"/>
+                    <path d="M20 136C20 102 36 84 60 84C84 84 100 102 100 136" fill="#18181b" stroke="url(#goldPortrait-${p.id}-${isHero ? 'h' : 'g'})" stroke-width="2"/>
+                    <text x="60" y="120" text-anchor="middle" fill="#F3E5AB" font-family="Cinzel, serif" font-size="13" font-weight="700" letter-spacing="2">${p.monogram}</text>
+                  </svg>
+                </div>
+              </div>
 
-<script>
-// ---- Store data -------------------------------------------------------
-// Listings and site settings are edited in the admin page (/admin/) and
-// saved to content/products.json and content/settings.json. The values
-// below are the defaults used until those files load.
-let SETTINGS={whatsapp_number:'962791153023'};
-let FEATURED={title:'The Last Dance Collectibles | The Icon Series',price:37.99,checkout_url:'',status:'active'};
-const money=n=>'$'+Number(n).toFixed(2);
+              <!-- Center: 24K Gold Foil Monogram & Era Title -->
+              <div class="col-span-5 text-center">
+                <span class="block text-[7px] sm:text-[9px] tracking-[0.28em] uppercase text-[#A3A3A3] mb-1">WORLD CUP ARCHIVE</span>
+                <div class="font-serif text-2xl sm:text-4xl lg:text-5xl font-extrabold text-gold-gradient tracking-wider leading-none mb-1.5">
+                  ${p.monogram}
+                </div>
+                <div class="h-px w-16 sm:w-24 mx-auto bg-gradient-to-r from-transparent via-[#D4AF37] to-transparent mb-1.5"></div>
+                <span class="block text-[8px] sm:text-[10px] font-bold tracking-[0.22em] text-[#F3E5AB]">
+                  ${p.eraSpan}
+                </span>
+              </div>
 
-function orderProduct(p,q){
-  if(p.status==='sold_out') return;
-  if(p.checkout_url){
-    try{
-      const u=new URL(p.checkout_url);
-      u.searchParams.set('quantity',q);
-      window.location.href=u.toString();
-      return;
-    }catch(e){/* invalid link: fall back to WhatsApp */}
-  }
-  const msg='Hi, I would like to order '+p.title+'.\nQuantity: '+q+'\nTotal: '+money(q*p.price);
-  window.open('https://wa.me/'+SETTINGS.whatsapp_number+'?text='+encodeURIComponent(msg),'_blank','noopener');
-}
-function placeOrder(){
-  const q=Math.max(1,parseInt(document.getElementById('qty').value,10)||1);
-  orderProduct(FEATURED,q);
-}
+              <!-- Right: Metallic Gold World Cup Trophy Silhouette -->
+              <div class="col-span-3 flex justify-center">
+                <div class="w-16 h-24 sm:w-20 sm:h-28 flex items-center justify-center">
+                  <svg class="w-12 h-20 sm:w-16 sm:h-24 drop-shadow-[0_0_12px_rgba(212,175,55,0.45)]" viewBox="0 0 80 120" fill="none">
+                    <defs>
+                      <linearGradient id="trophyGold-${p.id}-${isHero ? 'h' : 'g'}" x1="15" y1="10" x2="65" y2="110" gradientUnits="userSpaceOnUse">
+                        <stop offset="0%" stop-color="#FFF3C4"/>
+                        <stop offset="45%" stop-color="#D4AF37"/>
+                        <stop offset="100%" stop-color="#7C5E10"/>
+                      </linearGradient>
+                    </defs>
+                    <!-- Globe Top -->
+                    <circle cx="40" cy="26" r="15" fill="url(#trophyGold-${p.id}-${isHero ? 'h' : 'g'})"/>
+                    <path d="M27 22C34 26 46 26 53 22" stroke="#5c4308" stroke-width="1.5"/>
+                    <!-- Sculpted Stem -->
+                    <path d="M31 40L26 78H54L49 40H31Z" fill="url(#trophyGold-${p.id}-${isHero ? 'h' : 'g'})"/>
+                    <!-- Twin Malachite Rings Base -->
+                    <rect x="22" y="80" width="36" height="5" rx="2" fill="#065F46"/>
+                    <rect x="20" y="87" width="40" height="8" rx="2" fill="url(#trophyGold-${p.id}-${isHero ? 'h' : 'g'})"/>
+                    <rect x="22" y="97" width="36" height="4" rx="1.5" fill="#065F46"/>
+                    <rect x="18" y="103" width="44" height="7" rx="2" fill="url(#trophyGold-${p.id}-${isHero ? 'h' : 'g'})"/>
+                  </svg>
+                </div>
+              </div>
+            </div>
 
-// Paths saved by the admin start with "/"; make them relative so the site
-// also works when it is served from a sub-folder.
-const asset=u=>(typeof u==='string'&&u.startsWith('/')&&!u.startsWith('//'))?u.slice(1):u;
+            <!-- MIDDLE 6-CARD MUSEUM GRID -->
+            <div class="relative z-10 grid grid-cols-6 gap-1.5 sm:gap-2.5 mb-5 sm:mb-6">
+              ${cardsHTML}
+            </div>
 
-function applySettings(st){
-  SETTINGS=Object.assign(SETTINGS,st);
-  if(st.header_logo){
-    const h=document.getElementById('header-logo');
-    h.src=asset(st.header_logo);h.hidden=false;
-    document.getElementById('wordmark').hidden=true;
-  }
-  if(st.footer_logo) document.getElementById('footer-logo').src=asset(st.footer_logo);
-  if(st.favicon) document.getElementById('favicon').href=asset(st.favicon);
-  if(st.hero_logo) document.querySelector('.hero-logo').src=asset(st.hero_logo);
-  if(st.whatsapp_number){
-    document.querySelectorAll('a[href^="https://wa.me/"]').forEach(a=>{a.href=a.href.replace(/wa\.me\/\d+/,'wa.me/'+st.whatsapp_number);});
-  }
-  if(st.phone_display){
-    const a=document.getElementById('phone-link');
-    a.textContent=st.phone_display;
-    a.href='tel:'+st.phone_display.replace(/[^+\d]/g,'');
-  }
-}
+            <!-- BOTTOM GOLD FOIL SIGNATURE & NUMBERED PLAQUE -->
+            <div class="relative z-10 pt-2 border-t border-[#D4AF37]/25 flex items-center justify-between text-[8px] sm:text-[10px]">
+              <span class="tracking-[0.2em] uppercase text-[#A3A3A3]">${p.nation}</span>
+              <span class="font-serif italic text-sm sm:text-base text-gold-gradient font-semibold tracking-wide">
+                ${p.signatureText}
+              </span>
+              <span class="tracking-[0.16em] uppercase text-[#D4AF37] font-semibold">${p.eraSpan}</span>
+            </div>
 
-function applyFeatured(p){
-  FEATURED=p;
-  document.getElementById('p-title').textContent=p.title;
-  if(p.subtitle) document.getElementById('p-sub').textContent=p.subtitle;
-  document.getElementById('p-new').textContent=money(p.price);
-  const old=document.getElementById('p-old'),badge=document.getElementById('p-badge');
-  if(p.compare_price&&p.compare_price>p.price){
-    old.textContent=money(p.compare_price);
-    badge.textContent='-'+Math.round((1-p.price/p.compare_price)*100)+'%';
-    old.hidden=badge.hidden=false;
-  }else{old.hidden=badge.hidden=true;}
-  const btn=document.getElementById('order-btn');
-  if(p.status==='sold_out'){btn.disabled=true;btn.textContent='Sold Out';}
-  const imgs=(p.images||[]).filter(Boolean).map(asset);
-  if(imgs.length){
-    document.getElementById('main-img').src=asset(imgs[0]);
-    const t=document.getElementById('thumbs');
-    t.innerHTML='';
-    imgs.forEach((src,i)=>{
-      const im=document.createElement('img');
-      im.src=src;im.alt=p.title+' image '+(i+1);im.loading='lazy';
-      if(i===0) im.className='active';
-      im.addEventListener('click',()=>switchImg(im,src));
-      t.appendChild(im);
+          </div>
+        </div>
+      `;
+    }
+
+    // CR7 media
+    function cr7HeroHTML() {
+      return `<div class="rounded-xl overflow-hidden bg-black border border-[#262218]">
+        <video class="w-full h-auto block" autoplay muted loop playsinline preload="metadata" poster="${CR7_VIDEO.poster}">
+          <source src="${CR7_VIDEO.src}" type="video/mp4"/>
+        </video></div>`;
+    }
+    function cr7GalleryHTML() {
+      return `<img id="main-img" src="${CR7_PHOTOS[activePhoto]}" alt="The CR7 edition framed shadow box" class="w-full h-auto rounded-xl border border-[#262218] shadow-museum-frame"/>`;
+    }
+    function renderPhotoThumbs() {
+      const box = document.getElementById('photo-thumbs');
+      box.innerHTML = CR7_PHOTOS.map((src, i) => `
+        <button onclick="showPhoto(${i})" aria-label="Show photo ${i + 1}" class="rounded-xl overflow-hidden border ${i === activePhoto ? 'border-[#D4AF37]' : 'border-[#262218] hover:border-[#D4AF37]/50'} bg-[#121212] transition-colors">
+          <img src="${src.replace('width=1200', 'width=300')}" alt="" loading="lazy" class="w-full h-24 sm:h-28 object-cover"/>
+        </button>`).join('');
+    }
+    function showPhoto(i) { activePhoto = i; renderFrames(); renderPhotoThumbs(); }
+
+    function renderFrames() {
+      const player = PLAYERS_DATA[currentPlayerKey];
+      const isCR7 = currentPlayerKey === 'cr7';
+      document.getElementById('hero-shadowbox-mount').innerHTML = isCR7 ? cr7HeroHTML() : buildShadowboxHTML(player, true);
+      document.getElementById('gallery-frame-mount').innerHTML = isCR7 ? cr7GalleryHTML() : buildShadowboxHTML(player, false);
+    }
+
+    // Edition switcher
+    function switchPlayer(playerKey, opts = {}) {
+      if (!PLAYERS_DATA[playerKey]) return;
+      currentPlayerKey = playerKey;
+      const p = PLAYERS_DATA[playerKey];
+      const isCR7 = playerKey === 'cr7';
+
+      ['cr7', 'lm10', 'njr10'].forEach(key => {
+        [document.getElementById(`nav-${key}`), document.getElementById(`mob-nav-${key}`)].forEach(btn => {
+          if (!btn) return;
+          const on = key === playerKey;
+          btn.classList.toggle('bg-gold-metallic', on);
+          btn.classList.toggle('text-black', on);
+          btn.classList.toggle('shadow-gold-glow', on);
+          btn.classList.toggle('text-[#A3A3A3]', !on);
+          btn.classList.toggle('hover:text-white', !on);
+          btn.setAttribute('aria-pressed', on ? 'true' : 'false');
+        });
+      });
+
+      document.getElementById('hero-edition-badge').textContent = `${p.shortTitle} · ${p.nation}`;
+      document.getElementById('hero-headline').innerHTML = p.heroHeadline;
+      document.getElementById('hero-subheadline').textContent = p.heroSubheadline;
+      document.getElementById('hero-spotlight').style.background = `radial-gradient(circle, ${p.accentGlow} 0%, transparent 70%)`;
+      document.getElementById('hero-frame-label').textContent = isCR7 ? 'The CR7 edition, filmed in a real room' : `Illustrated preview of the ${p.shortTitle}. Tap a card to see its moment.`;
+      document.getElementById('hero-glare-btn').classList.toggle('hidden', isCR7);
+
+      document.getElementById('photo-thumbs').classList.toggle('hidden', !isCR7);
+      document.getElementById('angle-buttons').classList.toggle('hidden', isCR7);
+      if (isCR7) { renderPhotoThumbs(); setGalleryView('front'); }
+      document.getElementById('gallery-tip').textContent = isCR7 ? 'Photos of the CR7 edition.' : 'Illustrated preview. Tap any card inside the frame to see the moment it celebrates.';
+      renderFrames();
+
+      document.getElementById('buybox-series').textContent = `${p.shortTitle} · ${p.nation}`;
+      document.getElementById('buybox-title').textContent = p.editionName;
+      document.title = `${p.shortTitle} | The Last Dance Collectibles`;
+
+      document.getElementById('story-monogram').textContent = p.monogram;
+      document.getElementById('story-era-span').textContent = `World Cup journey • ${p.eraSpan.replace('–', ' — ')}`;
+      document.getElementById('story-signature-quote').textContent = p.quote;
+      document.getElementById('story-1-copy').textContent = p.story1Copy;
+
+      document.getElementById('timeline-cards-grid').innerHTML = p.cards.map((card, index) => `
+        <button onclick="openCardModal(${index})" class="group p-4 rounded-2xl bg-[#121212] border border-[#262218] hover:border-[#D4AF37] text-left transition-all flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between text-[11px] font-bold text-[#D4AF37] mb-2"><span>${card.year}</span><span>${card.jerseyNo}</span></div>
+            <h3 class="font-serif text-sm font-bold text-[#F5F5F5] group-hover:text-[#F3E5AB] mb-1">${card.tournament}</h3>
+            <span class="inline-block text-[10px] px-2 py-0.5 rounded bg-[#181818] border border-[#262218] text-[#A3A3A3] mb-3">${card.badge}</span>
+          </div>
+          <div class="pt-3 border-t border-[#262218] flex items-center justify-between text-xs">
+            <span class="font-bold text-[#F5F5F5]">${card.stage}</span>
+            <span class="text-[#D4AF37] font-semibold">View</span>
+          </div>
+        </button>`).join('');
+
+      document.getElementById('reviews-block').classList.toggle('hidden', !isCR7);
+      if (isCR7) renderReviews();
+
+      if (!opts.keepHash) history.replaceState(null, '', isCR7 ? location.pathname : `#${p.slug}`);
+    }
+
+    function switchPlayerAndScroll(playerKey) {
+      switchPlayer(playerKey);
+      document.getElementById('top').scrollIntoView({ behavior: 'smooth' });
+    }
+
+    // Reviews
+    function renderReviews() {
+      const list = CR7_REVIEWS.slice(0, reviewsShown);
+      document.getElementById('reviews-grid').innerHTML = list.map(r => `
+        <div class="p-6 rounded-2xl bg-[#121212] border border-[#262218] flex flex-col justify-between">
+          <div>
+            <div class="mb-3 text-[#D4AF37] text-sm" aria-label="${r.stars} out of 5 stars">${'★'.repeat(r.stars)}<span class="text-[#3a3322]">${'★'.repeat(5 - r.stars)}</span></div>
+            <p class="text-sm text-[#A3A3A3] leading-relaxed mb-5">${r.text}</p>
+          </div>
+          <div class="pt-3 border-t border-[#262218] text-xs font-semibold text-[#F5F5F5]">${r.author}</div>
+        </div>`).join('');
+      document.getElementById('reviews-more').classList.toggle('hidden', reviewsShown >= CR7_REVIEWS.length);
+    }
+    function showMoreReviews() { reviewsShown += 6; renderReviews(); }
+
+    // Gallery views (illustrated editions)
+    function setGalleryView(viewName) {
+      currentGalleryView = viewName;
+      const stage = document.getElementById('gallery-stage');
+      stage.classList.remove('view-front', 'view-angled', 'view-closeup', 'view-room');
+      stage.classList.add(`view-${viewName}`);
+      document.getElementById('room-wall-backdrop').classList.toggle('hidden', viewName !== 'room');
+      ['front', 'angled', 'closeup', 'room'].forEach(v => {
+        const btn = document.getElementById(`view-btn-${v}`);
+        const label = btn.querySelector('span:first-child');
+        const on = v === viewName;
+        btn.classList.toggle('border-[#D4AF37]', on);
+        btn.classList.toggle('border-[#262218]', !on);
+        label.classList.toggle('text-[#D4AF37]', on);
+        label.classList.toggle('text-[#A3A3A3]', !on);
+      });
+    }
+
+    function toggleFoilGlare() {
+      foilGlareEnabled = !foilGlareEnabled;
+      document.getElementById('glare-btn-label').textContent = `Glass glare: ${foilGlareEnabled ? 'on' : 'off'}`;
+      renderFrames();
+    }
+
+    // Quantity
+    function updateBuyQty(delta) {
+      buyQuantity = Math.max(1, Math.min(10, buyQuantity + delta));
+      document.getElementById('buy-qty').textContent = buyQuantity;
+      document.getElementById('buy-btn-total').textContent = (buyQuantity * UNIT_PRICE).toFixed(2);
+    }
+
+    // Card modal
+    function openCardModal(cardIndex) {
+      const player = PLAYERS_DATA[currentPlayerKey];
+      activeModalCardIndex = (cardIndex + player.cards.length) % player.cards.length;
+      const card = player.cards[activeModalCardIndex];
+      document.getElementById('modal-card-year').textContent = card.year;
+      document.getElementById('modal-card-title').textContent = card.tournament;
+      document.getElementById('modal-card-nation').textContent = `${player.fullName} • ${player.nation}`;
+      document.getElementById('modal-card-desc').textContent = card.desc;
+      document.getElementById('modal-stat-year').textContent = card.year;
+      document.getElementById('modal-stat-shirt').textContent = card.jerseyNo;
+      document.getElementById('modal-stat-stage').textContent = card.stage;
+      document.getElementById('modal-card-visual').innerHTML = `
+        <div class="w-40 rounded-xl p-3 bg-[#18181b] border-2 border-[#D4AF37] shadow-gold-glow">
+          <div class="flex justify-between text-xs font-bold text-[#F3E5AB] mb-2"><span>${card.year}</span><span>${card.jerseyNo}</span></div>
+          <div class="aspect-[3/4] rounded-lg flex flex-col items-center justify-center relative overflow-hidden mb-2" style="background: linear-gradient(145deg, ${card.kitPrimary} 0%, #09090b 95%);">
+            <div class="absolute inset-y-0 left-1/2 -translate-x-1/2 w-3 opacity-30" style="background:${card.kitAccent};"></div>
+            <svg class="w-16 h-16 relative z-10" viewBox="0 0 64 64" fill="none" aria-hidden="true">
+              <circle cx="32" cy="20" r="10" fill="#F5F5F5"/>
+              <path d="M14 56C14 43 22 36 32 36C42 36 50 43 50 56" fill="${card.kitPrimary}" stroke="${card.kitAccent}" stroke-width="2.5"/>
+              <text x="32" y="50" text-anchor="middle" fill="#F3E5AB" font-size="10" font-weight="bold">${card.jerseyNo}</text>
+            </svg>
+          </div>
+          <div class="text-center"><span class="block text-xs font-bold text-white">${player.monogram}</span><span class="block text-[10px] text-[#D4AF37] uppercase tracking-wider">${card.badge}</span></div>
+        </div>`;
+      const modal = document.getElementById('card-modal');
+      modal.classList.remove('hidden');
+      modal.classList.add('flex');
+    }
+    function stepCardModal(delta) { openCardModal(activeModalCardIndex + delta); }
+    function closeCardModal() {
+      const modal = document.getElementById('card-modal');
+      modal.classList.add('hidden');
+      modal.classList.remove('flex');
+    }
+
+    // Bag and WhatsApp order
+    function toggleCart(open) {
+      document.getElementById('cart-drawer-overlay').classList.toggle('hidden', !open);
+      document.getElementById('cart-drawer').classList.toggle('translate-x-full', !open);
+    }
+    function addToCart(key, qty) {
+      const p = PLAYERS_DATA[key];
+      const item = cart.find(i => i.id === key);
+      if (item) item.qty += qty; else cart.push({ id: key, monogram: p.monogram, title: p.shortTitle, qty });
+    }
+    function addCurrentPlayerToCart() { addToCart(currentPlayerKey, buyQuantity); renderCart(); toggleCart(true); }
+    function addTrioToCart() { ['cr7', 'lm10', 'njr10'].forEach(k => addToCart(k, 1)); renderCart(); toggleCart(true); }
+    function updateCartItemQty(id, delta) {
+      const i = cart.findIndex(x => x.id === id);
+      if (i === -1) return;
+      cart[i].qty += delta;
+      if (cart[i].qty <= 0) cart.splice(i, 1);
+      renderCart();
+    }
+    function cartTotal() { return cart.reduce((s, i) => s + i.qty * UNIT_PRICE, 0); }
+    function renderCart() {
+      const container = document.getElementById('cart-items-container');
+      document.getElementById('cart-badge').textContent = cart.reduce((s, i) => s + i.qty, 0);
+      document.getElementById('checkout-btn').disabled = cart.length === 0;
+      document.getElementById('cart-total').textContent = money(cartTotal());
+      if (!cart.length) {
+        container.innerHTML = `
+          <div class="h-full flex flex-col items-center justify-center text-center py-12">
+            <p class="font-serif text-lg font-bold text-[#F5F5F5] mb-1">Your bag is empty</p>
+            <p class="text-xs text-[#A3A3A3] max-w-xs mb-5">Choose the CR7, Lionel Messi or Neymar Jr edition to start.</p>
+            <button onclick="toggleCart(false)" class="px-5 py-2.5 rounded-xl bg-[#181818] border border-[#262218] hover:border-[#D4AF37] text-xs font-semibold text-[#F3E5AB]">Browse editions</button>
+          </div>`;
+        return;
+      }
+      container.innerHTML = cart.map(item => `
+        <div class="p-4 rounded-2xl bg-[#121212] border border-[#262218] flex gap-3.5 items-center">
+          <div class="w-14 h-16 rounded-xl bg-[#080808] border border-[#D4AF37]/40 flex items-center justify-center shrink-0"><span class="font-serif text-xs font-extrabold text-gold-gradient">${item.monogram}</span></div>
+          <div class="flex-1 min-w-0">
+            <h4 class="text-xs font-bold text-[#F5F5F5] truncate mb-2">${item.title}</h4>
+            <div class="flex items-center justify-between">
+              <div class="inline-flex items-center rounded-lg bg-[#080808] border border-[#262218]">
+                <button onclick="updateCartItemQty('${item.id}', -1)" aria-label="Remove one" class="px-2 py-1 text-xs text-[#A3A3A3] hover:text-white">−</button>
+                <span class="px-2 text-xs font-bold text-[#F5F5F5]">${item.qty}</span>
+                <button onclick="updateCartItemQty('${item.id}', 1)" aria-label="Add one" class="px-2 py-1 text-xs text-[#A3A3A3] hover:text-white">+</button>
+              </div>
+              <span class="text-xs font-bold text-[#F3E5AB]">${money(item.qty * UNIT_PRICE)}</span>
+            </div>
+          </div>
+        </div>`).join('');
+    }
+    function checkoutWhatsApp() {
+      if (!cart.length) return;
+      const lines = cart.map(i => `- ${i.title} × ${i.qty} (${money(i.qty * UNIT_PRICE)})`);
+      const msg = `Hi, I would like to order from The Last Dance Collectibles:\n${lines.join('\n')}\nTotal: ${money(cartTotal())}`;
+      window.open(`https://wa.me/${WHATSAPP}?text=${encodeURIComponent(msg)}`, '_blank', 'noopener');
+    }
+
+    // Prices and contact details from the admin (content/*.json)
+    function applyPrices() {
+      document.getElementById('price-now').textContent = money(UNIT_PRICE);
+      const was = document.getElementById('price-was'), save = document.getElementById('price-save');
+      const show = COMPARE_PRICE > UNIT_PRICE;
+      was.classList.toggle('hidden', !show); save.classList.toggle('hidden', !show);
+      if (show) { was.textContent = money(COMPARE_PRICE); save.textContent = `SAVE ${Math.round((1 - UNIT_PRICE / COMPARE_PRICE) * 100)}%`; }
+      document.getElementById('buy-btn-total').textContent = (buyQuantity * UNIT_PRICE).toFixed(2);
+      document.getElementById('trio-price').textContent = money(3 * UNIT_PRICE);
+      renderCart();
+    }
+    function applyContact(st) {
+      if (st.whatsapp_number) WHATSAPP = String(st.whatsapp_number).replace(/\D/g, '');
+      document.querySelectorAll('.wa-link').forEach(a => {
+        const t = a.dataset.text;
+        a.href = `https://wa.me/${WHATSAPP}` + (t ? `?text=${encodeURIComponent(t)}` : '');
+      });
+      if (st.phone_display) {
+        const tel = document.getElementById('phone-link');
+        tel.textContent = st.phone_display;
+        tel.href = 'tel:+' + WHATSAPP;
+      }
+    }
+    async function loadStore() {
+      try {
+        const [prod, st] = await Promise.all([
+          fetch('content/products.json', { cache: 'no-cache' }).then(r => r.ok ? r.json() : null),
+          fetch('content/settings.json', { cache: 'no-cache' }).then(r => r.ok ? r.json() : null)
+        ]);
+        const featured = prod && (prod.products || []).find(p => p.featured) || null;
+        if (featured) {
+          if (Number(featured.price) > 0) UNIT_PRICE = Number(featured.price);
+          COMPARE_PRICE = Number(featured.compare_price) || 0;
+          if (Array.isArray(featured.images) && featured.images.length) {
+            CR7_PHOTOS = featured.images.map(s => s.replace(/^\//, ''));
+            if (currentPlayerKey === 'cr7') { activePhoto = 0; renderFrames(); renderPhotoThumbs(); }
+          }
+        }
+        if (st) applyContact(st);
+      } catch (e) { /* keep defaults */ }
+      applyPrices();
+    }
+
+    document.addEventListener('keydown', e => {
+      if (e.key === 'Escape') { closeCardModal(); toggleCart(false); }
     });
-    t.hidden=imgs.length<2;
-  }
-}
 
-function renderMore(list){
-  const sec=document.getElementById('more-products'),grid=document.getElementById('more-grid');
-  grid.innerHTML='';
-  list.forEach(p=>{
-    const card=document.createElement('div');card.className='more-card';
-    const img=document.createElement('img');img.loading='lazy';img.alt=p.title;const first=asset((p.images||[])[0]);if(first)img.src=first;
-    const body=document.createElement('div');body.className='more-card-body';
-    const title=document.createElement('div');title.className='more-card-title';title.textContent=p.title;
-    const price=document.createElement('div');price.className='more-card-price';
-    if(p.compare_price&&p.compare_price>p.price){const s=document.createElement('s');s.textContent=money(p.compare_price);price.appendChild(s);}
-    price.appendChild(document.createTextNode(money(p.price)));
-    const btn=document.createElement('button');btn.type='button';
-    if(p.status==='sold_out'){btn.disabled=true;btn.textContent='Sold Out';}
-    else{btn.textContent='Order Now';btn.addEventListener('click',()=>orderProduct(p,1));}
-    body.append(title,price,btn);card.append(img,body);grid.appendChild(card);
-  });
-  sec.hidden=list.length===0;
-}
+    function keyFromHash() {
+      const h = location.hash.replace('#', '').toLowerCase();
+      return { messi: 'lm10', lm10: 'lm10', neymar: 'njr10', njr10: 'njr10', cr7: 'cr7' }[h] || null;
+    }
+    window.addEventListener('hashchange', () => { const k = keyFromHash(); if (k) switchPlayer(k, { keepHash: true }); });
 
-async function loadStore(){
-  const get=u=>fetch(u,{cache:'no-cache'}).then(r=>r.ok?r.json():null).catch(()=>null);
-  const [st,pr]=await Promise.all([get('content/settings.json'),get('content/products.json')]);
-  if(st) applySettings(st);
-  const visible=((pr&&pr.products)||[]).filter(p=>p&&p.title&&p.status!=='hidden'&&isFinite(p.price));
-  if(!visible.length) return;
-  const featured=visible.find(p=>p.featured)||visible[0];
-  applyFeatured(featured);
-  renderMore(visible.filter(p=>p!==featured));
-}
-loadStore();
+    window.addEventListener('DOMContentLoaded', () => {
+      switchPlayer(keyFromHash() || 'cr7', { keepHash: true });
+      applyPrices();
+      applyContact({});
+      loadStore();
+    });
 
-// Countdown timer — 24h rolling
-function updateCountdown(){
-  const now=new Date();
-  const end=new Date(now);
-  end.setHours(23,59,59,999);
-  const diff=end-now;
-  const h=Math.floor(diff/3600000);
-  const m=Math.floor((diff%3600000)/60000);
-  const s=Math.floor((diff%60000)/1000);
-  document.getElementById('cd-days').textContent='00';
-  document.getElementById('cd-hours').textContent=String(h).padStart(2,'0');
-  document.getElementById('cd-min').textContent=String(m).padStart(2,'0');
-  document.getElementById('cd-sec').textContent=String(s).padStart(2,'0');
-}
-updateCountdown();
-setInterval(updateCountdown,1000);
-
-// Gallery
-function switchImg(el,src){
-  document.getElementById('main-img').src=src;
-  document.querySelectorAll('.gallery-thumbs img').forEach(i=>i.classList.remove('active'));
-  el.classList.add('active');
-}
-
-// Qty
-function changeQty(d){
-  const el=document.getElementById('qty');
-  const v=Math.max(1,parseInt(el.value)+d);
-  el.value=v;
-}
-
-// FAQ
-function toggleFaq(el){
-  const item=el.closest('.faq-item');
-  item.classList.toggle('open');
-}
-
-// Reviews data
-const reviews=[
-  {stars:'⭐⭐⭐⭐⭐',text:'This CR7 shadow box is a must-have for any fan! The timeline of his World Cup journey from 2006 to 2026 is beautifully laid out. The golden accents make it feel super premium, and it looks stunning on my wall. Shipping was quick, and it arrived in perfect condition.',author:'James H.'},
-  {stars:'⭐⭐⭐⭐⭐',text:'As a huge Ronaldo fan, I was blown away by the quality of this piece! The collectible illustrated items are gorgeous, and the framed design truly feels like a museum piece. This is proudly displayed in my living room now!',author:'Sophia K.'},
-  {stars:'⭐⭐⭐⭐',text:'I really like the design and the concept behind this shadow box. The only reason I\'m giving it 4 stars instead of 5 is that I was hoping for more information on how to hang it. Overall, a beautiful tribute to CR7!',author:'Victor L.'},
-  {stars:'⭐⭐⭐⭐⭐',text:'I bought this as a birthday gift for my brother, and he absolutely loved it! The retro Panini vibe of the illustrations brings back great memories. It\'s a perfect addition to his sports collection!',author:'Jessica T.'},
-  {stars:'⭐⭐⭐⭐⭐',text:'My husband is a die-hard Ronaldo fan, and when I found this piece, I knew I had to get it for him! It turned out even better than expected—it\'s like a piece of art. He was thrilled to receive it!',author:'Linda R.'},
-  {stars:'⭐⭐⭐⭐⭐',text:'This piece is an absolute gem! The detail in the illustrations is stunning, and I love that it tells the story of CR7\'s international journey. It\'s a perfect addition to my sports collection!',author:'Jessica L.'},
-  {stars:'⭐⭐⭐⭐⭐',text:'This item exceeded my expectations! I was initially skeptical about whether it would look cheap, but it truly feels like an upscale decor piece. The frame is solid and heavy, which gives it a high-quality feel. A perfect conversation starter!',author:'Martin J.'},
-  {stars:'⭐⭐⭐⭐⭐',text:'Absolutely love this shadow box! As a collector, it\'s hard to find unique pieces, but this one fits the bill. The gold highlights and timeline make it really special.',author:'Ella S.'},
-  {stars:'⭐⭐⭐⭐⭐',text:'I purchased the Eternal Legacy CR7 framed piece as a birthday gift for my husband, who has been a die-hard Ronaldo fan for years. The quality is truly impressive! The gold accents really pop.',author:'Emily T.'},
-  {stars:'⭐⭐⭐⭐⭐',text:'Absolutely love this piece! The chronological layout is fantastic, illustrating CR7\'s journey in the World Cups. I was worried it might look cheap, but it feels premium and looks stunning on my wall.',author:'Liam D.'},
-  {stars:'⭐⭐⭐⭐⭐',text:'As a lifelong Ronaldo supporter, I can say this is the perfect tribute! The illustrations are stunning, and the quality of the frame is top-notch. It definitely stands out on my wall!',author:'Kevin L.'},
-  {stars:'⭐⭐⭐⭐⭐',text:'The artwork is nice, and I appreciate the story it tells about Ronaldo. A great addition to any Ronaldo fan\'s collection!',author:'Sophia R.'},
-];
-
-let shown=6;
-function renderReviews(){
-  const grid=document.getElementById('reviews-grid');
-  grid.innerHTML='';
-  reviews.slice(0,shown).forEach(r=>{
-    grid.innerHTML+=`<div class="review-card">
-      <div class="review-stars">${r.stars}</div>
-      <div class="review-text">"${r.text}"</div>
-      <div class="review-author">— ${r.author}</div>
-      <div class="review-verified">✔ Verified Purchase</div>
-    </div>`;
-  });
-}
-function loadMoreReviews(){
-  shown=Math.min(shown+6,reviews.length);
-  renderReviews();
-  if(shown>=reviews.length) document.querySelector('.load-more-btn').style.display='none';
-}
-renderReviews();
-</script>
+  </script>
 </body>
 </html>
