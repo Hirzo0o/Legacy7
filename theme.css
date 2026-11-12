@@ -51,3 +51,11 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--gold-light);outline
 .review-verified{color:var(--gold)}
 .load-more-btn{background:transparent;border:1px solid var(--border-strong);border-radius:12px;color:var(--muted)}
 .load-more-btn:hover{border-color:var(--gold);color:var(--gold)}
+
+/* longer brand name: keep the header on one line */
+.wordmark{white-space:nowrap}
+.nav-icons a{white-space:nowrap}
+@media (max-width:600px){
+  .wordmark{font-size:15px;letter-spacing:.08em}
+  .nav-logo{min-width:0}
+}
