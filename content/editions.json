@@ -1,0 +1,254 @@
+{
+  "editions": [
+    {
+      "key": "cr7",
+      "status": "active",
+      "title": "CR7 Edition",
+      "player": "Cristiano Ronaldo",
+      "nation": "Portugal",
+      "monogram": "CR7",
+      "years": "2006–2026",
+      "price": 37.99,
+      "compare_price": 69.99,
+      "product_name": "CR7 — The World Cup Journey (2006–2026)",
+      "headline": "The Entire World Cup Legacy of *CR7*, Immortalized in Gold Foil for Your Wall",
+      "subheadline": "Six World Cups, from Germany 2006 to North America 2026, in one framed shadow box with gold foil accents. Arrives ready to hang.",
+      "quote": "\"Six World Cups. One frame.\"",
+      "story": "From his first World Cup in Germany in 2006 to becoming the first man to score at five World Cups in Qatar 2022, every chapter of Cristiano Ronaldo’s international journey sits in order inside one frame.",
+      "signature": "Cristiano Ronaldo 7",
+      "video": "https://adelly33.com/cdn/shop/videos/c/vp/f53417867bee44698130b3cb59dd769d/f53417867bee44698130b3cb59dd769d.SD-480p-0.9Mbps-86342736.mp4?v=0",
+      "video_poster": "https://adelly33.com/cdn/shop/files/preview_images/f53417867bee44698130b3cb59dd769d.thumbnail.0000000000_small.jpg?v=1781235118",
+      "photos": [
+        "https://adelly33.com/cdn/shop/files/ly3.png?v=1781213927&width=1200",
+        "https://adelly33.com/cdn/shop/files/ly2.png?v=1781213927&width=1200",
+        "https://adelly33.com/cdn/shop/files/ly4.png?v=1781213927&width=1200"
+      ],
+      "cards": [
+        {
+          "year": "2006",
+          "tournament": "GERMANY 2006",
+          "shirt": "#17",
+          "label": "DEBUT",
+          "reached": "4th place",
+          "description": "His first World Cup. He scored against Iran in Frankfurt as Portugal reached their first semi-final in 40 years.",
+          "colour": "#9B1C1C",
+          "accent": "#047857"
+        },
+        {
+          "year": "2010",
+          "tournament": "SOUTH AFRICA 2010",
+          "shirt": "#7",
+          "label": "CAPTAIN",
+          "reached": "Round of 16",
+          "description": "His first World Cup as Portugal captain.",
+          "colour": "#B91C1C",
+          "accent": "#F5F5F5"
+        },
+        {
+          "year": "2014",
+          "tournament": "BRAZIL 2014",
+          "shirt": "#7",
+          "label": "BALLON D’OR",
+          "reached": "Group stage",
+          "description": "Arrived as the reigning Ballon d’Or winner, set up a late equaliser against the USA in Manaus and scored the winner against Ghana in Brasília.",
+          "colour": "#7F1D1D",
+          "accent": "#D4AF37"
+        },
+        {
+          "year": "2018",
+          "tournament": "RUSSIA 2018",
+          "shirt": "#7",
+          "label": "SOCHI HAT-TRICK",
+          "reached": "Round of 16",
+          "description": "Scored a hat-trick against Spain in Sochi, finishing with a late free kick to make it 3–3.",
+          "colour": "#991B1B",
+          "accent": "#065F46"
+        },
+        {
+          "year": "2022",
+          "tournament": "QATAR 2022",
+          "shirt": "#7",
+          "label": "FIVE WORLD CUPS",
+          "reached": "Quarter-final",
+          "description": "Scored against Ghana to become the first man to score at five World Cups.",
+          "colour": "#991B1B",
+          "accent": "#14532D"
+        },
+        {
+          "year": "2026",
+          "tournament": "NORTH AMERICA 2026",
+          "shirt": "#7",
+          "label": "SIXTH WORLD CUP",
+          "reached": "2026",
+          "description": "The 2026 World Cup, hosted across the USA, Canada and Mexico.",
+          "colour": "#881337",
+          "accent": "#D4AF37"
+        }
+      ]
+    },
+    {
+      "key": "lm10",
+      "status": "active",
+      "title": "Lionel Messi Edition",
+      "player": "Lionel Messi",
+      "nation": "Argentina",
+      "monogram": "LM10",
+      "years": "2006–2026",
+      "price": 37.99,
+      "compare_price": 69.99,
+      "product_name": "LM10 — The World Cup Journey (2006–2026)",
+      "headline": "Every Era of *Messi’s* World Cup Story, Framed in Gold Foil",
+      "subheadline": "Six World Cups, from his debut in Germany 2006 to North America 2026, in one framed shadow box with gold foil accents.",
+      "quote": "\"From an 18-year-old debut to lifting the trophy in Lusail.\"",
+      "story": "From his first World Cup goal at 18 in Germany to two Golden Balls and Argentina’s third star in Qatar, every chapter of Lionel Messi’s World Cup journey sits in order inside one frame.",
+      "signature": "Leo Messi 10",
+      "video": "",
+      "video_poster": "",
+      "photos": [],
+      "cards": [
+        {
+          "year": "2006",
+          "tournament": "GERMANY 2006",
+          "shirt": "#19",
+          "label": "DEBUT",
+          "reached": "Quarter-final",
+          "description": "His first World Cup. At 18 he scored against Serbia and Montenegro, becoming Argentina’s youngest World Cup scorer.",
+          "colour": "#38BDF8",
+          "accent": "#F8FAFC"
+        },
+        {
+          "year": "2010",
+          "tournament": "SOUTH AFRICA 2010",
+          "shirt": "#10",
+          "label": "NO. 10",
+          "reached": "Quarter-final",
+          "description": "His first World Cup in Argentina’s No. 10 shirt.",
+          "colour": "#0284C7",
+          "accent": "#F8FAFC"
+        },
+        {
+          "year": "2014",
+          "tournament": "BRAZIL 2014",
+          "shirt": "#10",
+          "label": "GOLDEN BALL",
+          "reached": "Final",
+          "description": "Led Argentina to the final at the Maracanã and won the tournament’s Golden Ball.",
+          "colour": "#38BDF8",
+          "accent": "#0F172A"
+        },
+        {
+          "year": "2018",
+          "tournament": "RUSSIA 2018",
+          "shirt": "#10",
+          "label": "ST PETERSBURG",
+          "reached": "Round of 16",
+          "description": "Scored against Nigeria in St Petersburg to help send Argentina through to the knockout stage.",
+          "colour": "#0EA5E9",
+          "accent": "#F8FAFC"
+        },
+        {
+          "year": "2022",
+          "tournament": "QATAR 2022",
+          "shirt": "#10",
+          "label": "WORLD CHAMPION",
+          "reached": "Winner",
+          "description": "Scored twice in the final, won the World Cup with Argentina and collected a second Golden Ball.",
+          "colour": "#38BDF8",
+          "accent": "#D4AF37"
+        },
+        {
+          "year": "2026",
+          "tournament": "NORTH AMERICA 2026",
+          "shirt": "#10",
+          "label": "SIXTH WORLD CUP",
+          "reached": "2026",
+          "description": "The 2026 World Cup, hosted across the USA, Canada and Mexico.",
+          "colour": "#0284C7",
+          "accent": "#D4AF37"
+        }
+      ]
+    },
+    {
+      "key": "njr10",
+      "status": "active",
+      "title": "Neymar Jr Edition",
+      "player": "Neymar Jr",
+      "nation": "Brazil",
+      "monogram": "NJR10",
+      "years": "2014–2026",
+      "price": 37.99,
+      "compare_price": 69.99,
+      "product_name": "NJR10 — The World Cup Journey (2014–2026)",
+      "headline": "The World Cup Artistry of *Neymar Jr*, Framed in Gold Foil",
+      "subheadline": "From Brazil 2014 to North America 2026, five World Cup cards and a gold tribute card in one framed shadow box.",
+      "quote": "\"Joga bonito, framed in gold.\"",
+      "story": "From carrying a host nation’s hopes at Brazil 2014 to equalling Pelé’s Brazil scoring record in Qatar, every chapter of Neymar Jr’s World Cup journey sits in order inside one frame.",
+      "signature": "Neymar Jr 10",
+      "video": "",
+      "video_poster": "",
+      "photos": [],
+      "cards": [
+        {
+          "year": "2014",
+          "tournament": "BRAZIL 2014",
+          "shirt": "#10",
+          "label": "OPENING MATCH",
+          "reached": "Semi-final",
+          "description": "Scored twice against Croatia in São Paulo in the opening match of the home World Cup.",
+          "colour": "#EAB308",
+          "accent": "#15803D"
+        },
+        {
+          "year": "2014",
+          "tournament": "BRAZIL 2014",
+          "shirt": "#10",
+          "label": "BRASÍLIA",
+          "reached": "Semi-final",
+          "description": "Scored twice against Cameroon in Brasília as Brazil won their group.",
+          "colour": "#CA8A04",
+          "accent": "#166534"
+        },
+        {
+          "year": "2018",
+          "tournament": "RUSSIA 2018",
+          "shirt": "#10",
+          "label": "SAMARA",
+          "reached": "Quarter-final",
+          "description": "Scored and set up a goal against Mexico in Samara to take Brazil into the quarter-finals.",
+          "colour": "#FACC15",
+          "accent": "#15803D"
+        },
+        {
+          "year": "2022",
+          "tournament": "QATAR 2022",
+          "shirt": "#10",
+          "label": "PELÉ’S RECORD",
+          "reached": "Quarter-final",
+          "description": "Scored in extra time against Croatia to equal Pelé’s record of 77 goals for Brazil.",
+          "colour": "#EAB308",
+          "accent": "#1D4ED8"
+        },
+        {
+          "year": "2026",
+          "tournament": "NORTH AMERICA 2026",
+          "shirt": "#10",
+          "label": "NORTH AMERICA",
+          "reached": "2026",
+          "description": "The 2026 World Cup, hosted across the USA, Canada and Mexico.",
+          "colour": "#FACC15",
+          "accent": "#15803D"
+        },
+        {
+          "year": "GOLD",
+          "tournament": "TRIBUTE CARD",
+          "shirt": "#10",
+          "label": "GOLD FOIL",
+          "reached": "Tribute",
+          "description": "A gold foil tribute card that completes the set.",
+          "colour": "#14532D",
+          "accent": "#D4AF37"
+        }
+      ]
+    }
+  ]
+}

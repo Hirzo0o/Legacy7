@@ -1,9 +1,8 @@
 {
-  "site_name": "The Last Dance Collectibles",
-  "header_logo": "",
-  "footer_logo": "/Logo.png",
-  "favicon": "/Logo.png",
-  "hero_logo": "https://adelly33.com/cdn/shop/files/LOGO_800_X_200PXLEGACY.png?v=1781546637&width=1780",
+  "brand_line_1": "THE LAST DANCE",
+  "brand_line_2": "Collectibles",
+  "announcement": "Order on WhatsApp",
   "whatsapp_number": "962791153023",
-  "phone_display": "+962 79 115 3023"
+  "phone_display": "+962 79 115 3023",
+  "favicon": "/Logo.png"
 }
