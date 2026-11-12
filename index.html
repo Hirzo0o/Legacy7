@@ -245,7 +245,7 @@
             <div class="flex flex-wrap items-center justify-between gap-2 pb-4 mb-5 border-b border-[#262218]/80 text-xs">
               <div class="flex items-center gap-2 text-[#A3A3A3]">
                 <span class="inline-block w-2 h-2 rounded-full bg-[#D4AF37]"></span>
-                <span id="hero-frame-label">The CR7 edition, filmed in a real room</span>
+                <span id="hero-frame-label">Tap a card to see its moment.</span>
               </div>
               <button id="hero-glare-btn" onclick="toggleFoilGlare()" class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg bg-[#181818] border border-[#262218] hover:border-[#D4AF37] text-[#F3E5AB] transition-colors">
                 <span id="glare-btn-label">Glass glare: on</span>
@@ -801,23 +801,31 @@
           <source src="${esc(asset(p.video))}" type="video/mp4"/>
         </video></div>`;
     }
+    // Gallery items: the video first (when there is one), then the photos
+    const galleryItems = p => [...(p.video ? [{ video: true }] : []), ...(Array.isArray(p.photos) ? p.photos.filter(Boolean).map(src => ({ src })) : [])];
+    const hasPhotos = p => galleryItems(p).length > 0;
     function photoHTML(p) {
-      return `<img id="main-img" src="${esc(asset(p.photos[activePhoto] || p.photos[0]))}" alt="The ${esc(p.shortTitle)} framed shadow box" class="w-full h-auto rounded-xl border border-[#262218] shadow-museum-frame"/>`;
+      const items = galleryItems(p);
+      const item = items[activePhoto] || items[0];
+      if (item.video) return videoHTML(p);
+      return `<img id="main-img" src="${esc(asset(item.src))}" alt="The ${esc(p.shortTitle)} framed shadow box" class="w-full h-auto rounded-xl border border-[#262218] shadow-museum-frame"/>`;
     }
-    const hasPhotos = p => Array.isArray(p.photos) && p.photos.length > 0;
     function renderPhotoThumbs() {
       const p = PLAYERS_DATA[currentPlayerKey];
       const box = document.getElementById('photo-thumbs');
-      box.innerHTML = p.photos.map((src, i) => `
-        <button onclick="showPhoto(${i})" aria-label="Show photo ${i + 1}" class="rounded-xl overflow-hidden border ${i === activePhoto ? 'border-[#D4AF37]' : 'border-[#262218] hover:border-[#D4AF37]/50'} bg-[#121212] transition-colors">
-          <img src="${esc(asset(src).replace('width=1200', 'width=300'))}" alt="" loading="lazy" class="w-full h-24 sm:h-28 object-cover"/>
+      box.innerHTML = galleryItems(p).map((item, i) => `
+        <button onclick="showPhoto(${i})" aria-label="${item.video ? 'Play the video' : `Show photo ${i + 1}`}" class="relative rounded-xl overflow-hidden border ${i === activePhoto ? 'border-[#D4AF37]' : 'border-[#262218] hover:border-[#D4AF37]/50'} bg-[#121212] transition-colors">
+          ${item.video
+            ? `${p.poster ? `<img src="${esc(asset(p.poster))}" alt="" loading="lazy" class="w-full h-24 sm:h-28 object-cover opacity-70"/>` : '<div class="w-full h-24 sm:h-28"></div>'}
+               <span class="absolute inset-0 flex items-center justify-center"><span class="w-10 h-10 rounded-full bg-gold-metallic text-black flex items-center justify-center text-sm" aria-hidden="true">▶</span></span>`
+            : `<img src="${esc(asset(item.src).replace('width=1200', 'width=300'))}" alt="" loading="lazy" class="w-full h-24 sm:h-28 object-cover"/>`}
         </button>`).join('');
     }
     function showPhoto(i) { activePhoto = i; renderFrames(); renderPhotoThumbs(); }
 
     function renderFrames() {
       const player = PLAYERS_DATA[currentPlayerKey];
-      document.getElementById('hero-shadowbox-mount').innerHTML = player.video ? videoHTML(player) : buildShadowboxHTML(player, true);
+      document.getElementById('hero-shadowbox-mount').innerHTML = (!player.artwork && player.video) ? videoHTML(player) : buildShadowboxHTML(player, true);
       document.getElementById('gallery-frame-mount').innerHTML = hasPhotos(player) ? photoHTML(player) : buildShadowboxHTML(player, false);
     }
 
@@ -847,13 +855,13 @@
       document.getElementById('hero-headline').innerHTML = p.heroHeadline;
       document.getElementById('hero-subheadline').textContent = p.heroSubheadline;
       document.getElementById('hero-spotlight').style.background = `radial-gradient(circle, ${p.accentGlow} 0%, transparent 70%)`;
-      document.getElementById('hero-frame-label').textContent = p.video ? `The ${p.shortTitle}, filmed in a real room` : p.artwork ? `The ${p.shortTitle} design. Tap a card to see its moment.` : `Illustrated preview of the ${p.shortTitle}. Tap a card to see its moment.`;
-      document.getElementById('hero-glare-btn').classList.toggle('hidden', !!p.video);
+      document.getElementById('hero-frame-label').textContent = p.artwork ? 'Tap a card to see its moment.' : p.video ? '' : `Illustrated preview of the ${p.shortTitle}. Tap a card to see its moment.`;
+      document.getElementById('hero-glare-btn').classList.toggle('hidden', !p.artwork && !!p.video);
 
-      document.getElementById('photo-thumbs').classList.toggle('hidden', !real || p.photos.length < 2);
+      document.getElementById('photo-thumbs').classList.toggle('hidden', !real || galleryItems(p).length < 2);
       document.getElementById('angle-buttons').classList.toggle('hidden', real);
       if (real) { renderPhotoThumbs(); setGalleryView('front'); }
-      document.getElementById('gallery-tip').textContent = real ? `Photos of the ${p.shortTitle}.` : p.artwork ? 'The full design. Tap any card to see the moment it celebrates.' : 'Illustrated preview. Tap any card inside the frame to see the moment it celebrates.';
+      document.getElementById('gallery-tip').textContent = real ? (p.video ? `Video and photos of the ${p.shortTitle}.` : `Photos of the ${p.shortTitle}.`) : p.artwork ? 'The full design. Tap any card to see the moment it celebrates.' : 'Illustrated preview. Tap any card inside the frame to see the moment it celebrates.';
       renderFrames();
 
       document.getElementById('buybox-series').textContent = `${p.shortTitle} · ${p.nation}`;
