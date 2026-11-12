@@ -32,7 +32,8 @@
           "reached": "4th place",
           "description": "His first World Cup. He scored against Iran in Frankfurt as Portugal reached their first semi-final in 40 years.",
           "colour": "#9B1C1C",
-          "accent": "#047857"
+          "accent": "#047857",
+          "image": ""
         },
         {
           "year": "2010",
@@ -42,7 +43,8 @@
           "reached": "Round of 16",
           "description": "His first World Cup as Portugal captain.",
           "colour": "#B91C1C",
-          "accent": "#F5F5F5"
+          "accent": "#F5F5F5",
+          "image": ""
         },
         {
           "year": "2014",
@@ -52,7 +54,8 @@
           "reached": "Group stage",
           "description": "Arrived as the reigning Ballon d’Or winner, set up a late equaliser against the USA in Manaus and scored the winner against Ghana in Brasília.",
           "colour": "#7F1D1D",
-          "accent": "#D4AF37"
+          "accent": "#D4AF37",
+          "image": ""
         },
         {
           "year": "2018",
@@ -62,7 +65,8 @@
           "reached": "Round of 16",
           "description": "Scored a hat-trick against Spain in Sochi, finishing with a late free kick to make it 3–3.",
           "colour": "#991B1B",
-          "accent": "#065F46"
+          "accent": "#065F46",
+          "image": ""
         },
         {
           "year": "2022",
@@ -72,7 +76,8 @@
           "reached": "Quarter-final",
           "description": "Scored against Ghana to become the first man to score at five World Cups.",
           "colour": "#991B1B",
-          "accent": "#14532D"
+          "accent": "#14532D",
+          "image": ""
         },
         {
           "year": "2026",
@@ -82,7 +87,8 @@
           "reached": "2026",
           "description": "The 2026 World Cup, hosted across the USA, Canada and Mexico.",
           "colour": "#881337",
-          "accent": "#D4AF37"
+          "accent": "#D4AF37",
+          "image": ""
         }
       ]
     },
@@ -114,7 +120,8 @@
           "reached": "Quarter-final",
           "description": "His first World Cup. At 18 he scored against Serbia and Montenegro, becoming Argentina’s youngest World Cup scorer.",
           "colour": "#38BDF8",
-          "accent": "#F8FAFC"
+          "accent": "#F8FAFC",
+          "image": ""
         },
         {
           "year": "2010",
@@ -124,7 +131,8 @@
           "reached": "Quarter-final",
           "description": "His first World Cup in Argentina’s No. 10 shirt.",
           "colour": "#0284C7",
-          "accent": "#F8FAFC"
+          "accent": "#F8FAFC",
+          "image": ""
         },
         {
           "year": "2014",
@@ -134,7 +142,8 @@
           "reached": "Final",
           "description": "Led Argentina to the final at the Maracanã and won the tournament’s Golden Ball.",
           "colour": "#38BDF8",
-          "accent": "#0F172A"
+          "accent": "#0F172A",
+          "image": ""
         },
         {
           "year": "2018",
@@ -144,7 +153,8 @@
           "reached": "Round of 16",
           "description": "Scored against Nigeria in St Petersburg to help send Argentina through to the knockout stage.",
           "colour": "#0EA5E9",
-          "accent": "#F8FAFC"
+          "accent": "#F8FAFC",
+          "image": ""
         },
         {
           "year": "2022",
@@ -154,7 +164,8 @@
           "reached": "Winner",
           "description": "Scored twice in the final, won the World Cup with Argentina and collected a second Golden Ball.",
           "colour": "#38BDF8",
-          "accent": "#D4AF37"
+          "accent": "#D4AF37",
+          "image": ""
         },
         {
           "year": "2026",
@@ -164,7 +175,8 @@
           "reached": "2026",
           "description": "The 2026 World Cup, hosted across the USA, Canada and Mexico.",
           "colour": "#0284C7",
-          "accent": "#D4AF37"
+          "accent": "#D4AF37",
+          "image": ""
         }
       ]
     },
@@ -180,9 +192,9 @@
       "compare_price": 69.99,
       "product_name": "NJR10 — The World Cup Journey (2014–2026)",
       "headline": "The World Cup Artistry of *Neymar Jr*, Framed in Gold Foil",
-      "subheadline": "From Brazil 2014 to North America 2026, five World Cup cards and a gold tribute card in one framed shadow box.",
+      "subheadline": "From Brazil 2014 to North America 2026, four World Cups in one framed shadow box with gold foil accents.",
       "quote": "\"Joga bonito, framed in gold.\"",
-      "story": "From carrying a host nation’s hopes at Brazil 2014 to equalling Pelé’s Brazil scoring record in Qatar, every chapter of Neymar Jr’s World Cup journey sits in order inside one frame.",
+      "story": "From carrying a host nation’s hopes at Brazil 2014 to equalling Pelé’s Brazil scoring record in Qatar, all four of Neymar Jr’s World Cups sit in order inside one frame.",
       "signature": "Neymar Jr 10",
       "video": "",
       "video_poster": "",
@@ -192,21 +204,12 @@
           "year": "2014",
           "tournament": "BRAZIL 2014",
           "shirt": "#10",
-          "label": "OPENING MATCH",
+          "label": "HOST NATION",
           "reached": "Semi-final",
-          "description": "Scored twice against Croatia in São Paulo in the opening match of the home World Cup.",
+          "description": "His first World Cup, at home. He scored twice in the opening match against Croatia in São Paulo and twice more against Cameroon in Brasília.",
           "colour": "#EAB308",
-          "accent": "#15803D"
-        },
-        {
-          "year": "2014",
-          "tournament": "BRAZIL 2014",
-          "shirt": "#10",
-          "label": "BRASÍLIA",
-          "reached": "Semi-final",
-          "description": "Scored twice against Cameroon in Brasília as Brazil won their group.",
-          "colour": "#CA8A04",
-          "accent": "#166534"
+          "accent": "#15803D",
+          "image": ""
         },
         {
           "year": "2018",
@@ -216,7 +219,8 @@
           "reached": "Quarter-final",
           "description": "Scored and set up a goal against Mexico in Samara to take Brazil into the quarter-finals.",
           "colour": "#FACC15",
-          "accent": "#15803D"
+          "accent": "#15803D",
+          "image": ""
         },
         {
           "year": "2022",
@@ -226,27 +230,19 @@
           "reached": "Quarter-final",
           "description": "Scored in extra time against Croatia to equal Pelé’s record of 77 goals for Brazil.",
           "colour": "#EAB308",
-          "accent": "#1D4ED8"
+          "accent": "#1D4ED8",
+          "image": ""
         },
         {
           "year": "2026",
           "tournament": "NORTH AMERICA 2026",
           "shirt": "#10",
-          "label": "NORTH AMERICA",
+          "label": "LAST DANCE",
           "reached": "2026",
           "description": "The 2026 World Cup, hosted across the USA, Canada and Mexico.",
           "colour": "#FACC15",
-          "accent": "#15803D"
-        },
-        {
-          "year": "GOLD",
-          "tournament": "TRIBUTE CARD",
-          "shirt": "#10",
-          "label": "GOLD FOIL",
-          "reached": "Tribute",
-          "description": "A gold foil tribute card that completes the set.",
-          "colour": "#14532D",
-          "accent": "#D4AF37"
+          "accent": "#15803D",
+          "image": ""
         }
       ]
     }

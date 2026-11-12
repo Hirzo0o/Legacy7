@@ -61,7 +61,7 @@ collections:
               - { name: video, label: "Video at the top (MP4, optional)", widget: file, required: false }
               - { name: video_poster, label: "Video cover image (optional)", widget: image, required: false }
               - name: cards
-                label: The six cards
+                label: The cards
                 label_singular: Card
                 widget: list
                 summary: "{{year}} — {{tournament}}"
@@ -72,6 +72,7 @@ collections:
                   - { name: label, label: "Short label (e.g. DEBUT)", widget: string }
                   - { name: reached, label: "Stage reached", widget: string }
                   - { name: description, label: Description, widget: text }
+                  - { name: image, label: "Card image (optional, the real sticker)", widget: image, required: false }
                   - { name: colour, label: Card colour, widget: color, required: false }
                   - { name: accent, label: Accent colour, widget: color, required: false }
 
