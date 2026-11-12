@@ -20,4 +20,4 @@ If the site moves to a custom domain, update the URL in `index.html` (canonical,
 
 ## Colours
 
-All colours come from the `:root` palette at the top of the `<style>` block in `index.html` (frame black, gold foil and ivory, with crimson for the discount badge only). Headings use Bodoni Moda and body text uses Hanken Grotesk, both self-hosted in `fonts/`. Change a value there to restyle the whole page.
+All colours come from the `:root` palette at the top of the `<style>` block in `index.html` (frame black, gold foil and ivory, with crimson for the discount badge only). Headings use Cinzel and body text uses Plus Jakarta Sans, both self-hosted in `fonts/`. `theme.css` holds the colours and type and loads last. Change a value there to restyle the whole page.

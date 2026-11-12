@@ -1,0 +1,53 @@
+/* Legacy 7 theme: loaded last, so it changes colour, type and button treatment only.
+   The frame images, the CR7 video and all scripts are left as they are. */
+@font-face{font-family:'Cinzel';src:url('fonts/cinzel-latin-600-normal.woff2') format('woff2');font-weight:600;font-style:normal;font-display:swap}
+@font-face{font-family:'Cinzel';src:url('fonts/cinzel-latin-700-normal.woff2') format('woff2');font-weight:700;font-style:normal;font-display:swap}
+@font-face{font-family:'Plus Jakarta Sans';src:url('fonts/plus-jakarta-sans-latin-wght-normal.woff2') format('woff2');font-weight:200 800;font-style:normal;font-display:swap}
+
+:root{
+  --bg:#080808;--surface:#121212;--surface-2:#181818;
+  --border:#262218;--border-strong:#3a3322;
+  --heading:#f5f5f5;--text:#f5f5f5;--muted:#a3a3a3;--subtle:#8a8a8a;--faint:#666;
+  --gold:#d4af37;--gold-light:#f3e5ab;--on-gold:#0a0a0a;
+  --crimson:#9e1b22;
+  --display:'Cinzel',Georgia,serif;
+  --body:'Plus Jakarta Sans',system-ui,sans-serif;
+  --gold-metal:linear-gradient(135deg,#e5c76b 0%,#d4af37 50%,#b58e22 100%);
+  --gold-metal-hover:linear-gradient(135deg,#f3e5ab 0%,#dfbd4b 50%,#c59b27 100%);
+  --glow:0 0 60px -15px rgba(212,175,55,.25);
+}
+
+body{font-family:var(--body);background:var(--bg);color:var(--text)}
+h1,h2,h3,.hero-headline,.section-title,.content-text h3,.step-title,.product-title,.wordmark,.more-card-title{font-family:var(--display);color:var(--heading)}
+h1,.hero-headline{font-weight:700;letter-spacing:.01em;line-height:1.18}
+h2,h3,.section-title,.content-text h3{font-weight:700}
+.wordmark{font-weight:700;letter-spacing:.18em}
+.wordmark b{color:var(--gold)}
+.price-new,.more-card-price{font-family:var(--body);font-weight:800;color:var(--heading)}
+
+/* labels: small tracked gold capitals, as in the reference design */
+.section-eyebrow,.hero-sub{font-family:var(--body);font-style:normal;font-size:11px;font-weight:700;letter-spacing:.24em;text-transform:uppercase;color:var(--gold)}
+.hero-sub{color:var(--gold-light)}
+
+/* navigation and top strip */
+nav{background:rgba(8,8,8,.86);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border-bottom:1px solid var(--border)}
+.topbar{background:var(--surface);border-bottom:1px solid var(--border);color:var(--muted)}
+.countdown-banner{background:#100e09;color:var(--gold-light);border-bottom:1px solid rgba(212,175,55,.45);font-family:var(--body);font-weight:700;letter-spacing:.16em}
+.timer-block{background:var(--surface-2);border:1px solid var(--border);border-radius:8px;color:var(--heading)}
+
+/* gold metallic actions */
+.hero-cta-btn,.order-btn,.final-cta a,.more-card button{background:var(--gold-metal);color:var(--on-gold);border-radius:12px;font-family:var(--body);font-weight:800;letter-spacing:.14em;text-transform:uppercase;box-shadow:var(--glow)}
+.hero-cta-btn:hover,.order-btn:hover,.final-cta a:hover,.more-card button:hover{background:var(--gold-metal-hover)}
+.order-btn:disabled,.more-card button:disabled{background:var(--surface-2);color:var(--subtle);box-shadow:none}
+a[style*="var(--gold)"]{background:var(--gold-metal)!important;color:var(--on-gold)!important;border-radius:12px!important;letter-spacing:.14em;text-transform:uppercase;font-weight:800!important}
+a:focus-visible,button:focus-visible{outline:2px solid var(--gold-light);outline-offset:3px}
+
+/* purchase panel and cards */
+#ex-buy-section{background:var(--surface);border:1px solid var(--border);border-radius:16px;box-shadow:0 30px 70px -10px rgba(0,0,0,.92)}
+.badge{background:var(--surface-2);border:1px solid var(--border);border-radius:20px;color:var(--gold)}
+.price-badge{background:var(--crimson);color:#fff;border-radius:6px}
+.feat-card,.review-card,.more-card,.pkg-item,.commit-item{background:var(--surface);border:1px solid var(--border);border-radius:16px}
+.feat-card:hover,.more-card:hover{border-color:rgba(212,175,55,.5)}
+.review-verified{color:var(--gold)}
+.load-more-btn{background:transparent;border:1px solid var(--border-strong);border-radius:12px;color:var(--muted)}
+.load-more-btn:hover{border-color:var(--gold);color:var(--gold)}
