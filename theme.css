@@ -59,3 +59,25 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--gold-light);outline
   .wordmark{white-space:normal;font-size:14px;line-height:1.25;letter-spacing:.08em;max-width:62vw}
   .nav-icons{flex-shrink:0}
 }
+
+/* Homepage layout: two columns on desktop, stacked on phones (matches the design file) */
+.hero{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center;text-align:left;max-width:1200px;margin:0 auto;padding:56px 24px 24px;background:none}
+.hero-copy{min-width:0}
+.hero-logo{max-width:280px;margin-bottom:16px}
+.hero-sub{margin-bottom:14px}
+.hero-headline{max-width:none;margin:0 0 16px}
+.hero-desc{max-width:none;margin:0 0 18px}
+.hero-cta-btn{margin-bottom:22px}
+.hero-media .hero-video-wrap{max-width:none;margin:0}
+.buy-grid{display:grid;grid-template-columns:7fr 5fr;gap:40px;max-width:1200px;margin:0 auto;padding:24px;align-items:start}
+.buy-left .gallery-section{max-width:none;padding:0}
+.buy-left .rating-bar{text-align:left;padding:12px 0 0}
+.buy-right #ex-buy-section{max-width:none;margin:0;position:sticky;top:110px}
+@media (max-width:900px){
+  .hero{grid-template-columns:1fr;text-align:center;gap:28px;padding:36px 20px 12px}
+  .hero-copy{text-align:center}
+  .hero-headline,.hero-desc{margin-left:auto;margin-right:auto}
+  .buy-grid{grid-template-columns:1fr;gap:24px;padding:16px 20px}
+  .buy-right #ex-buy-section{position:static}
+  .buy-left .rating-bar{text-align:center}
+}
