@@ -302,7 +302,7 @@
                 <span id="buy-qty" class="text-sm font-bold text-[#F5F5F5]">1</span>
                 <button onclick="updateBuyQty(1)" aria-label="Increase quantity" class="w-7 h-7 rounded-lg hover:bg-[#181818] text-[#A3A3A3] hover:text-white font-bold transition-colors">+</button>
               </div>
-              <button id="add-btn" onclick="addCurrentPlayerToCart()" class="flex-1 disabled:opacity-40 disabled:cursor-not-allowed py-4 px-6 rounded-xl bg-gold-metallic text-black font-bold text-xs sm:text-sm tracking-[0.16em] uppercase shadow-gold-glow flex items-center justify-center gap-2 transition-transform active:scale-[0.98]">
+              <button id="add-btn" onclick="addCurrentPlayerToCart()" class="flex-1 disabled:opacity-40 disabled:cursor-not-allowed py-4 px-4 rounded-xl bg-gold-metallic text-black font-bold text-xs sm:text-sm tracking-[0.1em] uppercase whitespace-nowrap shadow-gold-glow flex items-center justify-center gap-2 transition-transform active:scale-[0.98]">
                 <span>Add to bag — $<span id="buy-btn-total">37.99</span></span>
               </button>
             </div>
@@ -716,7 +716,7 @@
               <!-- Center: 24K Gold Foil Monogram & Era Title -->
               <div class="col-span-5 text-center">
                 <span class="block text-[7px] sm:text-[9px] tracking-[0.28em] uppercase text-[#A3A3A3] mb-1">WORLD CUP ARCHIVE</span>
-                <div class="font-serif text-2xl sm:text-4xl lg:text-5xl font-extrabold text-gold-gradient tracking-wider leading-none mb-1.5">
+                <div class="font-serif font-extrabold text-gold-gradient tracking-wider leading-none mb-1.5 whitespace-nowrap ${isHero ? 'text-2xl sm:text-4xl lg:text-5xl' : 'text-2xl sm:text-3xl xl:text-4xl'}">
                   ${p.monogram}
                 </div>
                 <div class="h-px w-16 sm:w-24 mx-auto bg-gradient-to-r from-transparent via-[#D4AF37] to-transparent mb-1.5"></div>
