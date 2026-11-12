@@ -56,6 +56,6 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--gold-light);outline
 .wordmark{white-space:nowrap}
 .nav-icons a{white-space:nowrap}
 @media (max-width:600px){
-  .wordmark{font-size:15px;letter-spacing:.08em}
-  .nav-logo{min-width:0}
+  .wordmark{white-space:normal;font-size:14px;line-height:1.25;letter-spacing:.08em;max-width:62vw}
+  .nav-icons{flex-shrink:0}
 }
