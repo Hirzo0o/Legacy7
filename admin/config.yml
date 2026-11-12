@@ -1,4 +1,4 @@
-# Legacy 7 admin (Sveltia CMS). Open /admin/ and choose "Sign in with Token".
+# The Last Dance Collectibles admin (Sveltia CMS). Open /admin/ and choose "Sign in with Token".
 backend:
   name: github
   repo: Hirzo0o/Legacy7
@@ -47,7 +47,7 @@ collections:
         file: content/settings.json
         fields:
           - { name: site_name, label: Site name, widget: string }
-          - { name: header_logo, label: "Header logo (leave empty to show the LEGACY 7 text wordmark)", widget: image, required: false }
+          - { name: header_logo, label: "Header logo (leave empty to show the THE LAST DANCE COLLECTIBLES text wordmark)", widget: image, required: false }
           - { name: footer_logo, label: "Footer logo (company logo)", widget: image, required: false }
           - { name: favicon, label: "Browser tab icon", widget: image, required: false }
           - { name: hero_logo, label: "Product logo (large logo at the top of the page)", widget: image, required: false }
