@@ -16,8 +16,8 @@
       "quote": "\"Six World Cups. One frame.\"",
       "story": "From his first World Cup in Germany in 2006 to becoming the first man to score at five World Cups in Qatar 2022, every chapter of Cristiano Ronaldo’s international journey sits in order inside one frame.",
       "signature": "Cristiano Ronaldo 7",
-      "video": "https://adelly33.com/cdn/shop/videos/c/vp/f53417867bee44698130b3cb59dd769d/f53417867bee44698130b3cb59dd769d.SD-480p-0.9Mbps-86342736.mp4?v=0",
-      "video_poster": "https://adelly33.com/cdn/shop/files/preview_images/f53417867bee44698130b3cb59dd769d.thumbnail.0000000000_small.jpg?v=1781235118",
+      "video": "",
+      "video_poster": "",
       "photos": [
         "https://adelly33.com/cdn/shop/files/ly3.png?v=1781213927&width=1200",
         "https://adelly33.com/cdn/shop/files/ly2.png?v=1781213927&width=1200",
@@ -273,6 +273,68 @@
       "crest": "/uploads/editions/neymar/crest.png",
       "signature_image": "/uploads/editions/neymar/signature.png",
       "artwork": "/uploads/editions/neymar/artwork.jpg"
+    },
+    {
+      "key": "zz10",
+      "status": "hidden",
+      "title": "Zinedine Zidane Edition",
+      "player": "Zinedine Zidane",
+      "nation": "France",
+      "monogram": "ZZ",
+      "years": "1998–2006",
+      "price": 37.99,
+      "compare_price": 69.99,
+      "product_name": "ZZ — The World Cup Journey (1998–2006)",
+      "headline": "The World Cup Story of *Zidane*, Framed in Gold Foil",
+      "subheadline": "Three World Cups, from France 1998 to Germany 2006, in one framed shadow box with gold foil accents.",
+      "quote": "\"Three World Cups. One maestro.\"",
+      "story": "From two headers in the 1998 final in Paris to the Golden Ball in Germany 2006, every chapter of Zinedine Zidane’s World Cup journey sits in order inside one frame.",
+      "signature": "Zinedine Zidane 10",
+      "video": "",
+      "video_poster": "",
+      "photos": [],
+      "artwork": "",
+      "portrait": "",
+      "crest": "",
+      "signature_image": "",
+      "cards": [
+        {
+          "year": "1998",
+          "tournament": "FRANCE 1998",
+          "shirt": "#10",
+          "label": "WORLD CHAMPION",
+          "reached": "Winner",
+          "description": "Scored twice in the final against Brazil as France won the World Cup on home soil.",
+          "colour": "#1E3A8A",
+          "accent": "#F5F5F5",
+          "image": "",
+          "area": ""
+        },
+        {
+          "year": "2002",
+          "tournament": "KOREA–JAPAN 2002",
+          "shirt": "#10",
+          "label": "DEFENDING CHAMPION",
+          "reached": "Group stage",
+          "description": "France arrived as defending champions; Zidane, carrying an injury, played in the final group match.",
+          "colour": "#1D4ED8",
+          "accent": "#F5F5F5",
+          "image": "",
+          "area": ""
+        },
+        {
+          "year": "2006",
+          "tournament": "GERMANY 2006",
+          "shirt": "#10",
+          "label": "GOLDEN BALL",
+          "reached": "Final",
+          "description": "Led France to the final in Berlin, scored in it, and won the tournament’s Golden Ball.",
+          "colour": "#1E40AF",
+          "accent": "#D4AF37",
+          "image": "",
+          "area": ""
+        }
+      ]
     }
   ]
 }

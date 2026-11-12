@@ -99,6 +99,7 @@ collections:
                   - { label: CR7, value: cr7 }
                   - { label: Lionel Messi, value: lm10 }
                   - { label: Neymar Jr, value: njr10 }
+                  - { label: Zinedine Zidane, value: zz10 }
               - { name: stars, label: Stars, widget: number, value_type: int, min: 1, max: 5, default: 5 }
               - { name: author, label: Name, widget: string }
               - { name: text, label: Review, widget: text }

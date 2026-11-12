@@ -185,11 +185,7 @@
           </div>
         </a>
 
-        <nav aria-label="Player editions" class="hidden md:flex items-center bg-[#121212] p-1.5 rounded-full border border-[#262218]">
-          <button data-edition="cr7" onclick="switchPlayer('cr7')" id="nav-cr7" class="player-tab-btn px-4 py-1.5 rounded-full text-xs font-semibold tracking-wider uppercase transition-all duration-300">CR7 Edition</button>
-          <button data-edition="lm10" onclick="switchPlayer('lm10')" id="nav-lm10" class="player-tab-btn px-4 py-1.5 rounded-full text-xs font-semibold tracking-wider uppercase transition-all duration-300">Lionel Messi Edition</button>
-          <button data-edition="njr10" onclick="switchPlayer('njr10')" id="nav-njr10" class="player-tab-btn px-4 py-1.5 rounded-full text-xs font-semibold tracking-wider uppercase transition-all duration-300">Neymar Jr Edition</button>
-        </nav>
+        <nav id="nav-desktop" aria-label="Player editions" class="hidden md:flex items-center bg-[#121212] p-1.5 rounded-full border border-[#262218]"></nav>
 
         <div class="flex items-center gap-2 sm:gap-3">
           <a href="#buy-section" class="hidden sm:inline-flex items-center px-3.5 py-2 rounded-xl border border-[#262218] bg-[#121212] hover:border-[#D4AF37]/60 text-xs font-medium text-[#F3E5AB] transition-colors">Order frame</a>
@@ -201,11 +197,7 @@
         </div>
       </div>
 
-      <div class="flex md:hidden items-center justify-center gap-1.5 pb-3 overflow-x-auto no-scrollbar">
-        <button data-edition="cr7" onclick="switchPlayer('cr7')" id="mob-nav-cr7" class="player-tab-btn shrink-0 px-3.5 py-1.5 rounded-full text-[11px] font-semibold tracking-wider uppercase transition-all">CR7 Edition</button>
-        <button data-edition="lm10" onclick="switchPlayer('lm10')" id="mob-nav-lm10" class="player-tab-btn shrink-0 px-3.5 py-1.5 rounded-full text-[11px] font-semibold tracking-wider uppercase transition-all">Messi Edition</button>
-        <button data-edition="njr10" onclick="switchPlayer('njr10')" id="mob-nav-njr10" class="player-tab-btn shrink-0 px-3.5 py-1.5 rounded-full text-[11px] font-semibold tracking-wider uppercase transition-all">Neymar Jr Edition</button>
-      </div>
+      <div id="nav-mobile" class="flex md:hidden items-center justify-center gap-1.5 pb-3 overflow-x-auto no-scrollbar"></div>
     </div>
   </header>
 
@@ -448,27 +440,12 @@
           <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
             <div class="lg:col-span-5 space-y-4">
               <span class="inline-block px-3 py-1 rounded-full bg-[#D4AF37]/15 border border-[#D4AF37]/40 text-[#F3E5AB] text-[11px] font-bold tracking-[0.2em] uppercase">The collection</span>
-              <h2 class="font-serif text-2xl sm:text-4xl font-bold text-[#F5F5F5] leading-tight">Complete the trio</h2>
-              <p class="text-sm text-[#A3A3A3] leading-relaxed">Hang <strong class="text-white">CR7</strong>, <strong class="text-white">Lionel Messi</strong> and <strong class="text-white">Neymar Jr</strong> side by side: three World Cup journeys on one wall.</p>
+              <h2 id="trio-title" class="font-serif text-2xl sm:text-4xl font-bold text-[#F5F5F5] leading-tight">Complete the trio</h2>
+              <p id="trio-text" class="text-sm text-[#A3A3A3] leading-relaxed">Hang <strong class="text-white">CR7</strong>, <strong class="text-white">Lionel Messi</strong> and <strong class="text-white">Neymar Jr</strong> side by side: three World Cup journeys on one wall.</p>
               <div class="flex items-baseline gap-3 pt-1"><span id="trio-price" class="text-3xl font-bold text-[#F3E5AB]">$113.97</span><span id="trio-count" class="text-sm text-[#A3A3A3]">for all three</span></div>
-              <div class="pt-2"><button onclick="addTrioToCart()" class="w-full sm:w-auto px-7 py-4 rounded-xl bg-gold-metallic text-black font-bold text-xs tracking-[0.16em] uppercase shadow-gold-glow transition-transform active:scale-[0.98]">Add all three to bag</button></div>
+              <div class="pt-2"><button id="trio-add" onclick="addTrioToCart()" class="w-full sm:w-auto px-7 py-4 rounded-xl bg-gold-metallic text-black font-bold text-xs tracking-[0.16em] uppercase shadow-gold-glow transition-transform active:scale-[0.98]">Add all three to bag</button></div>
             </div>
-            <div class="lg:col-span-7 grid grid-cols-1 sm:grid-cols-3 gap-4">
-              <button data-edition="cr7" onclick="switchPlayerAndScroll('cr7')" class="text-left cursor-pointer group rounded-2xl bg-[#121212] border border-[#262218] hover:border-[#D4AF37] p-4 transition-all">
-                <div class="flex items-center justify-between mb-3"><span class="font-serif text-lg font-bold text-gold-gradient">CR7</span><span class="text-[10px] px-2 py-0.5 rounded bg-[#181818] text-[#A3A3A3]">2006–2026</span></div>
-                <p class="text-xs font-semibold text-[#F5F5F5] mb-1">Cristiano Ronaldo</p><p class="text-[11px] text-[#A3A3A3] mb-4">Portugal</p>
-                <span class="text-[11px] font-bold text-[#D4AF37] group-hover:underline">View edition</span>
-              </button>
-              <button data-edition="lm10" onclick="switchPlayerAndScroll('lm10')" class="text-left cursor-pointer group rounded-2xl bg-[#121212] border border-[#262218] hover:border-[#D4AF37] p-4 transition-all">
-                <div class="flex items-center justify-between mb-3"><span class="font-serif text-lg font-bold text-gold-gradient">LM10</span><span class="text-[10px] px-2 py-0.5 rounded bg-[#181818] text-[#A3A3A3]">2006–2026</span></div>
-                <p class="text-xs font-semibold text-[#F5F5F5] mb-1">Lionel Messi</p><p class="text-[11px] text-[#A3A3A3] mb-4">Argentina</p>
-                <span class="text-[11px] font-bold text-[#D4AF37] group-hover:underline">View edition</span>
-              </button>
-              <button data-edition="njr10" onclick="switchPlayerAndScroll('njr10')" class="text-left cursor-pointer group rounded-2xl bg-[#121212] border border-[#262218] hover:border-[#D4AF37] p-4 transition-all">
-                <div class="flex items-center justify-between mb-3"><span class="font-serif text-lg font-bold text-gold-gradient">NJR10</span><span class="text-[10px] px-2 py-0.5 rounded bg-[#181818] text-[#A3A3A3]">2014–2026</span></div>
-                <p class="text-xs font-semibold text-[#F5F5F5] mb-1">Neymar Jr</p><p class="text-[11px] text-[#A3A3A3] mb-4">Brazil</p>
-                <span class="text-[11px] font-bold text-[#D4AF37] group-hover:underline">View edition</span>
-              </button>
+            <div id="trio-cards" class="lg:col-span-7 grid grid-cols-1 sm:grid-cols-3 gap-4">
             </div>
           </div>
         </div>
@@ -487,10 +464,7 @@
       </div>
       <div>
         <span class="block text-[#F5F5F5] font-semibold mb-3">Editions</span>
-        <ul class="space-y-2">
-          <li data-edition="cr7"><button onclick="switchPlayerAndScroll('cr7')" class="hover:text-[#D4AF37]">CR7 Edition</button></li>
-          <li data-edition="lm10"><button onclick="switchPlayerAndScroll('lm10')" class="hover:text-[#D4AF37]">Lionel Messi Edition</button></li>
-          <li data-edition="njr10"><button onclick="switchPlayerAndScroll('njr10')" class="hover:text-[#D4AF37]">Neymar Jr Edition</button></li>
+        <ul id="footer-editions" class="space-y-2">
           <li><a href="about.html" class="hover:text-[#D4AF37]">About us</a></li>
         </ul>
       </div>
@@ -544,11 +518,7 @@
   </aside>
 
   <script>
-    // Media for the CR7 edition (real product video and photos)
-    const CR7_VIDEO = {
-      poster: 'https://adelly33.com/cdn/shop/files/preview_images/f53417867bee44698130b3cb59dd769d.thumbnail.0000000000_small.jpg?v=1781235118',
-      src: 'https://adelly33.com/cdn/shop/videos/c/vp/f53417867bee44698130b3cb59dd769d/f53417867bee44698130b3cb59dd769d.SD-480p-0.9Mbps-86342736.mp4?v=0'
-    };
+    // Photos for the CR7 edition
     let CR7_PHOTOS = [
       'https://adelly33.com/cdn/shop/files/ly3.png?v=1781213927&width=1200',
       'https://adelly33.com/cdn/shop/files/ly2.png?v=1781213927&width=1200',
@@ -610,6 +580,21 @@
           {"year": "2022", "tournament": "QATAR 2022", "jerseyNo": "#10", "kitPrimary": "#EAB308", "kitAccent": "#1D4ED8", "badge": "PELÉ’S RECORD", "stage": "Quarter-final", "desc": "Scored in extra time against Croatia to equal Pelé’s record of 77 goals for Brazil."},
           {"year": "2026", "tournament": "NORTH AMERICA 2026", "jerseyNo": "#10", "kitPrimary": "#FACC15", "kitAccent": "#15803D", "badge": "LAST DANCE", "stage": "2026", "desc": "The 2026 World Cup, hosted across the USA, Canada and Mexico."}
         ]
+      },
+      zz10: {
+        id: 'zz10', status: 'hidden', price: 37.99, compare: 69.99, photos: [], video: '', poster: '', slug: 'zidane', monogram: 'ZZ', fullName: 'Zinedine Zidane', nation: 'France',
+        shortTitle: 'Zinedine Zidane Edition', eraSpan: '1998–2006', accentGlow: '#3B82F6',
+        editionName: 'ZZ — The World Cup Journey (1998–2006)',
+        heroHeadline: 'The World Cup Story of <span class="text-gold-gradient">Zidane</span>, Framed in Gold Foil',
+        heroSubheadline: 'Three World Cups, from France 1998 to Germany 2006, in one framed shadow box with gold foil accents.',
+        quote: '"Three World Cups. One maestro."',
+        story1Copy: 'From two headers in the 1998 final in Paris to the Golden Ball in Germany 2006, every chapter of Zinedine Zidane’s World Cup journey sits in order inside one frame.',
+        signatureText: 'Zinedine Zidane 10',
+        cards: [
+          { year: '1998', tournament: 'FRANCE 1998', jerseyNo: '#10', kitPrimary: '#1E3A8A', kitAccent: '#F5F5F5', badge: 'WORLD CHAMPION', stage: 'Winner', desc: 'Scored twice in the final against Brazil as France won the World Cup on home soil.' },
+          { year: '2002', tournament: 'KOREA–JAPAN 2002', jerseyNo: '#10', kitPrimary: '#1D4ED8', kitAccent: '#F5F5F5', badge: 'DEFENDING CHAMPION', stage: 'Group stage', desc: 'France arrived as defending champions; Zidane, carrying an injury, played in the final group match.' },
+          { year: '2006', tournament: 'GERMANY 2006', jerseyNo: '#10', kitPrimary: '#1E40AF', kitAccent: '#D4AF37', badge: 'GOLDEN BALL', stage: 'Final', desc: 'Led France to the final in Berlin, scored in it, and won the tournament’s Golden Ball.' }
+        ]
       }
     };
 
@@ -627,12 +612,11 @@
     let WHATSAPP = '962791153023';
     const money = n => '$' + Number(n).toFixed(2);
     const esc = t => String(t ?? '').replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
-    const KEYS = ['cr7', 'lm10', 'njr10'];
+    const KEYS = Object.keys(PLAYERS_DATA);
     const visibleKeys = () => KEYS.filter(k => PLAYERS_DATA[k].status !== 'hidden');
     const asset = u => String(u || '').replace(/^\//, '');
     PLAYERS_DATA.cr7.photos = CR7_PHOTOS.slice();
-    PLAYERS_DATA.cr7.video = CR7_VIDEO.src;
-    PLAYERS_DATA.cr7.poster = CR7_VIDEO.poster;
+
 
     function artworkFrameHTML(p) {
       const spots = p.cards.map((card, i) => {
@@ -802,11 +786,13 @@
         </video></div>`;
     }
     // Gallery items: the video first (when there is one), then the photos
-    const galleryItems = p => [...(p.video ? [{ video: true }] : []), ...(Array.isArray(p.photos) ? p.photos.filter(Boolean).map(src => ({ src })) : [])];
+    const galleryItems = p => [...(p.artwork ? [{ design: true }] : []), ...(p.video ? [{ video: true }] : []), ...(Array.isArray(p.photos) ? p.photos.filter(Boolean).map(src => ({ src })) : [])];
+    const designActive = p => { const it = galleryItems(p)[activePhoto]; return !it || !!it.design; };
     const hasPhotos = p => galleryItems(p).length > 0;
     function photoHTML(p) {
       const items = galleryItems(p);
       const item = items[activePhoto] || items[0];
+      if (item.design) return buildShadowboxHTML(p, false);
       if (item.video) return videoHTML(p);
       return `<img id="main-img" src="${esc(asset(item.src))}" alt="The ${esc(p.shortTitle)} framed shadow box" class="w-full h-auto rounded-xl border border-[#262218] shadow-museum-frame"/>`;
     }
@@ -814,14 +800,21 @@
       const p = PLAYERS_DATA[currentPlayerKey];
       const box = document.getElementById('photo-thumbs');
       box.innerHTML = galleryItems(p).map((item, i) => `
-        <button onclick="showPhoto(${i})" aria-label="${item.video ? 'Play the video' : `Show photo ${i + 1}`}" class="relative rounded-xl overflow-hidden border ${i === activePhoto ? 'border-[#D4AF37]' : 'border-[#262218] hover:border-[#D4AF37]/50'} bg-[#121212] transition-colors">
-          ${item.video
+        <button onclick="showPhoto(${i})" aria-label="${item.design ? 'Show the design' : item.video ? 'Play the video' : `Show photo ${i + 1}`}" class="relative rounded-xl overflow-hidden border ${i === activePhoto ? 'border-[#D4AF37]' : 'border-[#262218] hover:border-[#D4AF37]/50'} bg-[#121212] transition-colors">
+          ${item.design
+            ? `<img src="${esc(asset(p.artwork))}" alt="" loading="lazy" class="w-full h-24 sm:h-28 object-cover"/>`
+            : item.video
             ? `${p.poster ? `<img src="${esc(asset(p.poster))}" alt="" loading="lazy" class="w-full h-24 sm:h-28 object-cover opacity-70"/>` : '<div class="w-full h-24 sm:h-28"></div>'}
                <span class="absolute inset-0 flex items-center justify-center"><span class="w-10 h-10 rounded-full bg-gold-metallic text-black flex items-center justify-center text-sm" aria-hidden="true">▶</span></span>`
             : `<img src="${esc(asset(item.src).replace('width=1200', 'width=300'))}" alt="" loading="lazy" class="w-full h-24 sm:h-28 object-cover"/>`}
         </button>`).join('');
     }
-    function showPhoto(i) { activePhoto = i; renderFrames(); renderPhotoThumbs(); }
+    function showPhoto(i) {
+      activePhoto = i; renderFrames(); renderPhotoThumbs();
+      const p = PLAYERS_DATA[currentPlayerKey];
+      document.getElementById('angle-buttons').classList.toggle('hidden', !designActive(p));
+      if (!designActive(p)) setGalleryView('front');
+    }
 
     function renderFrames() {
       const player = PLAYERS_DATA[currentPlayerKey];
@@ -838,18 +831,7 @@
       const isCR7 = playerKey === KEYS[0];
       const real = hasPhotos(p);
 
-      ['cr7', 'lm10', 'njr10'].forEach(key => {
-        [document.getElementById(`nav-${key}`), document.getElementById(`mob-nav-${key}`)].forEach(btn => {
-          if (!btn) return;
-          const on = key === playerKey;
-          btn.classList.toggle('bg-gold-metallic', on);
-          btn.classList.toggle('text-black', on);
-          btn.classList.toggle('shadow-gold-glow', on);
-          btn.classList.toggle('text-[#A3A3A3]', !on);
-          btn.classList.toggle('hover:text-white', !on);
-          btn.setAttribute('aria-pressed', on ? 'true' : 'false');
-        });
-      });
+      styleTabs();
 
       document.getElementById('hero-edition-badge').textContent = `${p.shortTitle} · ${p.nation}`;
       document.getElementById('hero-headline').innerHTML = p.heroHeadline;
@@ -859,9 +841,9 @@
       document.getElementById('hero-glare-btn').classList.toggle('hidden', !p.artwork && !!p.video);
 
       document.getElementById('photo-thumbs').classList.toggle('hidden', !real || galleryItems(p).length < 2);
-      document.getElementById('angle-buttons').classList.toggle('hidden', real);
+      document.getElementById('angle-buttons').classList.toggle('hidden', !designActive(p));
       if (real) { renderPhotoThumbs(); setGalleryView('front'); }
-      document.getElementById('gallery-tip').textContent = real ? (p.video ? `Video and photos of the ${p.shortTitle}.` : `Photos of the ${p.shortTitle}.`) : p.artwork ? 'The full design. Tap any card to see the moment it celebrates.' : 'Illustrated preview. Tap any card inside the frame to see the moment it celebrates.';
+      document.getElementById('gallery-tip').textContent = p.artwork ? (galleryItems(p).length > 1 ? 'The full design and photos of the frame. Tap any card to see its moment.' : 'The full design. Tap any card to see the moment it celebrates.') : real ? `Photos of the ${p.shortTitle}.` : 'Illustrated preview. Tap any card inside the frame to see the moment it celebrates.';
       renderFrames();
 
       document.getElementById('buybox-series').textContent = `${p.shortTitle} · ${p.nation}`;
@@ -1065,7 +1047,48 @@
     }
 
     // Show or hide editions everywhere (tabs, trio, footer)
+    const NUM_WORDS = ['zero','one','two','three','four','five','six','seven','eight'];
+    function styleTabs() {
+      KEYS.forEach(key => {
+        [document.getElementById(`nav-${key}`), document.getElementById(`mob-nav-${key}`)].forEach(btn => {
+          if (!btn) return;
+          const on = key === currentPlayerKey;
+          btn.classList.toggle('bg-gold-metallic', on);
+          btn.classList.toggle('text-black', on);
+          btn.classList.toggle('shadow-gold-glow', on);
+          btn.classList.toggle('text-[#A3A3A3]', !on);
+          btn.classList.toggle('hover:text-white', !on);
+          btn.setAttribute('aria-pressed', on ? 'true' : 'false');
+        });
+      });
+    }
+    function renderEditionNav() {
+      const keys = visibleKeys();
+      const tab = (k, mob) => `<button data-edition="${k}" onclick="switchPlayer('${k}')" id="${mob ? 'mob-' : ''}nav-${k}" class="player-tab-btn ${mob ? 'shrink-0 px-3.5 text-[11px]' : 'px-4 text-xs'} py-1.5 rounded-full font-semibold tracking-wider uppercase transition-all duration-300">${esc(mob ? PLAYERS_DATA[k].shortTitle.replace('Lionel ', '') : PLAYERS_DATA[k].shortTitle)}</button>`;
+      document.getElementById('nav-desktop').innerHTML = keys.map(k => tab(k, false)).join('');
+      document.getElementById('nav-mobile').innerHTML = keys.map(k => tab(k, true)).join('');
+      const foot = document.getElementById('footer-editions');
+      foot.querySelectorAll('[data-edition]').forEach(el => el.remove());
+      foot.insertAdjacentHTML('afterbegin', keys.map(k => `<li data-edition="${k}"><button onclick="switchPlayerAndScroll('${k}')" class="hover:text-[#D4AF37]">${esc(PLAYERS_DATA[k].shortTitle)}</button></li>`).join(''));
+      const sale = trioKeys();
+      const cards = document.getElementById('trio-cards');
+      cards.className = `lg:col-span-7 grid grid-cols-1 ${sale.length > 3 ? 'sm:grid-cols-2' : 'sm:grid-cols-3'} gap-4`;
+      cards.innerHTML = sale.map(k => { const p = PLAYERS_DATA[k]; return `
+        <button data-edition="${k}" onclick="switchPlayerAndScroll('${k}')" class="text-left cursor-pointer group rounded-2xl bg-[#121212] border border-[#262218] hover:border-[#D4AF37] p-4 transition-all">
+          <div class="flex items-center justify-between mb-3"><span class="font-serif text-lg font-bold text-gold-gradient">${p.monogram}</span><span class="text-[10px] px-2 py-0.5 rounded bg-[#181818] text-[#A3A3A3]">${p.eraSpan}</span></div>
+          <p class="text-xs font-semibold text-[#F5F5F5] mb-1">${esc(p.fullName)}</p><p class="text-[11px] text-[#A3A3A3] mb-4">${p.nation}</p>
+          <span class="text-[11px] font-bold text-[#D4AF37] group-hover:underline">View edition</span>
+        </button>`; }).join('');
+      const names = sale.map(k => `<strong class="text-white">${esc(PLAYERS_DATA[k].fullName)}</strong>`);
+      const list = names.length > 1 ? names.slice(0, -1).join(', ') + ' and ' + names[names.length - 1] : names.join('');
+      document.getElementById('trio-title').textContent = sale.length === 3 ? 'Complete the trio' : 'Complete the collection';
+      styleTabs();
+      document.getElementById('trio-add').textContent = `Add all ${NUM_WORDS[sale.length] || sale.length} to bag`;
+      document.getElementById('trio-text').innerHTML = `Hang ${list} side by side: ${NUM_WORDS[sale.length] || sale.length} World Cup journeys on one wall.`;
+    }
+
     function updateEditionVisibility() {
+      renderEditionNav();
       KEYS.forEach(k => {
         const hidden = PLAYERS_DATA[k].status === 'hidden';
         document.querySelectorAll(`[data-edition="${k}"]`).forEach(el => el.classList.toggle('hidden', hidden));
@@ -1074,7 +1097,7 @@
       const trio = document.getElementById('trio-block');
       trio.classList.toggle('hidden', active.length < 2);
       document.getElementById('trio-price').textContent = money(active.reduce((s, k) => s + PLAYERS_DATA[k].price, 0));
-      document.getElementById('trio-count').textContent = active.length === 3 ? 'for all three' : `for ${active.length} editions`;
+      document.getElementById('trio-count').textContent = `for all ${NUM_WORDS[active.length] || active.length}`;
     }
 
     // Content from the admin (content/*.json)
@@ -1139,7 +1162,8 @@
 
     function keyFromHash() {
       const h = location.hash.replace('#', '').toLowerCase();
-      return { messi: 'lm10', lm10: 'lm10', neymar: 'njr10', njr10: 'njr10', cr7: 'cr7' }[h] || null;
+      if (!h) return null;
+      return KEYS.find(k => k === h || PLAYERS_DATA[k].slug === h) || null;
     }
     window.addEventListener('hashchange', () => { const k = keyFromHash(); if (k) switchPlayer(k, { keepHash: true }); });
 
