@@ -120,7 +120,7 @@
       transform: rotateY(var(--ry, -24deg)) rotateX(var(--rx, 8deg)) scale(0.88);
     }
     .view-angled.tilting .frame-3d-wrapper { transition: transform 0.12s linear; }
-    .hero-logo { box-shadow: 0 0 0 1px rgba(212,175,55,.35), 0 18px 60px -10px rgba(212,175,55,.45); }
+    .hero-logo { filter: drop-shadow(0 12px 40px rgba(212,175,55,.35)); }
     /* 3D frame box: depth faces behind the front of the frame */
     .frame-box { position: relative; transform-style: preserve-3d; --d: 26px; }
     .frame-face { position: absolute; pointer-events: none; background: var(--edge, linear-gradient(90deg,#050505,#1c1c1f 55%,#0a0a0a)); }
@@ -187,7 +187,7 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex items-center justify-between h-16 sm:h-20 gap-3">
         <a href="#top" class="flex items-center gap-3 group shrink-0" aria-label="The Last Dance Collectibles home">
-          <img src="logo-mark.png" alt="" width="64" height="64" class="w-12 h-12 sm:w-16 sm:h-16 rounded-full shadow-gold-glow group-hover:scale-105 transition-transform"/>
+          <img src="logo-mark.png" alt="" width="64" height="64" class="w-12 h-12 sm:w-16 sm:h-16 group-hover:scale-105 transition-transform"/>
           <div class="leading-tight">
             <span class="font-serif text-sm sm:text-base font-bold tracking-[0.18em] text-[#F5F5F5] block brand-1">THE LAST DANCE</span>
             <span class="text-[9px] tracking-[0.28em] uppercase text-[#D4AF37] block brand-2">Collectibles</span>
