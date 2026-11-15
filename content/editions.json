@@ -276,7 +276,7 @@
     },
     {
       "key": "zz10",
-      "status": "hidden",
+      "status": "active",
       "title": "Zinedine Zidane Edition",
       "player": "Zinedine Zidane",
       "nation": "France",
@@ -286,7 +286,7 @@
       "compare_price": 69.99,
       "product_name": "ZZ — The World Cup Journey (1998–2006)",
       "headline": "The World Cup Story of *Zidane*, Framed in Gold Foil",
-      "subheadline": "France 1998 to Germany 2006, plus the Euro 2000 title, in one framed shadow box with gold foil accents.",
+      "subheadline": "Three World Cups, from France 1998 to Germany 2006, in one framed shadow box with gold foil accents.",
       "quote": "\"Three World Cups. One maestro.\"",
       "story": "From two headers in the 1998 final in Paris to the Golden Ball in Germany 2006, every chapter of Zinedine Zidane’s World Cup journey sits in order inside one frame.",
       "signature": "Zinedine Zidane 10",
@@ -307,20 +307,8 @@
           "description": "Scored twice in the final against Brazil as France won the World Cup on home soil.",
           "colour": "#1E3A8A",
           "accent": "#F5F5F5",
-          "image": "",
-          "area": "21.00,45.13,13.00,28.80"
-        },
-        {
-          "year": "2000",
-          "tournament": "EURO 2000",
-          "shirt": "#10",
-          "label": "EURO CHAMPION",
-          "reached": "Winner",
-          "description": "France added the European title to the world crown, and Zidane was named player of the tournament.",
-          "colour": "#312E81",
-          "accent": "#D4AF37",
-          "image": "",
-          "area": "36.00,45.13,13.00,28.80"
+          "image": "/uploads/editions/zidane/card-1998.jpg",
+          "area": "26.80,45.13,13.60,28.80"
         },
         {
           "year": "2002",
@@ -331,8 +319,8 @@
           "description": "France arrived as defending champions; Zidane, carrying an injury, played in the final group match.",
           "colour": "#1D4ED8",
           "accent": "#F5F5F5",
-          "image": "",
-          "area": "51.00,45.13,13.00,28.80"
+          "image": "/uploads/editions/zidane/card-2002.jpg",
+          "area": "43.20,45.13,13.60,28.80"
         },
         {
           "year": "2006",
@@ -343,8 +331,8 @@
           "description": "Led France to the final in Berlin, scored in it, and won the tournament’s Golden Ball.",
           "colour": "#1E40AF",
           "accent": "#D4AF37",
-          "image": "",
-          "area": "66.00,45.13,13.00,28.80"
+          "image": "/uploads/editions/zidane/card-2006.jpg",
+          "area": "59.60,45.13,13.60,28.80"
         }
       ]
     }
