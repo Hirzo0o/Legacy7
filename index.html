@@ -1113,9 +1113,14 @@
         });
       });
     }
+    // Short tab name: "Lionel Messi Edition" -> "Messi", "Neymar Jr Edition" -> "Neymar Jr"
+    function tabLabel(k) {
+      const n = PLAYERS_DATA[k].shortTitle.replace(/\s*Edition$/i, '').trim(), w = n.split(/\s+/);
+      return /^jr\.?$/i.test(w[w.length - 1]) ? n : w[w.length - 1];
+    }
     function renderEditionNav() {
       const keys = visibleKeys();
-      const tab = (k, mob) => `<button data-edition="${k}" onclick="switchPlayer('${k}')" id="${mob ? 'mob-' : ''}nav-${k}" class="player-tab-btn ${mob ? 'shrink-0 px-3.5 text-[11px]' : 'px-4 text-xs'} py-1.5 rounded-full font-semibold tracking-wider uppercase transition-all duration-300">${esc(mob ? PLAYERS_DATA[k].shortTitle.replace('Lionel ', '') : PLAYERS_DATA[k].shortTitle)}</button>`;
+      const tab = (k, mob) => `<button data-edition="${k}" onclick="switchPlayer('${k}')" id="${mob ? 'mob-' : ''}nav-${k}" class="player-tab-btn ${mob ? 'shrink-0 px-3.5 text-[11px]' : 'px-4 text-xs'} py-1.5 rounded-full font-semibold tracking-wider uppercase whitespace-nowrap transition-all duration-300">${esc(tabLabel(k))}</button>`;
       document.getElementById('nav-desktop').innerHTML = keys.map(k => tab(k, false)).join('');
       document.getElementById('nav-mobile').innerHTML = keys.map(k => tab(k, true)).join('');
       const foot = document.getElementById('footer-editions');
