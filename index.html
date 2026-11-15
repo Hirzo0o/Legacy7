@@ -20,33 +20,7 @@
   <link rel="preload" href="fonts/plus-jakarta-sans-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin/>
   <link rel="preconnect" href="https://adelly33.com" crossorigin/>
   <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Product", "name": "CR7 Edition — The Last Dance Collectibles", "description": "A 12×16 inch framed shadow box tracing CR7's World Cup journey from 2006 to 2026, with gold foil accents and mounting hardware included.", "image": "https://adelly33.com/cdn/shop/files/ly3.png?v=1781213927&width=1200", "brand": {"@type": "Brand", "name": "The Last Dance Collectibles"}, "offers": {"@type": "Offer", "price": "45.00", "priceCurrency": "USD", "availability": "https://schema.org/InStock", "url": "https://legacy7.onrender.com/"}}</script>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      darkMode: 'class',
-      theme: {
-        extend: {
-          colors: {
-            obsidian: '#080808',
-            charcoal: '#121212',
-            charcoalLight: '#181818',
-            goldBorder: '#262218',
-            goldPrimary: '#D4AF37',
-            goldChampagne: '#F3E5AB',
-            goldDeep: '#997A1E',
-          },
-          fontFamily: {
-            serif: ['Cinzel', 'Georgia', 'serif'],
-            sans: ['Plus Jakarta Sans', 'system-ui', 'sans-serif'],
-          },
-          boxShadow: {
-            'gold-glow': '0 0 60px -15px rgba(212, 175, 55, 0.25)',
-            'museum-frame': '0 30px 70px -10px rgba(0, 0, 0, 0.92), 0 0 1px 1px rgba(212, 175, 55, 0.18)',
-          }
-        }
-      }
-    }
-  </script>
+  <link rel="stylesheet" href="tailwind.css"/>
   <style>
     @font-face{font-family:'Cinzel';src:url('fonts/cinzel-latin-600-normal.woff2') format('woff2');font-weight:500 600;font-display:swap}
     @font-face{font-family:'Cinzel';src:url('fonts/cinzel-latin-700-normal.woff2') format('woff2');font-weight:700 900;font-display:swap}
@@ -173,12 +147,19 @@
       -ms-overflow-style: none;
       scrollbar-width: none;
     }
+    @media (max-width: 639px) {
+      footer a, footer button { display: inline-block; padding: 9px 0; }
+      #announce-text ~ a { display: inline-block; padding: 6px 0; }
+      body.has-buybar { padding-bottom: 76px; }
+    }
+    #mobile-buybar { transition: transform .3s ease; }
+    #mobile-buybar.off { transform: translateY(110%); }
     </style>
 </head>
 <body class="antialiased selection:bg-[#D4AF37] selection:text-black">
 
   <!-- TOP ANNOUNCEMENT BAR -->
-  <div class="bg-[#100E09] border-b border-[#262218] text-center py-2 px-4 text-[11px] sm:text-xs tracking-[0.2em] uppercase text-[#F3E5AB] font-medium">
+  <div class="bg-[#100E09] border-b border-[#262218] text-center py-1.5 sm:py-2 px-3 text-[10px] sm:text-xs tracking-[0.08em] sm:tracking-[0.2em] uppercase whitespace-nowrap overflow-hidden text-ellipsis text-[#F3E5AB] font-medium">
     <span id="announce-text">Order on WhatsApp</span> &bull; <a class="wa-link hover:text-white underline-offset-4 hover:underline" data-text="Hi, I would like to track my The Last Dance Collectibles order." href="https://wa.me/962791153023" target="_blank" rel="noopener">Track your order</a> &bull; <a class="wa-link hover:text-white underline-offset-4 hover:underline" href="https://wa.me/962791153023" target="_blank" rel="noopener">Contact us</a>
   </div>
 
@@ -194,10 +175,10 @@
           </div>
         </a>
 
-        <nav id="nav-desktop" aria-label="Player editions" class="hidden md:flex items-center bg-[#121212] p-1.5 rounded-full border border-[#262218]"></nav>
+        <nav id="nav-desktop" aria-label="Player editions" class="hidden lg:flex items-center bg-[#121212] p-1.5 rounded-full border border-[#262218]"></nav>
 
         <div class="flex items-center gap-2 sm:gap-3">
-          <a href="#buy-section" class="hidden sm:inline-flex items-center px-3.5 py-2 rounded-xl border border-[#262218] bg-[#121212] hover:border-[#D4AF37]/60 text-xs font-medium text-[#F3E5AB] transition-colors">Order frame</a>
+          <a href="#buy-section" class="hidden lg:inline-flex items-center px-3.5 py-2 rounded-xl border border-[#262218] bg-[#121212] hover:border-[#D4AF37]/60 text-xs font-medium text-[#F3E5AB] transition-colors">Order frame</a>
           <button onclick="toggleCart(true)" aria-label="Open your bag" class="relative flex items-center gap-2 px-3.5 py-2 rounded-xl bg-[#121212] border border-[#262218] hover:border-[#D4AF37] text-[#F5F5F5] transition-all">
             <svg class="w-4 h-4 text-[#D4AF37]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" /></svg>
             <span class="text-xs font-semibold hidden sm:inline">Your bag</span>
@@ -206,7 +187,7 @@
         </div>
       </div>
 
-      <div id="nav-mobile" class="flex md:hidden items-center justify-center gap-1.5 pb-3 overflow-x-auto no-scrollbar"></div>
+      <div id="nav-mobile" class="flex lg:hidden items-center gap-1.5 pb-3 -mx-4 px-4 overflow-x-auto no-scrollbar"></div>
     </div>
   </header>
 
@@ -266,7 +247,7 @@
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-start">
 
           <div class="lg:col-span-7 space-y-5">
-            <div id="gallery-stage" class="frame-stage view-front relative rounded-2xl bg-[#101010] border border-[#262218] p-5 sm:p-10 min-h-[420px] sm:min-h-[540px] flex flex-col items-center justify-center overflow-hidden">
+            <div id="gallery-stage" class="frame-stage view-front relative rounded-2xl bg-[#101010] border border-[#262218] p-5 sm:p-10 min-h-[300px] sm:min-h-[540px] flex flex-col items-center justify-center overflow-hidden">
               <div id="room-wall-backdrop" class="hidden absolute inset-0 pointer-events-none transition-opacity duration-500">
                 <div class="absolute inset-0 bg-gradient-to-b from-[#1a1815] via-[#12100e] to-[#090807]"></div>
                 <div class="absolute top-0 left-1/2 -translate-x-1/2 w-96 h-64 bg-[#D4AF37]/10 blur-3xl"></div>
@@ -301,9 +282,9 @@
 
             <div class="flex flex-col sm:flex-row gap-3 mb-6">
               <div class="flex items-center justify-between sm:w-32 px-3 py-3 rounded-xl bg-[#080808] border border-[#262218]">
-                <button onclick="updateBuyQty(-1)" aria-label="Decrease quantity" class="w-7 h-7 rounded-lg hover:bg-[#181818] text-[#A3A3A3] hover:text-white font-bold transition-colors">−</button>
+                <button onclick="updateBuyQty(-1)" aria-label="Decrease quantity" class="w-10 h-10 rounded-lg hover:bg-[#181818] text-[#A3A3A3] hover:text-white font-bold transition-colors">−</button>
                 <span id="buy-qty" class="text-sm font-bold text-[#F5F5F5]">1</span>
-                <button onclick="updateBuyQty(1)" aria-label="Increase quantity" class="w-7 h-7 rounded-lg hover:bg-[#181818] text-[#A3A3A3] hover:text-white font-bold transition-colors">+</button>
+                <button onclick="updateBuyQty(1)" aria-label="Increase quantity" class="w-10 h-10 rounded-lg hover:bg-[#181818] text-[#A3A3A3] hover:text-white font-bold transition-colors">+</button>
               </div>
               <button id="add-btn" onclick="addCurrentPlayerToCart()" class="flex-1 disabled:opacity-40 disabled:cursor-not-allowed py-4 px-4 rounded-xl bg-gold-metallic text-black font-bold text-xs sm:text-sm tracking-[0.1em] uppercase whitespace-nowrap shadow-gold-glow flex items-center justify-center gap-2 transition-transform active:scale-[0.98]">
                 <span>Add to bag — $<span id="buy-btn-total">45.00</span></span>
@@ -1110,8 +1091,11 @@
           btn.classList.toggle('text-[#A3A3A3]', !on);
           btn.classList.toggle('hover:text-white', !on);
           btn.setAttribute('aria-pressed', on ? 'true' : 'false');
+          if (on && btn.id.startsWith('mob-')) { const m = btn.parentElement; m.scrollLeft = Math.max(0, btn.offsetLeft - (m.clientWidth - btn.offsetWidth) / 2); }
         });
       });
+      const mob = document.getElementById('nav-mobile');
+      if (mob) mob.style.justifyContent = mob.scrollWidth <= mob.clientWidth + 1 ? 'center' : 'flex-start';
     }
     // Short tab name: "Lionel Messi Edition" -> "Messi", "Neymar Jr Edition" -> "Neymar Jr"
     function tabLabel(k) {
@@ -1120,7 +1104,7 @@
     }
     function renderEditionNav() {
       const keys = visibleKeys();
-      const tab = (k, mob) => `<button data-edition="${k}" onclick="switchPlayer('${k}')" id="${mob ? 'mob-' : ''}nav-${k}" class="player-tab-btn ${mob ? 'shrink-0 px-3.5 text-[11px]' : 'px-4 text-xs'} py-1.5 rounded-full font-semibold tracking-wider uppercase whitespace-nowrap transition-all duration-300">${esc(tabLabel(k))}</button>`;
+      const tab = (k, mob) => `<button data-edition="${k}" onclick="switchPlayer('${k}')" id="${mob ? 'mob-' : ''}nav-${k}" class="player-tab-btn ${mob ? 'shrink-0 px-4 min-h-[40px] text-[11px]' : 'px-4 py-1.5 text-xs'} rounded-full font-semibold tracking-wider uppercase whitespace-nowrap transition-all duration-300">${esc(tabLabel(k))}</button>`;
       document.getElementById('nav-desktop').innerHTML = keys.map(k => tab(k, false)).join('');
       document.getElementById('nav-mobile').innerHTML = keys.map(k => tab(k, true)).join('');
       const foot = document.getElementById('footer-editions');
@@ -1128,7 +1112,7 @@
       foot.insertAdjacentHTML('afterbegin', keys.map(k => `<li data-edition="${k}"><button onclick="switchPlayerAndScroll('${k}')" class="hover:text-[#D4AF37]">${esc(PLAYERS_DATA[k].shortTitle)}</button></li>`).join(''));
       const sale = trioKeys();
       const cards = document.getElementById('trio-cards');
-      cards.className = `lg:col-span-7 grid grid-cols-1 ${sale.length > 3 ? 'sm:grid-cols-2' : 'sm:grid-cols-3'} gap-4`;
+      cards.className = `lg:col-span-7 grid grid-cols-2 ${sale.length > 3 ? '' : 'sm:grid-cols-3'} gap-3 sm:gap-4`;
       cards.innerHTML = sale.map(k => { const p = PLAYERS_DATA[k]; return `
         <button data-edition="${k}" onclick="switchPlayerAndScroll('${k}')" class="text-left cursor-pointer group rounded-2xl bg-[#121212] border border-[#262218] hover:border-[#D4AF37] p-4 transition-all">
           <div class="flex items-center justify-between mb-3"><span class="font-serif text-lg font-bold text-gold-gradient">${p.monogram}</span><span class="text-[10px] px-2 py-0.5 rounded bg-[#181818] text-[#A3A3A3]">${p.eraSpan}</span></div>
@@ -1231,6 +1215,27 @@
       loadStore();
     });
 
+  </script>
+  <div id="mobile-buybar" class="off sm:hidden fixed bottom-0 inset-x-0 z-40 bg-[#0D0D0D]/95 backdrop-blur border-t border-[#262218] px-4 py-3 flex items-center gap-3" style="padding-bottom:max(12px,env(safe-area-inset-bottom))">
+    <div class="min-w-0 flex-1"><p id="buybar-name" class="text-[11px] text-[#A3A3A3] truncate"></p><p id="buybar-price" class="text-base font-bold text-[#F5F5F5]"></p></div>
+    <button onclick="addCurrentPlayerToCart()" class="shrink-0 min-h-[44px] px-5 rounded-xl bg-gold-metallic text-black font-bold text-xs tracking-[0.12em] uppercase">Add to bag</button>
+  </div>
+  <script>
+    (function () {
+      const bar = document.getElementById('mobile-buybar'), box = document.getElementById('buy-section'), hero = document.querySelector('main section');
+      if (!bar || !box || !('IntersectionObserver' in window)) return;
+      let boxSeen = false, heroSeen = true;
+      const update = () => {
+        const p = PLAYERS_DATA[currentPlayerKey];
+        document.getElementById('buybar-name').textContent = p.shortTitle;
+        document.getElementById('buybar-price').textContent = money(p.price);
+        const show = !boxSeen && !heroSeen && p.status !== 'sold_out';
+        bar.classList.toggle('off', !show); document.body.classList.toggle('has-buybar', show);
+      };
+      new IntersectionObserver(e => { boxSeen = e[0].isIntersecting; update(); }).observe(box);
+      new IntersectionObserver(e => { heroSeen = e[0].isIntersecting; update(); }).observe(hero);
+      const orig = window.switchPlayer; window.switchPlayer = function () { const r = orig.apply(this, arguments); update(); return r; };
+    })();
   </script>
 </body>
 </html>
