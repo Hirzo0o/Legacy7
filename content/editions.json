@@ -308,7 +308,7 @@
           "colour": "#1E3A8A",
           "accent": "#F5F5F5",
           "image": "/uploads/editions/zidane/card-1998.jpg",
-          "area": "26.80,45.13,13.60,28.80"
+          "area": "26.80,47.68,13.60,28.80"
         },
         {
           "year": "2002",
@@ -320,7 +320,7 @@
           "colour": "#1D4ED8",
           "accent": "#F5F5F5",
           "image": "/uploads/editions/zidane/card-2002.jpg",
-          "area": "43.20,45.13,13.60,28.80"
+          "area": "43.20,47.68,13.60,28.80"
         },
         {
           "year": "2006",
@@ -332,7 +332,7 @@
           "colour": "#1E40AF",
           "accent": "#D4AF37",
           "image": "/uploads/editions/zidane/card-2006.jpg",
-          "area": "59.60,45.13,13.60,28.80"
+          "area": "59.60,47.68,13.60,28.80"
         }
       ]
     }
