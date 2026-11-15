@@ -370,7 +370,7 @@
           "colour": "#75AADB",
           "accent": "#D4AF37",
           "image": "/uploads/editions/maradona/card-1982.jpg",
-          "area": "23.70,45.84,11.20,24.00"
+          "area": "23.70,49.13,11.20,24.00"
         },
         {
           "year": "1986",
@@ -382,7 +382,7 @@
           "colour": "#75AADB",
           "accent": "#D4AF37",
           "image": "/uploads/editions/maradona/card-1986.jpg",
-          "area": "37.50,45.84,11.20,24.00"
+          "area": "37.50,49.13,11.20,24.00"
         },
         {
           "year": "1990",
@@ -394,7 +394,7 @@
           "colour": "#75AADB",
           "accent": "#D4AF37",
           "image": "/uploads/editions/maradona/card-1990.jpg",
-          "area": "51.30,45.84,11.20,24.00"
+          "area": "51.30,49.13,11.20,24.00"
         },
         {
           "year": "1994",
@@ -406,7 +406,7 @@
           "colour": "#75AADB",
           "accent": "#D4AF37",
           "image": "/uploads/editions/maradona/card-1994.jpg",
-          "area": "65.10,45.84,11.20,24.00"
+          "area": "65.10,49.13,11.20,24.00"
         }
       ]
     }
