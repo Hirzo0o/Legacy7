@@ -276,7 +276,7 @@
     },
     {
       "key": "zz10",
-      "status": "hidden",
+      "status": "active",
       "title": "Zinedine Zidane Edition",
       "player": "Zinedine Zidane",
       "nation": "France",
@@ -293,7 +293,7 @@
       "video": "",
       "video_poster": "",
       "photos": [],
-      "artwork": "",
+      "artwork": "/uploads/editions/zidane/artwork.jpg",
       "portrait": "",
       "crest": "",
       "signature_image": "",
@@ -307,8 +307,8 @@
           "description": "Scored twice in the final against Brazil as France won the World Cup on home soil.",
           "colour": "#1E3A8A",
           "accent": "#F5F5F5",
-          "image": "",
-          "area": ""
+          "image": "/uploads/editions/zidane/card-1998.jpg",
+          "area": "26.80,45.13,13.60,28.80"
         },
         {
           "year": "2002",
@@ -319,8 +319,8 @@
           "description": "France arrived as defending champions; Zidane, carrying an injury, played in the final group match.",
           "colour": "#1D4ED8",
           "accent": "#F5F5F5",
-          "image": "",
-          "area": ""
+          "image": "/uploads/editions/zidane/card-2002.jpg",
+          "area": "43.20,45.13,13.60,28.80"
         },
         {
           "year": "2006",
@@ -331,8 +331,8 @@
           "description": "Led France to the final in Berlin, scored in it, and won the tournament’s Golden Ball.",
           "colour": "#1E40AF",
           "accent": "#D4AF37",
-          "image": "",
-          "area": ""
+          "image": "/uploads/editions/zidane/card-2006.jpg",
+          "area": "59.60,45.13,13.60,28.80"
         }
       ]
     }
