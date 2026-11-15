@@ -272,7 +272,7 @@
           <div class="lg:col-span-5 rounded-2xl bg-[#121212] border border-[#262218] p-6 sm:p-8 shadow-2xl lg:sticky lg:top-28">
             <span id="buybox-series" class="block text-[11px] font-bold tracking-[0.2em] uppercase text-[#D4AF37] mb-3">CR7 Edition</span>
             <h2 id="buybox-title" class="font-serif text-2xl sm:text-3xl font-bold text-[#F5F5F5] leading-snug mb-2"></h2>
-            <p id="buybox-subtitle" class="text-xs sm:text-sm text-[#A3A3A3] mb-5">A 12 × 16 inch shadow box with <span data-count="word">six</span> collectible World Cup cards and gold foil accents. Mounting hardware and premium packaging included.</p>
+            <p id="buybox-subtitle" class="text-xs sm:text-sm text-[#A3A3A3] mb-5">A 12 × 16 inch shadow box with <span data-count="word">six</span> collectible <span class="journey-word">World Cup</span> cards and gold foil accents. Mounting hardware and premium packaging included.</p>
 
             <div class="flex items-baseline gap-3 pb-6 mb-6 border-b border-[#262218]">
               <span id="price-now" class="text-3xl sm:text-4xl font-bold text-[#F5F5F5]">$45.00</span>
@@ -317,7 +317,7 @@
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
           <div class="p-6 rounded-2xl bg-[#121212] border border-[#262218] hover:border-[#D4AF37]/50 transition-colors">
             <div class="w-11 h-11 rounded-xl bg-[#181818] border border-[#D4AF37]/30 flex items-center justify-center text-[#D4AF37] mb-5"><svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M7 8h4v8H7zM13 8h4v8h-4z"/></svg></div>
-            <h3 class="font-serif text-lg font-bold text-[#F5F5F5] mb-2"><span data-count="Word">Six</span> World Cup cards</h3>
+            <h3 class="font-serif text-lg font-bold text-[#F5F5F5] mb-2"><span data-count="Word">Six</span> <span class="journey-word">World Cup</span> cards</h3>
             <p class="text-sm text-[#A3A3A3] leading-relaxed">Each tournament illustrated as a collectible card and set in order, so the frame reads as a timeline.</p>
           </div>
           <div class="p-6 rounded-2xl bg-[#121212] border border-[#262218] hover:border-[#D4AF37]/50 transition-colors">
@@ -372,7 +372,7 @@
         <div class="space-y-10">
           <div class="text-center max-w-3xl mx-auto">
             <span class="text-xs font-bold tracking-[0.22em] uppercase text-[#D4AF37] block mb-2">The <span data-count="word">six</span> cards</span>
-            <h2 class="font-serif text-2xl sm:text-4xl font-bold text-[#F5F5F5] mb-3">Every World Cup, finally in one place</h2>
+            <h2 class="font-serif text-2xl sm:text-4xl font-bold text-[#F5F5F5] mb-3" id="cards-heading">Every World Cup, finally in one place</h2>
             <p class="text-sm sm:text-base text-[#A3A3A3]">Tap a card to see the moment it celebrates.</p>
           </div>
           <div id="timeline-cards-grid" class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4"></div>
@@ -401,7 +401,7 @@
               </div>
               <div class="space-y-3 text-xs">
                 <div class="p-3.5 rounded-xl bg-[#181818] border border-[#262218] flex items-center justify-between"><span class="font-semibold text-[#F5F5F5]">01. Shadow box frame</span><span class="text-[#D4AF37]">Solid build</span></div>
-                <div class="p-3.5 rounded-xl bg-[#181818] border border-[#262218] flex items-center justify-between"><span class="font-semibold text-[#F5F5F5]">02. <span data-count="Word">Six</span> World Cup cards</span><span class="text-[#D4AF37]">In order</span></div>
+                <div class="p-3.5 rounded-xl bg-[#181818] border border-[#262218] flex items-center justify-between"><span class="font-semibold text-[#F5F5F5]">02. <span data-count="Word">Six</span> <span class="journey-word">World Cup</span> cards</span><span class="text-[#D4AF37]">In order</span></div>
                 <div class="p-3.5 rounded-xl bg-[#181818] border border-[#262218] flex items-center justify-between"><span class="font-semibold text-[#F5F5F5]">03. Gold foil details</span><span class="text-[#D4AF37]">Throughout</span></div>
                 <div class="p-3.5 rounded-xl bg-[#181818] border border-[#262218] flex items-center justify-between"><span class="font-semibold text-[#F5F5F5]">04. Mounting hardware</span><span class="text-[#D4AF37]">Included</span></div>
                 <div class="p-3.5 rounded-xl bg-[#181818] border border-[#262218] flex items-center justify-between"><span class="font-semibold text-[#F5F5F5]">05. Premium packaging</span><span class="text-[#D4AF37]">Gift-ready</span></div>
@@ -478,7 +478,7 @@
   <div id="card-modal" role="dialog" aria-modal="true" aria-labelledby="modal-card-title" class="fixed inset-0 z-50 hidden items-center justify-center p-4 bg-black/85 backdrop-blur-md" onclick="if(event.target===this)closeCardModal()">
     <div class="relative w-full max-w-md rounded-2xl bg-[#121212] border border-[#D4AF37]/50 p-6 sm:p-7 shadow-2xl">
       <button onclick="closeCardModal()" aria-label="Close" class="absolute top-4 right-4 w-8 h-8 rounded-full bg-[#181818] border border-[#262218] text-[#A3A3A3] hover:text-white flex items-center justify-center">✕</button>
-      <div class="flex items-center gap-2 text-[11px] font-bold tracking-[0.2em] uppercase text-[#D4AF37] mb-2"><span>World Cup card</span><span>•</span><span id="modal-card-year">2006</span></div>
+      <div class="flex items-center gap-2 text-[11px] font-bold tracking-[0.2em] uppercase text-[#D4AF37] mb-2"><span><span class="journey-word">World Cup</span> card</span><span>•</span><span id="modal-card-year">2006</span></div>
       <h3 id="modal-card-title" class="font-serif text-2xl font-bold text-[#F5F5F5] mb-1"></h3>
       <p id="modal-card-nation" class="text-xs text-[#A3A3A3] mb-5"></p>
       <div id="modal-card-visual" class="mb-5 flex justify-center"></div>
@@ -603,6 +603,71 @@
           { year: '1986', tournament: 'MEXICO 1986', jerseyNo: '#10', kitPrimary: '#75AADB', kitAccent: '#D4AF37', badge: 'WORLD CHAMPION', stage: 'Winner', desc: 'Captained Argentina to the title, scored the Goal of the Century against England and won the Golden Ball.' },
           { year: '1990', tournament: 'ITALY 1990', jerseyNo: '#10', kitPrimary: '#75AADB', kitAccent: '#D4AF37', badge: 'RUNNER-UP', stage: 'Final', desc: 'Led the defending champions back to the final in Rome, where they lost to West Germany.' },
           { year: '1994', tournament: 'USA 1994', jerseyNo: '#10', kitPrimary: '#75AADB', kitAccent: '#D4AF37', badge: 'FOURTH WORLD CUP', stage: 'Round of 16', desc: 'His fourth World Cup. His goal against Greece was the last of his 34 for Argentina.' }
+        ]
+      },
+      kroos: {
+        id: 'kroos', status: 'coming_soon', journey: 'career', price: 45, compare: 69.99, photos: [], video: '', poster: '', slug: 'kroos', monogram: 'TK', fullName: "Toni Kroos", nation: 'Germany',
+        shortTitle: "Toni Kroos Edition", eraSpan: '2010–2024', accentGlow: '#E5E7EB', artwork: '/uploads/editions/kroos/artwork.jpg',
+        editionName: "TK — The Career Tribute (2010–2024)",
+        heroHeadline: "The Career of <span class=\"text-gold-gradient\">Kroos</span>, Framed in Gold Foil",
+        heroSubheadline: "Four chapters of a legendary career, 2010 to 2024, in one framed shadow box with gold foil accents.", quote: "\"The German Sniper.\"", story1Copy: "From his Germany debut in 2010 to a final season that ended with La Liga and the Champions League in 2024, every chapter of Toni Kroos’s career sits in order inside one frame.", signatureText: "Toni Kroos",
+        cards: [
+          { year: '2010', tournament: "GERMANY 2010", jerseyNo: '#8', kitPrimary: '#1F2937', kitAccent: '#E5E7EB', badge: "INTERNATIONAL DEBUT", stage: "Germany debut", desc: "Made his Germany debut in 2010 and went to that summer’s World Cup in South Africa.", area: '24.60,47.24,11.50,26.40' },
+          { year: '2014', tournament: "BRAZIL 2014", jerseyNo: '#8', kitPrimary: '#1F2937', kitAccent: '#E5E7EB', badge: "WORLD CHAMPION", stage: "World champion", desc: "Won the World Cup with Germany in Brazil.", area: '37.70,47.24,11.50,26.40' },
+          { year: '2018', tournament: "REAL MADRID 2018", jerseyNo: '#8', kitPrimary: '#1F2937', kitAccent: '#E5E7EB', badge: "THREE IN A ROW", stage: "Champions League", desc: "Won a third straight Champions League with Real Madrid.", area: '50.80,47.24,11.50,26.40' },
+          { year: '2024', tournament: "FAREWELL 2024", jerseyNo: '#8', kitPrimary: '#1F2937', kitAccent: '#E5E7EB', badge: "LEGEND", stage: "Retired", desc: "Ended his club career with La Liga and the Champions League, then retired after Euro 2024.", area: '63.90,47.24,11.50,26.40' }
+        ]
+      },
+      ramos: {
+        id: 'ramos', status: 'coming_soon', journey: 'career', price: 45, compare: 69.99, photos: [], video: '', poster: '', slug: 'ramos', monogram: 'SR', fullName: "Sergio Ramos", nation: 'Spain',
+        shortTitle: "Sergio Ramos Edition", eraSpan: '2005–2018', accentGlow: '#B91C1C', artwork: '/uploads/editions/ramos/artwork.jpg',
+        editionName: "SR — The Career Tribute (2005–2018)",
+        heroHeadline: "The Career of <span class=\"text-gold-gradient\">Ramos</span>, Framed in Gold Foil",
+        heroSubheadline: "Four chapters of a legendary career, 2005 to 2018, in one framed shadow box with gold foil accents.", quote: "\"El Capitán.\"", story1Copy: "From arriving at Real Madrid as a teenager to captaining three straight Champions League wins, every chapter of Sergio Ramos’s career sits in order inside one frame.", signatureText: "Sergio Ramos",
+        cards: [
+          { year: '2006', tournament: "SEVILLA TO MADRID", jerseyNo: '#4', kitPrimary: '#1F2937', kitAccent: '#B91C1C', badge: "THE ARRIVAL", stage: "Real Madrid", desc: "Joined Real Madrid from Sevilla in 2005 as a 19-year-old.", area: '24.60,46.76,11.50,26.40' },
+          { year: '2010', tournament: "SOUTH AFRICA 2010", jerseyNo: '#4', kitPrimary: '#1F2937', kitAccent: '#B91C1C', badge: "WORLD CHAMPION", stage: "World champion", desc: "Won the World Cup with Spain in South Africa.", area: '37.70,46.76,11.50,26.40' },
+          { year: '2014', tournament: "LISBON 2014", jerseyNo: '#4', kitPrimary: '#1F2937', kitAccent: '#B91C1C', badge: "LA DÉCIMA", stage: "Champions League", desc: "His 93rd-minute header in the final set up Real Madrid’s tenth European Cup.", area: '50.80,46.76,11.50,26.40' },
+          { year: '2018', tournament: "KYIV 2018", jerseyNo: '#4', kitPrimary: '#1F2937', kitAccent: '#B91C1C', badge: "THREE IN A ROW", stage: "Champions League", desc: "Captained Real Madrid to a third straight Champions League.", area: '63.90,46.76,11.50,26.40' }
+        ]
+      },
+      modric: {
+        id: 'modric', status: 'coming_soon', journey: 'career', price: 45, compare: 69.99, photos: [], video: '', poster: '', slug: 'modric', monogram: 'LM', fullName: "Luka Modrić", nation: 'Croatia',
+        shortTitle: "Luka Modrić Edition", eraSpan: '2012–2022', accentGlow: '#DC2626', artwork: '/uploads/editions/modric/artwork.jpg',
+        editionName: "LM — The Career Tribute (2012–2022)",
+        heroHeadline: "The Career of <span class=\"text-gold-gradient\">Modrić</span>, Framed in Gold Foil",
+        heroSubheadline: "Four chapters of a legendary career, 2012 to 2022, in one framed shadow box with gold foil accents.", quote: "\"The Maestro.\"", story1Copy: "From joining Real Madrid in 2012 to leading Croatia to the World Cup final and the Ballon d’Or, every chapter of Luka Modrić’s career sits in order inside one frame.", signatureText: "Luka Modrić",
+        cards: [
+          { year: '2012', tournament: "REAL MADRID 2012", jerseyNo: '#10', kitPrimary: '#1F2937', kitAccent: '#DC2626', badge: "THE ARRIVAL", stage: "Real Madrid", desc: "Joined Real Madrid from Tottenham in 2012.", area: '24.60,47.08,11.50,26.40' },
+          { year: '2014', tournament: "LISBON 2014", jerseyNo: '#10', kitPrimary: '#1F2937', kitAccent: '#DC2626', badge: "LA DÉCIMA", stage: "Champions League", desc: "Won Real Madrid’s tenth European Cup.", area: '37.70,47.08,11.50,26.40' },
+          { year: '2018', tournament: "RUSSIA 2018", jerseyNo: '#10', kitPrimary: '#1F2937', kitAccent: '#DC2626', badge: "BALLON D’OR", stage: "World Cup final", desc: "Led Croatia to the World Cup final, won the Golden Ball and then the Ballon d’Or.", area: '50.80,47.08,11.50,26.40' },
+          { year: '2022', tournament: "QATAR 2022", jerseyNo: '#10', kitPrimary: '#1F2937', kitAccent: '#DC2626', badge: "THIRD PLACE", stage: "Third place", desc: "Captained Croatia to third place at the World Cup in Qatar.", area: '63.90,47.08,11.50,26.40' }
+        ]
+      },
+      raul: {
+        id: 'raul', tabName: 'Raúl', status: 'coming_soon', journey: 'career', price: 45, compare: 69.99, photos: [], video: '', poster: '', slug: 'raul', monogram: 'RG', fullName: "Raúl González", nation: 'Spain',
+        shortTitle: "Raúl González Edition", eraSpan: '1994–2002', accentGlow: '#F5F5F5', artwork: '/uploads/editions/raul/artwork.jpg',
+        editionName: "RG — The Career Tribute (1994–2002)",
+        heroHeadline: "The Career of <span class=\"text-gold-gradient\">Raúl</span>, Framed in Gold Foil",
+        heroSubheadline: "Four chapters of a legendary career, 1994 to 2002, in one framed shadow box with gold foil accents.", quote: "\"El Ángel de Madrid.\"", story1Copy: "From his Real Madrid debut at 17 to three European Cups in five years, every chapter of Raúl González’s Madrid story sits in order inside one frame.", signatureText: "Raúl González",
+        cards: [
+          { year: '1996', tournament: "REAL MADRID 1996", jerseyNo: '#7', kitPrimary: '#1F2937', kitAccent: '#F5F5F5', badge: "PRODIGY", stage: "First team", desc: "Made his Real Madrid debut at 17 in 1994 and quickly became a regular.", area: '24.60,46.36,11.50,26.40' },
+          { year: '1998', tournament: "AMSTERDAM 1998", jerseyNo: '#7', kitPrimary: '#1F2937', kitAccent: '#F5F5F5', badge: "LA SÉPTIMA", stage: "Champions League", desc: "Won Real Madrid’s seventh European Cup.", area: '37.70,46.36,11.50,26.40' },
+          { year: '2000', tournament: "PARIS 2000", jerseyNo: '#7', kitPrimary: '#1F2937', kitAccent: '#F5F5F5', badge: "CHAMPIONS", stage: "Champions League", desc: "Scored in the final as Real Madrid beat Valencia.", area: '50.80,46.36,11.50,26.40' },
+          { year: '2002', tournament: "GLASGOW 2002", jerseyNo: '#7', kitPrimary: '#1F2937', kitAccent: '#F5F5F5', badge: "LA NOVENA", stage: "Champions League", desc: "Won Real Madrid’s ninth European Cup.", area: '63.90,46.36,11.50,26.40' }
+        ]
+      },
+      dimaria: {
+        id: 'dimaria', tabName: 'Di María', status: 'coming_soon', journey: 'career', price: 45, compare: 69.99, photos: [], video: '', poster: '', slug: 'dimaria', monogram: 'AD', fullName: "Ángel Di María", nation: 'Argentina',
+        shortTitle: "Ángel Di María Edition", eraSpan: '2008–2022', accentGlow: '#75AADB', artwork: '/uploads/editions/dimaria/artwork.jpg',
+        editionName: "AD — The Career Tribute (2008–2022)",
+        heroHeadline: "The Career of <span class=\"text-gold-gradient\">Di María</span>, Framed in Gold Foil",
+        heroSubheadline: "Four chapters of a legendary career, 2008 to 2022, in one framed shadow box with gold foil accents.", quote: "\"El Fideo.\"", story1Copy: "From the Olympic final in Beijing to scoring in the World Cup final in Qatar, every chapter of Ángel Di María’s career sits in order inside one frame.", signatureText: "Ángel Di María",
+        cards: [
+          { year: '2008', tournament: "BEIJING 2008", jerseyNo: '#11', kitPrimary: '#1F2937', kitAccent: '#75AADB', badge: "OLYMPIC GOLD", stage: "Gold medal", desc: "Scored the winning goal in the Olympic final.", area: '24.60,46.36,11.50,26.40' },
+          { year: '2014', tournament: "LISBON 2014", jerseyNo: '#11', kitPrimary: '#1F2937', kitAccent: '#75AADB', badge: "LA DÉCIMA", stage: "Champions League", desc: "Named man of the match as Real Madrid won its tenth European Cup.", area: '37.70,46.36,11.50,26.40' },
+          { year: '2021', tournament: "MARACANÃ 2021", jerseyNo: '#11', kitPrimary: '#1F2937', kitAccent: '#75AADB', badge: "COPA AMÉRICA", stage: "Winner", desc: "Scored the only goal of the Copa América final against Brazil.", area: '50.80,46.36,11.50,26.40' },
+          { year: '2022', tournament: "QATAR 2022", jerseyNo: '#11', kitPrimary: '#1F2937', kitAccent: '#75AADB', badge: "WORLD CHAMPION", stage: "World champion", desc: "Scored in the World Cup final as Argentina became champions.", area: '63.90,46.36,11.50,26.40' }
         ]
       }
     };
@@ -866,7 +931,9 @@
       document.title = `${p.shortTitle} | The Last Dance Collectibles`;
 
       document.getElementById('story-monogram').textContent = p.monogram;
-      document.getElementById('story-era-span').textContent = `World Cup journey • ${p.eraSpan.replace('–', ' — ')}`;
+      document.getElementById('story-era-span').textContent = `${p.journey === 'career' ? 'Career' : 'World Cup'} journey • ${p.eraSpan.replace('–', ' — ')}`;
+      document.querySelectorAll('.journey-word').forEach(el => el.textContent = p.journey === 'career' ? 'career' : 'World Cup');
+      document.getElementById('cards-heading').textContent = p.journey === 'career' ? 'Every chapter, finally in one place' : 'Every World Cup, finally in one place';
       document.getElementById('story-signature-quote').textContent = p.quote;
       document.getElementById('story-1-copy').textContent = p.story1Copy;
 
@@ -971,7 +1038,7 @@
     }
     function renderBuyBox() {
       const p = PLAYERS_DATA[currentPlayerKey];
-      const soldOut = p.status === 'sold_out';
+      const soldOut = p.status === 'sold_out' || p.status === 'coming_soon';
       document.getElementById('price-now').textContent = money(p.price);
       const was = document.getElementById('price-was'), save = document.getElementById('price-save');
       const show = p.compare > p.price;
@@ -979,7 +1046,7 @@
       if (show) { was.textContent = money(p.compare); save.textContent = `SAVE ${Math.round((1 - p.price / p.compare) * 100)}%`; }
       const btn = document.getElementById('add-btn');
       btn.disabled = soldOut;
-      btn.innerHTML = soldOut ? 'Sold out' : `Add to bag — $<span id="buy-btn-total">${(buyQuantity * p.price).toFixed(2)}</span>`;
+      btn.innerHTML = soldOut ? (p.status === 'coming_soon' ? 'Coming soon' : 'Sold out') : `Add to bag — $<span id="buy-btn-total">${(buyQuantity * p.price).toFixed(2)}</span>`;
     }
 
     // Card modal
@@ -1029,7 +1096,7 @@
       if (!p || p.status !== 'active') return;
       if (item) item.qty += qty; else cart.push({ id: key, monogram: p.monogram, title: p.shortTitle, qty });
     }
-    function addCurrentPlayerToCart() { addToCart(currentPlayerKey, buyQuantity); renderCart(); toggleCart(true); }
+    function addCurrentPlayerToCart() { if (PLAYERS_DATA[currentPlayerKey].status !== 'active') return; addToCart(currentPlayerKey, buyQuantity); renderCart(); toggleCart(true); }
     const trioKeys = () => KEYS.filter(k => PLAYERS_DATA[k].status === 'active');
     function addTrioToCart() { trioKeys().forEach(k => addToCart(k, 1)); renderCart(); toggleCart(true); }
     function updateCartItemQty(id, delta) {
@@ -1094,19 +1161,51 @@
           if (on && btn.id.startsWith('mob-')) { const m = btn.parentElement; m.scrollLeft = Math.max(0, btn.offsetLeft - (m.clientWidth - btn.offsetWidth) / 2); }
         });
       });
+      document.querySelectorAll('.more-btn').forEach(btn => {
+        const inside = btn.dataset.rest.split(',').includes(currentPlayerKey);
+        btn.classList.toggle('bg-gold-metallic', inside); btn.classList.toggle('text-black', inside); btn.classList.toggle('shadow-gold-glow', inside);
+        btn.classList.toggle('text-[#A3A3A3]', !inside); btn.classList.toggle('hover:text-white', !inside);
+        btn.querySelector('.more-label').textContent = inside ? tabLabel(currentPlayerKey) : 'More';
+        if (inside && btn.id.startsWith('mob-')) { const m = btn.parentElement; m.scrollLeft = Math.max(0, btn.offsetLeft - (m.clientWidth - btn.offsetWidth) / 2); }
+      });
       const mob = document.getElementById('nav-mobile');
       if (mob) mob.style.justifyContent = mob.scrollWidth <= mob.clientWidth + 1 ? 'center' : 'flex-start';
     }
     // Short tab name: "Lionel Messi Edition" -> "Messi", "Neymar Jr Edition" -> "Neymar Jr"
     function tabLabel(k) {
+      if (PLAYERS_DATA[k].tabName) return PLAYERS_DATA[k].tabName;
       const n = PLAYERS_DATA[k].shortTitle.replace(/\s*Edition$/i, '').trim(), w = n.split(/\s+/);
       return /^jr\.?$/i.test(w[w.length - 1]) ? n : w[w.length - 1];
     }
+    const TABS_DESKTOP = 4, TABS_MOBILE = 3;
+    function closeMoreMenu() {
+      const m = document.getElementById('more-menu'); if (m) m.remove();
+      document.querySelectorAll('.more-btn').forEach(b => b.setAttribute('aria-expanded', 'false'));
+    }
+    function toggleMoreMenu(btn) {
+      if (document.getElementById('more-menu')) { closeMoreMenu(); return; }
+      const r = btn.getBoundingClientRect(), mob = btn.id.startsWith('mob-');
+      const items = btn.dataset.rest.split(',').map(k => `<button type="button" role="menuitem" onclick="closeMoreMenu();switchPlayer('${k}')"
+        class="w-full text-left px-4 py-3 rounded-xl text-sm font-semibold transition-colors ${k === currentPlayerKey ? 'bg-[#1c170b] text-[#F3E5AB]' : 'text-[#D4D4D4] hover:bg-[#181818] hover:text-white'}">
+        ${esc(PLAYERS_DATA[k].shortTitle)}<span class="block text-[11px] font-normal text-[#A3A3A3] mt-0.5">${esc(PLAYERS_DATA[k].nation)} · ${PLAYERS_DATA[k].eraSpan}${PLAYERS_DATA[k].status === 'coming_soon' ? ' · <span class="text-[#D4AF37]">Coming soon</span>' : ''}</span></button>`).join('');
+      const w = 260, left = mob ? 16 : Math.min(Math.max(8, r.right - w), window.innerWidth - w - 8);
+      document.body.insertAdjacentHTML('beforeend', `<div id="more-menu" role="menu" class="fixed z-[60] p-1.5 rounded-2xl bg-[#121212] border border-[#262218] shadow-museum-frame"
+        style="top:${r.bottom + 8}px;left:${left}px;width:${mob ? 'calc(100vw - 32px)' : w + 'px'}">${items}</div>`);
+      btn.setAttribute('aria-expanded', 'true');
+    }
+    document.addEventListener('click', e => { if (!e.target.closest('#more-menu, .more-btn')) closeMoreMenu(); });
+    window.addEventListener('scroll', closeMoreMenu, { passive: true });
+    window.addEventListener('resize', closeMoreMenu);
     function renderEditionNav() {
       const keys = visibleKeys();
       const tab = (k, mob) => `<button data-edition="${k}" onclick="switchPlayer('${k}')" id="${mob ? 'mob-' : ''}nav-${k}" class="player-tab-btn ${mob ? 'shrink-0 px-4 min-h-[40px] text-[11px]' : 'px-4 py-1.5 text-xs'} rounded-full font-semibold tracking-wider uppercase whitespace-nowrap transition-all duration-300">${esc(tabLabel(k))}</button>`;
-      document.getElementById('nav-desktop').innerHTML = keys.map(k => tab(k, false)).join('');
-      document.getElementById('nav-mobile').innerHTML = keys.map(k => tab(k, true)).join('');
+      // First few editions as tabs, the rest in a "More" menu
+      const more = (mob, rest) => rest.length ? `<button type="button" id="${mob ? 'mob-' : ''}nav-more" data-rest="${rest.join(',')}" onclick="toggleMoreMenu(this)" aria-haspopup="true" aria-expanded="false"
+        class="player-tab-btn more-btn ${mob ? 'shrink-0 px-4 min-h-[40px] text-[11px]' : 'px-4 py-1.5 text-xs'} rounded-full font-semibold tracking-wider uppercase whitespace-nowrap transition-all duration-300 inline-flex items-center gap-1.5"><span class="more-label">More</span><svg class="w-3 h-3" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M3 4.5L6 7.5L9 4.5"/></svg></button>` : '';
+      const bar = (n, mob) => keys.slice(0, keys.length > n + 1 ? n : keys.length).map(k => tab(k, mob)).join('') + more(mob, keys.length > n + 1 ? keys.slice(n) : []);
+      document.getElementById('nav-desktop').innerHTML = bar(TABS_DESKTOP, false);
+      document.getElementById('nav-mobile').innerHTML = bar(TABS_MOBILE, true);
+      closeMoreMenu();
       const foot = document.getElementById('footer-editions');
       foot.querySelectorAll('[data-edition]').forEach(el => el.remove());
       foot.insertAdjacentHTML('afterbegin', keys.map(k => `<li data-edition="${k}"><button onclick="switchPlayerAndScroll('${k}')" class="hover:text-[#D4AF37]">${esc(PLAYERS_DATA[k].shortTitle)}</button></li>`).join(''));
@@ -1124,7 +1223,7 @@
       document.getElementById('trio-title').textContent = sale.length === 3 ? 'Complete the trio' : 'Complete the collection';
       styleTabs();
       document.getElementById('trio-add').textContent = `Add all ${NUM_WORDS[sale.length] || sale.length} to bag`;
-      document.getElementById('trio-text').innerHTML = `Hang ${list} side by side: ${NUM_WORDS[sale.length] || sale.length} World Cup journeys on one wall.`;
+      document.getElementById('trio-text').innerHTML = `Hang ${list} side by side: ${NUM_WORDS[sale.length] || sale.length} legends on one wall.`;
     }
 
     function updateEditionVisibility() {
@@ -1158,6 +1257,8 @@
         p.artwork = e.artwork || '';
         p.crest = e.crest || '';
         p.signatureImage = e.signature_image || '';
+        p.journey = e.journey === 'career' ? 'career' : 'worldcup';
+        p.tabName = e.tab_name || '';
         p.photos = Array.isArray(e.photos) ? e.photos.filter(Boolean) : [];
         if (Array.isArray(e.cards) && e.cards.length) {
           p.cards = e.cards.map(c => ({
@@ -1197,7 +1298,7 @@
     }
 
     document.addEventListener('keydown', e => {
-      if (e.key === 'Escape') { closeCardModal(); toggleCart(false); }
+      if (e.key === 'Escape') { closeMoreMenu(); closeCardModal(); toggleCart(false); }
     });
 
     function keyFromHash() {
@@ -1229,7 +1330,7 @@
         const p = PLAYERS_DATA[currentPlayerKey];
         document.getElementById('buybar-name').textContent = p.shortTitle;
         document.getElementById('buybar-price').textContent = money(p.price);
-        const show = !boxSeen && !heroSeen && p.status !== 'sold_out';
+        const show = !boxSeen && !heroSeen && p.status === 'active';
         bar.classList.toggle('off', !show); document.body.classList.toggle('has-buybar', show);
       };
       new IntersectionObserver(e => { boxSeen = e[0].isIntersecting; update(); }).observe(box);

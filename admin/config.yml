@@ -38,8 +38,11 @@ collections:
                 options:
                   - { label: "On sale", value: active }
                   - { label: "Sold out (shown, cannot be ordered)", value: sold_out }
+                  - { label: "Coming soon (shown, cannot be ordered yet)", value: coming_soon }
                   - { label: "Hidden (removed from the site)", value: hidden }
               - { name: title, label: "Edition name (tabs, bag)", widget: string }
+              - { name: tab_name, label: "Short name in the menu (optional, e.g. Raúl)", widget: string, required: false }
+              - { name: journey, label: "Edition type", widget: select, default: worldcup, required: false, options: [ { label: "World Cup journey", value: worldcup }, { label: "Career tribute", value: career } ] }
               - { name: product_name, label: "Product name (buy box)", widget: string }
               - { name: price, label: "Price (USD)", widget: number, value_type: float, min: 0 }
               - { name: compare_price, label: "Original price (USD, shown struck through). 0 to hide.", widget: number, value_type: float, min: 0, required: false }
@@ -101,6 +104,11 @@ collections:
                   - { label: Neymar Jr, value: njr10 }
                   - { label: Zinedine Zidane, value: zz10 }
                   - { label: Diego Maradona, value: dm10 }
+                  - { label: Toni Kroos, value: kroos }
+                  - { label: Sergio Ramos, value: ramos }
+                  - { label: Luka Modrić, value: modric }
+                  - { label: Raúl González, value: raul }
+                  - { label: Ángel Di María, value: dimaria }
               - { name: stars, label: Stars, widget: number, value_type: int, min: 1, max: 5, default: 5 }
               - { name: author, label: Name, widget: string }
               - { name: text, label: Review, widget: text }
