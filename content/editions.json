@@ -335,6 +335,80 @@
           "area": "59.60,47.68,13.60,28.80"
         }
       ]
+    },
+    {
+      "key": "dm10",
+      "status": "active",
+      "title": "Diego Maradona Edition",
+      "player": "Diego Maradona",
+      "nation": "Argentina",
+      "monogram": "DM",
+      "years": "1982–1994",
+      "price": 45,
+      "compare_price": 69.99,
+      "product_name": "DM — The World Cup Journey (1982–1994)",
+      "headline": "The World Cup Story of *Maradona*, Framed in Gold Foil",
+      "subheadline": "Four World Cups, from Spain 1982 to USA 1994, in one framed shadow box with gold foil accents.",
+      "quote": "\"Four World Cups. One eternal 10.\"",
+      "story": "From his World Cup debut in Spain 1982 to lifting the trophy in Mexico City in 1986, every chapter of Diego Maradona’s World Cup journey sits in order inside one frame.",
+      "signature": "Diego Maradona 10",
+      "video": "",
+      "video_poster": "",
+      "photos": [],
+      "artwork": "/uploads/editions/maradona/artwork.jpg",
+      "portrait": "",
+      "crest": "/uploads/editions/maradona/crest.png",
+      "signature_image": "/uploads/editions/maradona/signature.png",
+      "cards": [
+        {
+          "year": "1982",
+          "tournament": "SPAIN 1982",
+          "shirt": "#10",
+          "label": "FIRST WORLD CUP",
+          "reached": "Second round",
+          "description": "His first World Cup, at 21. He scored twice against Hungary before Argentina went out in the second group stage.",
+          "colour": "#75AADB",
+          "accent": "#D4AF37",
+          "image": "/uploads/editions/maradona/card-1982.jpg",
+          "area": "21.90,42.80,12.40,26.40"
+        },
+        {
+          "year": "1986",
+          "tournament": "MEXICO 1986",
+          "shirt": "#10",
+          "label": "WORLD CHAMPION",
+          "reached": "Winner",
+          "description": "Captained Argentina to the title, scored the Goal of the Century against England and won the Golden Ball.",
+          "colour": "#75AADB",
+          "accent": "#D4AF37",
+          "image": "/uploads/editions/maradona/card-1986.jpg",
+          "area": "36.50,42.80,12.40,26.40"
+        },
+        {
+          "year": "1990",
+          "tournament": "ITALY 1990",
+          "shirt": "#10",
+          "label": "RUNNER-UP",
+          "reached": "Final",
+          "description": "Led the defending champions back to the final in Rome, where they lost to West Germany.",
+          "colour": "#75AADB",
+          "accent": "#D4AF37",
+          "image": "/uploads/editions/maradona/card-1990.jpg",
+          "area": "51.10,42.80,12.40,26.40"
+        },
+        {
+          "year": "1994",
+          "tournament": "USA 1994",
+          "shirt": "#10",
+          "label": "FOURTH WORLD CUP",
+          "reached": "Round of 16",
+          "description": "His fourth World Cup. His goal against Greece was the last of his 34 for Argentina.",
+          "colour": "#75AADB",
+          "accent": "#D4AF37",
+          "image": "/uploads/editions/maradona/card-1994.jpg",
+          "area": "65.70,42.80,12.40,26.40"
+        }
+      ]
     }
   ]
 }
