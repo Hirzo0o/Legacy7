@@ -786,6 +786,81 @@
         }
       ],
       "tab_name": "Di María"
+    },
+    {
+      "key": "benzema",
+      "status": "coming_soon",
+      "journey": "career",
+      "title": "Karim Benzema Edition",
+      "player": "Karim Benzema",
+      "nation": "France",
+      "monogram": "KB",
+      "years": "2009–2022",
+      "price": 45,
+      "compare_price": 69.99,
+      "product_name": "KB — The Career Tribute (2009–2022)",
+      "headline": "The Career of *Benzema*, Framed in Gold Foil",
+      "subheadline": "Four chapters of a legendary career, 2009 to 2022, in one framed shadow box with gold foil accents.",
+      "quote": "\"KB9.\"",
+      "story": "From joining Real Madrid in 2009 to winning the Ballon d’Or in 2022, every chapter of Karim Benzema’s Madrid story sits in order inside one frame.",
+      "signature": "Karim Benzema",
+      "video": "",
+      "video_poster": "",
+      "photos": [],
+      "artwork": "/uploads/editions/benzema/artwork.jpg",
+      "portrait": "",
+      "crest": "",
+      "signature_image": "",
+      "cards": [
+        {
+          "year": "2009",
+          "tournament": "REAL MADRID 2009",
+          "shirt": "#9",
+          "label": "THE ARRIVAL",
+          "reached": "Real Madrid",
+          "description": "Joined Real Madrid from Lyon in 2009.",
+          "colour": "#1F2937",
+          "accent": "#F5F5F5",
+          "image": "",
+          "area": "24.60,46.28,11.50,26.40"
+        },
+        {
+          "year": "2014",
+          "tournament": "LISBON 2014",
+          "shirt": "#9",
+          "label": "LA DÉCIMA",
+          "reached": "Champions League",
+          "description": "Won Real Madrid’s tenth European Cup.",
+          "colour": "#1F2937",
+          "accent": "#F5F5F5",
+          "image": "",
+          "area": "37.70,46.28,11.50,26.40"
+        },
+        {
+          "year": "2018",
+          "tournament": "KYIV 2018",
+          "shirt": "#9",
+          "label": "THREE IN A ROW",
+          "reached": "Champions League",
+          "description": "Scored in the final as Real Madrid won a third straight Champions League.",
+          "colour": "#1F2937",
+          "accent": "#F5F5F5",
+          "image": "",
+          "area": "50.80,46.28,11.50,26.40"
+        },
+        {
+          "year": "2022",
+          "tournament": "PARIS 2022",
+          "shirt": "#9",
+          "label": "BALLON D’OR",
+          "reached": "Ballon d’Or",
+          "description": "Led Real Madrid to La Liga and the Champions League, then won the Ballon d’Or.",
+          "colour": "#1F2937",
+          "accent": "#F5F5F5",
+          "image": "",
+          "area": "63.90,46.28,11.50,26.40"
+        }
+      ]
     }
   ]
 }
