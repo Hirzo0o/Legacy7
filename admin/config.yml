@@ -109,6 +109,7 @@ collections:
                   - { label: Luka Modrić, value: modric }
                   - { label: Raúl González, value: raul }
                   - { label: Ángel Di María, value: dimaria }
+                  - { label: Karim Benzema, value: benzema }
               - { name: stars, label: Stars, widget: number, value_type: int, min: 1, max: 5, default: 5 }
               - { name: author, label: Name, widget: string }
               - { name: text, label: Review, widget: text }
