@@ -810,7 +810,7 @@
           "colour": "#1E3A8A",
           "accent": "#D4AF37",
           "image": "/uploads/editions/benzema/card-2010.jpg",
-          "area": "30.40,44.36,11.20,24.00"
+          "area": "30.40,46.76,11.20,24.00"
         },
         {
           "year": "2014",
@@ -822,7 +822,7 @@
           "colour": "#1E3A8A",
           "accent": "#D4AF37",
           "image": "/uploads/editions/benzema/card-2014.jpg",
-          "area": "44.40,44.36,11.20,24.00"
+          "area": "44.40,46.76,11.20,24.00"
         },
         {
           "year": "2022",
@@ -834,7 +834,7 @@
           "colour": "#1E3A8A",
           "accent": "#D4AF37",
           "image": "/uploads/editions/benzema/card-2022.jpg",
-          "area": "58.40,44.36,11.20,24.00"
+          "area": "58.40,46.76,11.20,24.00"
         }
       ]
     }
