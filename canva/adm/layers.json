@@ -1,0 +1,366 @@
+{
+ "imgs": [
+  {
+   "src": "file:///tmp/br/adm/player.png",
+   "box": {
+    "x": 0.004,
+    "y": 0.0416,
+    "w": 0.24,
+    "h": 0.5877396449704142
+   },
+   "fit": "contain",
+   "pos": "50% 0%",
+   "filter": "grayscale(1) contrast(1.15) brightness(0.95)",
+   "nw": 507,
+   "nh": 776,
+   "file": "layer-0.png"
+  },
+  {
+   "src": "file:///tmp/zz/trophy.png",
+   "box": {
+    "x": 0.82,
+    "y": 0.06793924050632913,
+    "w": 0.15,
+    "h": 0.4177215189873417
+   },
+   "fit": "contain",
+   "pos": "50% 50%",
+   "filter": "none",
+   "nw": 316,
+   "nh": 550,
+   "file": "layer-1.png"
+  },
+  {
+   "src": "file:///tmp/br/adm/logo.png",
+   "box": {
+    "x": 0.471,
+    "y": 0.0872,
+    "w": 0.058,
+    "h": 0.0928
+   },
+   "fit": "fill",
+   "pos": "50% 50%",
+   "filter": "none",
+   "nw": 196,
+   "nh": 196,
+   "file": "layer-2.png"
+  },
+  {
+   "src": "file:///tmp/br/adm/card-2010.jpg",
+   "box": {
+    "x": 0.237,
+    "y": 0.467275,
+    "w": 0.106,
+    "h": 0.2304
+   },
+   "fit": "cover",
+   "pos": "50% 50%",
+   "filter": "none",
+   "nw": 474,
+   "nh": 632,
+   "file": "layer-3.png"
+  },
+  {
+   "src": "file:///tmp/br/adm/card-2014.jpg",
+   "box": {
+    "x": 0.377,
+    "y": 0.467275,
+    "w": 0.106,
+    "h": 0.2304
+   },
+   "fit": "cover",
+   "pos": "50% 50%",
+   "filter": "none",
+   "nw": 474,
+   "nh": 632,
+   "file": "layer-4.png"
+  },
+  {
+   "src": "file:///tmp/br/adm/card-2018.jpg",
+   "box": {
+    "x": 0.517,
+    "y": 0.467275,
+    "w": 0.106,
+    "h": 0.2304
+   },
+   "fit": "cover",
+   "pos": "50% 50%",
+   "filter": "none",
+   "nw": 474,
+   "nh": 632,
+   "file": "layer-5.png"
+  },
+  {
+   "src": "file:///tmp/br/adm/card-2022.jpg",
+   "box": {
+    "x": 0.657,
+    "y": 0.467275,
+    "w": 0.106,
+    "h": 0.2304
+   },
+   "fit": "cover",
+   "pos": "50% 50%",
+   "filter": "none",
+   "nw": 474,
+   "nh": 632,
+   "file": "layer-6.png"
+  },
+  {
+   "src": "file:///tmp/br/adm/crest.png",
+   "box": {
+    "x": 0.086046875,
+    "y": 0.776,
+    "w": 0.083890625,
+    "h": 0.1888
+   },
+   "fit": "fill",
+   "pos": "50% 50%",
+   "filter": "drop-shadow(rgba(191, 149, 63, 0.25) 0px 0px 10px)",
+   "nw": 465,
+   "nh": 654,
+   "file": "layer-7.png"
+  },
+  {
+   "src": "file:///tmp/zz/trophy.png",
+   "box": {
+    "x": 0.489078125,
+    "y": 0.904,
+    "w": 0.021828125,
+    "h": 0.0608
+   },
+   "fit": "fill",
+   "pos": "50% 50%",
+   "filter": "none",
+   "nw": 316,
+   "nh": 550,
+   "file": "layer-8.png"
+  },
+  {
+   "src": "file:///tmp/br/adm/sig.png",
+   "box": {
+    "x": 0.7680145563089623,
+    "y": 0.84135,
+    "w": 0.1599708873820755,
+    "h": 0.10425
+   },
+   "fit": "contain",
+   "pos": "50% 50%",
+   "filter": "drop-shadow(rgba(252, 246, 186, 0.35) 0px 0px 8px)",
+   "nw": 1041,
+   "nh": 424,
+   "file": "layer-9.png"
+  }
+ ],
+ "texts": [
+  {
+   "text": "4 WORLD CUPS • WORLD CHAMPION 2022",
+   "box": {
+    "x": 0.33165625,
+    "y": 0.048,
+    "w": 0.3366875,
+    "h": 0.0264
+   },
+   "size": 11,
+   "family": "Montserrat, sans-serif",
+   "weight": "600",
+   "style": "normal",
+   "spacing": "2.75px",
+   "color": "#E6C566",
+   "gold": true
+  },
+  {
+   "text": "ÁNGEL DI MARÍA",
+   "box": {
+    "x": 0.275671875,
+    "y": 0.1896,
+    "w": 0.44865625,
+    "h": 0.06655
+   },
+   "size": 41.6,
+   "family": "Montserrat, sans-serif",
+   "weight": "900",
+   "style": "normal",
+   "spacing": "4.992px",
+   "color": "#E6C566",
+   "gold": true
+  },
+  {
+   "text": "2010 • 2014 • 2018 • 2022",
+   "box": {
+    "x": 0.40371875,
+    "y": 0.26575,
+    "w": 0.192546875,
+    "h": 0.024
+   },
+   "size": 10,
+   "family": "Montserrat, sans-serif",
+   "weight": "500",
+   "style": "normal",
+   "spacing": "3px",
+   "color": "rgba(252, 246, 186, 0.9)",
+   "gold": false
+  },
+  {
+   "text": "2010",
+   "box": {
+    "x": 0.2569375,
+    "y": 0.398475,
+    "w": 0.066125,
+    "h": 0.0256
+   },
+   "size": 12,
+   "family": "Montserrat, sans-serif",
+   "weight": "700",
+   "style": "normal",
+   "spacing": "1.2px",
+   "color": "rgb(255, 255, 255)",
+   "gold": false
+  },
+  {
+   "text": "SOUTH AFRICA",
+   "box": {
+    "x": 0.2569375,
+    "y": 0.427275,
+    "w": 0.066125,
+    "h": 0.0192
+   },
+   "size": 8,
+   "family": "Montserrat, sans-serif",
+   "weight": "400",
+   "style": "normal",
+   "spacing": "0.4px",
+   "color": "rgb(191, 149, 63)",
+   "gold": false
+  },
+  {
+   "text": "2014",
+   "box": {
+    "x": 0.413515625,
+    "y": 0.398475,
+    "w": 0.032953125,
+    "h": 0.0256
+   },
+   "size": 12,
+   "family": "Montserrat, sans-serif",
+   "weight": "700",
+   "style": "normal",
+   "spacing": "1.2px",
+   "color": "rgb(255, 255, 255)",
+   "gold": false
+  },
+  {
+   "text": "BRAZIL",
+   "box": {
+    "x": 0.413515625,
+    "y": 0.427275,
+    "w": 0.032953125,
+    "h": 0.0192
+   },
+   "size": 8,
+   "family": "Montserrat, sans-serif",
+   "weight": "400",
+   "style": "normal",
+   "spacing": "0.4px",
+   "color": "rgb(191, 149, 63)",
+   "gold": false
+  },
+  {
+   "text": "2018",
+   "box": {
+    "x": 0.5536875,
+    "y": 0.398475,
+    "w": 0.032609375,
+    "h": 0.0256
+   },
+   "size": 12,
+   "family": "Montserrat, sans-serif",
+   "weight": "700",
+   "style": "normal",
+   "spacing": "1.2px",
+   "color": "rgb(255, 255, 255)",
+   "gold": false
+  },
+  {
+   "text": "RUSSIA",
+   "box": {
+    "x": 0.5536875,
+    "y": 0.427275,
+    "w": 0.032609375,
+    "h": 0.0192
+   },
+   "size": 8,
+   "family": "Montserrat, sans-serif",
+   "weight": "400",
+   "style": "normal",
+   "spacing": "0.4px",
+   "color": "rgb(191, 149, 63)",
+   "gold": false
+  },
+  {
+   "text": "2022",
+   "box": {
+    "x": 0.692921875,
+    "y": 0.398475,
+    "w": 0.034140625,
+    "h": 0.0256
+   },
+   "size": 12,
+   "family": "Montserrat, sans-serif",
+   "weight": "700",
+   "style": "normal",
+   "spacing": "1.2px",
+   "color": "rgb(255, 255, 255)",
+   "gold": false
+  },
+  {
+   "text": "QATAR",
+   "box": {
+    "x": 0.692921875,
+    "y": 0.427275,
+    "w": 0.034140625,
+    "h": 0.0192
+   },
+   "size": 8,
+   "family": "Montserrat, sans-serif",
+   "weight": "400",
+   "style": "normal",
+   "spacing": "0.4px",
+   "color": "rgb(191, 149, 63)",
+   "gold": false
+  },
+  {
+   "text": "ARGENTINA",
+   "box": {
+    "x": 0.359,
+    "y": 0.8128,
+    "w": 0.2955,
+    "h": 0.0576
+   },
+   "size": 30,
+   "family": "Cinzel, serif",
+   "weight": "600",
+   "style": "normal",
+   "spacing": "12px",
+   "color": "#E6C566",
+   "gold": true
+  },
+  {
+   "text": "QATAR 2022",
+   "box": {
+    "x": 0.46753125,
+    "y": 0.88,
+    "w": 0.0649375,
+    "h": 0.0192
+   },
+   "size": 8,
+   "family": "Montserrat",
+   "weight": "400",
+   "style": "normal",
+   "spacing": "1.6px",
+   "color": "rgb(191, 149, 63)",
+   "gold": false
+  }
+ ],
+ "W": 1000,
+ "H": 625
+}
