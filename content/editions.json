@@ -242,20 +242,14 @@
             "label": "Top line"
           },
           {
-            "type": "text",
-            "text": "CR7",
-            "x": 36.4,
-            "y": 9.167,
-            "w": 30.0,
-            "h": 15.0,
-            "size": 108,
-            "font": "Montserrat",
-            "weight": 300,
-            "italic": false,
-            "spacing": 0,
-            "color": "rgb(212, 180, 106)",
-            "gold": false,
-            "label": "Monogram"
+            "type": "image",
+            "label": "Logo",
+            "image": "/uploads/editions/cr7/poster/logo.png",
+            "x": 42.209,
+            "y": 11.6,
+            "w": 18.383,
+            "h": 11.5,
+            "fit": "contain"
           },
           {
             "type": "text",
