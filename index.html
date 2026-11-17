@@ -680,6 +680,30 @@
           { year: '2014', tournament: "BRAZIL 2014", jerseyNo: "#10", kitPrimary: '#1E3A8A', kitAccent: '#D4AF37', badge: "THREE GOALS", stage: "Quarter-final", desc: "Scored three goals as France reached the quarter-finals in Brazil.", image: '/uploads/editions/benzema/card-2014.jpg', area: '44.40,46.76,11.20,24.00' },
           { year: '2022', tournament: "QATAR 2022", jerseyNo: "#19", kitPrimary: '#1E3A8A', kitAccent: '#D4AF37', badge: "BALLON D’OR", stage: "Injured", desc: "Named in the squad as the reigning Ballon d’Or winner, but a thigh injury ruled him out on the eve of the tournament.", image: '/uploads/editions/benzema/card-2022.jpg', area: '58.40,46.76,11.20,24.00' }
         ]
+      },
+      r9: {
+        id: 'r9', tabName: "Ronaldo (R9)", status: 'active', journey: 'worldcup', price: 45, compare: 69.99, photos: [], video: '', poster: '', slug: 'r9', monogram: 'R9', fullName: "Ronaldo Nazário", nation: 'Brazil',
+        shortTitle: "Ronaldo Edition", eraSpan: '1998–2006', accentGlow: '#15803D', artwork: '/uploads/editions/r9/artwork.jpg',
+        editionName: "R9 — The World Cup Journey (1998–2006)",
+        heroHeadline: "Fifteen World Cup Goals and Two Stars on His Chest: <span class=\"text-gold-gradient\">Ronaldo</span>",
+        heroSubheadline: "Three World Cups, from France 1998 to Germany 2006, in one framed shadow box with gold foil accents.", quote: "\"O Fenômeno.\"", story1Copy: "From the Golden Ball in France to both goals in the 2002 final and a then-record 15th World Cup goal in Germany, Ronaldo’s World Cup journey with Brazil sits in order inside one frame.", signatureText: "Ronaldo",
+        cards: [
+          { year: '1998', tournament: "FRANCE 1998", jerseyNo: "#9", kitPrimary: '#15803D', kitAccent: '#D4AF37', badge: "GOLDEN BALL", stage: "Runner-up", desc: "Four goals and the Golden Ball on the way to the final in Paris.", image: '/uploads/editions/r9/card-1998.jpg', area: '30.40,45.38,11.20,24.00' },
+          { year: '2002', tournament: "KOREA/JAPAN 2002", jerseyNo: "#9", kitPrimary: '#15803D', kitAccent: '#D4AF37', badge: "WORLD CHAMPION", stage: "Winner", desc: "Eight goals and the Golden Boot, including both goals in the final.", image: '/uploads/editions/r9/card-2002.jpg', area: '44.40,45.38,11.20,24.00' },
+          { year: '2006', tournament: "GERMANY 2006", jerseyNo: "#9", kitPrimary: '#15803D', kitAccent: '#D4AF37', badge: "RECORD 15TH GOAL", stage: "Quarter-finals", desc: "Three more goals, the last his 15th, a World Cup record at the time.", image: '/uploads/editions/r9/card-2006.jpg', area: '58.40,45.38,11.20,24.00' }
+        ]
+      },
+      r10: {
+        id: 'r10', tabName: "Ronaldinho", status: 'active', journey: 'worldcup', price: 45, compare: 69.99, photos: [], video: '', poster: '', slug: 'r10', monogram: 'R10', fullName: "Ronaldinho", nation: 'Brazil',
+        shortTitle: "Ronaldinho Edition", eraSpan: '2002–2010', accentGlow: '#15803D', artwork: '/uploads/editions/r10/artwork.jpg',
+        editionName: "R10 — The World Cup Journey (2002–2010)",
+        heroHeadline: "The Free Kick That Beat England, Then the Cup in Yokohama: <span class=\"text-gold-gradient\">Ronaldinho</span>",
+        heroSubheadline: "Three World Cup stickers, from Korea/Japan 2002 to South Africa 2010, in one framed shadow box with gold foil accents.", quote: "\"Joga bonito.\"", story1Copy: "From the long-range free kick against England on the way to the 2002 title, to Brazil’s No. 10 shirt in Germany and the 2010 sticker album, Ronaldinho’s World Cup story sits in order inside one frame.", signatureText: "Ronaldinho",
+        cards: [
+          { year: '2002', tournament: "KOREA/JAPAN 2002", jerseyNo: "#11", kitPrimary: '#15803D', kitAccent: '#D4AF37', badge: "WORLD CHAMPION", stage: "Winner", desc: "Scored the long-range free kick against England on the way to the title.", image: '/uploads/editions/r10/card-2002.jpg', area: '30.40,47.47,11.20,24.00' },
+          { year: '2006', tournament: "GERMANY 2006", jerseyNo: "#10", kitPrimary: '#15803D', kitAccent: '#D4AF37', badge: "THE NO. 10", stage: "Quarter-finals", desc: "Wore Brazil’s No. 10 shirt in Germany.", image: '/uploads/editions/r10/card-2006.jpg', area: '44.40,47.47,11.20,24.00' },
+          { year: '2010', tournament: "SOUTH AFRICA 2010", jerseyNo: "—", kitPrimary: '#15803D', kitAccent: '#D4AF37', badge: "THE STICKER", stage: "Not selected", desc: "In the 2010 sticker album, but left out of Brazil’s final squad for South Africa.", image: '/uploads/editions/r10/card-2010.jpg', area: '58.40,47.47,11.20,24.00' }
+        ]
       }
     };
 
@@ -1157,7 +1181,7 @@
     }
 
     // Show or hide editions everywhere (tabs, trio, footer)
-    const NUM_WORDS = ['zero','one','two','three','four','five','six','seven','eight'];
+    const NUM_WORDS = ['zero','one','two','three','four','five','six','seven','eight','nine','ten','eleven','twelve','thirteen','fourteen','fifteen'];
     function styleTabs() {
       KEYS.forEach(key => {
         [document.getElementById(`nav-${key}`), document.getElementById(`mob-nav-${key}`)].forEach(btn => {

@@ -837,6 +837,134 @@
           "area": "58.40,46.76,11.20,24.00"
         }
       ]
+    },
+    {
+      "key": "r9",
+      "status": "active",
+      "journey": "worldcup",
+      "title": "Ronaldo Edition",
+      "player": "Ronaldo Nazário",
+      "nation": "Brazil",
+      "monogram": "R9",
+      "years": "1998–2006",
+      "price": 45,
+      "compare_price": 69.99,
+      "product_name": "R9 — The World Cup Journey (1998–2006)",
+      "headline": "Fifteen World Cup Goals and Two Stars on His Chest: *Ronaldo*",
+      "subheadline": "Three World Cups, from France 1998 to Germany 2006, in one framed shadow box with gold foil accents.",
+      "quote": "\"O Fenômeno.\"",
+      "story": "From the Golden Ball in France to both goals in the 2002 final and a then-record 15th World Cup goal in Germany, Ronaldo’s World Cup journey with Brazil sits in order inside one frame.",
+      "signature": "Ronaldo",
+      "video": "",
+      "video_poster": "",
+      "photos": [],
+      "artwork": "/uploads/editions/r9/artwork.jpg",
+      "portrait": "",
+      "crest": "/uploads/editions/r9/crest.png",
+      "signature_image": "/uploads/editions/r9/signature.png",
+      "cards": [
+        {
+          "year": "1998",
+          "tournament": "FRANCE 1998",
+          "shirt": "#9",
+          "label": "GOLDEN BALL",
+          "reached": "Runner-up",
+          "description": "Four goals and the Golden Ball on the way to the final in Paris.",
+          "colour": "#15803D",
+          "accent": "#D4AF37",
+          "image": "/uploads/editions/r9/card-1998.jpg",
+          "area": "30.40,45.38,11.20,24.00"
+        },
+        {
+          "year": "2002",
+          "tournament": "KOREA/JAPAN 2002",
+          "shirt": "#9",
+          "label": "WORLD CHAMPION",
+          "reached": "Winner",
+          "description": "Eight goals and the Golden Boot, including both goals in the final.",
+          "colour": "#15803D",
+          "accent": "#D4AF37",
+          "image": "/uploads/editions/r9/card-2002.jpg",
+          "area": "44.40,45.38,11.20,24.00"
+        },
+        {
+          "year": "2006",
+          "tournament": "GERMANY 2006",
+          "shirt": "#9",
+          "label": "RECORD 15TH GOAL",
+          "reached": "Quarter-finals",
+          "description": "Three more goals, the last his 15th, a World Cup record at the time.",
+          "colour": "#15803D",
+          "accent": "#D4AF37",
+          "image": "/uploads/editions/r9/card-2006.jpg",
+          "area": "58.40,45.38,11.20,24.00"
+        }
+      ],
+      "tab_name": "Ronaldo (R9)"
+    },
+    {
+      "key": "r10",
+      "status": "active",
+      "journey": "worldcup",
+      "title": "Ronaldinho Edition",
+      "player": "Ronaldinho",
+      "nation": "Brazil",
+      "monogram": "R10",
+      "years": "2002–2010",
+      "price": 45,
+      "compare_price": 69.99,
+      "product_name": "R10 — The World Cup Journey (2002–2010)",
+      "headline": "The Free Kick That Beat England, Then the Cup in Yokohama: *Ronaldinho*",
+      "subheadline": "Three World Cup stickers, from Korea/Japan 2002 to South Africa 2010, in one framed shadow box with gold foil accents.",
+      "quote": "\"Joga bonito.\"",
+      "story": "From the long-range free kick against England on the way to the 2002 title, to Brazil’s No. 10 shirt in Germany and the 2010 sticker album, Ronaldinho’s World Cup story sits in order inside one frame.",
+      "signature": "Ronaldinho",
+      "video": "",
+      "video_poster": "",
+      "photos": [],
+      "artwork": "/uploads/editions/r10/artwork.jpg",
+      "portrait": "",
+      "crest": "/uploads/editions/r10/crest.png",
+      "signature_image": "/uploads/editions/r10/signature.png",
+      "cards": [
+        {
+          "year": "2002",
+          "tournament": "KOREA/JAPAN 2002",
+          "shirt": "#11",
+          "label": "WORLD CHAMPION",
+          "reached": "Winner",
+          "description": "Scored the long-range free kick against England on the way to the title.",
+          "colour": "#15803D",
+          "accent": "#D4AF37",
+          "image": "/uploads/editions/r10/card-2002.jpg",
+          "area": "30.40,47.47,11.20,24.00"
+        },
+        {
+          "year": "2006",
+          "tournament": "GERMANY 2006",
+          "shirt": "#10",
+          "label": "THE NO. 10",
+          "reached": "Quarter-finals",
+          "description": "Wore Brazil’s No. 10 shirt in Germany.",
+          "colour": "#15803D",
+          "accent": "#D4AF37",
+          "image": "/uploads/editions/r10/card-2006.jpg",
+          "area": "44.40,47.47,11.20,24.00"
+        },
+        {
+          "year": "2010",
+          "tournament": "SOUTH AFRICA 2010",
+          "shirt": "—",
+          "label": "THE STICKER",
+          "reached": "Not selected",
+          "description": "In the 2010 sticker album, but left out of Brazil’s final squad for South Africa.",
+          "colour": "#15803D",
+          "accent": "#D4AF37",
+          "image": "/uploads/editions/r10/card-2010.jpg",
+          "area": "58.40,47.47,11.20,24.00"
+        }
+      ],
+      "tab_name": "Ronaldinho"
     }
   ]
 }
