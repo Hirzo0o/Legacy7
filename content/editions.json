@@ -2670,13 +2670,33 @@
           },
           {
             "type": "image",
+            "label": "Small trophy 1 (1978)",
+            "image": "/uploads/editions/dimaria/poster/trophy.png",
+            "x": 45.725,
+            "y": 90.4,
+            "w": 2.183,
+            "h": 6.08,
+            "fit": "contain"
+          },
+          {
+            "type": "image",
+            "label": "Small trophy 2 (1986)",
+            "image": "/uploads/editions/dimaria/poster/trophy.png",
             "x": 48.908,
             "y": 90.4,
             "w": 2.183,
             "h": 6.08,
-            "fit": "contain",
-            "label": "Small trophy",
-            "image": "/uploads/editions/dimaria/poster/trophy.png"
+            "fit": "contain"
+          },
+          {
+            "type": "image",
+            "label": "Small trophy 3 (2022)",
+            "image": "/uploads/editions/dimaria/poster/trophy.png",
+            "x": 52.091,
+            "y": 90.4,
+            "w": 2.183,
+            "h": 6.08,
+            "fit": "contain"
           },
           {
             "type": "image",
@@ -2924,7 +2944,7 @@
           },
           {
             "type": "text",
-            "text": "QATAR 2022",
+            "text": "1978 • 1986 • 2022",
             "x": 46.753,
             "y": 88.0,
             "w": 6.494,
