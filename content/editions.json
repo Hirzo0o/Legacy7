@@ -3446,23 +3446,53 @@
           },
           {
             "type": "image",
-            "x": 47.317,
+            "label": "Small trophy 1 (1958)",
+            "image": "/uploads/editions/r9/poster/trophy.png",
+            "x": 42.543,
             "y": 90.4,
             "w": 2.183,
             "h": 6.08,
-            "fit": "contain",
-            "label": "Small trophy",
-            "image": "/uploads/editions/r9/poster/trophy.png"
+            "fit": "contain"
           },
           {
             "type": "image",
-            "x": 50.5,
+            "label": "Small trophy 2 (1962)",
+            "image": "/uploads/editions/r9/poster/trophy.png",
+            "x": 45.726,
             "y": 90.4,
             "w": 2.183,
             "h": 6.08,
-            "fit": "contain",
-            "label": "Small trophy 2",
-            "image": "/uploads/editions/r9/poster/trophy.png"
+            "fit": "contain"
+          },
+          {
+            "type": "image",
+            "label": "Small trophy 3 (1970)",
+            "image": "/uploads/editions/r9/poster/trophy.png",
+            "x": 48.909,
+            "y": 90.4,
+            "w": 2.183,
+            "h": 6.08,
+            "fit": "contain"
+          },
+          {
+            "type": "image",
+            "label": "Small trophy 4 (1994)",
+            "image": "/uploads/editions/r9/poster/trophy.png",
+            "x": 52.092,
+            "y": 90.4,
+            "w": 2.183,
+            "h": 6.08,
+            "fit": "contain"
+          },
+          {
+            "type": "image",
+            "label": "Small trophy 5 (2002)",
+            "image": "/uploads/editions/r9/poster/trophy.png",
+            "x": 55.275,
+            "y": 90.4,
+            "w": 2.183,
+            "h": 6.08,
+            "fit": "contain"
           },
           {
             "type": "image",
@@ -3694,10 +3724,10 @@
           },
           {
             "type": "text",
-            "text": "USA 94 • KOREA/JAPAN 02",
-            "x": 42.82,
+            "text": "1958 • 1962 • 1970 • 1994 • 2002",
+            "x": 35.0,
             "y": 88.0,
-            "w": 14.359,
+            "w": 30.0,
             "h": 1.92,
             "size": 8,
             "font": "Montserrat",
@@ -3857,13 +3887,53 @@
           },
           {
             "type": "image",
-            "x": 48.908,
+            "label": "Small trophy 1 (1958)",
+            "image": "/uploads/editions/r10/poster/trophy.png",
+            "x": 42.543,
             "y": 90.4,
             "w": 2.183,
             "h": 6.08,
-            "fit": "contain",
-            "label": "Small trophy",
-            "image": "/uploads/editions/r10/poster/trophy.png"
+            "fit": "contain"
+          },
+          {
+            "type": "image",
+            "label": "Small trophy 2 (1962)",
+            "image": "/uploads/editions/r10/poster/trophy.png",
+            "x": 45.726,
+            "y": 90.4,
+            "w": 2.183,
+            "h": 6.08,
+            "fit": "contain"
+          },
+          {
+            "type": "image",
+            "label": "Small trophy 3 (1970)",
+            "image": "/uploads/editions/r10/poster/trophy.png",
+            "x": 48.909,
+            "y": 90.4,
+            "w": 2.183,
+            "h": 6.08,
+            "fit": "contain"
+          },
+          {
+            "type": "image",
+            "label": "Small trophy 4 (1994)",
+            "image": "/uploads/editions/r10/poster/trophy.png",
+            "x": 52.092,
+            "y": 90.4,
+            "w": 2.183,
+            "h": 6.08,
+            "fit": "contain"
+          },
+          {
+            "type": "image",
+            "label": "Small trophy 5 (2002)",
+            "image": "/uploads/editions/r10/poster/trophy.png",
+            "x": 55.275,
+            "y": 90.4,
+            "w": 2.183,
+            "h": 6.08,
+            "fit": "contain"
           },
           {
             "type": "image",
@@ -4079,10 +4149,10 @@
           },
           {
             "type": "text",
-            "text": "KOREA/JAPAN 2002",
-            "x": 44.678,
+            "text": "1958 • 1962 • 1970 • 1994 • 2002",
+            "x": 35.0,
             "y": 88.0,
-            "w": 10.642,
+            "w": 30.0,
             "h": 1.92,
             "size": 8,
             "font": "Montserrat",
@@ -4232,13 +4302,53 @@
           },
           {
             "type": "image",
-            "x": 48.908,
+            "label": "Small trophy 1 (1958)",
+            "image": "/uploads/editions/rc/poster/trophy.png",
+            "x": 42.543,
             "y": 90.4,
             "w": 2.183,
             "h": 6.08,
-            "fit": "contain",
-            "label": "Small trophy",
-            "image": "/uploads/editions/rc/poster/trophy.png"
+            "fit": "contain"
+          },
+          {
+            "type": "image",
+            "label": "Small trophy 2 (1962)",
+            "image": "/uploads/editions/rc/poster/trophy.png",
+            "x": 45.726,
+            "y": 90.4,
+            "w": 2.183,
+            "h": 6.08,
+            "fit": "contain"
+          },
+          {
+            "type": "image",
+            "label": "Small trophy 3 (1970)",
+            "image": "/uploads/editions/rc/poster/trophy.png",
+            "x": 48.909,
+            "y": 90.4,
+            "w": 2.183,
+            "h": 6.08,
+            "fit": "contain"
+          },
+          {
+            "type": "image",
+            "label": "Small trophy 4 (1994)",
+            "image": "/uploads/editions/rc/poster/trophy.png",
+            "x": 52.092,
+            "y": 90.4,
+            "w": 2.183,
+            "h": 6.08,
+            "fit": "contain"
+          },
+          {
+            "type": "image",
+            "label": "Small trophy 5 (2002)",
+            "image": "/uploads/editions/rc/poster/trophy.png",
+            "x": 55.275,
+            "y": 90.4,
+            "w": 2.183,
+            "h": 6.08,
+            "fit": "contain"
           },
           {
             "type": "image",
@@ -4470,10 +4580,10 @@
           },
           {
             "type": "text",
-            "text": "KOREA/JAPAN 2002",
-            "x": 44.678,
+            "text": "1958 • 1962 • 1970 • 1994 • 2002",
+            "x": 35.0,
             "y": 88.0,
-            "w": 10.642,
+            "w": 30.0,
             "h": 1.92,
             "size": 8,
             "font": "Montserrat",
