@@ -55,10 +55,76 @@ collections:
               - { name: story, label: Story paragraph, widget: text }
               - { name: quote, label: Quote in the gold foil panel, widget: string }
               - { name: signature, label: Signature text inside the illustrated frame, widget: string }
-              - { name: artwork, label: "Full design artwork (shown as the frame; cards become clickable using each card's area)", widget: image, required: false }
+              - { name: artwork, label: "Full design artwork as one image (fallback, used only when the poster below has no pieces)", widget: image, required: false }
+              - name: poster
+                label: "Poster pieces (what the frame shows; replace or move any piece)"
+                widget: object
+                collapsed: true
+                required: false
+                fields:
+                  - { name: background, label: "Background (lines, dots and card frames)", widget: image, required: false }
+                  - { name: ratio, label: "Height ÷ width (0.625 for a 16×10 poster)", widget: number, value_type: float, min: 0.3, max: 2, step: 0.001, default: 0.625 }
+                  - name: layers
+                    label: Pieces
+                    label_singular: piece
+                    widget: list
+                    required: false
+                    collapsed: true
+                    summary: "{{fields.label}}"
+                    typeKey: type
+                    types:
+                      - name: image
+                        label: Picture
+                        widget: object
+                        summary: "{{fields.label}}"
+                        fields:
+                          - { name: label, label: "Name of this piece", widget: string }
+                          - { name: image, label: "Picture (transparent PNG for the player, logo, crest, trophy and signature)", widget: image, required: false }
+                          - name: bind
+                            label: "Use a picture from elsewhere in this edition"
+                            widget: select
+                            required: false
+                            hint: "Crest and signature use the fields above; Card N uses that card's image in The cards list. Leave empty to use the picture here."
+                            options:
+                              - { label: "No, use the picture here", value: none }
+                              - { label: "Team crest", value: crest }
+                              - { label: "Signature image", value: signature }
+                              - { label: "Card 1", value: card-0 }
+                              - { label: "Card 2", value: card-1 }
+                              - { label: "Card 3", value: card-2 }
+                              - { label: "Card 4", value: card-3 }
+                              - { label: "Card 5", value: card-4 }
+                              - { label: "Card 6", value: card-5 }
+                          - { name: x, label: "Left (% of the poster width)", widget: number, value_type: float, step: 0.1 }
+                          - { name: y, label: "Top (% of the poster height)", widget: number, value_type: float, step: 0.1 }
+                          - { name: w, label: "Width (%)", widget: number, value_type: float, step: 0.1 }
+                          - { name: h, label: "Height (%)", widget: number, value_type: float, step: 0.1 }
+                          - { name: fit, label: "Fit", widget: select, default: contain, options: [ { label: "Fit inside the box", value: contain }, { label: "Fill the box (crop edges)", value: cover } ] }
+                          - { name: mono, label: "Black and white with faded bottom (player photo)", widget: boolean, required: false, default: false }
+                          - { name: effect, label: "Glow (optional, e.g. drop-shadow(0px 0px 18px rgba(191,149,63,0.35)))", widget: string, required: false }
+                          - { name: hidden, label: "Hide this piece", widget: boolean, required: false, default: false }
+                      - name: text
+                        label: Text
+                        widget: object
+                        summary: "{{fields.label}}: {{fields.text}}"
+                        fields:
+                          - { name: label, label: "Name of this piece", widget: string }
+                          - { name: text, label: Text, widget: string }
+                          - { name: x, label: "Left (% of the poster width)", widget: number, value_type: float, step: 0.1 }
+                          - { name: y, label: "Top (% of the poster height)", widget: number, value_type: float, step: 0.1 }
+                          - { name: w, label: "Width (%) — text is centred in this box", widget: number, value_type: float, step: 0.1 }
+                          - { name: h, label: "Height (%)", widget: number, value_type: float, step: 0.1 }
+                          - { name: size, label: "Font size (px on a 1000px-wide poster)", widget: number, value_type: float, step: 0.5 }
+                          - { name: font, label: Font, widget: select, default: Montserrat, options: [ Montserrat, Cinzel ] }
+                          - { name: weight, label: "Weight (100 thin – 900 black)", widget: number, value_type: int, min: 100, max: 900, step: 100, default: 600 }
+                          - { name: italic, label: Italic, widget: boolean, required: false, default: false }
+                          - { name: spacing, label: "Letter spacing (px on a 1000px-wide poster)", widget: number, value_type: float, step: 0.1, default: 0 }
+                          - { name: gold, label: "Gold foil gradient (ignores the colour below)", widget: boolean, required: false, default: true }
+                          - { name: color, label: Colour, widget: color, enableAlpha: true, allowInput: true, required: false }
+                          - { name: hidden, label: "Hide this piece", widget: boolean, required: false, default: false }
               - { name: portrait, label: "Player portrait inside the illustrated frame (optional)", widget: image, required: false }
-              - { name: crest, label: "Team crest in the frame (optional)", widget: image, required: false }
-              - { name: signature_image, label: "Signature image in the frame (optional, replaces the signature text)", widget: image, required: false }
+              - { name: crest, label: "Team crest (also shown on the poster)", widget: image, required: false }
+              - { name: signature_image, label: "Signature image (also shown on the poster)", widget: image, required: false }
               - name: photos
                 label: "Photos of the real frame (if empty, an illustrated frame is shown)"
                 label_singular: Photo
@@ -79,8 +145,8 @@ collections:
                   - { name: label, label: "Short label (e.g. DEBUT)", widget: string }
                   - { name: reached, label: "Stage reached", widget: string }
                   - { name: description, label: Description, widget: text }
-                  - { name: image, label: "Card image (optional, the real sticker)", widget: image, required: false }
-                  - { name: area, label: "Position on the artwork: left,top,width,height in % (e.g. 12.05,50.92,12.5,25.18)", widget: string, required: false }
+                  - { name: image, label: "Card image (the real sticker; also shown on the poster)", widget: image, required: false }
+                  - { name: area, label: "Clickable area on the full-design image, only when there are no poster pieces: left,top,width,height in %", widget: string, required: false }
                   - { name: colour, label: Card colour, widget: color, required: false }
                   - { name: accent, label: Accent colour, widget: color, required: false }
 
