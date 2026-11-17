@@ -3537,20 +3537,14 @@
             "label": "Top line"
           },
           {
-            "type": "text",
-            "text": "R9",
-            "x": 47.784,
-            "y": 8.4,
-            "w": 4.431,
-            "h": 6.4,
-            "size": 30,
-            "font": "Cinzel",
-            "weight": 700,
-            "italic": true,
-            "spacing": 1.5,
-            "color": "#E6C566",
-            "gold": true,
-            "label": "Monogram"
+            "type": "image",
+            "label": "Logo",
+            "image": "/uploads/editions/r9/poster/logo.png",
+            "x": 46.84,
+            "y": 7.6,
+            "w": 6.319,
+            "h": 7.0,
+            "fit": "contain"
           },
           {
             "type": "text",
