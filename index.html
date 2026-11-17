@@ -25,6 +25,16 @@
     @font-face{font-family:'Cinzel';src:url('fonts/cinzel-latin-600-normal.woff2') format('woff2');font-weight:500 600;font-display:swap}
     @font-face{font-family:'Cinzel';src:url('fonts/cinzel-latin-700-normal.woff2') format('woff2');font-weight:700 900;font-display:swap}
     @font-face{font-family:'Plus Jakarta Sans';src:url('fonts/plus-jakarta-sans-latin-wght-normal.woff2') format('woff2');font-weight:200 800;font-display:swap}
+    @font-face{font-family:'Montserrat';src:url('fonts/montserrat-latin-wght-normal.woff2') format('woff2');font-weight:100 900;font-style:normal;font-display:swap}
+    @font-face{font-family:'Montserrat';src:url('fonts/montserrat-latin-ext-wght-normal.woff2') format('woff2');font-weight:100 900;font-style:normal;font-display:swap;unicode-range:U+0100-02BA,U+1E00-1EFF}
+    @font-face{font-family:'Montserrat';src:url('fonts/montserrat-latin-wght-italic.woff2') format('woff2');font-weight:100 900;font-style:italic;font-display:swap}
+    /* Poster built from layers: every image and text is a separate piece edited in the admin */
+    .poster{position:relative;width:100%;container-type:inline-size;background:#000 center/100% 100% no-repeat;overflow:hidden}
+    .poster > *{position:absolute;margin:0}
+    .poster img{display:block}
+    .poster .pt{display:flex;align-items:center;justify-content:center;white-space:nowrap;line-height:1}
+    .poster .pt.gold{background:linear-gradient(to right,#bf953f,#fcf6ba,#b38728,#fbf5b7,#aa771c);-webkit-background-clip:text;background-clip:text;color:transparent;-webkit-text-fill-color:transparent}
+    .poster .mono{filter:grayscale(1) contrast(1.15) brightness(.95);-webkit-mask-image:linear-gradient(to bottom,#000 82%,transparent);mask-image:linear-gradient(to bottom,#000 82%,transparent)}
     a:focus-visible,button:focus-visible{outline:2px solid #F3E5AB;outline-offset:3px}
     @media (prefers-reduced-motion: reduce){.foil-active .foil-shimmer-layer{animation:none}.frame-3d-wrapper{transition:none}}
 
@@ -739,9 +749,40 @@
     PLAYERS_DATA.cr7.photos = CR7_PHOTOS.slice();
 
 
+    // Poster built from layers (content/editions.json → poster). Positions are % of the poster; sizes are px on a 1000px-wide poster.
+    const num = (v, d = 0) => (isFinite(parseFloat(v)) ? parseFloat(v) : d);
+    const safeCss = v => String(v || '').replace(/[^#a-zA-Z0-9(),.%\s-]/g, '');
+    function layerSrc(p, L) {
+      const b = String(L.bind || '');
+      if (b === 'crest' && p.crest) return p.crest;
+      if (b === 'signature' && p.signatureImage) return p.signatureImage;
+      const m = b.match(/^card-(\d+)$/); if (m && p.cards[+m[1]] && p.cards[+m[1]].image) return p.cards[+m[1]].image;
+      return L.image || '';
+    }
+    function posterHTML(p, thumb = false) {
+      const P = p.posterSpec; if (!P) return '';
+      const box = L => `left:${num(L.x)}%;top:${num(L.y)}%;width:${num(L.w)}%;height:${num(L.h)}%`;
+      const parts = P.layers.filter(L => !L.hidden).map(L => {
+        if (L.type === 'text') {
+          const fam = L.font === 'Cinzel' ? "'Cinzel',serif" : "'Montserrat',sans-serif";
+          const col = L.gold ? '' : `color:${safeCss(L.color) || '#E6C566'};`;
+          return `<div class="pt${L.gold ? ' gold' : ''}" style="${box(L)};font-family:${fam};font-size:${num(L.size, 12) / 10}cqw;font-weight:${num(L.weight, 400)};font-style:${L.italic ? 'italic' : 'normal'};letter-spacing:${num(L.spacing) / 10}cqw;${col}">${esc(L.text)}</div>`;
+        }
+        const src = layerSrc(p, L); if (!src) return '';
+        const fx = L.effect ? `filter:${safeCss(L.effect)};` : '';
+        return `<img src="${esc(asset(src))}" alt="" ${thumb ? '' : 'loading="lazy"'} class="${L.mono ? 'mono' : ''}" style="${box(L)};object-fit:${L.fit === 'cover' ? 'cover' : 'contain'};object-position:${L.mono ? '50% 0%' : '50% 50%'};${fx}"/>`;
+      }).join('');
+      return `<div class="poster" role="img" aria-label="The ${esc(p.shortTitle)} design" style="aspect-ratio:${1 / num(P.ratio, 0.625)};${P.background ? `background-image:url('${esc(asset(P.background))}')` : ''}">${parts}</div>`;
+    }
+    // A card's clickable area: the poster layer showing its sticker when there is one, otherwise the card's own area
+    function cardArea(p, i) {
+      const L = p.posterSpec && p.posterSpec.layers.find(l => l.bind === `card-${i}` && !l.hidden);
+      return L ? [num(L.x), num(L.y), num(L.w), num(L.h)] : String(p.cards[i].area || '').split(',').map(Number);
+    }
+
     function artworkFrameHTML(p) {
       const spots = p.cards.map((card, i) => {
-        const a = String(card.area || '').split(',').map(Number);
+        const a = cardArea(p, i);
         if (a.length !== 4 || a.some(isNaN)) return '';
         return `<button type="button" onclick="openCardModal(${i})" aria-label="View the ${card.tournament} card"
           class="absolute rounded-sm transition-shadow hover:shadow-[0_0_0_2px_#F3E5AB,0_0_24px_rgba(212,175,55,.55)] focus-visible:shadow-[0_0_0_2px_#F3E5AB]"
@@ -756,7 +797,7 @@
         <span class="frame-face r"></span><span class="frame-face l"></span><span class="frame-face t"></span><span class="frame-face b"></span>
         <div class="relative w-full rounded-xl p-2 sm:p-3 ${outer} border-[6px] sm:border-[10px] shadow-museum-frame">
           <div class="relative overflow-hidden rounded ${foilGlareEnabled ? 'foil-active' : ''}">
-            <img src="${esc(asset(p.artwork))}" alt="The ${esc(p.shortTitle)} design" class="block w-full h-auto"/>
+            ${p.posterSpec ? posterHTML(p) : `<img src="${esc(asset(p.artwork))}" alt="The ${esc(p.shortTitle)} design" class="block w-full h-auto"/>`}
             <div class="foil-shimmer-layer" style="opacity:${foilGlareEnabled ? '1' : '0'}"></div>
             ${spots}
           </div>
@@ -928,7 +969,7 @@
       box.innerHTML = galleryItems(p).map((item, i) => `
         <button onclick="showPhoto(${i})" aria-label="${item.design ? 'Show the design' : item.video ? 'Play the video' : `Show photo ${i + 1}`}" class="relative rounded-xl overflow-hidden border ${i === activePhoto ? 'border-[#D4AF37]' : 'border-[#262218] hover:border-[#D4AF37]/50'} bg-[#121212] transition-colors">
           ${item.design
-            ? `<img src="${esc(asset(p.artwork))}" alt="" loading="lazy" class="w-full h-24 sm:h-28 object-cover"/>`
+            ? (p.posterSpec ? `<div class="w-full h-24 sm:h-28 flex items-center overflow-hidden pointer-events-none" aria-hidden="true">${posterHTML(p, true)}</div>` : `<img src="${esc(asset(p.artwork))}" alt="" loading="lazy" class="w-full h-24 sm:h-28 object-cover"/>`)
             : item.video
             ? `${p.poster ? `<img src="${esc(asset(p.poster))}" alt="" loading="lazy" class="w-full h-24 sm:h-28 object-cover opacity-70"/>` : '<div class="w-full h-24 sm:h-28"></div>'}
                <span class="absolute inset-0 flex items-center justify-center"><span class="w-10 h-10 rounded-full bg-gold-metallic text-black flex items-center justify-center text-sm" aria-hidden="true">▶</span></span>`
@@ -1302,6 +1343,8 @@
         p.video = e.video || ''; p.poster = e.video_poster || '';
         p.portrait = e.portrait || '';
         p.artwork = e.artwork || '';
+        p.posterSpec = (e.poster && Array.isArray(e.poster.layers) && e.poster.layers.length) ? e.poster : null;
+        if (p.posterSpec && !p.artwork) p.artwork = p.posterSpec.background || 'poster';
         p.crest = e.crest || '';
         p.signatureImage = e.signature_image || '';
         p.journey = e.journey === 'career' ? 'career' : 'worldcup';
