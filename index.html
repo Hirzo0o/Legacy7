@@ -44,6 +44,17 @@
       font-family: 'Plus Jakarta Sans', sans-serif;
       overflow-x: hidden;
     }
+    /* Hero headline: small tracked line above a big serif name */
+    .hero-eyebrow { display:block; font-family:'Plus Jakarta Sans',sans-serif; font-weight:600; font-size:13px; letter-spacing:.12em; line-height:1.6; color:#BDB6A3; max-width:36rem; margin:0 auto 14px; }
+    .hero-name { display:block; font-size:clamp(42px, 8vw, 80px); line-height:1.02; letter-spacing:.01em; }
+    .hero-name--long { font-size:clamp(30px, 5vw, 54px); line-height:1.14; }
+    .hero-product { width:min(100%, 300px); }
+    @media (min-width:640px){ .hero-eyebrow{font-size:14px} .hero-product{width:340px} }
+    /* Matte grain over the near-black background */
+    body::after {
+      content: ''; position: fixed; inset: 0; pointer-events: none; z-index: 30; opacity: .055;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 .9 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+    }
 
     /* Metallic Gold Text & Gradients */
     .text-gold-gradient {
@@ -208,14 +219,17 @@
       <div id="hero-spotlight" class="pointer-events-none absolute top-10 left-1/2 -translate-x-1/2 w-[90vw] max-w-4xl h-[480px] rounded-full blur-[130px] opacity-25 transition-colors duration-700" style="background: radial-gradient(circle, #D4AF37 0%, transparent 70%);"></div>
 
       <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 flex flex-col items-center text-center">
-        <img src="Logo.png" alt="The Last Dance Collectibles, framing football history" width="512" height="512" fetchpriority="high"
-             class="hero-logo w-40 h-40 sm:w-56 sm:h-56 lg:w-64 lg:h-64 rounded-full mb-6"/>
-        <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#121212] border border-[#D4AF37]/40 mb-5 shadow-gold-glow">
+        <img id="hero-logo" src="Logo.png" alt="The Last Dance Collectibles, framing football history" width="512" height="512"
+             class="hero-logo w-20 h-20 sm:w-24 sm:h-24 rounded-full mb-6"/>
+        <figure id="hero-product" class="hidden hero-product mx-auto mb-8">
+          <img id="hero-product-img" src="" alt="" fetchpriority="high" class="w-full rounded-2xl border border-[#262218] shadow-2xl bg-[#121212]"/>
+        </figure>
+        <div class="inline-flex items-center gap-2.5 px-6 py-2.5 rounded-full bg-[#121212] border border-[#D4AF37]/40 mb-5 shadow-gold-glow">
           <span class="w-1.5 h-1.5 rounded-full bg-[#D4AF37]"></span>
           <span id="hero-edition-badge" class="text-[11px] font-bold tracking-[0.22em] uppercase text-[#F3E5AB]">CR7 Edition · Portugal</span>
         </div>
 
-        <h1 id="hero-headline" class="font-serif text-3xl sm:text-5xl lg:text-[54px] font-bold tracking-tight leading-[1.14] max-w-4xl text-[#F5F5F5] mb-5">
+        <h1 id="hero-headline" class="font-serif font-bold tracking-tight max-w-4xl text-[#F5F5F5] mb-6">
           The Entire World Cup Legacy of <span class="text-gold-gradient">CR7</span>, Immortalized in Gold Foil for Your Wall
         </h1>
 
@@ -989,6 +1003,14 @@
       document.getElementById('gallery-frame-mount').innerHTML = hasPhotos(player) ? photoHTML(player) : buildShadowboxHTML(player, false);
     }
 
+    // Headline "Eyebrow line: <gold>Name</gold>" -> small tracked line above a big serif name
+    function heroHeadlineHTML(h) {
+      const m = String(h || '').match(/^([\s\S]*?):\s*(<span class="text-gold-gradient">[\s\S]*<\/span>)\s*$/);
+      if (!m) return `<span class="hero-name hero-name--long">${h}</span>`;
+      return `<span class="hero-eyebrow">${m[1]}</span>`
+           + `<span class="hero-name">${m[2]}</span>`;
+    }
+
     // Edition switcher
     function switchPlayer(playerKey, opts = {}) {
       if (!PLAYERS_DATA[playerKey] || PLAYERS_DATA[playerKey].status === 'hidden') playerKey = visibleKeys()[0] || 'cr7';
@@ -1001,7 +1023,11 @@
       styleTabs();
 
       document.getElementById('hero-edition-badge').textContent = `${p.shortTitle} · ${p.nation}`;
-      document.getElementById('hero-headline').innerHTML = p.heroHeadline;
+      document.getElementById('hero-headline').innerHTML = heroHeadlineHTML(p.heroHeadline);
+      const heroPhoto = real && Array.isArray(p.photos) ? p.photos.filter(Boolean)[0] : '';
+      document.getElementById('hero-product').classList.toggle('hidden', !heroPhoto);
+      document.getElementById('hero-logo').classList.toggle('hidden', !!heroPhoto);
+      if (heroPhoto) { const hi = document.getElementById('hero-product-img'); hi.src = heroPhoto; hi.alt = `The ${p.shortTitle} framed shadow box`; }
       document.getElementById('hero-subheadline').textContent = p.heroSubheadline;
       document.getElementById('hero-spotlight').style.background = `radial-gradient(circle, ${p.accentGlow} 0%, transparent 70%)`;
       document.getElementById('hero-frame-label').textContent = p.artwork ? 'Tap a card to see its moment.' : p.video ? '' : `Illustrated preview of the ${p.shortTitle}. Tap a card to see its moment.`;
